@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<Root><LData><perAgmDate>1111.11.11</perAgmDate>
+<apvDate>2222.22.22</apvDate>
+<apvAppcNm>홍 X</apvAppcNm>
+<apvAppId>123123</apvAppId>
+<con_mng_no>88888888819</con_mng_no>
+<grp_nm>증권</grp_nm>
+<prod_nm>무배당   비전플러스상해보험 ( 본인형 )</prod_nm>
+<sttl_yn>Y</sttl_yn>
+<grupAgmtNo>88888888819</grupAgmtNo>
+<name>증권</name>
+<prodName>무배당   비전플러스상해보험 ( 본인형 )</prodName>
+<depoja>박  X</depoja>
+<refNo>8888888888089</refNo>
+<telNo>02  )3771-****</telNo>
+<saupjaNo>8888888887</saupjaNo>
+<address>서울   영등포구   여의도동                     ********************************</address>
+<insPe>1</insPe>
+<insSttlYn>Y</insSttlYn>
+<stDt>2011-11-29</stDt>
+<bokjiYn></bokjiYn>
+<edDt>2012-11-29</edDt>
+<occrRt>100</occrRt>
+<basePrem>148,409,130</basePrem>
+<decPrem>28,939,780</decPrem>
+<applPrem>119,469,350</applPrem>
+<sunapPrem>0</sunapPrem>
+<mJong>701</mJong>
+<mBeau>0</mBeau>
+<mJa>0</mJa>
+<mBumo>0</mBumo>
+<mTot>701</mTot>
+<wJong>368</wJong>
+<wBeau>0</wBeau>
+<wJa>0</wJa>
+<wBumo>0</wBumo>
+<wTot>368</wTot>
+<tJong>1,069</tJong>
+<tBeau>0</tBeau>
+<tJa>0</tJa>
+<tBumo>0</tBumo>
+<tTot>1,069</tTot>
+<ingamYn>Y</ingamYn>
+<songgumYn>Y</songgumYn>
+<premFreq>년납</premFreq>
+<bankName>국민은행</bankName>
+<bankNo>926**********</bankNo>
+<fpBrnc>법 1본부</fpBrnc>
+<fpName>김  X</fpName>
+<fpAddress>서울   서대문구   충정로3가                 ********************************</fpAddress>
+<fpTel>02  )1588-1001</fpTel>
+<fpEmail></fpEmail>
+<list><LMultiData name='ResultSet'><LData><appDtm>2012-08-22</appDtm>
+<stkNo>888888888684</stkNo>
+<inrDiv></inrDiv>
+<nm>정 X</nm>
+<resdNo>8888888880000</resdNo>
+<note>유지</note>
+<rplTarPsnInrDiv></rplTarPsnInrDiv>
+<rplTarPsnNm>홍 X</rplTarPsnNm>
+<rplTarPsnResdNo>8888888880000</rplTarPsnResdNo>
+<rplTarPsnDrvChk>승용</rplTarPsnDrvChk>
+<rplTarPsnHlthAnorChk>2123</rplTarPsnHlthAnorChk>
+<rplTarPsnNote>123</rplTarPsnNote>
+<apvAppId>cop01</apvAppId>
+<devonindex>1</devonindex>
+</LData>
+</LMultiData>
+</list>
+</LData>
+</Root>
+

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="출석부 표지" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="784" leftMargin="29" rightMargin="29" topMargin="42" bottomMargin="42" uuid="e72f397b-0dee-4839-8605-e7432fdb4103">
+	<property name="rxreport.background.image" value="D:\Reports\이미지\충남대학교 출석부1.png"/>
+	<property name="rxreport.background.image.properties" value="false,true,0.25,0,0,0,0,0,0"/>
+	<property name="rxreport.zoom" value="1.6105100000000083"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="720"/>
+	<style name="Normal" isDefault="true" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<topPen lineWidth="0.5"/>
+			<leftPen lineWidth="0.5"/>
+			<bottomPen lineWidth="0.5"/>
+			<rightPen lineWidth="0.5"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}>1 && $V{REPORT_COUNT} % 5 == 0]]></conditionExpression>
+			<style>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+			</style>
+		</conditionalStyle>
+	</style>
+	<style name="Normal12" style="Normal" fontSize="12"/>
+	<queryString language="xPath">
+		<![CDATA[/출석부/학생]]>
+	</queryString>
+	<field name="교과목" class="java.lang.String">
+		<fieldDescription><![CDATA[/출석부/교과목]]></fieldDescription>
+	</field>
+	<field name="담당교수명" class="java.lang.String">
+		<fieldDescription><![CDATA[/출석부/담당교수명]]></fieldDescription>
+	</field>
+	<field name="월일교시" class="java.lang.String">
+		<fieldDescription><![CDATA[/출석부/월일교시]]></fieldDescription>
+	</field>
+	<field name="번호" class="java.lang.String">
+		<fieldDescription><![CDATA[@번호]]></fieldDescription>
+	</field>
+	<field name="학번" class="java.lang.String">
+		<fieldDescription><![CDATA[@학번]]></fieldDescription>
+	</field>
+	<field name="학년" class="java.lang.String">
+		<fieldDescription><![CDATA[@학년]]></fieldDescription>
+	</field>
+	<field name="성명" class="java.lang.String">
+		<fieldDescription><![CDATA[@성명]]></fieldDescription>
+	</field>
+	<background>
+		<band height="511">
+			<rectangle>
+				<reportElement uuid="6bcc8d2f-503e-45d7-9ce7-66c6577b6117" mode="Transparent" x="0" y="0" width="784" height="511">
+					<property name="com.cabsoft.rx.export.html.zindex" value="-1"/>
+				</reportElement>
+			</rectangle>
+		</band>
+	</background>
+	<summary>
+		<band height="511" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="aa040fea-8e9b-4c92-8abb-7c67e59f1f76" style="Normal" x="0" y="21" width="784" height="52"/>
+				<box rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[출         석         부]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="48e42ff8-f806-49ab-b0ce-a6ad7b3e5646" style="Normal12" x="65" y="97" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[학년도 / 학기 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="abd899f1-b323-4814-8170-0eccde47bcd0" style="Normal12" x="65" y="125" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[교 과 목 명 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9d7d99f3-4218-4cf4-ad4b-4214e0547896" style="Normal12" x="65" y="153" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[교 과 구 분 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1ea125ea-657c-4dfa-ac0c-be836b28141c" style="Normal12" x="65" y="181" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[학 수 번 호 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="263296e8-e03b-4b4b-994d-280332bee2d2" style="Normal12" x="65" y="209" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[학 점 / 시 수 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="281469df-3bcb-4362-9499-a5657e863574" style="Normal12" x="65" y="237" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[설강대학(원)(학과) :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="90a07b21-9c4e-408d-b6a9-2a1edad983ba" style="Normal12" x="65" y="265" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[수업시간 및 강의실 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a2c0241d-231a-4503-9cbf-7ad0b4622182" style="Normal12" x="65" y="293" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[인      원 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="13a52b80-f970-43bf-8749-35203d189f56" style="Normal12" x="65" y="328" width="147" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[담 당 교 수 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b6ed7833-b007-4d5f-81b8-a4dc99442e27" style="Normal12" x="233" y="97" width="69" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[2011]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="82ab8597-d231-49fb-a2af-c57b34f7ce0d" style="Normal12" x="305" y="97" width="48" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[학년도]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d5979065-8281-467a-b694-5ba4aa215364" style="Normal12" x="363" y="97" width="38" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3adeb5a0-09b6-4ed3-8bc0-34cd8c743a59" style="Normal12" x="404" y="97" width="45" height="20"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[학기]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f3c0c5c2-70dd-40b3-b2f8-f488597db00b" style="Normal12" x="233" y="125" width="216" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{교과목}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="542df1aa-78b9-40e6-8ea9-1a96ad34fcdf" style="Normal12" x="233" y="181" width="90" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6ea0114c-2fcf-446f-b0a8-026f6afae06f" style="Normal12" x="353" y="181" width="96" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="6db2355a-1d9b-4812-9e90-1bc9ca6cab99" x="328" y="191" width="20" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="ad9cd10a-7ac3-41d6-8edb-b7846a216491" style="Normal12" x="233" y="153" width="216" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4f0a460e-fc8b-4fd6-bd48-3f7d2e9f073e" style="Normal12" x="234" y="209" width="48" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a756968-40b3-4ede-8503-016976c29886" style="Normal12" x="317" y="209" width="48" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c3b2d92a-3dbb-4bc0-b354-92b233bc5e53" style="Normal12" x="401" y="209" width="48" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="0de31a85-2e9f-48e4-8ef7-a599ea4c27bf" x="293" y="220" width="10" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="8167ac1c-22d7-41f6-b73f-75022c8f9a55" x="377" y="220" width="10" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="f8e57f95-3e0f-415f-bd54-b87b3d1ec93b" style="Normal12" x="233" y="237" width="216" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9bf580bc-fce4-46a8-a665-6cf2ab184242" style="Normal12" x="233" y="265" width="216" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="341afca9-9275-49d4-a38f-84beda8da466" style="Normal12" x="233" y="293" width="216" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="986da3e7-61ec-4a0f-a345-2a2e47e41680" style="Normal12" x="233" y="328" width="216" height="20"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.25" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.25" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.25" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.25" lineStyle="Dotted"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{담당교수명}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fd7a97c6-4ec2-4995-9c97-caa1c9ce00ce" style="Normal12" x="0" y="388" width="784" height="33"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[캡 소 프 트   대 학 교]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d13b443a-263c-409c-8f0f-53575abf72c4" style="Normal" x="81" y="453" width="614" height="34"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[※ 출석부는 성적평가의 기본자료로 활용되므로 출결사항을 정확히 작성 관리하시기 바랍니다.
+※ 학기말 성적평가 후에는 설강대학 행정실에 제출하여 주시기 바랍니다.]]></text>
+			</staticText>
+		</band>
+	</summary>
+</ReportExpress>

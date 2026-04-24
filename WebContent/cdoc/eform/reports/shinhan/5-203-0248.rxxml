@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="5-203-0248" pageWidth="595" pageHeight="842" columnWidth="579" leftMargin="8" rightMargin="8" topMargin="8" bottomMargin="8" uuid="e8d8429c-3927-446a-9039-94836bded459">
+	<property name="rxreport.zoom" value="1.6105100000000026"/>
+	<property name="rxreport.x" value="95"/>
+	<property name="rxreport.y" value="810"/>
+	<import value="com.cabsoft.utils.StringUtils"/>
+	<style name="Default" isDefault="true" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Defaultback" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="Default_10pt" hAlign="Left" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./image/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//R_NEXL3323]]>
+	</queryString>
+	<field name="item1" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='1']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item2" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='2']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item3" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='3']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item4" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='4']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="EF_DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[COM_EF_DATE/@value]]></fieldDescription>
+	</field>
+	<group name="group1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="760">
+				<staticText>
+					<reportElement uuid="8f5bbc08-8a3d-4221-9b3f-8df16302822a" x="15" y="33" width="548" height="727">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-99"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d92ac2d7-b32c-4eda-91a7-e09cebbfe47c" style="Default_10pt" x="218" y="33" width="129" height="21">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box rightPadding="0">
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[개인정보 제공 동의서]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a44a05d3-179b-4423-b8ae-e14c4de82e5a" style="Default_10pt" x="47" y="87" width="138" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[한국주택금융공사 귀하]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="551af969-08d0-4fd9-9b99-8c302fed6c40" style="Default_10pt" x="41" y="117" width="496" height="35">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[  본인은 아래의 제공기관이 주택금융신용보증기금의 운용관리기관인 한국주택금융공사에게 본인의 부동산
+소유현황, 주민등록정보 및 직장 · 소득정보 등을 제공하는데 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a031c29a-b899-4bcc-b560-4665cccf136b" style="Default_10pt" x="41" y="170" width="201" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[※ 제공할 개인정보의 내용 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="85fe131c-5cc8-40ff-9217-0e177936e073" style="Default_10pt" x="47" y="191" width="490" height="157">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[1. 제공기관 : 국가, 지방자치단체, 금융기관, 「국민연금법」에 따른 국민연금관리공단 및 「국민건강보험법」에
+   따른 국민건강보험공단 및 그 밖의 공공단체
+
+2. 사용목적 : 미수채권(구상권 포함) 행사(재산보유 파악, 보전조치, 강제집행 등)
+
+3. 자료제공범위 : 본인 소유부동산 현황, 주민등록번호 및 직장·소득정보 등
+
+4. 동의서 유효기간 : 미수채권(구상권 포함)의 소멸시까지
+
+5. 동의를 거부할 권리 및 동의를 거부할 경우의 불이익 : 위 개인정보의 제공에 관한 동의는 계약의 체결 및
+   이행을 위하여 필수적이므로 위 사항에 동의하셔야만 금융거래 관계의 설정 및 유지가 가능합니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a031c29a-b899-4bcc-b560-4665cccf136b" style="Default_10pt" x="41" y="354" width="376" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[※ 근거법령 : 「개인정보보호법」 제17조 및 「한국주택금융공사법」 제64조]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="a2f56fbe-ae4d-405e-93ad-1d6b6b801998" style="Default_10pt" x="405" y="407" width="132" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[StringUtils.format($F{EF_DATE},"@@@@년 @@월 @@일")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="471" width="129" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["동의자 성명(법인명) : "]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="173" y="471" width="174" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item1}]]></textFieldExpression>
+				</textField>
+				<image onErrorType="Blank">
+					<reportElement uuid="47f3d3a5-ab24-434e-a2ef-9529f30f0912" key="sign.png" x="350" y="464" width="30" height="30">
+						<property name="com.cabsoft.rx.export.html.id" value="signimg_sign1"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir}+"sign.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="7af3a2a1-43f5-44b1-88c6-9f3cb0ee5f03" style="Default_10pt" x="348" y="476" width="35" height="26" forecolor="#999999">
+						<property name="com.cabsoft.rx.export.html.id" value="sign1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doSign(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="개인정보 제공 동의서 확인 서명"/>
+						<property name="com.cabsoft.rx.export.html.type" value="sign"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="5" isBold="true"/>
+					</textElement>
+					<text><![CDATA[(인) 또는 서명]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="488" width="129" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["주민등록번호(법인번호) : "]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="173" y="488" width="225" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[StringUtils.format($F{item2},"@@@@@@ - @@@@@@@")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="505" width="67" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["주     소 : "]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="111" y="505" width="287" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{item3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="522" width="67" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["전화번호 : "]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="111" y="522" width="287" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{item4}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="556" width="129" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["동의자 성명(법인명) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="173" y="556" width="225" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="573" width="129" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["주민등록번호(법인번호) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="173" y="573" width="225" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="590" width="67" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["주     소 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="111" y="590" width="287" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="607" width="67" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["전화번호 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="111" y="607" width="287" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="644" width="129" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["동의자 성명(법인명) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="173" y="644" width="225" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="661" width="129" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["주민등록번호(법인번호) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="173" y="661" width="225" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="0aa64366-a61d-400f-8279-b34b49c92904" style="Defaultback" x="411" y="670" width="129" height="15"/>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[본인 확인필]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="678" width="67" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["주     소 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="111" y="678" width="287" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="fd4d9593-2439-4070-8610-a8f428a1bd1a" style="Defaultback" x="411" y="685" width="54" height="15"/>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[직위]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5c174f9c-b935-48ae-85a4-d9063156eae1" style="Defaultback" x="465" y="685" width="75" height="15"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[성   명]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="44" y="695" width="67" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA["전화번호 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="111" y="695" width="287" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="88ab92ee-348e-45f2-a8d7-2711f51469ee" style="Defaultback" x="411" y="700" width="54" height="40"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="88ab92ee-348e-45f2-a8d7-2711f51469ee" style="Defaultback" x="465" y="700" width="49" height="40"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" key="" style="Default" x="514" y="700" width="26" height="40"/>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[(인)]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<pageFooter>
+		<band height="66">
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
+				<reportElement uuid="2a04d483-6b85-4a93-a94f-47b741e2a234" x="41" y="12" width="492" height="54">
+					<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"barcode2.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>

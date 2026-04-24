@@ -1,0 +1,35 @@
+.popbox {
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+	z-index: 10000;
+}
+.box {
+	display: none;
+	background: #fff;
+	opacity : 0.9;
+	filter: alpha(opacity:'90');
+	border: solid 1px #004890;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px #999;
+	position: absolute;
+	padding:7px;
+	font-size:14px;
+	font-family:'나눔고딕코딩';
+	line-height:1.5em;
+	z-index: 10000;
+	behavior: url(../essviewer/pie/PIE.htc);
+}
+
+.box p b{color:#dd1c75 !important;}
+/* .arrow {
+	width: 19px;
+	height: 12px;
+	background:url(../images/menu/gray-blue/bg_tool_arrow.png);
+	position: absolute;
+	left:30px;
+	top: -12px;
+	z-index: 1001;	
+}
+
+ */

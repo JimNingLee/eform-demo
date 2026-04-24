@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="euc-kr"?><Root><LData><pDate>11112233</pDate>
+<TR_CODE>CY0714</TR_CODE>
+<MEDIA>H</MEDIA>
+<RT_CD>0</RT_CD>
+<MSG_CD>OK</MSG_CD>
+<MESSAGE>정상처리되었습니다.</MESSAGE>
+<CUST_NM></CUST_NM>
+<CUST_NO></CUST_NO>
+<RNAME_NO></RNAME_NO>
+<ACCT_NO></ACCT_NO>
+<TRD_DT></TRD_DT>
+<TRUST_TP></TRUST_TP>
+<TRUST_ORIGIN></TRUST_ORIGIN>
+<BASE_FEE_RT></BASE_FEE_RT>
+<EST_SUM>39694</EST_SUM>
+<JONG_AMT_SUM>0</JONG_AMT_SUM>
+<out_list_1><LMultiData><LData><JONG_NAME>RP110914(3.4)</JONG_NAME>
+<QTY>0</QTY>
+<CLSPRICE>0</CLSPRICE>
+<ESTAMT>39696</ESTAMT>
+<HOLDING_TYPE>유동자산</HOLDING_TYPE>
+</LData>
+</LMultiData>
+</out_list_1>
+</LData>
+</Root>

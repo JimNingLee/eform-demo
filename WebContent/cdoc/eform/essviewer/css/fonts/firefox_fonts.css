@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+@font-face{
+	font-family: '맑은 고딕';
+	font-weight: normal;
+	src: url('malgun.woff') format('truetype');
+
+}
+
+@font-face{
+	font-family: '맑은 고딕';
+	font-weight: bold;
+	src: url('malgunbd.woff') format('truetype');
+}

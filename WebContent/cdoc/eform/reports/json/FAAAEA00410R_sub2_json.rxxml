@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="FAAAEA00410R_subreport2" pageWidth="184" pageHeight="483" columnWidth="184" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="15fe2d3b-245b-461d-8490-e815bb75ece4">
+	<property name="rxreport.zoom" value="1.5"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true"/>
+	<queryString language="json">
+		<![CDATA[list]]>
+	</queryString>
+	<field name="SUB_ORG_TYPE_NM3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_NM3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_CNT3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_CNT3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_PSON_CNT3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_PSON_CNT3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_NM4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_NM4]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_CNT4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_CNT4]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_PSON_CNT4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_PSON_CNT4]]></fieldDescription>
+	</field>
+	<field name="ORG_CD" class="java.lang.String">
+		<fieldDescription><![CDATA[ORG_CD]]></fieldDescription>
+	</field>
+	<group name="gh3">
+		<groupExpression><![CDATA[$F{ORG_CD}]]></groupExpression>
+	</group>
+	<detail>
+		<band height="35">
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="152" y="0" width="32" height="35" isPrintWhenDetailOverflows="true" forecolor="#0000FF"/>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SUB_ORG_TYPE_PSON_CNT4}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="127" y="0" width="25" height="35" isPrintWhenDetailOverflows="true" forecolor="#0000FF"/>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SUB_ORG_TYPE_CNT4}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="60" y="0" width="32" height="35" isPrintWhenDetailOverflows="true" forecolor="#0000FF"/>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SUB_ORG_TYPE_PSON_CNT3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="35" y="0" width="25" height="35" isPrintWhenDetailOverflows="true" forecolor="#0000FF"/>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SUB_ORG_TYPE_CNT3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="92" y="0" width="35" height="35" isPrintWhenDetailOverflows="true" forecolor="#0000FF"/>
+				<box leftPadding="2">
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SUB_ORG_TYPE_NM4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="0" y="0" width="35" height="35" isPrintWhenDetailOverflows="true" forecolor="#0000FF"/>
+				<box leftPadding="2">
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SUB_ORG_TYPE_NM3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</ReportExpress>

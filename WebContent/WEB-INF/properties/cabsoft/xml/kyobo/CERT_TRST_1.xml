@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='EUC-KR'?>
+<Root>
+<LData>
+<pTpdNm>MMT</pTpdNm>
+
+<pAddress>경상북도 청도군</pAddress>
+
+<pResdNo>0003102******</pResdNo>
+
+<pName>임 X</pName>
+
+<pTrustAmt>1111111</pTrustAmt>
+
+<pTrustFrom>20120911</pTrustFrom>
+
+<pTrustTo>20121011</pTrustTo>
+
+<pNoticeYN></pNoticeYN>
+
+<pNoticeMod></pNoticeMod>
+
+<pEmail>@hanmail.net</pEmail>
+
+<pBaseAmt>0.1</pBaseAmt>
+
+<pTpdCd>20001</pTpdCd>
+
+<pKorTrustAmt>일천만</pKorTrustAmt>
+
+</LData>
+
+</Root>

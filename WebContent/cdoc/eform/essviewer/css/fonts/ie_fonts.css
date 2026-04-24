@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+@font-face{
+	font-family: '맑은 고딕';
+	font-weight: normal;
+	src: url('malgun.eot');
+	src: local(*), url('malgun.woff') format('woff'), url('malgun.ttf') format('truetype'); 
+}
+
+@font-face{
+	font-family: '맑은 고딕';
+	font-weight: bold;
+	src: url('malgunbd.eot');
+	src: local(*), url('malgunbd.woff') format('woff'), url('malgunbd.ttf) format('truetype'); 
+}

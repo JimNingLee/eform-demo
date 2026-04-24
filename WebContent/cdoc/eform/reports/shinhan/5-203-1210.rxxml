@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="5-203-1210" pageWidth="595" pageHeight="842" columnWidth="579" leftMargin="8" rightMargin="8" topMargin="8" bottomMargin="8" uuid="67eeb0e8-2e83-493c-badb-5fa0ae93af3e">
+	<property name="rxreport.zoom" value="1.100000000000001"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="353"/>
+	<import value="com.cabsoft.utils.StringUtils"/>
+	<style name="Default" isDefault="true" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./image/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//R_NEXL3323]]>
+	</queryString>
+	<field name="EF_DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[COM_EF_DATE/@value]]></fieldDescription>
+	</field>
+	<field name="고객명" class="java.lang.String">
+		<fieldDescription><![CDATA[고객명/@value]]></fieldDescription>
+	</field>
+	<field name="실명번호" class="java.lang.String">
+		<fieldDescription><![CDATA[실명번호/@value]]></fieldDescription>
+	</field>
+	<group name="report">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="760">
+				<rectangle>
+					<reportElement uuid="728a44e3-e937-444d-bef3-ff1a771d064f" mode="Transparent" x="11" y="22" width="557" height="727">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-99"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="0.75"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="f7ecefdd-6861-4b9c-a2fd-eef451cb4911" x="228" y="32" width="140" height="18"/>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[개인(신용)정보 조회 동의서]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="23" y="63" width="533" height="72">
+						<property name="com.cabsoft.rx.export.html.id" value="scrollpoint1_1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[    한국주택금융공사 귀하
+
+한국주택금융공사(이하 ‘공사’라 함)와의 금융거래와 관련하여 공사가 본인의 개인(신용)정보를 조회하고자 하는 경우에는 「개인정보 보호법」 제
+15조 제1항 제1호, 제17조 제1항 제1호, 제24조 제1항 제1호, 「신용정보의 이용 및 보호에 관한 법률」제32조 제2항 및 제34조에 따라 본인의 동
+의를 얻어야 합니다. 이에 본인은 공사가 본인의 개인(신용)정보를 조회하기 위하여 아래의 내용과 같이 본인의 개인(신용)정보를 수집·이용·제공
+하는 것에 동의합니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fa13a132-8d03-40e6-b41c-8fa387fd5275" style="Default" mode="Transparent" x="23" y="135" width="533" height="20"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[1. 개인(신용)정보의 수집·이용에 관한 사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="23" y="155" width="533" height="156"/>
+					<textElement/>
+					<text><![CDATA[   ■ 개인(신용)정보의 수집·이용 목적
+      귀하의 개인(신용)정보는 공사와의 금융거래와 관련하여 신용조회회사 또는 신용정보집중기관에 귀하의 개인(신용)정보 조회하기 위한 목
+      적으로 수집·이용됩니다.
+   ■ 수집·이용할 개인(신용)정보의 항목
+      수집·이용되는 귀하의 개인(신용)정보는 다음과 같습니다.
+      ▶ 개인(신용)정보: 성명, 주민등록번호 등 고유식별정보, 주소, 전화번호 등 연락처
+   ■ 개인(신용)정보의 보유·이용 기간
+       귀하의 개인(신용)정보는 수집·이용에 관한 동의일로부터 본인에 대한 신용정보 제공·조회 동의의 효력 기간까지 보유·이용됩니다. 단, 신용
+       정보 제공·조회 동의의 효력 기간 종료 후에는 금융사고 조사, 분쟁 해결, 민원처리 및 법령상 의무이행만을 위하여 보유·이용됩니다.
+   ■ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+       위 개인(신용)정보의 수집·이용에 동의하지 않으실 경우 (금융)거래 관계의 설정 또는 유지가 불가능합니다.
+
+▩ 본인은 공사가 위 목적으로 본인의 개인(신용)정보를 수집·이용하는 것에 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="413" y="291" width="32" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[( 동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="445" y="291" width="22" height="20">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm1"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="개인(신용)정보 수집·이용 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="468" y="291" width="52" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="521" y="291" width="22" height="20">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm1_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="개인(신용)정보 수집·이용 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="544" y="291" width="12" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[ )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="23" y="311" width="533" height="44"/>
+					<textElement/>
+					<text><![CDATA[▩ 본인은 공사가 위 목적으로 다음과 같은 본인의 고유식별정보를 수집·이용하는 것에 동의합니다.
+ ☞ 고유식별정보: 주민등록번호, 여권번호, 외국인등록번호, 국내거소신고번호             ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="413" y="335" width="32" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[( 동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="445" y="335" width="22" height="20">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="고유식별정보 수집·이용 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="468" y="335" width="52" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="521" y="335" width="22" height="20">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm2_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="고유식별정보 수집·이용 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="544" y="335" width="12" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[ )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fa13a132-8d03-40e6-b41c-8fa387fd5275" style="Default" x="23" y="355" width="533" height="20"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[2. 개인(신용)정보의 제공·조회에 관한 사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="23" y="375" width="533" height="255">
+						<property name="com.cabsoft.rx.export.html.id" value="scrollpoint1_2"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[   ■ 제공·조회대상 기관
+      귀하의 개인(신용)정보는 다음과 같은 기관에 제공·조회됩니다.
+      ▶ 신용조회회사: 코리아크레딧뷰로(주), NICE신용평가정보㈜ 등
+      ▶ 신용정보집중기관: 전국은행연합회, 여신금융협회 등
+   ■ 제공·조회의 목적
+      귀하의 개인(신용)정보는 공사와의 금융거래와 관련하여 신용조회회사 또는 신용정보집중기관에 귀하의 개인(신용)정보를 조회하기 위한 목
+      적으로 제공됩니다.
+   ■ 제공·조회할 개인(신용)정보
+      공사가 신용정보집중기관 또는 신용조회회사에 조회하고자 하는 귀하의 개인(신용)정보는 다음과 같습니다.
+      ▶ 개인식별정보: 성명, 주민등록번호 등 고유식별정보, 국적, 직업·직장, 주소·전자우편주소·전화 등 연락처
+      ▶ 신용거래정보: 대출(현금서비스 포함), 채무보증, 신용카드(체크카드 포함), 당좌(가계당좌)예금 등
+      ▶ 신용능력정보: 재산·채무·소득의 총액, 납세실적
+      ▶ 신용등급 및 평점정보
+      위 정보를 조회하기 위하여 조회대상기관에게 제공되는 귀하의 개인(신용)정보는 다음과 같습니다.
+      ▶ 개인(신용)정보: 성명, 주민등록번호 등 고유식별정보, 주소, 전화번호 등 연락처
+   ■ 제공·조회 동의의 효력 기간
+      공사의 조회 결과 귀하와의 금융거래가 개시되는 경우에는 해당 금융거래 종료일까지 제공·조회 동의의 효력이 지속됩니다.
+      다만, 공사의 조회 결과 귀하가 신청한 금융거래의 설정이 거절된 경우에는 그 시점부터 동의의 효력은 소멸합니다.
+      ▶ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+          위 개인(신용)정보의 제공·조회에 관해 동의하지 않으실 경우 금융거래 관계의 설정 또는 유지가 불가능합니다.
+
+▩ 본인은 공사가 위 목적으로 본인의 개인(신용)정보를 제공·조회하는 것에 동의합니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="413" y="609" width="32" height="21">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[( 동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="445" y="609" width="22" height="21">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm3"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="개인(신용)정보 제공·조회 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm3"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="468" y="609" width="52" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="521" y="609" width="22" height="21">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm3_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="개인(신용)정보 제공·조회 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm3"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="544" y="609" width="12" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[ )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="23" y="630" width="533" height="39"/>
+					<textElement/>
+					<text><![CDATA[▩ 본인은 공사가 위 목적으로 다음과 같은 본인의 고유식별정보를 제공·조회하는 것에 동의합니다.
+ ☞ 고유식별정보: 주민등록번호, 여권번호, 외국인등록번호, 국내거소신고번호           ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="413" y="649" width="32" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[( 동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="445" y="649" width="22" height="20">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm4"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="고유식별정보 제공·조회 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm4"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="468" y="649" width="52" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="521" y="649" width="22" height="20">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm4_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="고유식별정보 제공·조회 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm4"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Default" x="544" y="649" width="12" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[ )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="671e9976-f922-45d2-961d-52b232c39aa6" style="Default" x="23" y="669" width="533" height="20"/>
+					<box leftPadding="10"/>
+					<textElement/>
+					<text><![CDATA[* 실명확인증표 사본 첨부]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="bf81ba1a-1c97-4022-8e95-5d78d96be4b2" style="Default" x="23" y="689" width="533" height="15"/>
+					<textElement textAlignment="Right" markup="none"/>
+					<textFieldExpression><![CDATA[StringUtils.format($F{EF_DATE},"@@@@년 @@월 @@일")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="671e9976-f922-45d2-961d-52b232c39aa6" style="Default" x="121" y="727" width="73" height="15"/>
+					<textElement/>
+					<text><![CDATA[신청인(본인) 성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="e8e8c70c-4d9d-4f8a-b8b3-00eb8104112d" style="Default" x="194" y="727" width="100" height="15"/>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{고객명}]]></textFieldExpression>
+				</textField>
+				<image onErrorType="Blank">
+					<reportElement uuid="47f3d3a5-ab24-434e-a2ef-9529f30f0912" key="sign.png" x="298" y="719" width="30" height="30">
+						<property name="com.cabsoft.rx.export.html.id" value="signimg_sign1"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir}+"sign.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default" x="295" y="731" width="35" height="18">
+						<property name="com.cabsoft.rx.export.html.id" value="sign1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doSign(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.type" value="sign"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["사용자 확인 서명"]]></propertyExpression>
+					</reportElement>
+					<textElement textAlignment="Center" markup="html">
+						<font size="5" isBold="false"/>
+					</textElement>
+					<text><![CDATA[(서명 또는 인)]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<pageFooter>
+		<band height="66">
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
+				<reportElement uuid="2a04d483-6b85-4a93-a94f-47b741e2a234" x="41" y="12" width="492" height="54">
+					<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"barcode2.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>

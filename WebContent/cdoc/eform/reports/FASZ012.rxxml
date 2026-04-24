@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="Cabsoft" pageWidth="595" pageHeight="842" columnWidth="517" leftMargin="39" rightMargin="39" topMargin="50" bottomMargin="43" uuid="1169ad0d-a525-4e65-92e0-9db407f1303f">
+	<property name="rxreport.zoom" value="0.6372616354207167"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true" isBlankWhenNull="true" fontName="굴림" fontSize="10">
+		<box leftPadding="3" rightPadding="3"/>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:/Users/4323k/Downloads/MG손해보험 rpx/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["../images/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="imgDirSecure" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./images/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//detail/list]]>
+	</queryString>
+	<field name="col0" class="java.lang.String">
+		<fieldDescription><![CDATA[col0]]></fieldDescription>
+	</field>
+	<field name="col1" class="java.lang.String">
+		<fieldDescription><![CDATA[col1]]></fieldDescription>
+	</field>
+	<field name="col2" class="java.lang.String">
+		<fieldDescription><![CDATA[col2]]></fieldDescription>
+	</field>
+	<field name="col3" class="java.lang.String">
+		<fieldDescription><![CDATA[col3]]></fieldDescription>
+	</field>
+	<field name="col4" class="java.lang.String">
+		<fieldDescription><![CDATA[col4]]></fieldDescription>
+	</field>
+	<field name="col5" class="java.lang.String">
+		<fieldDescription><![CDATA[col5]]></fieldDescription>
+	</field>
+	<field name="col6" class="java.lang.String">
+		<fieldDescription><![CDATA[col6]]></fieldDescription>
+	</field>
+	<field name="col7" class="java.lang.String">
+		<fieldDescription><![CDATA[col7]]></fieldDescription>
+	</field>
+	<group name="gh1">
+		<groupExpression><![CDATA[$F{col1}]]></groupExpression>
+		<groupHeader>
+			<band height="33">
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement uuid="77aaecc4-509f-4113-9b70-b0361c0dfdfc" x="3" y="10" width="54" height="23" backcolor="#E0E0E0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA["결의번호 :"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement uuid="2e173fbd-39e7-47cc-8329-6e666daba7ae" x="57" y="10" width="227" height="23"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA[$F{col0}]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="38">
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement uuid="7d4eb7e4-bc6d-4f68-82b0-1afc5d4d8de2" stretchType="RelativeToBandHeight" x="1" y="1" width="80" height="37" backcolor="#E0E0E0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA["일      시"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="@@@@년 @@월 @@일" isBlankWhenNull="true">
+					<reportElement uuid="3de77353-c29d-4a3b-9ddb-7e0feb88581c" stretchType="RelativeToBandHeight" x="81" y="1" width="432" height="37"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA[$F{col1} == null || "".equals($F{col1}) ? "    년     월     일" : ($F{col1}.length() == 8 ? ($F{col1}.substring(0,4) + "년 " + $F{col1}.substring(4,6) + "월 "+$F{col1}.substring(6,8) + "일" ) : $F{col1})]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="36">
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement uuid="cc368af6-3a57-45e7-abdb-c4de2e4ef10e" stretchType="RelativeToBandHeight" x="1" y="0" width="80" height="36" backcolor="#E0E0E0"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA["회 의 장 소"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="2cdc7946-08e0-4a61-a8a9-30117a0fb3d6" stretchType="RelativeToBandHeight" x="381" y="0" width="132" height="36"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA["".equals($F{col3}) || $F{col3} == null ? 0 : Double.valueOf($F{col3})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement uuid="86c71549-c036-4efe-8879-b10283cfc7e7" stretchType="RelativeToBandHeight" x="81" y="0" width="230" height="36"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA[$F{col2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement uuid="e2280f1f-157e-4072-85a3-1a4d6df8a3f7" stretchType="RelativeToBandHeight" x="311" y="0" width="70" height="36" backcolor="#E0E0E0"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA["사용금액"]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="40">
+				<staticText>
+					<reportElement uuid="cf07337e-5029-4a1c-b35f-409c47edf490" stretchType="RelativeToBandHeight" x="1" y="0" width="80" height="40" backcolor="#E0E0E0"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+					<text><![CDATA[참 석 자
+ (성 명)]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement uuid="0b8a85dd-f8c9-4db9-a8e7-c8e9258345d2" stretchType="RelativeToBandHeight" x="81" y="0" width="432" height="40"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{col4}]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="26">
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement uuid="26ef0978-3a4a-4336-bf18-462e8ab163c1" stretchType="RelativeToBandHeight" x="1" y="0" width="80" height="26" backcolor="#E0E0E0"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA["적      요"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement uuid="bcd16a8d-e185-4c0e-9b0b-c7c7979f0f30" stretchType="RelativeToBandHeight" x="81" y="0" width="432" height="26"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA[$F{col5}]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="25">
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement uuid="22a03d80-0cf8-4863-ae7c-0b34d1fbb9b1" stretchType="RelativeToBandHeight" x="1" y="0" width="512" height="25" backcolor="#E0E0E0"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA["◆ 회의내용 : < 회의내용을 요약하여 구체적으로 기술>"]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="324">
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement uuid="f8a74975-a30a-41d8-8716-823724819a35" stretchType="RelativeToBandHeight" x="1" y="0" width="512" height="324"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+						<paragraph lineSpacing="AtLeast"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{col6}]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="26">
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement uuid="dc54b278-16f2-4149-9a8a-2c1ba18ef80b" stretchType="RelativeToBandHeight" x="1" y="0" width="512" height="26" backcolor="#E0E0E0"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled"/>
+					<textFieldExpression><![CDATA["※ 기  타"]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="120">
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement uuid="829e92f5-66ec-4a75-953b-4f809dea7084" stretchType="RelativeToBandHeight" x="1" y="0" width="512" height="120"/>
+					<box>
+						<leftPen lineWidth="0.5" lineStyle="Solid"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Top" markup="styled"/>
+					<textFieldExpression><![CDATA[$F{col7}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+				<reportElement uuid="7afc3d36-5a88-4e37-a397-e0f88d3e712f" x="1" y="0" width="514" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["회 의 일 지"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement uuid="0b6d1792-ba30-4907-8be9-e19178c55fcd" x="367" y="0" width="148" height="30"/>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{imgDir} + "Official_MG.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>

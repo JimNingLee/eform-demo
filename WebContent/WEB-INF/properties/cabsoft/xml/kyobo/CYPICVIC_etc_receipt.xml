@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='EUC-KR'?><Root><LData><list><LMultiData><LData><subNo>888888888701</subNo>
+<procRsn>책임보상(약관주요내용</procRsn>
+<prodNm>연금보험</prodNm>
+<agmtDt>2012.02.29</agmtDt>
+<payDt>2012.05.02</payDt>
+<premAmt>53,705</premAmt>
+<bfPremAmt>5,000,000</bfPremAmt>
+<sherTaxAmt>0</sherTaxAmt>
+<incomeTaxAmt>10,740</incomeTaxAmt>
+<incomeTaxAmt1>0</incomeTaxAmt1>
+<juminTaxAmt>1,070</juminTaxAmt>
+<juminTaxAmt1>0</juminTaxAmt1>
+<nongTaxAmt>0</nongTaxAmt>
+<nongTaxAmt1>0</nongTaxAmt1>
+<total>11,810</total>
+<total1>0</total1>
+<inagCnt>0</inagCnt>
+</LData>
+</LMultiData>
+</list>
+<premAmtSum>53,705</premAmtSum>
+<incomeTaxAmtSum>10,740</incomeTaxAmtSum>
+<juminTaxAmtSum>1,070</juminTaxAmtSum>
+<totalSum>11,810</totalSum>
+<sendFile>CYPICVIC_etc_receipt</sendFile>
+<regNo>999999-1******</regNo>
+<regNm>서 X</regNm>
+<homeAddr>부산 사하구 장림동 **************리 42 번지 ******호 ************************************************** *********</homeAddr>
+<currDate>2012년 08월 30일</currDate>
+</LData>
+</Root>

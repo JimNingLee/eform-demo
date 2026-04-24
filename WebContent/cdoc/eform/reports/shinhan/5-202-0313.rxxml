@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="5-202-0313" pageWidth="595" pageHeight="842" columnWidth="579" leftMargin="8" rightMargin="8" topMargin="8" bottomMargin="8" uuid="a49b569a-eae9-415a-bc3c-2486d2374050">
+	<property name="rxreport.zoom" value="1.126972201352367"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="376"/>
+	<import value="com.cabsoft.utils.StringUtils"/>
+	<style name="Default" isDefault="true" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Defaultback" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Default_10pt" hAlign="Left" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="confirm_in" forecolor="#FF3333" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="checkbox" isBlankWhenNull="true" fontName="맑은 고딕" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./image/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//R_NEXL3323]]>
+	</queryString>
+	<field name="item1" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='1']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item2" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='2']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item3" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='3']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="EF_DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[COM_EF_DATE/@value]]></fieldDescription>
+	</field>
+	<group name="report">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="760">
+				<rectangle>
+					<reportElement uuid="ae563a86-f457-4214-aa1a-fa5a6bafdd80" x="26" y="66" width="14" height="14" backcolor="#000000">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+				</rectangle>
+				<rectangle>
+					<reportElement uuid="ae563a86-f457-4214-aa1a-fa5a6bafdd80" x="556" y="67" width="14" height="14" backcolor="#000000">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="4bd46c08-bbce-4277-a773-6e10d193116f" x="94" y="91" width="395" height="36">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="20" isBold="true"/>
+					</textElement>
+					<text><![CDATA[확 약 서]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4bd46c08-bbce-4277-a773-6e10d193116f" x="94" y="127" width="395" height="27">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="15" isBold="true"/>
+					</textElement>
+					<text><![CDATA[[신규, 대환/재약정, 연기]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="502a8be0-b20a-4382-b0ef-74a1e8ac77f4" style="Default_10pt" x="34" y="165" width="140" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement>
+						<font size="13" isBold="false"/>
+					</textElement>
+					<text><![CDATA[주식회사 캡소프트 앞]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="30481586-7319-40b6-a6d5-2b4786fffb10" style="Default_10pt" x="372" y="185" width="172" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[StringUtils.format($F{EF_DATE},"@@@@년 @@월 @@일")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="da7384d2-a1ef-402f-9979-f2b0aaa4d2ff" x="36" y="222" width="153" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement>
+						<font size="13" isBold="true"/>
+					</textElement>
+					<text><![CDATA[▷ COFIX 의 주요내용]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="da7384d2-a1ef-402f-9979-f2b0aaa4d2ff" style="Default_10pt" x="55" y="242" width="489" height="123">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="html"/>
+					<text><![CDATA[- COFIX 는 잔액기준과 신규취급액기준으로 구분하여 은행연합회에서 산출합니다.<br>
+&nbsp;&nbsp;<b>‘잔액기준 COFIX’</b>는 정보제공은행의 월말 지수산출대상 조달자금잔액에 적용된 금리의 가중평균이고,  <b>‘신규<br>
+&nbsp;&nbsp;취급액기준 COFIX’</b>는 정보제공은행들의 월중 신규로 조달한 지수산출대상 자금에 적용된 금리의 가중평균<br>
+&nbsp;&nbsp;입니다.<br>
+&nbsp;&nbsp;(* 정보제공은행 : 신한, 우리, SC제일, 하나, 국민, 한국외환, 한국씨티, 농협중앙회, 기업)<br>
+-  COFIX는 은행연합회 홈페이지를 통해 매월15일(공휴일인경우 익영업일) 15시이후에 공시되며, 은행은 대출<br>
+&nbsp;&nbsp;실행일과 그 날로부터 매6개월(또는 매3개월, 매1년) 되는 날에 직전일 은행연합회에 최종 공시된 COFIX<br>
+&nbsp;&nbsp;를 적용하여 대출금리를 산출합니다.
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="da7384d2-a1ef-402f-9979-f2b0aaa4d2ff" x="36" y="391" width="161" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement>
+						<font size="13" isBold="true"/>
+					</textElement>
+					<text><![CDATA[▷ COFIX 연동대출의 특징]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="da7384d2-a1ef-402f-9979-f2b0aaa4d2ff" style="Default_10pt" x="55" y="413" width="489" height="118">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="html"/>
+					<text><![CDATA[-  COFIX연동대출은 취급후 매6개월(또는 매3개월, 매1년)마다 대출금리가 변경되므로 CD연동대출보다 낮은<br>
+&nbsp;&nbsp;변동성으로 유리한 측면이 있으나, 시장상황에 따라 불리할 수도 있습니다.<br>
+-<b>‘잔액기준 COFIX’</b>는 변동성이 낮기 때문에 시장금리 상승시 상대적으로 유리하지만, 하락시에는 불리할 수<br>
+&nbsp;&nbsp;있습니다.<br>
+-<b>‘신규취급액기준 COFIX’</b>는 조달금리를 신속히 반영할 수 있어서 금리하락기에는 상대적으로 유리하지만,<br>
+&nbsp;&nbsp;금리상승기에는 대출이자부담이 증가할 수 있습니다.<br>
+- <b>시장상황에 따라 COFIX 연동대출로 신규후 이자부담이 증가할 수도 있습니다.</b>
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="da7384d2-a1ef-402f-9979-f2b0aaa4d2ff" x="39" y="531" width="504" height="98">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5">
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="13" isBold="true"/>
+					</textElement>
+					<text><![CDATA[본인은 주식회사 캡소프트과 신규(대환재약정,연기) 대출약정을 체결함에 있어,
+
+위의 내용에 대하여 충분한 설명을 듣고 (                                    )
+
+본인의 의사에 따라 COFIX 연동대출로 취급함을 확약합니다. (                       )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="056b0ef4-e982-449c-8b4b-6cce8415a555" x="39" y="531" width="504" height="222">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-99"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="082c4c8d-912c-4af6-b0ac-4d8959584555" key="" style="confirm_in" mode="Opaque" x="295" y="568" width="127" height="22" forecolor="#CCCCCC">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.id" value="readconfirm1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doClick(this,&apos;popup&apos;)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="신규 대출약정 체결 내용"/>
+						<property name="com.cabsoft.rx.export.html.type" value="readconfirm"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["클릭하시면 본인은 충분한 설명을 들었음을 확인합니다."]]></propertyExpression>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["설명을 듣고"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="082c4c8d-912c-4af6-b0ac-4d8959584555" key="" style="confirm_in" mode="Opaque" x="414" y="604" width="78" height="20" forecolor="#CCCCCC">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.id" value="readconfirm2"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doClick(this,&apos;popup&apos;)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="COFIX 연동대출로 취급함"/>
+						<property name="com.cabsoft.rx.export.html.type" value="readconfirm"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["클릭하시면 본인의 의사에 따라 COFIX 연동대출로 취급함을 확약합니다."]]></propertyExpression>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["확약함"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d619532d-5ed8-4cb3-bea7-5356120d4f32" style="Default_10pt" x="39" y="629" width="97" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="buttonconfirm"/>
+						<property name="com.cabsoft.rx.export.html.id" value="buttonconfirm1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doBtnClick(this)&quot;"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13" isBold="false"/>
+					</textElement>
+					<text><![CDATA[취급할 COFIX]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d619532d-5ed8-4cb3-bea7-5356120d4f32" x="136" y="629" width="44" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+					<text><![CDATA[(택 1)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d619532d-5ed8-4cb3-bea7-5356120d4f32" style="Default_10pt" x="180" y="629" width="363" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="13">
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="13" isBold="true"/>
+					</textElement>
+					<text><![CDATA[   잔액기준 COFIX           신규취급액기준 COFIX]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="180" y="629" width="29" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA["13".equals($F{item2}) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="321" y="629" width="29" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA["14".equals($F{item2}) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d619532d-5ed8-4cb3-bea7-5356120d4f32" style="Default_10pt" x="39" y="655" width="141" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="buttonconfirm"/>
+						<property name="com.cabsoft.rx.export.html.id" value="buttonconfirm2"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doBtnClick(this)&quot;"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13" isBold="false"/>
+					</textElement>
+					<text><![CDATA[금리 변경 주기]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d619532d-5ed8-4cb3-bea7-5356120d4f32" style="Default_10pt" x="180" y="655" width="363" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="10">
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="13" isBold="true"/>
+					</textElement>
+					<text><![CDATA[    1년                 6개월                3개월]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="180" y="655" width="29" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA["3".equals($F{item3}) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="279" y="655" width="29" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA["6".equals($F{item3}) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="385" y="655" width="29" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA["12".equals($F{item3}) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d619532d-5ed8-4cb3-bea7-5356120d4f32" style="Default_10pt" x="39" y="681" width="141" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13" isBold="false"/>
+					</textElement>
+					<text><![CDATA[본             인]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="444b7d43-4f2f-4dc7-9ad4-29b8ad4993d4" style="Default_10pt" x="180" y="681" width="237" height="42">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="13" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item1}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="444b7d43-4f2f-4dc7-9ad4-29b8ad4993d4" style="Default_10pt" x="417" y="681" width="126" height="42">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="13" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<image onErrorType="Blank">
+					<reportElement uuid="47f3d3a5-ab24-434e-a2ef-9529f30f0912" key="sign.png" x="465" y="687" width="30" height="30">
+						<property name="com.cabsoft.rx.export.html.id" value="signimg_sign1"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir}+"sign.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default_10pt" x="463" y="699" width="35" height="28">
+						<property name="com.cabsoft.rx.export.html.id" value="sign1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doSign(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.type" value="sign"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["본인 확인 서명"]]></propertyExpression>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="5" isBold="false"/>
+					</textElement>
+					<text><![CDATA[(서명 또는 인)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d619532d-5ed8-4cb3-bea7-5356120d4f32" x="39" y="707" width="141" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[(겸 담보제공자)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d619532d-5ed8-4cb3-bea7-5356120d4f32" style="Default_10pt" x="39" y="723" width="141" height="30">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13" isBold="false"/>
+					</textElement>
+					<text><![CDATA[담보제공자]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b812ca52-5839-4e81-8560-03ca4b2cfa24" style="Default_10pt" x="180" y="723" width="237" height="30">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="13" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default_10pt" x="417" y="723" width="126" height="30">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="5" isBold="false"/>
+					</textElement>
+					<text><![CDATA[(서명 또는 인)]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<pageFooter>
+		<band height="66">
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
+				<reportElement uuid="2a04d483-6b85-4a93-a94f-47b741e2a234" x="41" y="12" width="492" height="54">
+					<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"barcode2.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="607c3950-1d1c-45e1-bf33-4ebf70038426" style="Default" x="41" y="35" width="99" height="20">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+				</reportElement>
+				<textElement/>
+				<text><![CDATA[(2011.11.17 제정)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="607c3950-1d1c-45e1-bf33-4ebf70038426" style="Default" x="474" y="45" width="75" height="20">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[(5-202-0313)]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</ReportExpress>

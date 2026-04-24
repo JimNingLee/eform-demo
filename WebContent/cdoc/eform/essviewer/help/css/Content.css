@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+html, body{margin:0 0 0 0px;font-size:12px; font-family:돋움; color:#707070;height:100%;}
+h1{margin:0;padding:0;list-style:none;font-size:18px;font-family:돋움;font-weight:bold;}
+h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset{margin:0;padding:0;list-style:none;font-size:12px;font-family:돋움;font-weight:normal;}
+hr{display:none;}
+ol,ul,li{list-style:none;}
+fieldset,dl,dd,dt{border:none;}
+td, select {font-size:12px; font-family:돋움,verdana; line-height:130%; color:#707070; word-break:break-all; word-wrap:break-word;}
+caption{display:none}
+img {border:0px}
+
+div.loading_bg{background:url('../images/loading_bg.gif') no-repeat left top;width:600px;overflow:hidden;border-bottom:3px solid #D7D7D7;padding-bottom:24px;}
+div.loading_bg h1.title{text-align:left;padding-top:27px;padding-left:27px;height:46px;}
+div.loading_bg div.lo_top_con{margin-left:33px;padding-bottom:10px;}
+div.loading_bg div.lo_top_con ul.lo_img{width:600px;overflow:hidden}
+div.loading_bg div.lo_top_con ul.lo_img li{float:left;}
+div.loading_bg div.lo_top_con ul.lo_img li span.bl{display:block}
+div.loading_bg div.lo_top_con ul.g_dot{}
+div.loading_bg div.lo_top_con ul.g_dot li{background:url('../images/title_dot.gif') no-repeat left 3px;line-height:17px;padding-left:10px;font-size:11px;padding-bottom:4px;}
+div.loading_bg div.lo_box_bg{margin-left:73px;background:url('../images/lo_box_bg.gif') repeat-y left top;width:454px;}
+div.loading_bg div.lo_box_bg ul{padding:8px 8px 0px 20px}
+div.loading_bg div.lo_box_bg ul li{background:url('../images/lo_dot.gif') no-repeat left 5px;line-height:17px;padding-left:10px;padding-right:10px;font-size:11px;padding-bottom:4px;}
+
+.mt22{margin-top:22px}
+.mt5{margin-top:5px}
+.mt7{margin-top:7px}
+.ml32{margin-left:73px}
+.f_ora{color:#F26522}
+.f_red{color:#E9040B}
+.f_blue{color:#006CB7}

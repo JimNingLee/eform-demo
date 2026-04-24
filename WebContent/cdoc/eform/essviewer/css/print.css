@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+.printToolbar {
+	display: none;
+}
+
+.toolbar_menu {
+	display: none;
+}
+
+.chromestyle {
+	display: none;
+}
+
+.dropmenudiv {
+	display: none;
+}
+
+@page {
+	margin: 0.01cm;
+}
+
+.rxe-page-paginated {
+	border: none !important;
+	margin-bottom: 0 !important;
+}
+
+.rxe-page-header {
+	border-bottom: none !important;
+}
+
+.rxe-page-footer {
+	border-top: none !important;
+}
+
+.rxe-page-compact {
+	border-top: none !important;
+	margin-top: 0 !important;
+}
+
+.rxe-page-compact-first {
+	padding-top: 0 !important;
+}
+
+.rxe-appview {
+	background: #fff;
+}
+
+.rxe-appview {
+	border-top: none !important;
+	overflow: visible !important;
+}
+
+.rxe-appview-editor {
+	overflow: visible !important;
+	height: auto !important;
+	position: static !important;
+}
+
+.rxe-paginateddocumentplugin {
+	position: static !important;
+}
+
+.rxe-paginateddocumentplugin-compact-mode {
+	border: 0 !important;
+}
+
+.docstext-unprintable {
+	display: none !important;
+}
+
+.paper {
+	background-color: #ffffff;
+}
+
+.rxe-default-page {
+	background: #ffffff;
+}
+
+.rxe-appview {
+	background: #ffffff;
+}
+
+body {
+	background-color: #ffffff;
+}

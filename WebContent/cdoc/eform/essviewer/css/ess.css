@@ -1,0 +1,282 @@
+@CHARSET "UTF-8";
+
+/* 라운드 박스 */
+.rxe-round{
+	behavior: url(../essviewer/pie/PIE.htc);
+}
+
+/* 테스트 입력 */
+.textfiled {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    behavior: url(../essviewer/pie/PIE.htc);
+}
+.textfiled:focus{
+	border: 2px solid #FF0066;
+}
+.textfiled:hover{
+	border: 2px solid #FF0066;
+}
+
+/* 따라쓰기 바탕 */
+.textconfirmfiled {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    color: rgba(0,0,255,0.5);
+    behavior: url(../essviewer/pie/PIE.htc);
+}
+.textconfirmfiled:focus{
+	border: 2px solid #FF0066;
+}
+.textconfirmfiled:hover{
+	border: 2px solid #FF0066;
+}
+
+/* 일반 버튼 및 스크립트가 있는 일반 텍스트 */
+.button {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    behavior: url(../essviewer/pie/PIE.htc);
+}
+.button:focus{
+	border: 2px solid #FF0066;
+}
+.button:hover{
+	border: 2px solid #FF0066;
+}
+
+/* 단순 확인 버튼 */
+.buttonconfirm {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    cursor:pointer;cursor:hand;
+    behavior: url(../essviewer/pie/PIE.htc);
+}
+.buttonconfirm:focus{
+	border: 4px solid #FF0066;
+}
+.buttonconfirm:hover{
+	border: 4px solid #FF0066;
+}
+
+/* 셀렉트 박스 */
+.selectbox {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    behavior: url(../essviewer/pie/PIE.htc);
+}
+.selectbox:focus{
+	border: 2px solid #FF0066;
+}
+.selectbox:hover{
+	border: 2px solid #FF0066;
+}
+
+/* 체크 박스 */
+
+/**
+ * tabindex 이동이 불가능하기 때문에 삭제
+ */
+ 
+/*
+.checkbox {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 13px; margin-right:10px; line-height:18px;
+}
+input[type=checkbox] {
+ display:none;	
+}
+.checkbox:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align:middle;
+	text-align: center;
+	
+	border: 2px solid #EF9F1B;
+	background: #FFFF00;
+	color: #FF0000;
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+	border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    behavior: url(../essviewer/pie/PIE.htc);
+    cursor: pointer;
+}
+input[type=checkbox]:checked + .checkbox:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-weight: bold;
+	font-size: 18px;
+}
+*/
+
+.checkbox {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    behavior: url(../essviewer/pie/PIE.htc);
+}
+.checkbox:focus{
+	border: 2px solid #FF0066;
+}
+.checkbox:hover{
+	border: 2px solid #FF0066;
+}
+
+
+/* 라디오 버튼 */
+.radiobutton {
+	display: inline-block;
+	cursor: pointer;
+}
+
+/**
+ * tabindex 이동이 불가능하기 때문에 삭제
+ */
+
+/*
+.radiobutton {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 13px; margin-right:10px; line-height:18px;
+}
+input[type=radio] {
+ display:none;	
+}
+.radiobutton:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align:middle;
+	text-align: center;
+	border: 2px solid #EF9F1B;
+	background: #FFFF00;
+	color: #FF0000;
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+	border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    behavior: url(../essviewer/pie/PIE.htc);
+    cursor: pointer;
+}
+input[type=radio]:checked + .radiobutton:before {
+	content: "\25C9";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-weight: bold;
+	font-size: 16px;
+}
+*/
+
+.radiobutton {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+    behavior: url(../essviewer/pie/PIE.htc);
+}
+.radiobutton:focus{
+	border: 2px solid #FF0066;
+}
+.radiobutton:hover{
+	border: 2px solid #FF0066;
+}
+
+.radiocheckspan {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    -moz-box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    box-shadow: inset 0 0 4px  rgba(255,0,0,0.2),0 0 8px rgba(255,0,0,0.2); 
+    background: #FFFF00;
+	vertical-align:middle;
+	text-align: center;
+	cursor: pointer;
+    behavior: url(../essviewer/pie/PIE.htc);
+}
+.radiocheckspan:focus{
+	border: 2px solid #FF0000;
+}
+.radiocheckspan:hover{
+	border: 2px solid #FF0000;
+}
+
+/**
+ * 마우스 오버레이 툴팁
+ */
+ .tooltiplayer{
+	background: #ffffa8;
+	opacity : 0.9;
+	filter: alpha(opacity:'90');
+	border: solid 1px #004890;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px #999;
+	position: absolute;
+	padding:7px;
+	font-size:14px;
+	font-family:'나눔고딕코딩';
+	line-height:1.5em;
+	z-index: 10000;
+}
+.tooltiplayer .arrow{
+	background: #ffffa8;
+	text-align: left;
+	text-valign: bottom;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color : #004890 !important;
+	width: 95%;
+	overflow:hidden;
+	position:absolute;
+	top: 5px;
+}

@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<rxcert>
+<kyobo certname='보험계약청약서'>
+<RelInfo><NAME0>홍길동</NAME0><REGNO0>123456-1******</REGNO0><AGE0>42</AGE0><REL0>본인</REL0><NAME1>홍길동</NAME1><REGNO1>123456-1******</REGNO1><AGE1>42</AGE1><REL1>본인</REL1><JIN1>무</JIN1><SIMSA0>A-일반A-입원A-1-1</SIMSA0><JOB0>컴퓨터프로그래머</JOB0><NAME6>홍길동</NAME6><REGNO6>123456-1******</REGNO6><AGE6>42</AGE6><REL6>본인</REL6><NAME7>홍길동</NAME7><REGNO7>123456-1******</REGNO7><AGE7>42</AGE7><REL7>본인</REL7><NAME8>상속인</NAME8><REGNO8> </REGNO8><AGE8>0</AGE8><REL8></REL8><BNFY_SHAR_RATE0>0</BNFY_SHAR_RATE0></RelInfo><BaseInfo><PROD_NAME>무배당 100세시대변액연금보험(월납)</PROD_NAME><PROD_CAT>1000538</PROD_CAT><PROD_CODE>100053801</PROD_CODE><classificationCode>1</classificationCode><ISSU_CAT>D</ISSU_CAT><subscribeSpot>(전자청약)</subscribeSpot><INAG_INAG_NO>210074005396</INAG_INAG_NO><CompareConf>0</CompareConf><house_pledge>N</house_pledge><PRE_PAID_CNT>0</PRE_PAID_CNT><PRE_SUN_AMT>0</PRE_SUN_AMT><TOT_PREM>100,000</TOT_PREM><TOT_TOT_PREM_NM>총납입 보험료</TOT_TOT_PREM_NM><TOT_TOT_PREM>100,000</TOT_TOT_PREM><PAY_FREQ_NAME>월납</PAY_FREQ_NAME><PNSN_ST>연금개시연령</PNSN_ST><PNSN_ST_AGE>80</PNSN_ST_AGE><PAYMTH_NM>초회 즉시이체</PAYMTH_NM><CLCT_MTHD>1302</CLCT_MTHD><SALS_NAME>캡 FP  홍길동( 09212271 )</SALS_NAME><PUB_TM>발행일자 : 2010년 07월 07일 15:58:38</PUB_TM><DUE_DT>2010-07-15 까지사용가능</DUE_DT><DELVMTHD>방문전달</DELVMTHD><contractor_same>1</contractor_same><sind_cnt>0</sind_cnt><childYN>0</childYN><SPEC_ACPT_CAT>0</SPEC_ACPT_CAT><csdt_dise>1</csdt_dise><personal_agree certname='개인신용정보'><person_agree1>Y</person_agree1><credit_agree>Y</credit_agree><FRST_PAYM_NM>초회즉시이체</FRST_PAYM_NM><person_agree2>Y</person_agree2><cardInfo><CARD_NAME></CARD_NAME><CARD_NO></CARD_NO><MOPY_PRID></MOPY_PRID><VALID_THRU>-</VALID_THRU><YEAGUM_NM></YEAGUM_NM>
+
+
+
+
+<!--  서버에서 데잍가 이상하게 넘어온 녀석....  -->
+<YEAGUM_NO>java.lang.NumberFormatException: For input string: "     "</YEAGUM_NO>
+
+
+
+
+
+<POHD_RLSHIP> 본인</POHD_RLSHIP></cardInfo><bankInfo><RQST_BANK_NM>농협</RQST_BANK_NM><INPT_ACCT_NO>40502***767</INPT_ACCT_NO><IND_DT>20</IND_DT><YEAGUM_NM>홍길동</YEAGUM_NM><YEAGUM_NO>6810232403014</YEAGUM_NO><POHD_RLSHIP>본인</POHD_RLSHIP></bankInfo><INP_DATE>20100707155410</INP_DATE></personal_agree><stipulation_URL> </stipulation_URL></BaseInfo><contract><ELAG_NAME>주계약</ELAG_NAME><PREM_PE>연금-5세</PREM_PE><ELAG_PE>종신</ELAG_PE><ELAG_INS_AMT>5,000</ELAG_INS_AMT><PREM_BASE_PREM>100,000</PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><contract><ELAG_NAME></ELAG_NAME><PREM_PE></PREM_PE><ELAG_PE></ELAG_PE><ELAG_INS_AMT></ELAG_INS_AMT><PREM_BASE_PREM></PREM_BASE_PREM></contract><fundInfo><FUND_NM0>코리아인</FUND_NM0><FUND_RT0>100%</FUND_RT0><FUND_OPTI_CAT>선 택안됨</FUND_OPTI_CAT></fundInfo><AddressInfo><PH_ADDR_ZIPNO0>306-790</PH_ADDR_ZIPNO0><PH_PHON_NO0>042-0627-1618</PH_PHON_NO0><PH_HP_PHON_NO0>010-3975-3954</PH_HP_PHON_NO0><PH_ADDR_ADDR_R0><![CDATA[서울시 서초구 서초동 서초빌리지프라자 201호]]></PH_ADDR_ADDR_R0><PH_ADDR_ZIPNO1>301-731</PH_ADDR_ZIPNO1><PH_PHON_NO1>042-229-5587</PH_PHON_NO1><PH_EMAIL2><![CDATA[k4253954@kyobolife.co.kr]]></PH_EMAIL2><PH_ADDR_ADDR_R1><![CDATA[서울시 서초구 서초동 캡소프트지점]]></PH_ADDR_ADDR_R1><PH_PST_DLV></PH_PST_DLV><MIND_ADDR_ZIPNO0>306-790</MIND_ADDR_ZIPNO0><MIND_PHON_NO0>042-0627-1618</MIND_PHON_NO0><MIND_HAND_PHON_NO0>010-3975-3954</MIND_HAND_PHON_NO0><MIND_ADDR_ADDR_R0><![CDATA[서울시 서초구 서초동 서초빌리지프라자 201호]]></MIND_ADDR_ADDR_R0><MIND_ADDR_ZIPNO1></MIND_ADDR_ZIPNO1><MIND_PHON_NO1>--</MIND_PHON_NO1><MIND_EMAIL2><![CDATA[test@cabsoftware.com]]></MIND_EMAIL2><MIND_ADDR_ADDR_R1><![CDATA[]]></MIND_ADDR_ADDR_R1></AddressInfo><principal><PRIN_DUE_YR>9</PRIN_DUE_YR><P_PRIN_DUE_YR>9</P_PRIN_DUE_YR></principal><term_of_agree certname='계약조건승낙서'><EXTRA_YN>N</EXTRA_YN></term_of_agree>
+
+
+
+
+
+
+<!-- 에러수정: 태그가 없음 -->
+<GOGI>
+	<INSU_KIND>SLV</INSU_KIND>
+	<Q>
+		<QUESTION CAT='M_HISTORY' QID='1'><![CDATA[아래와 같은 증상이나 질환으로 의사로부터 진찰,검사를 통하여 진단을 받았거나 치료,투약,입원,수술, 정밀검사를 받은적이 있습니까? (※ 있으시다면 아래 해당항목에 관련 증상,질환을 선택하여 주시기 바랍니다.)]]></QUESTION>
+		<ANSWER YN='Y' GUBUN='jupi' TEST='1'>
+			<HEALTH_CHK1_DISEASE_val0><![CDATA[은 증상이나 질환으로 의사로부]]></HEALTH_CHK1_DISEASE_val0>
+			<HEALTH_CHK1_DISEASE_val1><![CDATA[2]]></HEALTH_CHK1_DISEASE_val1>
+			<HEALTH_CHK1_DISEASE_val2><![CDATA[3]]></HEALTH_CHK1_DISEASE_val2>
+			<HEALTH_CHK1_DISEASE_val3><![CDATA[4]]></HEALTH_CHK1_DISEASE_val3>
+			<HEALTH_CHK1_DISEASE_val4><![CDATA[5]]></HEALTH_CHK1_DISEASE_val4>
+			<HEALTH_CHK1_DISEASE_val5><![CDATA[6]]></HEALTH_CHK1_DISEASE_val5>
+			<DETAIL>
+				<MEDICAL>
+					<EXAM_RESULTS><![CDATA[eeeeeeeeeeeeeeeeeeeeeeeeeee]]></EXAM_RESULTS>
+					<CURE_CONT><![CDATA[]]></CURE_CONT>
+					<HOSPITAL><![CDATA[]]></HOSPITAL>
+					<SURGERY><![CDATA[N]]></SURGERY>
+					<DISEASE><![CDATA[eee]]></DISEASE>
+					<CURE_MTHD><![CDATA[1]]></CURE_MTHD>
+					<CURE_FROM_YY><![CDATA[]]></CURE_FROM_YY>
+					<CURE_FROM_MM><![CDATA[]]></CURE_FROM_MM>
+					<CURE_TO_YY><![CDATA[]]></CURE_TO_YY>
+					<CURE_TO_MM><![CDATA[]]></CURE_TO_MM>
+					<CURE_WEEK><![CDATA[]]></CURE_WEEK>
+					<RELAPSE_YN><![CDATA[N]]></RELAPSE_YN>
+					<RECOVERY_YN><![CDATA[Y]]></RECOVERY_YN>
+				</MEDICAL>
+			</DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='M_HISTORY' QID='2'><![CDATA[최근 5년 이내 아래와 같은 증상이나 질환으로 의사로부터 진찰, 검사를 통하여 진단을 받았거나 치료,투약,입원,수술,정밀검사를 받은적이 있습니까?<br>(※ 있으시다면 아래의 해당항목에 관련 증상·질환을 선택하여 주시기 바랍니다.)]]></QUESTION>
+		<ANSWER YN='Y' GUBUN='jupi' TEST='2'>
+			<HEALTH_CHK2_DISEASE_val0><![CDATA[1]]></HEALTH_CHK2_DISEASE_val0>
+			<HEALTH_CHK2_DISEASE_val1><![CDATA[2]]></HEALTH_CHK2_DISEASE_val1>
+			<HEALTH_CHK2_DISEASE_val2><![CDATA[3]]></HEALTH_CHK2_DISEASE_val2>
+			<HEALTH_CHK2_DISEASE_val3><![CDATA[4]]></HEALTH_CHK2_DISEASE_val3>
+			<HEALTH_CHK2_DISEASE_val4><![CDATA[5]]></HEALTH_CHK2_DISEASE_val4>
+			<HEALTH_CHK2_DISEASE_val5><![CDATA[6]]></HEALTH_CHK2_DISEASE_val5>
+			<HEALTH_CHK2_DISEASE_val6><![CDATA[7]]></HEALTH_CHK2_DISEASE_val6>
+			<HEALTH_CHK2_DISEASE_val7><![CDATA[8]]></HEALTH_CHK2_DISEASE_val7>
+			<HEALTH_CHK2_DISEASE_val8><![CDATA[9]]></HEALTH_CHK2_DISEASE_val8>
+			<HEALTH_CHK2_DISEASE_val9><![CDATA[10]]></HEALTH_CHK2_DISEASE_val9>
+			<HEALTH_CHK2_DISEASE_val10><![CDATA[11]]></HEALTH_CHK2_DISEASE_val10>
+			<HEALTH_CHK2_DISEASE_val11><![CDATA[12]]></HEALTH_CHK2_DISEASE_val11>
+			<HEALTH_CHK2_DISEASE_val12><![CDATA[13]]></HEALTH_CHK2_DISEASE_val12>
+			<HEALTH_CHK2_DISEASE_val13><![CDATA[14]]></HEALTH_CHK2_DISEASE_val13>
+			<DETAIL>
+				<MEDICAL>
+					<EXAM_RESULTS><![CDATA[wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww]]></EXAM_RESULTS>
+					<CURE_CONT><![CDATA[]]></CURE_CONT>
+					<HOSPITAL><![CDATA[]]></HOSPITAL>
+					<SURGERY><![CDATA[N]]></SURGERY>
+					<DISEASE><![CDATA[wwww]]></DISEASE>
+					<CURE_MTHD><![CDATA[1]]></CURE_MTHD>
+					<CURE_FROM_YY><![CDATA[]]></CURE_FROM_YY>
+					<CURE_FROM_MM><![CDATA[]]></CURE_FROM_MM>
+					<CURE_TO_YY><![CDATA[]]></CURE_TO_YY>
+					<CURE_TO_MM><![CDATA[]]></CURE_TO_MM>
+					<CURE_WEEK><![CDATA[]]></CURE_WEEK>
+					<RELAPSE_YN><![CDATA[N]]></RELAPSE_YN>
+					<RECOVERY_YN><![CDATA[Y]]></RECOVERY_YN>
+				</MEDICAL>
+			</DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='M_HISTORY' QID='3'><![CDATA[최근 5년 이내 약을 계속하여 30일 이상 복용하였거나(감기약 제외),습관성 약물을 흡입,주사를 하신적이 있습니까?<br>※ 단, 위에서 언급된 것은 제외<br>(여기서 "계속하여"란 같은 원인으로 치료 시작후 완료일까지 실제 투약일수를 말합니다.)]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi' TEST='3'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='M_HISTORY' QID='4'><![CDATA[현재 눈, 코, 귀, 언어, 씹는기능, 정신·신경기능의 장애 또는 팔, 다리, 손·발(가락포함)의 손실, 기형, 척추의 변형 등 외관상 신체장애가 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi' TEST='4'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='M_HISTORY' QID='5'><![CDATA[[교보의료비 특약에 가입하는 경우] 현재 의료기관에 검사 또는 치료를 목적으로 하는 진료예약을 한 사실이 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi' TEST='5'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='M_HISTORY' QID='6'><![CDATA[향후 의적상담, 검사, 조사, 치료를 고려하고 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi' TEST='6'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='M_HISTORY' QID='7'><![CDATA[(여성의 경우) 현재 임신중입니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='M_HISTORY' QID='8'><![CDATA[제왕절개 또는 임신합병증을 경험한 적이 있거나 유방 혹은 목부위에서 몽우리가 만져진 적이 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi' TEST='8'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='FM_HISTORY' QID='1'><![CDATA[부모,형제,자매 중(생존여부에 관계없이) 65세 이전에 아래의 경우에 해당한 적이 있습니까?<br>①치매 ②암(간,난소,유방,대장,전립선에 한함) ③선천성근위축증, 근이영양증 ④헌팅턴무도병 ⑤다낭성신질환 ⑥가족성폴립증]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='EVERYDAY' QID='1'><![CDATA[아래와 같은 일상의 활동중에 다른 사람의 도움을 필요로 하거나 보살핌을 필요로 하십니까?<br>①이동(보행)하기 ②식사하기 ③화장실 사용하기 ④목욕하기 ⑤옷입기<br>* 가입자 보관용 뒷면의 "일상생활 기본동작"을 참조하여 기재하여 주십시오]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='EVERYDAY' QID='2'><![CDATA[최근 5년 이내에 다음과 같은 기구, 장비를 사용하신 적이 있거나 현재 사용하고 계십니까?<br>①휠체어(보조이동장치 포함) ②목발·지팡이 ③도뇨관(導尿管) ④산소호흡장비 ⑤인공호흡장치<br>⑥투석장치 ⑦기타보조기구]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='EVERYDAY' QID='3'><![CDATA[최근 5년 이내에 의료기관 및 요양시설에서 진단,치료,요양을 받으신 적이 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='DRIVE' QID='1'><![CDATA[현재 운전을 하고 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='HOBBY' QID='1'><![CDATA[다음과 같은 취미와 관련된 자격증을 가지고 있거나 동호회 활동을 하고 있습니까?<br>(※ 5년 이내 미활동제외)]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='JOB' QID='1'><![CDATA[귀하의 직업은 무엇입니까?]]></QUESTION>
+		<ANSWER YN='Y' GUBUN='jupi'>
+			<DETAIL>
+				<JOB>
+					<JOB_NAME><![CDATA[기타]]></JOB_NAME>
+					<OFFICE_NM><![CDATA[]]></OFFICE_NM>
+					<WORK_YY><![CDATA[]]></WORK_YY>
+					<WORK_MM><![CDATA[]]></WORK_MM>
+					<POSITION><![CDATA[]]></POSITION>
+					<DUTY_DETAIL><![CDATA[fffff]]></DUTY_DETAIL>
+					<J_LOCATION><![CDATA[ff]]></J_LOCATION>
+				</JOB>
+			</DETAIL>
+		</ANSWER>
+		<ANSWER YN='Y' GUBUN='jongpi1'>
+			<DETAIL>
+				<JOB>
+					<JOB_NAME><![CDATA[기타]]></JOB_NAME>
+					<OFFICE_NM><![CDATA[]]></OFFICE_NM>
+					<WORK_YY><![CDATA[]]></WORK_YY>
+					<WORK_MM><![CDATA[]]></WORK_MM>
+					<POSITION><![CDATA[]]></POSITION>
+					<DUTY_DETAIL><![CDATA[gggggg]]></DUTY_DETAIL>
+					<J_LOCATION><![CDATA[]]></J_LOCATION>
+				</JOB>
+			</DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='1'><![CDATA[부업 또는 겸업, 계절적으로 종사하는 업무가 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='2'><![CDATA[현재 다른 보험회사에 가입하신 보험이 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='3'><![CDATA[해외지역으로 출국할 예정이 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[ ~ ]]></D_VAL1>
+					<D_VAL2><![CDATA[]]></D_VAL2>
+					<D_VAL3><![CDATA[]]></D_VAL3>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[ ~ ]]></D_VAL1>
+					<D_VAL2><![CDATA[]]></D_VAL2>
+					<D_VAL3><![CDATA[]]></D_VAL3>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='4'><![CDATA[1일 흡연량과 흡연기간은?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[]]></D_VAL1>
+					<D_VAL2><![CDATA[]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[]]></D_VAL1>
+					<D_VAL2><![CDATA[]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='5'><![CDATA[현재 금연중이라면 금연기간은?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[]]></D_VAL1>
+					<D_VAL2><![CDATA[]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[]]></D_VAL1>
+					<D_VAL2><![CDATA[]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='6'><![CDATA[음주횟수(1주일 기준) 1회 음주량(소주기준)은?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[]]></D_VAL1>
+					<D_VAL2><![CDATA[]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[]]></D_VAL1>
+					<D_VAL2><![CDATA[]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='7'><![CDATA[체격(키/몸무게)]]></QUESTION>
+		<ANSWER YN='Y' GUBUN='jupi'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[111]]></D_VAL1>
+					<D_VAL2><![CDATA[111]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+		<ANSWER YN='Y' GUBUN='jongpi1'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[222]]></D_VAL1>
+					<D_VAL2><![CDATA[222]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='8'><![CDATA[지난 1년간 몸무게가 5kg이상 증가 혹은 감소한 적이 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='9'><![CDATA[타사 보험청약시 거절되거나 연기,부담보, 할증, 삭감으로 인수된 적이 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='10'><![CDATA[타사에서 질병이나 재해로 보험금을 수령한 적이 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='11'><![CDATA[직업외에 사회활동 또는 취미가 있습니까?]]></QUESTION>
+		<ANSWER YN='N' GUBUN='jupi'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+		<ANSWER YN='N' GUBUN='jongpi1'>
+			<DETAIL></DETAIL>
+		</ANSWER>
+	</Q>
+	<Q>
+		<QUESTION CAT='PRIVATE_INFO' QID='12'><![CDATA[동거가족은?]]></QUESTION>
+		<ANSWER YN='Y' GUBUN='jupi'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[ㅁㅁㅁㅁㅁ]]></D_VAL1>
+					<D_VAL2><![CDATA[ㅁㅁㅁㅁㅁ]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+		<ANSWER YN='Y' GUBUN='jongpi1'>
+			<DETAIL>
+				<PRIVATE_INFO>
+					<D_VAL1><![CDATA[ㄹㄹㄹㄹㄹ]]></D_VAL1>
+					<D_VAL2><![CDATA[ㄹㄹㄹㄹㄹ]]></D_VAL2>
+				</PRIVATE_INFO>
+			</DETAIL>
+		</ANSWER>
+	</Q>
+	
+	<LIVING_E>
+		<Q>
+			<QUESTION CAT='LIVING_E' QID='1'><![CDATA[세대년간 소득은?]]></QUESTION>
+			<INCOME><![CDATA[33,333]]></INCOME>
+		</Q>
+	</LIVING_E>
+	
+	<HB_LIST>     <!-- 취미목록 서브레포트용 -->
+		<LIST>
+			<NAME><![CDATA[①스쿠버 다이빙]]></NAME>
+			<NAME><![CDATA[②번지점프]]></NAME>
+			<NAME><![CDATA[③수상스키]]></NAME>
+			<NAME><![CDATA[④제트스키]]></NAME>
+			<NAME><![CDATA[⑤래프팅]]></NAME>
+			<NAME><![CDATA[⑥빙벽, 암벽등반]]></NAME>
+			<NAME><![CDATA[⑦자동차]]></NAME>
+			<NAME><![CDATA[⑧이와 유사한 자격증 또는 동호회 활동을 하는 취미]]></NAME>
+		</LIST>
+	</HB_LIST>
+	
+	<CAR_LIST>    <!-- 자동차목록 서브레포트용 -->
+		<LIST>
+			<NAME><![CDATA[ⓐ승용차]]></NAME>
+			<NAME><![CDATA[ⓑ영업용택시]]></NAME>
+			<NAME><![CDATA[ⓒ사업용(개인)택시]]></NAME>
+			<NAME><![CDATA[ⓓ오토바이]]></NAME>
+			<NAME><![CDATA[ⓔ중형승합차(25인승이하)]]></NAME>
+			<NAME><![CDATA[ⓕ대형승합차(26인승이상)]]></NAME>
+			<NAME><![CDATA[ⓖ소형화물차(2.5톤미만)]]></NAME>
+			<NAME><![CDATA[ⓗ중/대형화물차(2.5톤이상)]]></NAME>
+			<NAME><![CDATA[ⓘ폭발물/인화물수송차량]]></NAME>
+			<NAME><![CDATA[ⓙ특장차량]]></NAME>
+			<NAME><![CDATA[ⓚ건설/토목중장비]]></NAME>
+			<NAME><![CDATA[ⓛ기타]]></NAME>
+		</LIST>
+	</CAR_LIST>
+	
+	<JOB_LIST>    <!-- 직업구분 목록 -->
+		<JOB_NAME><![CDATA[①급여소득자 ②자영업자 ③연금/이자소득자 ④일당소득자 ⑤기타]]></JOB_NAME>
+	</JOB_LIST>
+	
+	<FM_LIST>   <!-- SLV 가족력 질병목록 서브레포트용 -->
+		<LIST>
+			<NAME><![CDATA[①치매]]></NAME>
+			<NAME><![CDATA[②암(간,난소,유방,대장,전립선에 한함)]]></NAME>
+			<NAME><![CDATA[③선천성근위축증,근이영양증]]></NAME>
+			<NAME><![CDATA[④헌팅턴무도병]]></NAME>
+			<NAME><![CDATA[⑤다낭성신질환]]></NAME>
+			<NAME><![CDATA[⑥가족성폴립증]]></NAME>
+		</LIST>
+	</FM_LIST>
+	
+	<EDAY_LIST1>    <!-- 활동목록 -->
+		<NAME><![CDATA[①이동(보행)하기 ②식사하기 ③화장실 이용하기 ④목욕하기 ⑤옷입기]]></NAME>
+	</EDAY_LIST1>
+	
+	<EDAY_LIST2>    <!-- 보조기구 -->
+		<NAME><![CDATA[①휠체어(보조이동장치포함) ②목발?지팡이 ③도뇨관(導尿管) ④산소호흡장치 ⑤인공호흡장치 ⑥투석장치 ⑦기타보조기구]]></NAME>
+	</EDAY_LIST2>
+</GOGI>
+
+
+
+
+
+
+</kyobo></rxcert>

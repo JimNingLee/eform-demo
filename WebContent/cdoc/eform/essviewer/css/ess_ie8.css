@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+
+.rxe-round{
+
+}
+
+/* 테스트 입력 */
+.textfiled {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    -moz-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    background:  rgb(255,255,0);
+}
+
+.textconfirmfiled {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    -moz-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    background:  rgb(255,255,0);
+    color: rgb(0,0,255,0.5);
+}
+
+
+/* 일반 버튼 및 스크립트가 있는 일반 텍스트 */
+.button {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    -moz-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    background:  rgb(255,255,0);
+    color: rgb(255,0,0);
+}
+
+/* 셀렉트 박스 */
+.selectbox {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    -moz-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    background:  rgb(255,255,0);
+    color: rgb(255,0,0);
+}
+
+/* 단순 확인 버튼 */
+.buttonconfirm {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    -moz-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    background:  rgb(255,255,0);
+    cursor:pointer;cursor:hand;
+    color: rgb(255,0,0);
+}
+
+/* 체크 박스 */
+.checkbox {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    -moz-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    background:  rgb(255,255,0);
+}
+
+/* 라디오 버튼 */
+.radiobutton {
+    border: 2px solid #EF9F1B; 
+  	-moz-border-radius:5px;
+  	-webkit-border-radius:5px;
+  	border-radius:5px;
+    -webkit-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    -moz-box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    box-shadow: inset 0 0 4px  rgb(255,0,0),0 0 8px rgb(255,0,0); 
+    background:  rgb(255,255,0);
+}

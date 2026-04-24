@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="B4"  pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="a49b569a-eae9-415a-bc3c-2486d2374050">
+	<property name="rxreport.zoom" value="1.818181818181821"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="832"/>
+	<style name="Default" isDefault="true" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="Defaultback" style="Default" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="styborder" style="Default">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="styback" style="Default" mode="Opaque" backcolor="#FF0066" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="styinfo" style="Default" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Default_10pt" style="Default" hAlign="Left" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Default_9pt" style="Default" hAlign="Left" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="styback2 " style="Default" mode="Opaque" backcolor="#E5E5E5" hAlign="Center" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<queryString language="xPath">
+		<![CDATA[//root/shinhan]]>
+	</queryString>
+	<field name="수령일" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/shinhan/수령일]]></fieldDescription>
+	</field>
+	<field name="성명1" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/shinhan/성명1]]></fieldDescription>
+	</field>
+	<field name="성명2" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/shinhan/성명2]]></fieldDescription>
+	</field>
+	<field name="성명3" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/shinhan/성명3]]></fieldDescription>
+	</field>
+	<group name="report">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="842">
+				<staticText>
+					<reportElement uuid="eb4dbcfb-5e87-4260-aa8a-5eb0afc21639" x="26" y="8" width="543" height="811"/>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="165" y="407" width="399" height="23"/>
+					<box leftPadding="3">
+						<leftPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(동의함 □   동의하지 않음 □ )
+(동의함 □   동의하지 않음 □ )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="112" y="290" width="447" height="32"/>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[
+ ■ 개인식별정보 외에 거래신청서에 기재된 정보 또는 고객이 제공한 정보 
+ ▶ 주거 및 가족사항, 거주기간, 세대구성 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="112" y="161" width="447" height="129"/>
+					<box leftPadding="3">
+						<topPen lineWidth="0.75"/>
+						<bottomPen lineWidth="1.0" lineStyle="Double"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[
+ ■ 개인식별정보
+ ▶ 성명, 주민등록번호 등 고유식별정보, 국적, 직업.직장, 주소. 전자우편 주소. 전화번호 등 연락처
+ ■ 금융거래정보 
+ ▶ 상품종류, 거래조건(이자율, 만기, 담보 등), 거래일시, 금액 등 거래 설정 및 내역 정보
+ ■ 신용평가를 위한 정보(여신거래에 한정)
+ ▶ 신용능력정보: 재산·채무·소득의 총액, 납세실적
+ ▶ 신용도판단정보: 연체, 대위변제, 대지급, 부도, 관련인 발생사실 등
+ ■국가, 지방자치단체, 금융기관, 「국민연금법」에 따른 국민연금관리공단 및 「국민건강보험법」에 따른
+ 국민건강보험공단 그 밖의 공공단체가 제공하는 귀하의 부동산 소유현황, 주민등록정보 및 직장.소득정보
+ ■ 기타 금융거래의 설정.유지·이행·관리를 위한 상담, 채권관리 등을 통해 생성되는 정보
+ ▶ 결혼여부, 거주형태(자가, 전세, 월세 등) 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="158" width="457" height="178"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="279c4264-fe5d-4488-adc2-55e204b8a47b" style="Default" x="150" y="8" width="298" height="16"/>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="true" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[개인(신용)정보 수집.이용.제공 동의서(금융거래 설정 등) ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" x="26" y="24" width="543" height="55"/>
+					<textElement textAlignment="Justified" markup="none">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[   한국주택금융공사 귀하 
+   한국주택금융공사(이하 ‘공사’라 함)와의 금융거래와 관련하여 공사가 본인의 개인(신용)정보를 수집.이용하거나 제3자에게 제공하고자 하는 경우에는
+  「개인정보 보호법」 제15조 제1항 제1호, 제17조 제1항 제1호, 제23조 제1호, 제24조 제1항 제1호, 「신용정보의 이용 및 보호에 관한 법률」 제32조
+   제1항, 제33조 및 제34조에 따라 본인의 동의를 얻어야 합니다. 이에 본인은 공사가 아래의 내용과 같이 본인의 개인(신용)정보를 수집.이용 또는 제공
+   하는 것에 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="Default" x="26" y="79" width="543" height="13"/>
+					<textElement/>
+					<text><![CDATA[   * 금융거래라 함은 여신업무, 부수업무(보증 등)와 관련된 거래를 의미합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="279c4264-fe5d-4488-adc2-55e204b8a47b" style="Default_9pt" x="32" y="91" width="532" height="13"/>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ 1. 수집·이용에 관한 사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="104" width="75" height="54"/>
+					<box>
+						<topPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[수집·이용 목적]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="104" width="457" height="54"/>
+					<box leftPadding="3">
+						<topPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[ ■ 금융거래관계의 설정 여부 판단
+ ■ 금융거래관계의 설정·유지·이행·관리
+ ■ 미수채권(구상권 포함) 행사를 위한 재산보유 파악, 보전조치, 강제집행 등
+ ■ 금융사고 조사, 분쟁 해결, 민원 처리 
+ ■ 법령상 의무이행 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="158" width="75" height="178"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[수집·이용할
+항목]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="Default" x="116" y="290" width="53" height="12"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[[선택적 정보]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="Default" x="116" y="161" width="53" height="13"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[[필수적 정보]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" x="107" y="322" width="452" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ ※ 본 동의 이전에 발생한 개인(신용)정보도 포함됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="336" width="75" height="24"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[보유·이용 기간]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="336" width="457" height="24"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[위 개인(신용)정보는 수집·이용에 관한 동의일로부터 금융거래 종료일까지 위 이용목적을 위하여 보유·이용됩니다. 단, 금융거래
+종료일 후에는 금융사고 조사, 분쟁 해결, 민원처리, 법령상 의무이행 및 공사의 리스크 관리업무만을 위하여 보유·이용됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="360" width="75" height="33"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[동의를 거부할 권리
+및 동의를 거부할 
+경우의 불이익]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="360" width="457" height="33"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[위 개인(신용)정보 중 필수적 정보의 수집·이용에 관한 동의는 계약의 체결 및 이행을 위하여 필수적이므로, 위 사항에 동의하셔
+야만 금융거래 관계의 설정 및 유지가 가능합니다. 위 개인(신용)정보 중 선택적 정보의 수집·이용에 관한 동의는 거부하실 수 
+있으며, 다만 동의하지 않으시는 경우 금융거래 조건 등에 불이익을 받으실 수 있습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="393" width="75" height="37"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[수집·이용
+동의 여부]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="393" width="457" height="14"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[공사가 위와 같이 본인의 개인(신용)정보를 수집. 이용하는 것에 동의합니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="407" width="58" height="23"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[■ 필수적 정보
+■ 선택적 정보]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="430" width="75" height="26"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[고유식별정보
+동의여부]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="430" width="457" height="13"/>
+					<box leftPadding="3">
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 공사가 위 목적으로 다음과 같은 본인의 고유식별정보를 수집. 이용하는 것에 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="443" width="279" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 고유식별정보: 주민등록번호, 여권번호, 외국인등록번호, 국내거소신고번호]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="Default" x="386" y="443" width="178" height="13"/>
+					<box leftPadding="3">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(동의함 □   동의하지 않음 □ )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="279c4264-fe5d-4488-adc2-55e204b8a47b" style="Default_9pt" x="32" y="456" width="532" height="16"/>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ 2. 제공에 관한 사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="472" width="75" height="100"/>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[제공받는 자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" x="107" y="472" width="457" height="43"/>
+					<box leftPadding="0">
+						<topPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ ■ 신용정보집중기관 및 신용조회회사에 대한 제공
+ ▶ 신용정보집중기관: 전국은행연합회, 여신금융협회 등
+ ▶ 신용조회회사: 코리아크레딧뷰로(주), NICE신용평가정보㈜ 등
+ ■ 채권은행 : 대출신청 은행]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" x="107" y="515" width="457" height="11" forecolor="#0000FF"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#0000FF"/>
+						<rightPen lineWidth="0.75" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[■ 연대보증인]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" x="107" y="526" width="457" height="46"/>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ ■ 수탁업체에 대한 제공
+ ▶ 위 개인(신용)정보의 처리수탁업체: 보증료 안내 및 DM 발송업체, 대출 및 보증상담  업무업체, 채권추심업체 등
+ ▶ 공사는 수탁업체에게 개인(신용)정보를 제공할 경우, 업무수행에 필요한 최소한의  정보만을 제공하며, 수탁업체의
+ 추가.변경 및 제공 목적의 세부적 내용은 공사 홈페이지 [www.hf.go.kr]에서 확인하실 수 있습니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="572" width="75" height="47"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[제공받는 자의
+이용 목적]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="572" width="457" height="47"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ ■ 신용정보집중기관 및 신용조회회사에 대한 제공
+ ▶ 본인의 신용을 판단하기 위한 자료로 활용하거나 공공기관에서 정책자료로 활용
+ ■ 채권은행 : 주택금융신용보증서 담보 대출취급
+ ■ 수탁업체에 대한 제공 : 금융거래의 설정·유지·이행·관리 등에 필요한 경우로서 위탁 받은 업무의 수행]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="619" width="75" height="55"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[제공할
+개인(신용)정보의
+항목]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="619" width="457" height="55"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ ■ 신용정보집중기관 및 신용조회회사에게 제공되는 개인(신용)정보의 항목
+ ▶ 개인식별정보, 신용거래정보, 신용능력정보, 신용평가를 위한 정보
+ ■ 수탁업체에 대한 제공되는 개인(신용)정보의 항목
+ ▶ 수집.이용에 동의한 정보 중 위탁업무 목적달성을 위해 필요한 정보에 한함
+ ※ 본 동의 이전에 수집된 개인(신용)정보도 포함됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="674" width="75" height="33"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[제공받은 자의
+개인(신용)정보
+보유·이용 기간]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="674" width="457" height="33"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[개인(신용)정보는 제공된 날로부터 동의 철회시 또는 제공된 목적을 달성할 때까지 보유·이용됩니다. 동의 철회 또는 제공된 목
+적 달성 후에는 위에 기재된 이용 목적과 관련된 금융사고 조사, 분쟁 해결, 민원처리, 법령상 의무이행을 위하여 필요한 범위 
+내에서만 보유·이용 됩니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="707" width="75" height="33"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[동의를 거부할 권리
+및 동의를 거부할 
+경우의 불이익]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="707" width="457" height="33"/>
+					<box>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[위 개인(신용)정보의 제공에 관한 동의는 계약의 체결 및 이행을 위하여 필수적이므로, 위 사항에 동의하셔야만 금융거래 관계
+의 설정 및 유지가 가능합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="740" width="75" height="13"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[제공 동의여부]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="740" width="260" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 공사가 위와 같이 본인의 개인(신용)정보를 제공하는 것에 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="367" y="740" width="197" height="13"/>
+					<box leftPadding="3">
+						<leftPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(동의함 □   동의하지 않음 □ )]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="32" y="753" width="75" height="26"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[고유식별정보
+동의여부]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="753" width="457" height="13"/>
+					<box leftPadding="3">
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 공사가 위 목적으로 다음과 같은 본인의 고유식별정보를 수집·이용하는 것에 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="107" y="766" width="279" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 고유식별정보: 주민등록번호, 여권번호, 외국인등록번호, 국내거소신고번호]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="styborder" x="386" y="766" width="178" height="13"/>
+					<box leftPadding="3">
+						<leftPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(동의함 □   동의하지 않음 □ )]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b2859f58-09a4-416f-bf7e-e2b23fa01c3a" style="Default" x="31" y="780" width="532" height="13"/>
+					<textElement textAlignment="Right">
+						<font isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["년     월     일"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default" x="31" y="793" width="29" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b2859f58-09a4-416f-bf7e-e2b23fa01c3a" style="Default" x="60" y="793" width="74" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default" x="134" y="793" width="64" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[(서명 또는 인)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default" x="302" y="793" width="59" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[(서명 또는 인)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b2859f58-09a4-416f-bf7e-e2b23fa01c3a" style="Default" x="228" y="793" width="74" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default" x="198" y="793" width="30" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 성명 :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default" x="361" y="793" width="30" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b2859f58-09a4-416f-bf7e-e2b23fa01c3a" style="Default" x="391" y="793" width="74" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default" x="465" y="793" width="98" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[(서명 또는 인)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341c5e3a-dc94-4f64-968b-74084587c4ac" style="Default" x="31" y="806" width="532" height="13"/>
+					<textElement>
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[본인은 본 동의서의 내용을 이해하였으며, 신용정보 수집·이용.제공에 관한 고객 권리 안내문에 관하여 자세히 설명을 듣고 수령하였습니다. ]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+</ReportExpress>

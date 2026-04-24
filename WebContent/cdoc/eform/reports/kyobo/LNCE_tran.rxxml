@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="LNCE_tran" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="25" bottomMargin="25">
+	<property name="rxreport.zoom" value="1.4641000000000006"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<import value="com.cabsoft.rx.hbarcode.sec"/>
+	<style name="Default" isDefault="true"/>
+	<style name="styleM" hAlign="Left" vAlign="Middle" fontSize="96"/>
+	<style name="paddingL" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingR" style="styleM">
+		<box leftPadding="0" rightPadding="5"/>
+	</style>
+	<subDataset name="dataset1">
+		<queryString language="xPath">
+			<![CDATA[/Root/LData/list/LMultiData/LData]]>
+		</queryString>
+		<field name="select" class="java.lang.String">
+			<fieldDescription><![CDATA[select]]></fieldDescription>
+		</field>
+		<field name="inagNo1" class="java.lang.String">
+			<fieldDescription><![CDATA[inagNo1]]></fieldDescription>
+		</field>
+		<field name="inagNo2" class="java.lang.String">
+			<fieldDescription><![CDATA[inagNo2]]></fieldDescription>
+		</field>
+		<field name="inagNo" class="java.lang.String">
+			<fieldDescription><![CDATA[inagNo]]></fieldDescription>
+		</field>
+		<field name="prodNm" class="java.lang.String">
+			<fieldDescription><![CDATA[prodNm]]></fieldDescription>
+		</field>
+		<field name="stDt" class="java.lang.String">
+			<fieldDescription><![CDATA[stDt]]></fieldDescription>
+		</field>
+		<field name="stPrem" class="java.lang.String">
+			<fieldDescription><![CDATA[stPrem]]></fieldDescription>
+		</field>
+		<field name="paidAmt" class="java.lang.String">
+			<fieldDescription><![CDATA[paidAmt]]></fieldDescription>
+		</field>
+		<field name="prcsDt" class="java.lang.String">
+			<fieldDescription><![CDATA[prcsDt]]></fieldDescription>
+		</field>
+		<field name="lstMon" class="java.lang.String">
+			<fieldDescription><![CDATA[lstMon]]></fieldDescription>
+		</field>
+		<field name="payRsn" class="java.lang.String">
+			<fieldDescription><![CDATA[payRsn]]></fieldDescription>
+		</field>
+		<field name="rtrnAmt" class="java.lang.String">
+			<fieldDescription><![CDATA[rtrnAmt]]></fieldDescription>
+		</field>
+		<field name="loanAmt" class="java.lang.String">
+			<fieldDescription><![CDATA[loanAmt]]></fieldDescription>
+		</field>
+		<field name="charAmt" class="java.lang.String">
+			<fieldDescription><![CDATA[charAmt]]></fieldDescription>
+		</field>
+		<field name="idh" class="java.lang.String">
+			<fieldDescription><![CDATA[idh]]></fieldDescription>
+		</field>
+		<field name="inagNoMask" class="java.lang.String">
+			<fieldDescription><![CDATA[inagNoMask]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["../../images/kyobo/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="org_barcode" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[Steganography에 사용될 바코드 이미지]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXSecurity/barcode.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodepath" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[고밀도 바코드가 저장되어 있는 경로]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXHiDensityBarcode/out/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodeAction" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 삽입 후 이미지 파일 삭제]]></parameterDescription>
+		<defaultValueExpression><![CDATA["deleteafter"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="surfix" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 파일 접두사]]></parameterDescription>
+		<defaultValueExpression><![CDATA["test_"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IssuerNo" class="java.util.Map" isForPrompting="false"/>
+	<queryString language="xPath">
+		<![CDATA[/Root/LData/list/LMultiData/LData]]>
+	</queryString>
+	<field name="/Root/LData/regNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/regNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/regNm" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/regNm]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/homeAddr" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/homeAddr]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/currDate" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/currDate]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/useName" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/useName]]></fieldDescription>
+	</field>
+	<group name="gh0" minHeightToStartNewPage="30">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="51">
+				<staticText>
+					<reportElement mode="Opaque" x="3" y="0" width="72" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[가입증서번호
+(단체번호)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="75" y="0" width="120" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[상  품  명]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="195" y="0" width="56" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[계약
+일자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="251" y="0" width="56" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[1회
+보험료]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="307" y="0" width="56" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[기납일
+보험료]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="363" y="0" width="56" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[처리일자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="419" y="0" width="56" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[처리사유]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="475" y="0" width="56" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[금    액]]></text>
+				</staticText>
+				<componentElement>
+					<reportElement isPrintRepeatedValues="false" x="0" y="31" width="535" height="20"/>
+					<rx:list xmlns:rx="http://www.cabsoftware.com/reportexpress/components" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress/components http://www.cabsoftware.com/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="dataset1">
+							<dataSourceExpression><![CDATA[new com.cabsoft.rx.engine.data.RXXmlDataSource($P{XML_DATA_DOCUMENT},"//Root/LData/list/LMultiData/LData")]]></dataSourceExpression>
+						</datasetRun>
+						<rx:listContents height="20" width="535">
+							<textField isBlankWhenNull="true">
+								<reportElement style="styleM" x="363" y="0" width="56" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{prcsDt}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="styleM" x="195" y="0" width="56" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{stDt}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="paddingL" x="75" y="0" width="120" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{prodNm}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="styleM" x="419" y="0" width="56" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{payRsn}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="styleM" x="3" y="0" width="72" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{inagNoMask}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="paddingR" x="307" y="0" width="56" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{paidAmt}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="paddingR" x="251" y="0" width="56" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{stPrem}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="paddingR" x="475" y="0" width="56" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{charAmt}]]></textFieldExpression>
+							</textField>
+						</rx:listContents>
+					</rx:list>
+				</componentElement>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="gh1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="gh2">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="183" splitType="Stretch">
+			<staticText>
+				<reportElement style="styleM" x="0" y="0" width="422" height="57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[금 융 거 래 내 용 확 인]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
+				<reportElement isPrintRepeatedValues="false" x="422" y="0" width="113" height="57" isPrintInFirstWholeBand="true"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imgDir} + "kyobo_logo.gif"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="styleM" mode="Opaque" x="0" y="61" width="535" height="4" backcolor="#0969B3"/>
+				<textElement>
+					<font size="1"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="3" y="68" width="258" height="13"/>
+				<textElement markup="none"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["발급번호 : " + $P{IssuerNo}.get("IssuerNo")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="450" y="68" width="82" height="13"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[인터넷발급]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="styleM" x="22" y="91" width="67" height="32"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[* 계   약   자 :
+   (가입단체)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="styleM" x="89" y="91" width="163" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/regNm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="styleM" x="287" y="91" width="73" height="32"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[* 주민등록번호 :
+(사업자 등록번호)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="styleM" x="360" y="91" width="159" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/regNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="styleM" x="22" y="123" width="67" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[* 주        소 :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="styleM" x="89" y="123" width="421" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/homeAddr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="styleM" x="22" y="143" width="67" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[* 용        도 :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="styleM" x="89" y="143" width="421" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/useName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="styleM" x="150" y="163" width="382" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/currDate} + "기준"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band height="189" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="80" width="535" height="23"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ 본 증명서는 인터넷으로 발급 되었으며, 홈페이지(www.cabsoftware.com)의 사이버창구 "발급증명서 확인" 메뉴에서 발급사실을
+ 확인하실 수 있습니다.]]></text>
+			</staticText>
+			<image scaleImage="HDBarcode" hAlign="Center" vAlign="Middle">
+				<reportElement isPrintRepeatedValues="false" x="0" y="20" width="535" height="57"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<imageExpression class="java.awt.Image"><![CDATA[sec.encodeBarcode(
+    $P{org_barcode},
+    $P{barcodepath},
+    $P{surfix} + $V{PAGE_NUMBER} + ".bmp",
+    $P{barcodeAction}
+)]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame" hAlign="Center" onErrorType="Blank">
+				<reportElement isPrintRepeatedValues="false" x="0" y="106" width="535" height="83">
+<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+</reportElement>
+<imageExpression class="java.lang.String"><![CDATA[$P{imgDir} + "solution_income_bottom.gif"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="styleM" x="0" y="0" width="341" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[* 상기 내용은 홈페이지(www.cabsoftware.com)에서 제공된 것입니다.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</ReportExpress>

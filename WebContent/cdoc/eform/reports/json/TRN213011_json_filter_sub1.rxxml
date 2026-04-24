@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="이체결과 조회" pageWidth="595" pageHeight="842" whenNoDataType="BlankPage" columnWidth="539" leftMargin="28" rightMargin="28" topMargin="20" bottomMargin="19" whenResourceMissingType="Empty" uuid="e467b0e4-9de3-4129-9a80-f8d05bc2fd90">
+	<property name="rxreport.zoom" value="1.5"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\god870225\\Desktop\\수정작업\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:/전북은행/까마귀/12.img/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="fontDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:/전북은행/까마귀/11.fonts/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="DS" class="com.cabsoft.rx.engine.RXDataSource" isForPrompting="false">
+		<defaultValueExpression><![CDATA["이체결과 조회"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="HeaderColName0" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["예금주명"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="HeaderColName1" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["계좌번호"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="HeaderData0" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["홍길동"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="HeaderData1" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["전체"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="HeaderData2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["2013.05.07 18:42:44"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName0" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["이체일자"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName1" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["출금계좌번호"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName2" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["입금은행"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName3" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["입금계좌번호"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName4" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["수취인"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName5" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["이체금액"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName6" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["수수료"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName7" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["처리결과"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName8" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["입금통장인쇄내용"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ListColName9" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["출금통장인쇄내용"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="json">
+		<![CDATA[ListData.list]]>
+	</queryString>
+	<field name="TX_DT_S8" class="java.lang.String">
+		<fieldDescription><![CDATA[TX_DT_S8]]></fieldDescription>
+	</field>
+	<field name="WDL_ACCO_NO_S16" class="java.lang.String">
+		<fieldDescription><![CDATA[WDL_ACCO_NO_S16]]></fieldDescription>
+	</field>
+	<field name="MNRC_BANK_S6" class="java.lang.String">
+		<fieldDescription><![CDATA[MNRC_BANK_S6]]></fieldDescription>
+	</field>
+	<field name="MNRC_ACNO" class="java.lang.String">
+		<fieldDescription><![CDATA[MNRC_ACNO]]></fieldDescription>
+	</field>
+	<field name="RECV_FLNM_S20" class="java.lang.String">
+		<fieldDescription><![CDATA[RECV_FLNM_S20]]></fieldDescription>
+	</field>
+	<field name="TX_AMT_S15" class="java.lang.String">
+		<fieldDescription><![CDATA[TX_AMT_S15]]></fieldDescription>
+	</field>
+	<field name="FEE_S6" class="java.lang.String">
+		<fieldDescription><![CDATA[FEE_S6]]></fieldDescription>
+	</field>
+	<field name="PROCS_RSLT_S10" class="java.lang.String">
+		<fieldDescription><![CDATA[PROCS_RSLT_S10]]></fieldDescription>
+	</field>
+	<field name="SUMRY_S20" class="java.lang.String">
+		<fieldDescription><![CDATA[SUMRY_S20]]></fieldDescription>
+	</field>
+	<field name="WDL_ACCO_FACTOR_CTNT_S20" class="java.lang.String">
+		<fieldDescription><![CDATA[WDL_ACCO_FACTOR_CTNT_S20]]></fieldDescription>
+	</field>
+	<field name="grid" class="java.lang.String">
+		<fieldDescription><![CDATA[grid]]></fieldDescription>
+	</field>
+	<group name="gh1">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<detail>
+		<band height="20">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="47" height="20" backcolor="#FFFF00"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{TX_DT_S8}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" x="118" y="0" width="47" height="20"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MNRC_BANK_S6}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" x="165" y="0" width="71" height="20"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MNRC_ACNO}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" x="236" y="0" width="49" height="20"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{RECV_FLNM_S20}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" x="285" y="0" width="58" height="20"/>
+				<box rightPadding="3">
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{TX_AMT_S15}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" x="343" y="0" width="49" height="20"/>
+				<box rightPadding="3">
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{FEE_S6}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" x="392" y="0" width="43" height="20"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{PROCS_RSLT_S10}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" x="435" y="0" width="52" height="20"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{SUMRY_S20}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" x="487" y="0" width="52" height="20"/>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{WDL_ACCO_FACTOR_CTNT_S20}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="38cb4062-6ae8-4b1b-a441-8a8f442e015a" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="47" y="0" width="71" height="20" forecolor="#000000" backcolor="#00FF00"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+					<topPen lineWidth="0.5" lineColor="#999999"/>
+					<leftPen lineWidth="0.5" lineColor="#999999"/>
+					<bottomPen lineWidth="0.5" lineColor="#999999"/>
+					<rightPen lineWidth="0.5" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{grid}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</ReportExpress>

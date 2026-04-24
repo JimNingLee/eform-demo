@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<root>
+	<shinhan>
+		<R_NEXL3323_1>		
+			<본인_성명><![CDATA[본인_성명]]></본인_성명>
+			<본인_주소><![CDATA[본인_주소]]></본인_주소>
+			<본인_전화번호><![CDATA[본인_전화번호]]></본인_전화번호>
+			<여신서류작성항목한글명 length="100" value="항목한글명 테스트" valueType="X"/>
+		</R_NEXL3323_1>
+	</shinhan>
+</root>
+	

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='euc-kr'?><com.mirae.life.ess.model.SucoReportModel>
+	<sucoDate>20130529</sucoDate>
+	<sucoDocCheckModel>
+		<sspNo>12345678901</sspNo>
+		<plcd>A2833</plcd>
+		<pdnm>(주) 캡소프트 생명보험 다이렉트 암보험 무배당 1306</pdnm>
+		<prodDpNm>암보험</prodDpNm>
+		<custHanNm>정다은</custHanNm>
+		<insAge>30</insAge>
+		<gndrCd>1</gndrCd>
+		<prno>791208-1******</prno>
+		<cbwrArNo>010</cbwrArNo>
+		<cbwrKukNo>1234</cbwrKukNo>
+		<cbwrIdvNo>1231</cbwrIdvNo>
+		<emalAddr>123@naver.com</emalAddr>
+		<jJobNm>컴퓨터 및 통신 관련 연구소 연구원</jJobNm>
+		<wrkpNm>캡소프트웨어</wrkpNm>
+		<jobPositionNm>개발</jobPositionNm>
+		<zipc01>123</zipc01>
+		<zipc02>456</zipc02>
+		<addr01></addr01>
+		<addr02>서울 </addr02>
+		<addr03>여의도동</addr03>
+		<cstAddrScCd>01</cstAddrScCd>
+		<custHanNm2>정다은</custHanNm2>
+		<insAge2>30</insAge2>
+		<gndrCd2>1</gndrCd2>
+		<prno2>791208-1******</prno2>
+		<rvcyCd>01</rvcyCd>
+		<rvPdDvvl>Y20</rvPdDvvl>
+		<prm>14800</prm>
+		<scrtInfo>암진단비 2년이후 4,000 만원</scrtInfo>
+		<sucoInipNo>C2013052100000000037</sucoInipNo>
+		<bnfcScYn>Y</bnfcScYn>
+		<ntryAmt>10000000</ntryAmt>
+		<isPrdDvvl>S70</isPrdDvvl>
+		<gndr>남</gndr>
+		<cstAddrScNm>자택</cstAddrScNm>
+		<gndr2>남</gndr2>
+		<rvcyNm>월납</rvcyNm>
+		<rvPdDvvlNm>20년</rvPdDvvlNm>
+		<IsPrdDvvlNm>70세</IsPrdDvvlNm>
+	</sucoDocCheckModel>
+	<noticeTotal>
+		<hlthNotiItem>
+			<tsucoNo>0000000000005</tsucoNo>
+			<cstSucoRlty>21</cstSucoRlty>
+			<psPgnnYn>N</psPgnnYn>
+			<hobyYn>N</hobyYn>
+			<mm3wtDfacYn>N</mm3wtDfacYn>
+			<fstFegDtm>2013-05-23 20:06:19.673 KST</fstFegDtm>
+			<lstModDtm>2013-05-23 20:06:19.673 KST</lstModDtm>
+			<latsMdexDcloYn>N</latsMdexDcloYn>
+			<latsRiskYn>N</latsRiskYn>
+			<lats10DsasDcloYn>N</lats10DsasDcloYn>
+			<mdctCndtDcloYn>N</mdctCndtDcloYn>
+			<addMdexDcloYn>N</addMdexDcloYn>
+			<mntlyNvObsYn>N</mntlyNvObsYn>
+			<outHmbdObsYn>N</outHmbdObsYn>
+			<fetlAbovDiagDcloYn>N</fetlAbovDiagDcloYn>
+			<otcpInsNtyn>N</otcpInsNtyn>
+		</hlthNotiItem>
+		<diseaseDetailList>
+			<com.mirae.life.ess.model.TbOdDise>
+				<tsucoNo>0000000000005</tsucoNo>
+				<custSucoRlty>21</custSucoRlty>
+				<hlnoItemScCd>A0100</hlnoItemScCd>
+				<diseSrno>1</diseSrno>
+				<diseCd>A000</diseCd>
+				<cnctDiseNm>비브리오콜레리01전형균에의한콜레라</cnctDiseNm>
+				<mcrAgoCd>01</mcrAgoCd>
+				<mcrPeri>7</mcrPeri>
+				<mcrText>약물치료</mcrText>
+				<rcrEprnBnb>Y</rcrEprnBnb>
+				<cmreYn>Y</cmreYn>
+				<fstFegDtm>2013-05-28 16:03:10.377 KST</fstFegDtm>
+				<lstModDtm>2013-05-28 16:03:10.377 KST</lstModDtm>
+			</com.mirae.life.ess.model.TbOdDise>
+			<com.mirae.life.ess.model.TbOdDise>
+				<tsucoNo>0000000000005</tsucoNo>
+				<custSucoRlty>21</custSucoRlty>
+				<hlnoItemScCd>A0100</hlnoItemScCd>
+				<diseSrno>2</diseSrno>
+				<diseCd>A013</diseCd>
+				<cnctDiseNm>파라티푸스C</cnctDiseNm>
+				<mcrAgoCd>02</mcrAgoCd>
+				<mcrPeri>8</mcrPeri>
+				<mcrText>통원치료</mcrText>
+				<rcrEprnBnb>Y</rcrEprnBnb>
+				<cmreYn>N</cmreYn>
+				<fstFegDtm>2013-05-28 16:03:10.383 KST</fstFegDtm>
+				<lstModDtm>2013-05-28 16:03:10.383 KST</lstModDtm>
+			</com.mirae.life.ess.model.TbOdDise>
+			<com.mirae.life.ess.model.TbOdDise>
+				<tsucoNo>0000000000005</tsucoNo>
+				<custSucoRlty>21</custSucoRlty>
+				<hlnoItemScCd>A0100</hlnoItemScCd>
+				<diseSrno>3</diseSrno>
+				<diseCd>A014</diseCd>
+				<cnctDiseNm>상세불명의파라티푸스</cnctDiseNm>
+				<mcrAgoCd>03</mcrAgoCd>
+				<mcrPeri>9</mcrPeri>
+				<mcrText>입원치료</mcrText>
+				<rcrEprnBnb>N</rcrEprnBnb>
+				<cmreYn>Y</cmreYn>
+				<fstFegDtm>2013-05-28 16:03:10.387 KST</fstFegDtm>
+				<lstModDtm>2013-05-28 16:03:10.387 KST</lstModDtm>
+			</com.mirae.life.ess.model.TbOdDise>
+		</diseaseDetailList>
+		<last10DiseaseList>
+			<com.mirae.life.ess.model.TbOdHlthDcd>
+				<tsucoNo>0000000000005</tsucoNo>
+				<custSucoRlty>21</custSucoRlty>
+				<hlnoItemScCd>A0301</hlnoItemScCd>
+				<hlnoItemCorrYn>Y</hlnoItemCorrYn>
+				<fstFegDtm>2013-05-28 21:20:42.583 KST</fstFegDtm>
+				<lstModDtm>2013-05-28 21:20:42.583 KST</lstModDtm>
+			</com.mirae.life.ess.model.TbOdHlthDcd>
+			<com.mirae.life.ess.model.TbOdHlthDcd>
+				<tsucoNo>0000000000005</tsucoNo>
+				<custSucoRlty>21</custSucoRlty>
+				<hlnoItemScCd>A0302</hlnoItemScCd>
+				<fstFegDtm>2013-05-28 21:20:42.587 KST</fstFegDtm>
+				<lstModDtm>2013-05-28 21:20:42.587 KST</lstModDtm>
+			</com.mirae.life.ess.model.TbOdHlthDcd>
+			<com.mirae.life.ess.model.TbOdHlthDcd>
+				<tsucoNo>0000000000005</tsucoNo>
+				<custSucoRlty>21</custSucoRlty>
+				<hlnoItemScCd>A0303</hlnoItemScCd>
+				<fstFegDtm>2013-05-28 21:20:42.590 KST</fstFegDtm>
+				<lstModDtm>2013-05-28 21:20:42.590 KST</lstModDtm>
+			</com.mirae.life.ess.model.TbOdHlthDcd>
+		</last10DiseaseList>
+		<medicalActList/>
+		<examinationDetailList/>
+		<fetusAbnormalDiagnosisList/>
+		<driveList/>
+		<hobbyList/>
+		<ohrsInsurList>
+			<com.mirae.life.ess.model.TbOdOhrsInsur>
+				<tsucoNo>0000000000005</tsucoNo>
+				<custSucoRlty>21</custSucoRlty>
+				<ohrsInsurList>1</ohrsInsurList>
+				<insurCd>a03</insurCd>
+				<insurNm>기타보험회사</insurNm>
+				<insurCnt>7</insurCnt>
+				<prm>2000</prm>
+				<fstFegDtm>2013-05-28 20:52:07.807 KST</fstFegDtm>
+				<lstModDtm>2013-05-28 20:52:07.807 KST</lstModDtm>
+			</com.mirae.life.ess.model.TbOdOhrsInsur>
+		</ohrsInsurList>
+	</noticeTotal>
+</com.mirae.life.ess.model.SucoReportModel>

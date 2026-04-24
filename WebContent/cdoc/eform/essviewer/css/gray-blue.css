@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+/* Webfonts */
+@font-face{
+	font-family: '나눔바른고딕';
+	font-style: normal;
+	font-weight: 400;
+	src:local('fonts/Nanum Barun Gothic Regular'), local('fonts/Nanum Barun Gothic-Regular'), local('fonts/NanumBarunGothic Regular');
+	src:url('fonts/NanumBarunGothic.eot');
+	src:url('fonts/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/NanumBarunGothic.woff') format('woff'), 
+	url('fonts/NanumBarunGothic.ttf') format('truetype');
+}
+
+/* Menu items */
+.gray-blue{
+	background:#7c8ca4 url(../images/menu/gray-blue/bg_tool_off.png) repeat-x;/* Old browsers */
+}
+.gray-blue:after{
+	content: ".";
+	display:block;
+	height:0;
+	clear: both;
+	visibility:hidden;
+}
+.gray-blue,.gray-blue ul,.gray-blue li{
+	display:block;
+	list-style:none;
+	padding:0;
+	margin:0;
+	line-height:normal;
+	direction:ltr;
+}
+.gray-blue a {
+	padding:6px 0;
+	color:#fff;
+	font-size:12px;
+	line-height:18px;
+	font-family:"나눔바른고딕",Arial,Helvetica,sans-serif;
+	font-weight:normal !important;
+	text-decoration:none;
+	display:block;
+}
+.gray-blue a:hover, .gray-blue a:focus, .gray-blue a:active,
+.gray-blue a.highlighted {
+	background:#4d6ea4 url(../images/menu/gray-blue/bg_tool_on.png) repeat-x; /* Old browsers */
+	-moz-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+	box-shadow:0 1px 1px rgba(0,0,0,0.3);		
+}
+
+/* Items separators */
+.gray-blue li {
+	float:left;
+	border-left:1px solid #919fb4;
+	width:9%;
+	text-align:center;
+}
+.gray-blue li:first-child{border-left:0;}
+.gray-blue li span{
+	display:block;
+	width:24px;
+	height:24px;
+	margin:3px auto;
+	background:url(../images/menu/gray-blue/icon_toolbar.png);
+}
+.gray-blue li .page span{
+	width:100%;
+	background-image:none;
+	line-height:2em;
+	font-size:14px;
+}
+
+/* toolbar icon add */
+.gray-blue .tool-write span{background-position:0 0;}
+.gray-blue .tool-first span{background-position:-34px 0;}
+.gray-blue .tool-before span{background-position:-68px 0;}
+.gray-blue .tool-next span{background-position:-102px 0;}
+.gray-blue .tool-last span{background-position:-136px 0;}
+.gray-blue .tool-zoomin span{background-position:-170px 0;}
+.gray-blue .tool-zoomout span{background-position:-204px 0;}
+.gray-blue .tool-beforechk span{background-position:-238px 0;}
+.gray-blue .tool-nextchk span{background-position:-272px 0;}
+.gray-blue .tool-viewer span{background-position:-306px 0;}
+.gray-blue .tool-close span{background-position:-340px 0;}
+.gray-blue .tool-compl span{background-position:-376px 0;}
+
+.tool-notice{
+	background:#fcfcea url(../images/menu/gray-blue/icon_tool_notice.png) no-repeat 34px center;
+	padding-left:45px;
+	border-bottom:1px solid #95a9af;
+	font-size:12px;
+	color:#666;
+	line-height:36px;
+}
+.tool-notice strong{
+	color:#dd1c75;
+}

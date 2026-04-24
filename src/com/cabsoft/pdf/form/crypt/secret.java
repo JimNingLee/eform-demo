@@ -1,0 +1,5 @@
+package com.cabsoft.pdf.form.crypt;
+
+public class secret {
+	public static final String Passwrod = "25ffEQki74QDs2LYkk2E/Hed5QAUhuul8is82eRsx+UaxMIn5BBUTdliqMRlX4MMht43MaPDyu0dOUtL9qoSHrRAlqJ4KHCOG314EUS6PNSnBwBuYYaIqSuDfLANnugJbb4Xn8RXicW/IL+9m0S9FY8LisW7M2YlcqZsAZrg2aCfMpH47S0c2Uh8lSly2OkcHzgKbZqysBBRDImSsp9Xom7W/3+bjzG5nepNEs7yQFKIfB1oTBOLY1G6gNYCatc";
+}

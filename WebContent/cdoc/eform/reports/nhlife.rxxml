@@ -1,0 +1,1846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="소득공제용 보험료 납입증명서" pageWidth="595" pageHeight="842" columnWidth="483" leftMargin="30" rightMargin="30" topMargin="28" bottomMargin="28" uuid="1169ad0d-a525-4e65-92e0-9db407f1303f">
+	<property name="rxreport.zoom" value="1.5026296018031553"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="663"/>
+	<style name="Default" isDefault="true">
+		<paragraph rightIndent="4"/>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:/Users/cab/Desktop/svn/장애인이용편의및오픈뱅킹구축_2013/00_서식/공제rxxml/공제_JSP-INSU-cdoc/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="probeUrl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="IssuerID" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="IssuerIDStr" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:/Users/cab/Desktop/공제 작업폴더/작업서식/images/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[/농협생명/납입현황]]>
+	</queryString>
+	<field name="년도" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/년도]]></fieldDescription>
+	</field>
+	<field name="발급일시" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/발급일시]]></fieldDescription>
+	</field>
+	<field name="사용목적" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/사용목적]]></fieldDescription>
+	</field>
+	<field name="발행기관" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/발행기관]]></fieldDescription>
+	</field>
+	<field name="확인자" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/확인자]]></fieldDescription>
+	</field>
+	<field name="문의전화" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/문의전화]]></fieldDescription>
+	</field>
+	<field name="계약자명" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/기본정보/계약자명]]></fieldDescription>
+	</field>
+	<field name="주민등록번호" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/기본정보/주민등록번호]]></fieldDescription>
+	</field>
+	<field name="주소" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/기본정보/주소]]></fieldDescription>
+	</field>
+	<field name="상품명" class="java.lang.String">
+		<fieldDescription><![CDATA[상품명]]></fieldDescription>
+	</field>
+	<field name="증권번호" class="java.lang.String">
+		<fieldDescription><![CDATA[증권번호]]></fieldDescription>
+	</field>
+	<field name="최종납입월" class="java.lang.String">
+		<fieldDescription><![CDATA[최종납입월]]></fieldDescription>
+	</field>
+	<field name="횟수" class="java.lang.String">
+		<fieldDescription><![CDATA[횟수]]></fieldDescription>
+	</field>
+	<field name="보험대상자" class="java.lang.String">
+		<fieldDescription><![CDATA[보험대상자]]></fieldDescription>
+	</field>
+	<field name="보장성보험대상보험료" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[보장성보험대상보험료]]></fieldDescription>
+	</field>
+	<field name="보장성보험연간합계액" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[보장성보험연간합계액]]></fieldDescription>
+	</field>
+	<field name="연금저축대상보험료" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[연금저축대상보험료]]></fieldDescription>
+	</field>
+	<field name="연금저축연간합계액" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[연금저축연간합계액]]></fieldDescription>
+	</field>
+	<field name="증명서이름" class="java.lang.String">
+		<fieldDescription><![CDATA[/농협생명/기본정보/증명서이름]]></fieldDescription>
+	</field>
+	<field name="일회보험료" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[일회보험료]]></fieldDescription>
+	</field>
+	<variable name="보장성대상보험료합계" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{보장성보험대상보험료}]]></variableExpression>
+	</variable>
+	<variable name="보장성대상연간합계" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{보장성보험연간합계액}]]></variableExpression>
+	</variable>
+	<variable name="연금저축대상보험합계" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{연금저축대상보험료}]]></variableExpression>
+	</variable>
+	<variable name="연금저축연갑합계" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{연금저축연간합계액}]]></variableExpression>
+	</variable>
+	<variable name="PAGEFIXCOUNT" class="java.lang.Integer" resetType="None">
+		<variableExpression><![CDATA[8]]></variableExpression>
+	</variable>
+	<group name="GHTable2" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="178" splitType="Stretch">
+				<rectangle radius="10">
+					<reportElement uuid="57e5b74a-58ad-4038-8300-be34f3496e53" mode="Opaque" x="20" y="3" width="500" height="36" backcolor="#CCCCFF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="2.0" lineColor="#0033CC"/>
+					</graphicElement>
+				</rectangle>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="7bcedd66-81a1-4839-b4fe-69f8c569b59d" x="27" y="8" width="105" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "reportexpress.png"]]></imageExpression>
+				</image>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="c359b052-5faf-4abb-9717-e44a83ee2650" key="" mode="Transparent" x="20" y="3" width="500" height="36" forecolor="#000000" backcolor="#EDEEEE">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#6699FF"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#6699FF"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#6699FF"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#6699FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="18" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{증명서이름}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="412571f3-33ca-45ae-b662-6503369ae029" key="" mode="Opaque" x="20" y="52" width="81" height="30" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["계약자명\n"+
+"(단체명)"]]></textFieldExpression>
+				</textField>
+				<textField pattern="" isBlankWhenNull="true">
+					<reportElement uuid="1b25d04b-ff7f-45cc-b75c-d0cd71e818b9" key="" mode="Transparent" x="101" y="52" width="161" height="30" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box leftPadding="5">
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+						<paragraph leftIndent="4"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{계약자명}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="d6c6dbad-334b-472e-8ccd-1eaa472efa6c" key="" mode="Opaque" x="20" y="82" width="81" height="30" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="1.0" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["주    소"]]></textFieldExpression>
+				</textField>
+				<textField pattern="@" isBlankWhenNull="true">
+					<reportElement uuid="875ba5a8-ee3c-46be-a2d1-20a3aca4c0f8" key="" mode="Transparent" x="101" y="82" width="419" height="30" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="1.0" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+						<paragraph leftIndent="4"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{주소}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="8dc683ac-68e3-40c6-883d-34a3efd46c7d" key="" mode="Opaque" x="20" y="138" width="81" height="40" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["상 품 명"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="19f32e9f-7f90-4b6e-ad4b-f7c25519778d" key="" mode="Opaque" x="101" y="138" width="79" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.0" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["증 권 번 호"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="dab3c1a3-8cdf-45f1-b200-bd9026259e5a" key="" mode="Opaque" x="390" y="138" width="130" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["개인연금저축/연금저축"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="7949cb85-f5a5-48da-9caa-f741a0c53f51" key="" mode="Opaque" x="101" y="158" width="79" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.0" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["보험대상자"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="f94c0789-1557-4e68-8460-3aee23296cdf" key="" mode="Opaque" x="390" y="158" width="65" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["대상보험료"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="cf2e9cb9-917e-400d-be90-ec05414fd403" key="" mode="Opaque" x="455" y="158" width="65" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["연간합계액"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="7949cb85-f5a5-48da-9caa-f741a0c53f51" key="" mode="Opaque" x="180" y="158" width="82" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.0" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1회보험료"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="19f32e9f-7f90-4b6e-ad4b-f7c25519778d" key="" mode="Opaque" x="180" y="138" width="82" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.0" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["최종납입월/횟수"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="cf2e9cb9-917e-400d-be90-ec05414fd403" key="" mode="Opaque" x="326" y="158" width="64" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["연간합계액"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="f94c0789-1557-4e68-8460-3aee23296cdf" key="" mode="Opaque" x="262" y="158" width="64" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["대상보험료"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="dab3c1a3-8cdf-45f1-b200-bd9026259e5a" key="" mode="Opaque" x="262" y="138" width="128" height="20" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["보장성보험"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5813a484-6651-4509-989c-c8f32d6ee9c8" x="20" y="118" width="500" height="20"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["("+$F{년도}+")"+" 년도 보험료 납입현황"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="ff646d7d-5a66-4587-95b3-ca2ad2e780b3" key="" mode="Opaque" x="262" y="52" width="99" height="30" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["주민등록번호\n"+
+"(사업자번호)"]]></textFieldExpression>
+				</textField>
+				<textField pattern="@" isBlankWhenNull="true">
+					<reportElement uuid="d0b7581e-acab-4af1-9ab8-2867729eb1cd" key="" mode="Transparent" x="361" y="52" width="159" height="30" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box leftPadding="5">
+						<topPen lineWidth="1.0" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+						<paragraph leftIndent="4"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{주민등록번호}.substring( 0, 6 ) + "-"
++ $F{주민등록번호}.substring( 6, 7 ) + "******"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="GHTable1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupFooter>
+			<band height="40" splitType="Stretch">
+				<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+) < 2
+&&
+(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)!=0]]></printWhenExpression>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="180" y="0" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8f1df25c-02e5-4838-a843-9e3f0b433ee6" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8016ebab-307e-4e72-b225-e4f0675ecfa4" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="180" y="20" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField>
+					<reportElement uuid="e9c5bf70-a3aa-424d-9dbc-e3d37aaaa86f" x="0" y="0" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="bed0b4fa-55b4-4436-900d-9b0e222e0de1" x="0" y="20" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="20" y="0" width="81" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="101" y="20" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="101" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+			</band>
+			<band height="40">
+				<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+) < 3
+&&
+(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)!=0]]></printWhenExpression>
+				<textField>
+					<reportElement uuid="bed0b4fa-55b4-4436-900d-9b0e222e0de1" x="0" y="20" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8f1df25c-02e5-4838-a843-9e3f0b433ee6" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="180" y="20" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="101" y="20" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8016ebab-307e-4e72-b225-e4f0675ecfa4" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="180" y="0" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="101" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="20" y="0" width="81" height="40" forecolor="#FF0000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+			</band>
+			<band height="40">
+				<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+) < 4
+&&
+(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)!=0]]></printWhenExpression>
+				<textField>
+					<reportElement uuid="bed0b4fa-55b4-4436-900d-9b0e222e0de1" x="0" y="20" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8f1df25c-02e5-4838-a843-9e3f0b433ee6" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="180" y="20" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="101" y="20" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8016ebab-307e-4e72-b225-e4f0675ecfa4" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="180" y="0" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="101" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="20" y="0" width="81" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+			</band>
+			<band height="40">
+				<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+) < 5
+&&
+(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)!=0]]></printWhenExpression>
+				<textField>
+					<reportElement uuid="bed0b4fa-55b4-4436-900d-9b0e222e0de1" x="0" y="20" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="101" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8f1df25c-02e5-4838-a843-9e3f0b433ee6" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8016ebab-307e-4e72-b225-e4f0675ecfa4" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="101" y="20" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="20" y="0" width="81" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="180" y="20" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="180" y="0" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+			</band>
+			<band height="40">
+				<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+) < 6
+&&
+(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)!=0]]></printWhenExpression>
+				<textField>
+					<reportElement uuid="bed0b4fa-55b4-4436-900d-9b0e222e0de1" x="0" y="20" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="180" y="20" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="180" y="0" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="101" y="20" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8016ebab-307e-4e72-b225-e4f0675ecfa4" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8f1df25c-02e5-4838-a843-9e3f0b433ee6" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="101" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="20" y="0" width="81" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+			</band>
+			<band height="40">
+				<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+) < 7
+&&
+(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)!=0]]></printWhenExpression>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="101" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8f1df25c-02e5-4838-a843-9e3f0b433ee6" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="20" y="0" width="81" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="180" y="20" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="180" y="0" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField>
+					<reportElement uuid="bed0b4fa-55b4-4436-900d-9b0e222e0de1" x="0" y="20" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8016ebab-307e-4e72-b225-e4f0675ecfa4" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="101" y="20" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+			</band>
+			<band height="40">
+				<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+) < 8
+&&
+(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)!=0]]></printWhenExpression>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="101" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8f1df25c-02e5-4838-a843-9e3f0b433ee6" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="20" y="0" width="81" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="180" y="20" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4726d015-ea68-4a41-b052-776816652690" key="" mode="Transparent" x="180" y="0" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField>
+					<reportElement uuid="bed0b4fa-55b4-4436-900d-9b0e222e0de1" x="0" y="20" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <= $V{PAGEFIXCOUNT} ?
+((Integer.valueOf($V{GHTable1_COUNT})+$V{PAGEFIXCOUNT})%$V{PAGEFIXCOUNT})
+: (Integer.valueOf($V{GHTable1_COUNT})%$V{PAGEFIXCOUNT} )
+)]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0 원" isBlankWhenNull="true">
+					<reportElement uuid="8016ebab-307e-4e72-b225-e4f0675ecfa4" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.0" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fe071b64-746f-4601-a695-2fc355c691d4" key="" mode="Transparent" x="101" y="20" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="acdffebe-46ce-4a66-96b6-e3b632de2f3e" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+				</textField>
+			</band>
+			<band height="40">
+				<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) < 10 ?
+((Integer.valueOf($V{GHTable1_COUNT})+8)%8)
+: (Integer.valueOf($V{GHTable1_COUNT})%8 )
+)!=0]]></printWhenExpression>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box rightPadding="3">
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{연금저축연갑합계}.equals(null) ? "" : $V{연금저축연갑합계}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box rightPadding="3">
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{보장성대상보험료합계}.equals(null) ? "" : $V{보장성대상보험료합계}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="e9c5bf70-a3aa-424d-9dbc-e3d37aaaa86f" x="0" y="0" width="20" height="20">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<textElement/>
+					<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="c0e1d81f-b3e5-4dfd-a661-bb063da4a4f3" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box rightPadding="3">
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{보장성대상연간합계}.equals(null) ? "" : $V{보장성대상연간합계}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="a08cb3eb-746d-4811-b3e2-06ac8b87a265" key="" mode="Opaque" x="20" y="0" width="81" height="40" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["사 용 목 적"]]></textFieldExpression>
+				</textField>
+				<textField pattern="@" isBlankWhenNull="true">
+					<reportElement uuid="b81a882e-415d-4650-9bc0-37efc3e4dc4b" key="" mode="Transparent" x="101" y="0" width="79" height="40" forecolor="#000000" backcolor="#FFFF66"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+						<paragraph leftIndent="4"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{사용목적}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box rightPadding="3">
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{연금저축대상보험합계}.equals(null) ? "" : $V{연금저축대상보험합계}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="b6891ba2-0afd-4a03-b3f1-2649cd87ef04" key="" mode="Opaque" x="180" y="0" width="82" height="40" forecolor="#707662" backcolor="#D5E2BB"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#808080"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+						<bottomPen lineWidth="0.5" lineColor="#808080"/>
+						<rightPen lineWidth="0.5" lineColor="#808080"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["연간납입금액"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<detail>
+		<band height="40">
+			<textField>
+				<reportElement uuid="e9c5bf70-a3aa-424d-9dbc-e3d37aaaa86f" x="0" y="0" width="20" height="20">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6512e02d-e4ca-409b-8940-0607c5ec6b27" key="" mode="Transparent" x="20" y="0" width="81" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box leftPadding="3" rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{상품명}.equals(null) ? "" : $F{상품명}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c0e1d81f-b3e5-4dfd-a661-bb063da4a4f3" key="" mode="Transparent" x="101" y="20" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{보험대상자}.equals(null) ? "" : $F{보험대상자}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="101" y="0" width="79" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{증권번호}.equals(null) ? "" : $F{증권번호}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="180" y="0" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.0" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{최종납입월}.substring(0,4) + "." + $F{최종납입월}.substring(4,6))+" / "+$F{횟수}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="c0e1d81f-b3e5-4dfd-a661-bb063da4a4f3" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{보장성보험연간합계액}.equals(null) ? "" : $F{보장성보험연간합계액}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{연금저축대상보험료}.equals(null) ? "" : $F{연금저축대상보험료}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{연금저축연간합계액}.equals(null) ? "" : $F{연금저축연간합계액}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{보장성보험대상보험료}.equals(null) ? "" : $F{보장성보험대상보험료}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="c0e1d81f-b3e5-4dfd-a661-bb063da4a4f3" key="" mode="Transparent" x="180" y="20" width="82" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.0" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{일회보험료}.equals(null) ? "" : $F{일회보험료}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="40">
+			<printWhenExpression><![CDATA[(
+Integer.valueOf($V{GHTable1_COUNT}) <16 ?
+((Integer.valueOf($V{GHTable1_COUNT})+8)%8)
+: (Integer.valueOf($V{GHTable1_COUNT})%8 )
+)==0]]></printWhenExpression>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="455" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{연금저축연갑합계}.equals(null) ? "" : $V{연금저축연갑합계}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="c0e1d81f-b3e5-4dfd-a661-bb063da4a4f3" key="" mode="Transparent" x="326" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{보장성대상연간합계}.equals(null) ? "" : $V{보장성대상연간합계}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="390" y="0" width="65" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{연금저축대상보험합계}.equals(null) ? "" : $V{연금저축대상보험합계}]]></textFieldExpression>
+			</textField>
+			<textField pattern="@" isBlankWhenNull="true">
+				<reportElement uuid="b81a882e-415d-4650-9bc0-37efc3e4dc4b" key="" mode="Transparent" x="101" y="0" width="79" height="40" forecolor="#000000" backcolor="#FFFF66"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="1.0" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{사용목적}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e9c5bf70-a3aa-424d-9dbc-e3d37aaaa86f" x="0" y="0" width="20" height="20">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<textElement/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="b6891ba2-0afd-4a03-b3f1-2649cd87ef04" key="" mode="Opaque" x="180" y="0" width="82" height="40" forecolor="#707662" backcolor="#D5E2BB"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="1.0" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["연간납입금액"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="a08cb3eb-746d-4811-b3e2-06ac8b87a265" key="" mode="Opaque" x="20" y="0" width="81" height="40" forecolor="#707662" backcolor="#D5E2BB"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="1.0" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["사 용 목 적"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="bf85b5da-2908-46c5-bf49-be06030c3537" key="" mode="Transparent" x="262" y="0" width="64" height="40" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="3">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{보장성대상보험료합계}.equals(null) ? "" : $V{보장성대상보험료합계}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="241" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="7eaa80d7-1ea5-4e9f-8206-43dcd112f763" key="" mode="Transparent" x="20" y="1" width="500" height="45" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box leftPadding="3">
+					<pen lineColor="#707662"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#707662"/>
+					<leftPen lineWidth="0.0" lineColor="#707662"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#707662"/>
+					<rightPen lineWidth="0.0" lineColor="#707662"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[소득세법 제52조, 조세특례 제한법 제 86조, 제 86조의 2, 제 87조의 규정에 의하여 소득공제보험료를 위와 같이 납입하였음을 증명합니다.]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ff6a2946-e5da-48fa-a71c-add21eba483d" x="318" y="49" width="194" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{발급일시}.substring(0,4) + "년 " 
++ $F{발급일시}.substring(4,6) + "월 " 
++ $F{발급일시}.substring(6,8) + "일 "]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="a08cb3eb-746d-4811-b3e2-06ac8b87a265" key="" mode="Opaque" x="20" y="79" width="81" height="16" forecolor="#707662" backcolor="#D5E2BB"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["발행기관"]]></textFieldExpression>
+			</textField>
+			<textField pattern="@" isBlankWhenNull="true">
+				<reportElement uuid="b81a882e-415d-4650-9bc0-37efc3e4dc4b" key="" mode="Transparent" x="101" y="79" width="126" height="16" forecolor="#000000" backcolor="#FFFF66"/>
+				<box leftPadding="25">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{발행기관}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="a08cb3eb-746d-4811-b3e2-06ac8b87a265" key="" mode="Opaque" x="20" y="95" width="81" height="16" forecolor="#707662" backcolor="#D5E2BB"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["확 인 자"]]></textFieldExpression>
+			</textField>
+			<textField pattern="@" isBlankWhenNull="true">
+				<reportElement uuid="b81a882e-415d-4650-9bc0-37efc3e4dc4b" key="" mode="Transparent" x="101" y="95" width="100" height="16" forecolor="#000000" backcolor="#FFFF66"/>
+				<box leftPadding="25">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineColor="#808080"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{확인자}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="a08cb3eb-746d-4811-b3e2-06ac8b87a265" key="" mode="Opaque" x="20" y="111" width="81" height="16" forecolor="#707662" backcolor="#D5E2BB"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["문의전화"]]></textFieldExpression>
+			</textField>
+			<textField pattern="@" isBlankWhenNull="true">
+				<reportElement uuid="b81a882e-415d-4650-9bc0-37efc3e4dc4b" key="" mode="Transparent" x="101" y="111" width="126" height="16" forecolor="#000000" backcolor="#FFFF66"/>
+				<box leftPadding="25">
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{문의전화}]]></textFieldExpression>
+			</textField>
+			<textField pattern="@" isBlankWhenNull="true">
+				<reportElement uuid="b81a882e-415d-4650-9bc0-37efc3e4dc4b" key="" mode="Transparent" x="201" y="95" width="26" height="16" forecolor="#000000" backcolor="#FFFF66"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#808080"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#808080"/>
+					<bottomPen lineWidth="0.5" lineColor="#808080"/>
+					<rightPen lineWidth="0.5" lineColor="#808080"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA["(인)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="43a677eb-5e4c-461e-bd91-a66ae56b1238" x="229" y="79" width="306" height="48"/>
+				<box leftPadding="4"/>
+				<textElement markup="none">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["※ 본 안내창은 소득공제용 이외 다른 용도로 사용할 수 없습니다.\n"+
+"※ 소득공제 보험료는 실제 납입하시는 보험료와 상이 할 수 있습니다.\n"+
+"※ 고객님의 금융정보보호를 위해 증권번호의 주민번호 일부에 ***처리하였습니다.\n"+
+"※ 소득공제 자료는 소득세법 제 165조 및 동법 시행령 제 216조의 3\n"+
+"(소득공제 증빙서류의 제출 및 행정지도)의 규정에 의하여 국세청으로 제공되며,\n"+
+"고객님께서 신고하신 금액과 비교하게 됩니다."]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="368">
+			<frame>
+				<reportElement uuid="d1b48240-e777-4a93-8219-8bd5e938a8af" mode="Opaque" x="203" y="132" width="135" height="82" backcolor="#FFFF66"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Double" lineColor="#FF0000"/>
+					<leftPen lineWidth="1.0" lineStyle="Double" lineColor="#FF0000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double" lineColor="#FF0000"/>
+					<rightPen lineWidth="1.0" lineStyle="Double" lineColor="#FF0000"/>
+				</box>
+				<staticText>
+					<reportElement uuid="11a2eb94-15b7-45ab-8ff9-2c7b6cd1dd9b" mode="Opaque" x="48" y="38" width="79" height="25" backcolor="#CCCCFF"/>
+					<box>
+						<pen lineColor="#3366FF"/>
+						<topPen lineWidth="0.5" lineStyle="Dashed" lineColor="#3366FF"/>
+						<leftPen lineWidth="0.5" lineStyle="Dashed" lineColor="#3366FF"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#3366FF"/>
+						<rightPen lineWidth="0.5" lineStyle="Dashed" lineColor="#3366FF"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[프레임 내부 겹침]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4bdf0915-4a62-4866-a071-b9df05bcea38" x="26" y="51" width="100" height="20"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[프레임 내부 요소 2]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement uuid="502de626-4a20-4738-b500-7b818994d89f" mode="Opaque" x="109" y="102" width="135" height="82" backcolor="#66FF66"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Double"/>
+					<leftPen lineWidth="1.0" lineStyle="Double"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<staticText>
+					<reportElement uuid="10ff5594-3f9d-490f-8c59-1089fe51aa0e" x="19" y="37" width="100" height="33"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[프레임 내부 요소 1
+둥근 사각형]]></text>
+				</staticText>
+				<rectangle radius="10">
+					<reportElement uuid="27b8bc39-2a82-4703-8808-33c9ccc7f401" x="19" y="12" width="100" height="20"/>
+				</rectangle>
+			</frame>
+			<ellipse>
+				<reportElement uuid="be841fa9-633e-43d2-bc65-012161df6df7" x="372" y="137" width="100" height="20"/>
+			</ellipse>
+			<ellipse>
+				<reportElement uuid="307cdf12-4a16-4b70-b2ef-c3701568e96c" x="488" y="121" width="20" height="100"/>
+			</ellipse>
+			<ellipse>
+				<reportElement uuid="001458ce-f910-448e-a177-755e7ec1ba97" mode="Opaque" x="20" y="31" width="40" height="40" backcolor="#CCCCFF"/>
+			</ellipse>
+			<staticText>
+				<reportElement uuid="8b38b924-3cc4-4691-905a-a671bae4e6bd" x="20" y="31" width="40" height="40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1,000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e7c72a0e-1e7c-4d9f-99ce-abd1a8c73bdf" x="387" y="89" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[타원]]></text>
+			</staticText>
+		</band>
+	</summary>
+</ReportExpress>

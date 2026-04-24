@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+@font-face{
+	font-family: '맑은 고딕';
+	src: url('./malgun.eot');
+	src: url('./malgun.eot?#iefix')
+		format('embedded-opentype'), url('./malgun.woff')
+		format('woff'), url('./malgun.ttf')
+		format('truetype'),
+		url('./nanumgothiccoding.svg#malgun') format('svg');
+	font-weight: normal;
+	font-style: normal;;
+}
+
+@font-face {
+	font-family: '나눔고딕코딩';
+	src: url('./nanumgothiccoding.eot');
+	src: url('./nanumgothiccoding.eot?#iefix')
+		format('embedded-opentype'), url('./nanumgothiccoding.woff')
+		format('woff'), url('./nanumgothiccoding.ttf')
+		format('truetype'),
+		url('./nanumgothiccoding.svg#nanumgothiccoding') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: '나눔바른고딕';
+	src: url('./NanumBarunGothic.eot');
+	src: url('./NanumBarunGothic.eot?#iefix')
+		format('embedded-opentype'), url('./NanumBarunGothic.woff')
+		format('woff'), url('./NanumBarunGothic.ttf')
+		format('truetype'),
+		url('./nanumgothiccoding.svg#NanumBarunGothic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

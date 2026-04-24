@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<root>
+	<shinhan>
+		<info>		
+			<본인_성명><![CDATA[본인_성명]]></본인_성명>
+			<본인_주소><![CDATA[본인_주소]]></본인_주소>
+			<본인_전화번호><![CDATA[본인_전화번호]]></본인_전화번호>
+		</info>
+	</shinhan>
+</root>
+	

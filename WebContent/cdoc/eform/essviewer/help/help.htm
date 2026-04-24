@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+<title>ReportExpress™ Enterprise 도움말</title>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8" Cache-control="no-cache" Pragma="no-cache">
+<link rel="stylesheet" type="text/css" href="css/Content.css">
+<script language="javascript">
+var os, bw, version;
+
+function SysInfo(){
+	var agent = navigator.userAgent.toLowerCase();
+
+	try{
+	if (agent.indexOf("windows") > -1) {
+		os = "ms";
+	} else if (agent.indexOf("android") > -1) {
+		if (agent.indexOf("shw-m380w") > -1) {
+			os = "galexytab";
+		} else {
+			os = "android";
+		}
+	} else if (agent.indexOf("linux") > -1) {
+		os = "linux";
+	} else if (agent.indexOf("iphone") > -1) {
+		os = "iphone";
+	} else if (agent.indexOf("ipad") > -1) {
+		os = "ipad";
+	} else if (agent.indexOf("mac") > -1) {
+		os = "mac";
+	} else {
+		os = "unknown";
+	}
+
+	if (agent.indexOf("msie") > -1) {
+		bw = "ie";
+	} else if (agent.indexOf("chrome") > -1) {
+		bw = "chrome";
+	} else if (agent.indexOf("safari") > -1) {
+		bw = "safari";
+	} else if (agent.indexOf("opera") > -1) {
+		bw = "opera";
+	} else if (agent.indexOf("firefox") > -1) {
+		bw = "firefox";
+	} else {
+		bw = "unknown";
+	}
+	
+	if (os == "ms" && bw == "ie") {
+		var start = agent.indexOf("msie");
+		var tmp = agent.substring(start);
+		var end = tmp.indexOf(";");
+		tmp = tmp.substring(0, end);
+		tmp = tmp.substring(tmp.lastIndexOf(" "));
+		version = tmp;
+	} else {
+		version = 99999;
+	}
+	}catch(e){alert(e.description);}
+}
+
+function getOS(){
+	if(os=="ms"){
+		return "Microsft Window";
+	}else if(os=="android"){
+		return "Android";
+	}else if(os=="galexytab"){
+		return "Galexy TAB";
+	}else if(os=="linux"){
+		return "Linux";
+	}else if(os=="iphone"){
+		return "IOS(iPhone)";
+	}else if(os=="ipad"){
+		return "IOS(iPad)";
+	}else if(os=="mac"){
+		return "MAC OSX";
+	}else{
+		return "Unknown";
+	}
+}
+
+function getBw(){
+	if(bw=="ie"){
+		return "Internet Explorer";
+	}else if(bw=="chrome"){
+		return "Chrome";
+	}else if(bw=="safari"){
+		return "Safari";
+	}else if(bw=="opera"){
+		return "Opera";
+	}else if(bw=="firefox"){
+		return "Firefox";
+	}else{
+		return "Unknown"
+	}
+}
+
+function getVersion(){
+	if(version!=99999){
+		return version;
+	}else{
+		return "";
+	}
+}
+
+function getSysInfo(){
+	var v = getVersion();
+	return "<b>" + getOS() + " " + getBw() + (v!="" ? " " + v : "") + "</b>";
+}
+
+function rxprintable() {
+	var pnot = "프린터로 출력이 <span class='f_red'><b>불가능</b></span>하므로<br/>페이지 출력 대신 <span class='f_red'><b>PDF 파일</b></span>로 다운로드됩니다.";
+	
+	if ((version <= 6.0) || (os!="mac" && bw == "safari") || os=="android" || os=="galexytab") {
+		return pnot;
+	} else if (os!="mac" && bw == "safari") {
+		return pnot;
+	}else{
+		return "프린터로 출력이 <span class='f_red'><b>가능</b></span>합니다.";
+	}
+}
+
+window.onload = function(){
+	SysInfo();
+	document.getElementById("sysinfo").innerHTML = getSysInfo();
+	document.getElementById("printable").innerHTML = "고객님께서 사용하시는 운용체제 또는 브라우저에서는 <b>RXHTML 뷰어</b>에서 " + rxprintable();
+}
+</script>
+<script language="javascript">
+function closeWindow() {
+	parent.dhxWins.window("w1").close();
+}
+</script>
+</head>
+
+<body>
+<table cellspacing="0" cellpadding="0" align="center" style="height:100%;">
+  <tr>
+    <td>
+      <div class="loading_bg">
+        <h1 class="title"><img src="images/rxe.png" align="absmiddle"><span class="f_blue"> RXHTML 뷰어</span> 도움말
+		<span id="sysinfo" style="font-size:11px;" class="f_blue"><b>MS Internet Explorer</b></span>
+		</h1>
+        <div class="lo_top_con">
+          <ul class="lo_img">
+            <li>&nbsp;</li>
+          </ul>
+          <ul class="g_dot">
+		    <li><span class="f_ora"><b>RXHTML 뷰어</b></span>는 (주) 캡소프트의 ReportExpress Enterprise™에서 제공하는 것으로 모든 운영체제 및<br/>브라우저를 지원하며 
+				별도의 ActiveX 또는 Plugin 없이 고품질의 출력물을 얻을 수 있습니다.</li>
+            <li><span id="printable" class="f_blue">인쇄 가능</span></li>
+			<li><span class="f_ora"><b>RXHTML 뷰어</b></span>에서 프린터로 출력하시기 전에 <span class="f_red"><b>반드시 [페이지 설정]을 참고</b></span>하시기 바랍니다.</li>
+            <li><span class="f_ora"><b>RXHTML 뷰어</b></span>에서 인쇄 상태가 올바르지 않은 경우 저장하기 메뉴를 이용하여 <span class="f_red"><b>PDF</b></span>와 같은<br/>다른 포멧의 문서를 저장한 후 사용하시기 바랍니다.</li>
+          </ul>
+        </div>
+        <div class="ml32"><img src="images/lo_box_top.gif" alt="" /></div>
+        <div class="lo_box_bg">
+          <ul>
+			HTML 문서의 인쇄 상태가 올바르지 않은 경우에는 메뉴의 <span class="f_red"><b>[저장하기]</b></span>를
+			선택하시면 PDF, 워드, 파워포인트 및 엑셀 문서 등을 다운로드하실 수 있습니다.
+			이 문서를 출력하시면 보다 고품질의 출력물을 얻으실 수 있습니다.
+          </ul>
+        </div>
+        <div class="ml32"><img src="images/lo_box_bottom.gif" alt="" /></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+	<td align="right">
+	  <div style="margin: 10px; align: right;">
+		<input type="button" value="닫 기" onclick="closeWindow();">
+	  </div>
+	</td>
+	</tr>
+</table>
+</body>
+</html>

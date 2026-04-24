@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="FAAAEA00410R_subreport1" pageWidth="690" pageHeight="483" orientation="Landscape" columnWidth="690" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e82e20a9-68a8-470e-acf2-035edb5fc2aa">
+	<property name="rxreport.zoom" value="1.0"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true" fontSize="9"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="json">
+		<![CDATA[list]]>
+	</queryString>
+	<field name="OFFC_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[OFFC_NM]]></fieldDescription>
+	</field>
+	<field name="OFFC_CD" class="java.lang.String">
+		<fieldDescription><![CDATA[OFFC_CD]]></fieldDescription>
+	</field>
+	<field name="ORG_CD" class="java.lang.String">
+		<fieldDescription><![CDATA[ORG_CD]]></fieldDescription>
+	</field>
+	<field name="ORG_NM_TEL" class="java.lang.String">
+		<fieldDescription><![CDATA[ORG_NM_TEL]]></fieldDescription>
+	</field>
+	<field name="ORG_DGE_CD" class="java.lang.String">
+		<fieldDescription><![CDATA[ORG_DGE_CD]]></fieldDescription>
+	</field>
+	<field name="ADDR_ZIP" class="java.lang.String">
+		<fieldDescription><![CDATA[ADDR_ZIP]]></fieldDescription>
+	</field>
+	<field name="POSLOC_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[POSLOC_NM]]></fieldDescription>
+	</field>
+	<field name="AUDIT_CNT" class="java.lang.String">
+		<fieldDescription><![CDATA[AUDIT_CNT]]></fieldDescription>
+	</field>
+	<field name="CHRG_NM_TEL" class="java.lang.String">
+		<fieldDescription><![CDATA[CHRG_NM_TEL]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_NM3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_NM3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_CNT3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_CNT3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_PSON_CNT3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_PSON_CNT3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_NM4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_NM4]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_CNT4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_CNT4]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_PSON_CNT4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_PSON_CNT4]]></fieldDescription>
+	</field>
+	<field name="STAFF_CNT1" class="java.lang.String">
+		<fieldDescription><![CDATA[STAFF_CNT1]]></fieldDescription>
+	</field>
+	<group name="gh2">
+		<groupExpression><![CDATA[$F{ORG_CD}]]></groupExpression>
+		<groupHeader>
+			<band height="35">
+				<textField>
+					<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="0" y="0" width="65" height="35" isPrintWhenDetailOverflows="true"/>
+					<box leftPadding="2">
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ORG_CD}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="179" y="0" width="25" height="35" isPrintWhenDetailOverflows="true"/>
+					<box>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ORG_DGE_CD}+"차"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement uuid="995e1e62-b6e8-4b6e-8f44-fe657a51443e" stretchType="RelativeToBandHeight" x="506" y="0" width="184" height="35" forecolor="#00FF33" backcolor="#66CC00"/>
+					<subreportParameter name="SUBREPORT_DIR">
+						<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[((com.cabsoft.datasource.RXJsonDataSource)$P{REPORT_DATA_SOURCE}).dataSource("list(ORG_CD=="+$F{ORG_CD}+")","list")]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "FAAAEA00410R_sub2_json.report"]]></subreportExpression>
+				</subreport>
+				<textField pattern="#,##0" isBlankWhenNull="false">
+					<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="406" y="0" width="30" height="35" isPrintWhenDetailOverflows="true"/>
+					<box rightPadding="2">
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{AUDIT_CNT} == null ? "0"  : $F{AUDIT_CNT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="204" y="0" width="120" height="35" isPrintWhenDetailOverflows="true"/>
+					<box leftPadding="2">
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ADDR_ZIP}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement uuid="51f1906a-c626-4c2f-a3c0-ee37bb06a692" style="Default" stretchType="RelativeToBandHeight" x="65" y="0" width="114" height="35" isPrintWhenDetailOverflows="true"/>
+					<box>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement markup="styled">
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ORG_NM_TEL}.length() > 42 ? "<b><font size='6'>" + $F{ORG_NM_TEL} + "</font></b>" : "<font size='7'>" + $F{ORG_NM_TEL} + "</font>"]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0">
+					<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="324" y="0" width="34" height="35" isPrintWhenDetailOverflows="true"/>
+					<box rightPadding="2">
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{STAFF_CNT1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="436" y="0" width="70" height="35" isPrintWhenDetailOverflows="true"/>
+					<box>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CHRG_NM_TEL}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="262b3cd4-33da-43a5-aaae-86cdf52d3be8" stretchType="RelativeToBandHeight" x="358" y="0" width="48" height="35" isPrintWhenDetailOverflows="true"/>
+					<box>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{POSLOC_NM}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="50">
+			<printWhenExpression><![CDATA[false]]></printWhenExpression>
+		</band>
+	</detail>
+</ReportExpress>

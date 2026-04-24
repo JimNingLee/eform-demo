@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="카드신청서-개인체크"  pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="56" bottomMargin="56" uuid="abad4a6b-8130-480e-92b7-bf8057110fa5">
+	<property name="rxreport.zoom" value="1.5"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="419"/>
+	<style name="Default" isDefault="true"/>
+	<queryString language="xPath">
+		<![CDATA[/root]]>
+	</queryString>
+	<field name="orgEngNm" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/orgEngNm]]></fieldDescription>
+	</field>
+	<field name="orgNm" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/orgNm]]></fieldDescription>
+	</field>
+	<field name="psbzNo1" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/psbzNo1]]></fieldDescription>
+	</field>
+	<field name="psbzNo2" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/psbzNo2]]></fieldDescription>
+	</field>
+	<field name="psbzNo3" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/psbzNo3]]></fieldDescription>
+	</field>
+	<field name="stlAcno" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/stlAcno]]></fieldDescription>
+	</field>
+	<field name="reqCardCnt" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/reqCardCnt]]></fieldDescription>
+	</field>
+	<field name="ccdPrdNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/ccdPrdNo]]></fieldDescription>
+	</field>
+	<field name="supBizYr" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/supBizYr]]></fieldDescription>
+	</field>
+	<field name="astBizNm" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/astBizNm]]></fieldDescription>
+	</field>
+	<field name="rpspeNm" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/rpspeNm]]></fieldDescription>
+	</field>
+	<field name="rpspePsno1" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/rpspePsno1]]></fieldDescription>
+	</field>
+	<field name="rpspePsno2" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/info/rpspePsno2]]></fieldDescription>
+	</field>
+	<title>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="dcdf5a19-71cf-4466-9fc5-f1fa6db72d6a" x="95" y="0" width="351" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[보조금결제전용카드(기업체크) 발급 신청서]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="262" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="70f48870-0a61-4861-95b3-f8effc021591" x="0" y="0" width="446" height="15"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[※ 해당 신청서 음영처리 부분 기재, 법인명판/법인인감 날인, 대표자 서명 후 필수 서류 첨부하여 우리은행 영업점 제출]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="514c5a72-702f-46a5-a38e-b26a86a336a9" mode="Opaque" x="0" y="15" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[카드번호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f1b9e1a2-2420-4158-aaaf-654b470be1b7" mode="Opaque" x="0" y="34" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[법인명(단체명)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="920acbdd-20d9-4e08-ad62-fad4762d9961" mode="Opaque" x="0" y="53" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[법인(단체)영문]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ed1c367e-4bae-4673-b119-7e43e78fc8e8" mode="Opaque" x="0" y="72" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[대표자명]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2defb09e-2c4c-484b-89c9-ee6df5ebd368" mode="Opaque" x="0" y="110" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[관리부서]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="73b1b00f-d103-471e-b76f-62a3aaa9d876" mode="Opaque" x="0" y="129" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[직위]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9dc1eefb-c8cb-48f2-9116-ea27de5db58a" mode="Opaque" x="0" y="148" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[휴대전화]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c8509c53-0db2-4914-a230-1d005665e348" mode="Opaque" x="0" y="186" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[카드종류]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4f30bd37-36a2-4658-b15b-de5dc1e408cf" mode="Opaque" x="0" y="205" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[상품코드]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8a84d380-b34a-4710-a4ad-5c041999008c" x="68" y="15" width="467" height="19"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[       (우리은행 담당직원 기재란 / 선정단체 기재 금지)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a4b1cfc8-33af-4616-85e1-34d4e276b44c" x="68" y="34" width="209" height="19"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{orgNm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c08cf368-57ca-4676-8331-53ab6be152e8" mode="Opaque" x="277" y="34" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[법인등록번호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d0fc085-7fc8-4160-9936-d3320ced15d2" mode="Opaque" x="0" y="91" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[법인(단체)주소]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c973d773-d4bb-4fce-9e7d-6525de6e3878" mode="Opaque" x="345" y="34" width="190" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[(법인이 아닐경우 미기재)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6b3f7fea-2b8a-408e-ad2a-69d97ede7a42" mode="Opaque" x="68" y="53" width="209" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{orgEngNm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ecb54312-1299-4491-aba3-892ed82d5710" mode="Opaque" x="277" y="53" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[법인영문약어]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3d28d372-61a4-45e8-920d-85b151933a3c" mode="Opaque" x="345" y="53" width="190" height="19" backcolor="#FFFF33"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6f1e6732-5db3-40c6-9620-a1219bdf6430" x="68" y="72" width="47" height="19"/>
+				<box leftPadding="3">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{rpspeNm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a59b1cba-f6e8-4578-8879-54b3675cfde4" mode="Opaque" x="115" y="72" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[주민등록번호]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d68ecd1b-e9ae-4b96-9fb5-8bbc788a3653" x="183" y="72" width="40" height="19"/>
+				<box leftPadding="3">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{rpspePsno1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="68ca888f-6665-4630-9676-000d97f2a3a2" x="68" y="91" width="467" height="19"/>
+				<box leftPadding="5" rightPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="74fc9ca4-4fc2-4824-8f62-61f35923d4cb" mode="Opaque" x="68" y="110" width="209" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="0" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d3eb5de4-c98d-4a53-b465-50d3df79540a" mode="Opaque" x="277" y="110" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[담당자명]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8a8453b4-d2d0-460d-95a4-11d83f57f4cd" mode="Opaque" x="345" y="110" width="190" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="0" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="92681277-7282-42a6-8584-8ef999ed8fce" mode="Opaque" x="68" y="129" width="209" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="0" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e840cc7d-23e0-47ab-a265-42e81ea2da08" mode="Opaque" x="68" y="148" width="209" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="0" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a5baa8ae-57e5-4735-a907-98af9a85dc42" mode="Opaque" x="277" y="148" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[E-mail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07b3f805-8a66-4c6a-97d5-761bcbc67ae3" mode="Opaque" x="345" y="148" width="190" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="0" rightPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="72939b13-31cc-427c-9878-fb2b9f512f22" mode="Opaque" x="68" y="186" width="119" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA["□ 공용("+ $F{reqCardCnt}+"매)"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7f391311-72cf-473b-9241-d40091b6a5e8" mode="Opaque" x="277" y="186" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[카드수령지]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="83167c7b-99cd-4122-8d6c-9d013d8c7206" mode="Opaque" x="345" y="186" width="101" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="5" rightPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+				<text><![CDATA[□영업점(   ) □직장]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f6303bc4-6886-4c14-b37a-7c589f6c8ab6" x="68" y="205" width="209" height="19"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{ccdPrdNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3dd541da-fca9-4c72-aaf5-8c8e0a7203ce" mode="Opaque" x="277" y="205" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[대금청구지]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c2f002db-c391-429a-bb85-fccf5e2a6468" mode="Opaque" x="345" y="205" width="101" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="5" rightPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[□자택     □직장]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cb3b9176-fb6b-4101-b8e2-d0c71738c657" mode="Opaque" x="0" y="224" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[사업자(고유)번호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c1c91c4e-8940-481b-bceb-ff6adfc50a8c" x="68" y="224" width="209" height="19"/>
+				<box leftPadding="5" rightPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="307fe746-a104-4fd7-b46f-35d006af02b6" mode="Opaque" x="277" y="224" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[사업연도]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="008a220e-aaeb-4b7d-902f-1f49ab78ad4e" x="345" y="224" width="190" height="19"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{supBizYr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="61aa8bac-89d5-4dc9-885d-b4619c547c1d" mode="Opaque" x="0" y="243" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[사업명]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5f3e6d50-dd00-4ecf-8869-40b834241621" x="68" y="243" width="467" height="19"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{astBizNm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3f28ad9c-77ae-4bcd-a767-acf0e44a8cd3" mode="Opaque" x="277" y="72" width="68" height="19" backcolor="#DCDCDC"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[사업자등록번호]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="73b7a1c8-ab89-4d0e-ad90-293ecfb5b5fd" x="345" y="72" width="190" height="19"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{psbzNo1}+"-"+$F{psbzNo2}+"-"+$F{psbzNo3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ecb54312-1299-4491-aba3-892ed82d5710" mode="Opaque" x="277" y="129" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[전화번호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3d28d372-61a4-45e8-920d-85b151933a3c" mode="Opaque" x="345" y="129" width="190" height="19" backcolor="#FFFF00"/>
+				<box leftPadding="0" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07b3f805-8a66-4c6a-97d5-761bcbc67ae3" x="345" y="167" width="190" height="19"/>
+				<box leftPadding="5" rightPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9dc1eefb-c8cb-48f2-9116-ea27de5db58a" mode="Opaque" x="0" y="167" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[결제계좌]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="18b791c6-328d-41b2-901e-8c3c15831375" x="68" y="167" width="209" height="19"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none"/>
+				<textFieldExpression><![CDATA[$F{stlAcno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a5baa8ae-57e5-4735-a907-98af9a85dc42" mode="Opaque" x="277" y="167" width="68" height="19" backcolor="#DCDCDC"/>
+				<box leftPadding="5" rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[예금주]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9c268c1a-065e-489c-900b-146c1c4ab046" mode="Opaque" x="446" y="186" width="89" height="19" backcolor="#FFFF00"/>
+				<box rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9c268c1a-065e-489c-900b-146c1c4ab046" mode="Opaque" x="446" y="205" width="89" height="19" backcolor="#FFFF00"/>
+				<box rightPadding="5">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9c268c1a-065e-489c-900b-146c1c4ab046" mode="Opaque" x="187" y="186" width="90" height="19" backcolor="#FFFF00"/>
+				<box rightPadding="5">
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[(선정단체 기재란)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a4ac9d9-d713-475f-ad1b-fc5f2417f9fa" x="223" y="72" width="12" height="19"/>
+				<box leftPadding="5" rightPadding="5">
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f966a6b6-b273-4f69-a2f5-47874d3e95b7" x="235" y="72" width="42" height="19"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{rpspePsno2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="7e65380f-17ba-477e-8544-1c88cc2e0b39" mode="Opaque" x="0" y="0" width="212" height="20" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+				<text><![CDATA[신청인(회사)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ae879665-98ad-44bd-8a6a-1d94d00597a7" x="0" y="20" width="282" height="34"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[●당사는 우리카드 기업회원 약관,CMS출금,자동이체약관 등의  기업카드 관련 약관의 수령 및 주요내용에 대한 설명을 잘 들었음을 확인하고, 동 회원규약을 준수할 것을 확약하며 위와 같이 우리카드의 기업카드 가입 및 카드발급은 신청합니다
+※카드사는 상품설명서의 내용을 준수하기로 합니다
+※회원은 상품설명서의 내용 및 부가서비스 이용과 관련한 회원의 의무 등에 대하여 충분한 설명을 들었습니다.,
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9c69afdb-4ad1-4852-8b0f-f2763427e0ec" mode="Opaque" x="282" y="54" width="253" height="20" backcolor="#FFFF00"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[신청인                                             (서명) 또는 (인)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9c69afdb-4ad1-4852-8b0f-f2763427e0ec" mode="Opaque" x="282" y="34" width="253" height="20" backcolor="#FFFF00"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[법인명판 및 법인인감                                         (인)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="450b652e-e743-4921-860e-6e629e963ce9" mode="Opaque" x="155" y="54" width="109" height="20" backcolor="#FFFF00"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20     년     월     일        ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7e65380f-17ba-477e-8544-1c88cc2e0b39" mode="Opaque" x="212" y="0" width="323" height="20" backcolor="#DCDCDC"/>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[※ 법인명판, 법인인감, 대표자 서명은 모두 날인, 자필 작성해야 합니다.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="278" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="d364d11a-b1df-455c-809b-e86898dfeaba" mode="Opaque" x="0" y="0" width="535" height="20" backcolor="#DCDCDC"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[개인(신용)정보의 수집ㆍ이용 동의서 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d6f0575a-97c2-4985-93d5-3a3da0389439" x="0" y="35" width="267" height="160"/>
+				<box leftPadding="6"/>
+				<textElement>
+					<font size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[귀사와의 (금융)거래에 관련하여 귀사가 본인의 개인(신용)정보를 조회하고자 하는 경우에는 『개인정보 보호법』 제15조 제1항 제1호, 제17조 제1항 제1호, 제24조 제1항 제1호, 『신용정보의 이용 및 보호에 관한 법률』제32조 제2항 및 제34조에 따라 본인의 동의를 얻어야합니다. 이에 본인은 귀사가 본인의 개인(신용)정보를 조회하기 위하여 아래의 내용과 같이 본인의 개인(신용)정보를 수집ㆍ이용ㆍ제공하는 것에 동의합니다.
+1. 개인(신용)정보의 수집ㆍ이용에 관한 사항
+■개인(신용)정보의 수집ㆍ이용 목적
+    귀하의 개인(신용)정보는 당사와의(금융)거래와 관련하여 신용조회회사 또는 신용정보집중
+    기관에 개인(신용)정보를 조회하기 위한 목적으로 수집ㆍ이용됩니다. 
+■수집ㆍ이용할 개인(신용)정보의 항목
+    수집ㆍ이용되는 귀하의 개인(신용)정보는 다음과 같습니다.
+    ▶개인(신용)정보:성명,주민등록번호 등 고유식별정보,주소,전화번호 등 연락처
+■개인(신용)정보의 보유ㆍ이용 기간
+    귀하의 개인(신용)정보는 수집ㆍ이용에 관한 동의일로부터 본인에 대한 신용정보 제공ㆍ조회 
+    동의의 효기간까지 보유ㆍ이용됩니다. 단,신용정보 제공ㆍ조회 동의의 효력 기간종료 후에는 
+    금융사고 조사,분쟁해결, 민원처리 및 법령상 의무이행만을 위하여 보유ㆍ이용됩니다. 
+■동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+    위 개인(신용)정보의 수집ㆍ이용에 동의하지 않으실 경우(금융)거래 관계의 설정 또는 유지가
+    불가능합니다. 
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a195fb8c-13b7-4736-b6b0-6bd2baaf8373" x="0" y="20" width="267" height="15"/>
+				<box leftPadding="6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[㈜우리카드 귀하]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6aa6d301-35ec-4a12-8197-ffade4dc6c60" x="0" y="195" width="264" height="10"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[※본인은 귀사가 위 목적으로 본인의 개인(신용)정보를 제공ㆍ조회하는 것에 동의합니다.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6bb94738-cc97-4bb0-b7f4-e65a98210dab" x="0" y="243" width="534" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[•당사가 신용조회 회사를 통하여 귀하의 개인(신용)정보를 조회한 기록은 타 금융기관에 제공될 수 있으며, 이에 따라 귀하의 신용등급이 하락할 수 있음을 알려드립니다.
+•상기내용이 변동하는 경우 인터넷 홈페이지 게시 등을 통해 그 내용을 알려드립니다. 
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="446541b4-a576-4e3d-ac5b-cdd4c1925253" x="267" y="20" width="268" height="15"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="5" isBold="true"/>
+				</textElement>
+				<text><![CDATA[[개인(신용)정보의 선택적인 수집ㆍ이용에 관한 사항]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f509c218-af3c-4359-bfee-82615d9167f4" x="267" y="35" width="268" height="165"/>
+				<box leftPadding="5"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[2. 개인(신용)정보의 제공ㆍ조회에 관한 사항
+■제공ㆍ조회대상 기관
+    귀하의 개인(신용)정보는 다음과 같은 기관에 제공ㆍ조회됩니다.
+    ▶신용조회회사:서울신용평가정보㈜,코리아크레딧뷰로㈜,NICE신용평가정보㈜ 등
+    ▶신용정보집중기관:전국은행연합회,여신금융협회 등.
+    ▶보조금사업관리기관 : 보조금사업 주관기관(정부기관, 광역 기초자치단체, 민간단체 및 기업 등)
+    ■제공ㆍ조회의 목적
+       귀하의 개인(신용)정보는 당사와의 (금융)거래와 관련하여 신용조회회사 또는 신용정보집중기관, 
+       보조금사업관리기관에 개인(신용)정보를 조회 및 보조금사업관리를 위한 목적으로 제공됩니다. 
+    ■제공ㆍ조회할 개인(신용)정보
+    당사가 신용정보집중기관 또는 신용조회회사에 조회하고자하는 귀하의 개인(신용)정보는 다음과같습니다.
+    ▶개인식별정보 :생존하는 개인의 성명,주민번호,연락처,주소,성별,직업,여권번호,국적
+    ▶신용거래정보:대출,보증,담보제공,당좌거래,신용카드,할부금융,실명제에 의한 상거래 내역 등,
+    ▶신용능력정보:재산,채무,소득,납세실적 등
+    ▶신용등급 및 평점정보. 
+       위 정보를 조회하기 위하여 조회 대상 기관에 제공되는 귀하의 개인(신용)정보는 다음과 같습니다.
+    ▶개인(신용)정보:성명,주민등록번호, 등 고유식별정보,주소,전화번호 등 연락처. 
+    ■제공ㆍ조회 동의의 효력 기간
+       당사의 조회 결과 귀하와의 (금융)거래가 개시되는 경우에는 해당(금융)거래 종료일까지 제공ㆍ조회 
+       동의의 효력이 지속됩니다. 다만, 당사의 조회 결과 귀하가 신청한 (금융)거래의 설정이 거절된 경우에는 
+       그 시점부터 동의의 효력은 소멸합니다.
+    ▶ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익
+       위 개인(신용)정보의 수집ㆍ이용에 동의하지 않으실경우(금융)거래 관계의 설정 또는 유지가 
+       불가능합니다 
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9b58040d-eddb-4cbf-aa36-0cff7343b6b9" mode="Opaque" x="294" y="259" width="241" height="19" backcolor="#FFFF00"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[신청인(대표자)                                                         (인)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="450b652e-e743-4921-860e-6e629e963ce9" mode="Opaque" x="155" y="259" width="109" height="19" backcolor="#FFFF00"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20     년     월     일        ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="395da03e-7c1d-4af7-941c-2caf3b040a5b" x="264" y="259" width="29" height="19"/>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6aa6d301-35ec-4a12-8197-ffade4dc6c60" mode="Opaque" x="173" y="205" width="91" height="9" backcolor="#FFFF00"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[동의함 □ 동의하지않음 □ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6aa6d301-35ec-4a12-8197-ffade4dc6c60" x="0" y="214" width="264" height="15"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[※본인은 귀사가 위 목적으로 다음과 같은 본인의 고유식별정보를 수집ㆍ이용하는 것에 동의합니다.
+    ▶고유식별정보:〔주민등록번호,운전면허번호,여권번호,외국인등록번호〕]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6aa6d301-35ec-4a12-8197-ffade4dc6c60" mode="Opaque" x="173" y="229" width="91" height="9" backcolor="#FFFF00"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[동의함 □ 동의하지않음 □ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d1f05eca-cc57-4083-b79e-abc012402d18" x="0" y="205" width="173" height="9"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d1f05eca-cc57-4083-b79e-abc012402d18" x="0" y="229" width="173" height="9"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6aa6d301-35ec-4a12-8197-ffade4dc6c60" x="270" y="200" width="264" height="10"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[※본인은 귀사가 위 목적으로 본인의 개인(신용)정보를 제공ㆍ조회하는 것에 동의합니다.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6aa6d301-35ec-4a12-8197-ffade4dc6c60" mode="Opaque" x="443" y="210" width="91" height="9" backcolor="#FFFF00"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[동의함 □ 동의하지않음 □ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6aa6d301-35ec-4a12-8197-ffade4dc6c60" mode="Opaque" x="443" y="234" width="91" height="9" backcolor="#FFFF00"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[동의함 □ 동의하지않음 □ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d1f05eca-cc57-4083-b79e-abc012402d18" x="270" y="210" width="173" height="9"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d1f05eca-cc57-4083-b79e-abc012402d18" x="270" y="234" width="173" height="9"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6aa6d301-35ec-4a12-8197-ffade4dc6c60" x="270" y="219" width="264" height="15"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[※본인은 귀사가 위 목적으로 다음과 같은 본인의 고유식별정보를 수집ㆍ이용하는 것에 동의합니다.
+    ▶고유식별정보:〔주민등록번호,운전면허번호,여권번호,외국인등록번호〕]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="70">
+			<staticText>
+				<reportElement uuid="4153d488-af15-4c8e-9f18-0a9b7f90006b" x="375" y="19" width="53" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="337be403-97ae-420f-98c6-2eab4056e33b" x="0" y="38" width="57" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[인감대조]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="914890ae-bb84-4dd1-ad63-f7f423b0fe43" x="57" y="38" width="236" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cc63226a-be5e-4b7e-be53-5a38086a0d65" x="428" y="19" width="53" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="68d39801-2074-40a0-bb75-18d6942e74a2" x="357" y="0" width="18" height="57"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[개
+설
+점]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8ac8a467-5fe7-4989-8adb-dc6ba54a3b52" x="57" y="19" width="236" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d30a15a-4a8f-4dd1-90a7-21fc506c87a7" x="0" y="19" width="57" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[본인확인]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="32f90414-5a55-43c9-b446-bef973ea3c6a" x="0" y="0" width="57" height="19"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[권유직원]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c3fb0126-1650-436f-a07b-b4d15b3a4023" x="293" y="0" width="64" height="57"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[대한민국정부
+인지세
+1,000원
+남대문세무서장
+후납승인2002-39호
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dfa95452-6eef-4c58-a484-44f7c5da0e24" x="481" y="0" width="53" height="19"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[결재권자]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c39b1c21-3817-41d3-9320-bf5a3eb5e628" x="375" y="0" width="53" height="19"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[담당자]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ca22e5b2-d166-4419-9334-8d5ec5aa197b" x="0" y="57" width="267" height="13"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[※ 제출하신 서류는 일체 반환하지 않습니다.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6515c2f6-5555-4909-9e89-75d87eb568c0" x="481" y="19" width="53" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="932c2b97-0e38-4be2-b4f0-cba602f79739" x="428" y="0" width="53" height="19"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[검토자]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0f2932d4-416d-49ed-bf01-23d6a7a0bfe6" x="57" y="0" width="236" height="19"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4153d488-af15-4c8e-9f18-0a9b7f90006b" x="375" y="38" width="53" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6515c2f6-5555-4909-9e89-75d87eb568c0" x="481" y="38" width="53" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cc63226a-be5e-4b7e-be53-5a38086a0d65" x="428" y="38" width="53" height="19"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</ReportExpress>

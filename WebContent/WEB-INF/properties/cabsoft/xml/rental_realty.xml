@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<root>
+	<classification></classification>
+	<realty>
+		<location></location>
+		<land_category></land_category>
+		<land_area></land_area>
+		<building_structure></building_structure>
+		<building_purpose></building_purpose>
+		<building_area></building_area>
+		<rental_part></rental_part>
+		<rental_part_area></rental_part_area>		
+	</realty>
+	<contract>
+		<deposit></deposit>
+		<payment></payment>
+		<payment_recipient></payment_recipient>
+		<part_payment></part_payment>
+		<part_payment_date></part_payment_date>
+		<balance></balance>
+		<balance_pay_date></balance_pay_date>
+		<monthly_rent></monthly_rent>
+		<monthly_rent_pay_date></monthly_rent_pay_date>
+		<pre_deferred_pay></pre_deferred_pay>
+	</contract>
+	
+	<rental_delivery_date></rental_delivery_date>
+	<tental_term></tental_term>
+	<tental_term_month></tental_term_month>
+	<special></special>
+	
+	<lessor_address></lessor_address>
+	<lessor_regid></lessor_regid>
+	<lessor_tel></lessor_tel>
+	<lessor_name></lessor_name>
+	<lessor_agent_regid></lessor_agent_regid>
+	<lessor_agent_tel></lessor_agent_tel>
+	<lessor_agent_name></lessor_agent_name>
+	<tenant_address></tenant_address>
+	<tenant_regid></tenant_regid>
+	<tenant_tel></tenant_tel>
+	<tenant_name></tenant_name>
+	<tenant_agent_regid></tenant_agent_regid>
+	<tenant_agent_tel></tenant_agent_tel>
+	<tenant_agent_name></tenant_agent_name>
+	
+</root>

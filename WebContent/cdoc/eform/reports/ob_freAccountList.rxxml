@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="자주쓰는입금계좌" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="483" leftMargin="56" rightMargin="56" topMargin="56" bottomMargin="56" uuid="c5473dd4-84e6-4adc-b3a0-cf295d1907d7">
+	<property name="rxreport.zoom" value="1.4641000000000006"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true"/>
+	<style name="thead" mode="Opaque" backcolor="#EEF1F4" hAlign="Center" vAlign="Middle" fontName="맑은 고딕" fontSize="9" isBold="true">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell" hAlign="Center" vAlign="Middle" fontSize="9">
+		<box>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_r" hAlign="Right" vAlign="Middle" fontSize="9">
+		<box rightPadding="5">
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="box" hAlign="Left" vAlign="Top">
+		<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+			<topPen lineWidth="0.75" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_w_t" hAlign="Center" vAlign="Middle" fontSize="9">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_l" hAlign="Left" vAlign="Middle" fontSize="9">
+		<box leftPadding="10" rightPadding="0">
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_w_t_l" hAlign="Left" vAlign="Middle" fontSize="9">
+		<box leftPadding="10">
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_w_t_r" hAlign="Right" vAlign="Middle" fontSize="9">
+		<box leftPadding="0" rightPadding="5">
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="thead_l" mode="Opaque" backcolor="#EEF1F4" hAlign="Left" vAlign="Middle" fontName="맑은 고딕" fontSize="9" isBold="true">
+		<box leftPadding="10">
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="first_bg" hAlign="Center" vAlign="Middle" fontSize="9">
+		<box>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{incval} == 3 | $V{incval} == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#EEF100"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:/kfccWork/common/testcase/images/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//kfcc/list]]>
+	</queryString>
+	<field name="DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[DATE]]></fieldDescription>
+	</field>
+	<field name="TIME" class="java.lang.String">
+		<fieldDescription><![CDATA[TIME]]></fieldDescription>
+	</field>
+	<field name="RESV_TRAN_DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[RESV_TRAN_DATE]]></fieldDescription>
+	</field>
+	<field name="TR_TIME" class="java.lang.String">
+		<fieldDescription><![CDATA[TR_TIME]]></fieldDescription>
+	</field>
+	<field name="OAMT_ACNO" class="java.lang.String">
+		<fieldDescription><![CDATA[OAMT_ACNO]]></fieldDescription>
+	</field>
+	<field name="OAMT_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[OAMT_NM]]></fieldDescription>
+	</field>
+	<field name="IAMT_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[IAMT_NM]]></fieldDescription>
+	</field>
+	<field name="IAMT_BKCD" class="java.lang.String">
+		<fieldDescription><![CDATA[IAMT_BKCD]]></fieldDescription>
+	</field>
+	<field name="IAMT_ACT_DPMN_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[IAMT_ACT_DPMN_NM]]></fieldDescription>
+	</field>
+	<field name="TRAN_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[TRAN_AMT]]></fieldDescription>
+	</field>
+	<field name="FEE_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[FEE_AMT]]></fieldDescription>
+	</field>
+	<field name="TRAN_STCD" class="java.lang.String">
+		<fieldDescription><![CDATA[TRAN_STCD]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement uuid="0e6f54fb-03c6-4071-bba8-78beb619b75b" key="ob_freAccountList.png" x="0" y="0" width="483" height="35">
+					<property name="com.cabsoft.rx.export.html.position" value="absolute"/>
+					<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["자주쓰는 입금계좌"]]></propertyExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir} + "ob_freAccountList.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="40728582-d592-4c65-94c2-ccccd2fded46" style="thead" x="0" y="0" width="25" height="20"/>
+				<textElement/>
+				<text><![CDATA[구분]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="39ca92cf-6ce5-44ae-8e6f-dae0c644c5b4" style="thead" x="25" y="0" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[입금은행1231]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="31462b43-2968-4137-8886-069e7c464b83" style="thead" x="105" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[입금계좌번호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cb07026c-47bc-4486-85e9-ed2d6ac0b342" style="thead" x="205" y="0" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[예금주명]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="46d3fe08-5a97-4ccb-9515-d00a943c24c3" style="thead" x="285" y="0" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[그룹명]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c149ca9b-3973-4829-a8c6-bbc152655d64" style="thead" x="365" y="0" width="115" height="20"/>
+				<textElement/>
+				<text><![CDATA[별칭]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="be486333-8975-4934-9a3a-a046586aa695" style="tdcell" stretchType="RelativeToTallestObject" x="0" y="0" width="25" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="87d1c7cf-c528-483b-b220-888a2e2e826d" style="tdcell" stretchType="RelativeToTallestObject" x="25" y="0" width="80" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$F{IAMT_NM}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="d5d9c2cd-35e8-4dfc-ba70-5577230dd06c" style="tdcell" stretchType="RelativeToTallestObject" x="105" y="0" width="100" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$F{OAMT_ACNO}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="c46a95b4-ff48-47e4-801e-c6f5fd9799fd" style="tdcell" stretchType="RelativeToTallestObject" x="205" y="0" width="80" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$F{OAMT_NM}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="7910746c-0b27-4a9b-9deb-55b51f20d4bb" style="tdcell" stretchType="RelativeToTallestObject" x="285" y="0" width="80" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="a58ae55b-0a1a-4750-b281-588760020a23" style="tdcell" stretchType="RelativeToTallestObject" x="365" y="0" width="115" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="f91f8396-c45c-4ecc-9fe8-7184fd4de74c" x="171" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["페이지 : "+$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="121d3cd3-772e-43ff-b057-296d9dc12b3e" x="251" y="0" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="70">
+			<textField>
+				<reportElement uuid="bd4d8f98-71ef-49bd-9924-92bee1452dd3" x="171" y="50" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["페이지 : "+$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c75f9093-81c0-45e8-80ff-66803beb88c1" style="box" x="0" y="0" width="375" height="50"/>
+				<textElement markup="styled"/>
+				<text><![CDATA[◈  PC에서 인쇄 출력한 처리결과는 변경가능성이 있어 거래증빙으로 사용할 수 없습니다.
+◈  CMS지금가능금액은 1일, 2일 자기앞수표가 포함된 금액입니다.
+]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement uuid="41c30050-8eda-432b-b054-ffc2cf152796" x="251" y="50" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="1ecdc2c7-de87-42e6-bada-a25e71e487ac" x="380" y="0" width="57" height="50">
+					<property name="com.cabsoft.rx.export.html.title" value="원본 대조를 위한 QR 코드입니다."/>
+				</reportElement>
+				<imageExpression><![CDATA[com.cabsoft.rx.components.qrcode.QRCode.createQRCode("QR Code 입니다.", 600)]]></imageExpression>
+			</image>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</ReportExpress>

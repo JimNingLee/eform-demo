@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="CYPICVIC_insuFeeEng" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="25" bottomMargin="25">
+	<property name="rxreport.zoom" value="1.6105100000000008"/>
+	<property name="rxreport.x" value="12"/>
+	<property name="rxreport.y" value="6"/>
+	<import value="com.cabsoft.rx.hbarcode.sec"/>
+	<style name="Default" isDefault="true"/>
+	<style name="styleM" hAlign="Left" vAlign="Middle" fontSize="96">
+		<box leftPadding="0"/>
+	</style>
+	<style name="padding" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingL" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingR" style="styleM">
+		<box leftPadding="0" rightPadding="5"/>
+	</style>
+	<subDataset name="dataset1">
+		<queryString language="xPath">
+			<![CDATA[/Root/LData/list/LMultiData/LData]]>
+		</queryString>
+		<field name="POLICYNO" class="java.lang.String">
+			<fieldDescription><![CDATA[POLICYNO]]></fieldDescription>
+		</field>
+		<field name="INSURANT" class="java.lang.String">
+			<fieldDescription><![CDATA[INSURANT]]></fieldDescription>
+		</field>
+		<field name="GOODSNM" class="java.lang.String">
+			<fieldDescription><![CDATA[GOODSNM]]></fieldDescription>
+		</field>
+		<field name="CONTDATE" class="java.lang.String">
+			<fieldDescription><![CDATA[CONTDATE]]></fieldDescription>
+		</field>
+		<field name="FIN_PAYMONTH" class="java.lang.String">
+			<fieldDescription><![CDATA[FIN_PAYMONTH]]></fieldDescription>
+		</field>
+		<field name="PAYCNT" class="java.lang.String">
+			<fieldDescription><![CDATA[PAYCNT]]></fieldDescription>
+		</field>
+		<field name="ORG_PREMIUM" class="java.lang.String">
+			<fieldDescription><![CDATA[ORG_PREMIUM]]></fieldDescription>
+		</field>
+		<field name="SUM_PREMIUM" class="java.lang.String">
+			<fieldDescription><![CDATA[SUM_PREMIUM]]></fieldDescription>
+		</field>
+		<field name="CONTSTAT" class="java.lang.String">
+			<fieldDescription><![CDATA[CONTSTAT]]></fieldDescription>
+		</field>
+		<field name="LOANBALANCE" class="java.lang.String">
+			<fieldDescription><![CDATA[LOANBALANCE]]></fieldDescription>
+		</field>
+		<field name="POLICYNO_MASK" class="java.lang.String">
+			<fieldDescription><![CDATA[POLICYNO_MASK]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["../../images/kyobo/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="org_barcode" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[Steganography에 사용될 바코드 이미지]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXSecurity/barcode.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodepath" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[고밀도 바코드가 저장되어 있는 경로]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXHiDensityBarcode/out/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodeAction" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 삽입 후 이미지 파일 삭제]]></parameterDescription>
+		<defaultValueExpression><![CDATA["deleteafter"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="surfix" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 파일 접두사]]></parameterDescription>
+		<defaultValueExpression><![CDATA["test_"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IssuerNo" class="java.util.Map" isForPrompting="false"/>
+	<queryString language="xPath">
+		<![CDATA[/Root/LData/list/LMultiData/LData]]>
+	</queryString>
+	<field name="POLICYNO" class="java.lang.String">
+		<fieldDescription><![CDATA[POLICYNO]]></fieldDescription>
+	</field>
+	<field name="INSURANT" class="java.lang.String">
+		<fieldDescription><![CDATA[INSURANT]]></fieldDescription>
+	</field>
+	<field name="GOODSNM" class="java.lang.String">
+		<fieldDescription><![CDATA[GOODSNM]]></fieldDescription>
+	</field>
+	<field name="CONTDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[CONTDATE]]></fieldDescription>
+	</field>
+	<field name="FIN_PAYMONTH" class="java.lang.String">
+		<fieldDescription><![CDATA[FIN_PAYMONTH]]></fieldDescription>
+	</field>
+	<field name="PAYCNT" class="java.lang.String">
+		<fieldDescription><![CDATA[PAYCNT]]></fieldDescription>
+	</field>
+	<field name="ORG_PREMIUM" class="java.lang.String">
+		<fieldDescription><![CDATA[ORG_PREMIUM]]></fieldDescription>
+	</field>
+	<field name="SUM_PREMIUM" class="java.lang.String">
+		<fieldDescription><![CDATA[SUM_PREMIUM]]></fieldDescription>
+	</field>
+	<field name="EXC_PREMIUM" class="java.lang.String">
+		<fieldDescription><![CDATA[EXC_PREMIUM]]></fieldDescription>
+	</field>
+	<field name="CONTSTAT" class="java.lang.String">
+		<fieldDescription><![CDATA[CONTSTAT]]></fieldDescription>
+	</field>
+	<field name="LOANBALANCE" class="java.lang.String">
+		<fieldDescription><![CDATA[LOANBALANCE]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/totPrimium" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/totPrimium]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/totLoanBalance" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/totLoanBalance]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/iterCnt" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/iterCnt]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/custnm" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/custnm]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/korAddr" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/korAddr]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/engAddr" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/engAddr]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/addrFull" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/addrFull]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/city" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/city]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/contCnt" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/contCnt]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/overAll1" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/overAll1]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/overAll2" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/overAll2]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/overAll3" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/overAll3]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/overAll4" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/overAll4]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/excType2" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/excType2]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/monetary" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/monetary]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/msgYn" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/msgYn]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/engNm" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/engNm]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/reason" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/reason]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/regNm" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/regNm]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/regNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/regNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/accessType" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/accessType]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/accessIP" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/accessIP]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/accessDate" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/accessDate]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/resdNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/resdNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/name" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/name]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/penEtc" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/penEtc]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/granEtc" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/granEtc]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/policyNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/policyNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/workType" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/workType]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/rcvMth" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/rcvMth]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/rcvLoc" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/rcvLoc]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/homeAddr" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/homeAddr]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/currDate" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/currDate]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/langType" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/langType]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/useName" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/useName]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/sendFile" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/sendFile]]></fieldDescription>
+	</field>
+	<group name="gh0">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh1">
+		<groupHeader>
+			<band height="39">
+				<staticText>
+					<reportElement style="styleM" x="4" y="0" width="63" height="13"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[· Policyholder : ]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="styleM" x="67" y="0" width="229" height="13"/>
+					<textElement markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/engNm}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="styleM" x="4" y="13" width="43" height="13"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[· Address: ]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="styleM" x="52" y="13" width="229" height="13"/>
+					<textElement markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/homeAddr}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="styleM" x="4" y="26" width="43" height="13"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[· Userfor : ]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="styleM" x="52" y="26" width="229" height="13"/>
+					<textElement markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/useName}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="gh2">
+		<groupHeader>
+			<band height="61">
+				<textField isBlankWhenNull="true">
+					<reportElement style="styleM" x="421" y="0" width="112" height="13" isPrintWhenDetailOverflows="true"/>
+					<textElement textAlignment="Right" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA["Date :" + $F{/Root/LData/currDate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="styleM" mode="Opaque" x="4" y="13" width="83" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Policy No]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="styleM" mode="Opaque" x="87" y="13" width="93" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Commencement
+Date]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="styleM" mode="Opaque" x="180" y="13" width="116" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[The Last Payment
+Month]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="styleM" mode="Opaque" x="296" y="13" width="136" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Amount of Premium paid]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="styleM" mode="Opaque" x="432" y="13" width="101" height="31" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Exchange Amount]]></text>
+				</staticText>
+				<componentElement>
+					<reportElement isPrintRepeatedValues="false" x="4" y="44" width="529" height="17"/>
+					<rx:list xmlns:rx="http://www.cabsoftware.com/reportexpress/components" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress/components http://www.cabsoftware.com/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="dataset1">
+							<dataSourceExpression><![CDATA[new com.cabsoft.rx.engine.data.RXXmlDataSource($P{XML_DATA_DOCUMENT},"//Root/LData/list/LMultiData/LData")]]></dataSourceExpression>
+						</datasetRun>
+						<rx:listContents height="17" width="529">
+							<textField isBlankWhenNull="true">
+								<reportElement style="paddingR" x="292" y="0" width="136" height="17"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{SUM_PREMIUM}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="styleM" x="83" y="0" width="93" height="17"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{CONTDATE}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="paddingR" x="428" y="0" width="101" height="17"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{LOANBALANCE}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="paddingL" x="0" y="0" width="83" height="17"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{POLICYNO_MASK}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement style="paddingL" x="176" y="0" width="116" height="17"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression class="java.lang.String"><![CDATA[$F{FIN_PAYMONTH}]]></textFieldExpression>
+							</textField>
+						</rx:listContents>
+					</rx:list>
+				</componentElement>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="67">
+				<staticText>
+					<reportElement style="styleM" mode="Opaque" x="4" y="0" width="292" height="31" backcolor="#EEEFEE"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="paddingR" x="296" y="0" width="136" height="31"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/totPrimium}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="paddingR" x="432" y="0" width="101" height="31"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/totLoanBalance}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="styleM" x="4" y="41" width="83" height="13"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[ * Exchange Rate :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="styleM" x="87" y="41" width="125" height="13"/>
+					<textElement textAlignment="Center" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{/Root/LData/currDate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="styleM" x="212" y="41" width="321" height="13"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[We certify the amount of premium paid as of as above-mentioned]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="423" y="54" width="100" height="13"/>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement style="styleM" mode="Opaque" x="0" y="61" width="535" height="4" backcolor="#0969B3"/>
+				<textElement>
+					<font size="1"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
+				<reportElement isPrintRepeatedValues="false" x="422" y="0" width="113" height="57" isPrintInFirstWholeBand="true"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{imgDir} + "kyobo_logo.gif"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="styleM" x="0" y="0" width="422" height="57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CERTIFICATE OF THE AMOUNT OF PERMIUM PAID]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="styleM" x="4" y="68" width="280" height="15"/>
+				<textElement markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["lssue Num : " + $P{IssuerNo}.get("IssuerNo")]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band height="169" splitType="Stretch">
+			<image scaleImage="HDBarcode" hAlign="Center" vAlign="Middle">
+				<reportElement isPrintRepeatedValues="false" x="12" y="0" width="510" height="56"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<imageExpression class="java.awt.Image"><![CDATA[sec.encodeBarcode(
+    $P{org_barcode},
+    $P{barcodepath},
+    $P{surfix} + $V{PAGE_NUMBER} + ".bmp",
+    $P{barcodeAction}
+)]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="60" width="535" height="23"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[* This certificate should be exclusively used for confirming the amount of premium paid.
+* This certificate is issued by kyobo life insurance web site.]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" hAlign="Center" onErrorType="Blank">
+				<reportElement isPrintRepeatedValues="false" x="0" y="86" width="535" height="83" isPrintInFirstWholeBand="true">
+<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+</reportElement>
+<imageExpression class="java.lang.String"><![CDATA[$P{imgDir} + "solution_income_bottom.gif"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>

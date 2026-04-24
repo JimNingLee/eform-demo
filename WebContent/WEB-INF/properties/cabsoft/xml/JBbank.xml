@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<MOJIPAPP>
+		<!--성명 -->
+		<NAME><![CDATA[캡소프트]]></NAME>
+		<!--자택전화번호 -->
+		<TELNO><![CDATA[070-8275-5200]]></TELNO>
+		<!--주민등록번호 -->
+		<REGNO><![CDATA[890000-1000000]]></REGNO>
+		<!--여권번호 -->
+		<BIZNO><![CDATA[KOR00000000]]></BIZNO>
+		<!--자택주소 -->
+		<ADDR><![CDATA[서울시 서초구 서초3동]]></ADDR>
+		<!--이메일 -->
+		<EMAIL><![CDATA[staff@cabsoftware.com]]></EMAIL>
+		<!--직장명 -->
+		<BANKNM><![CDATA[캡소프트]]></BANKNM>
+		<!--휴대폰 -->
+		<ACUTNO><![CDATA[010-000-0000]]></ACUTNO>
+		<!--영문명 -->
+		<HOLDER><![CDATA[CAB SOFT.]]></HOLDER>
+		<!-- 직장주소 -->
+		<CARDEXPIRY><![CDATA[서울시 서초구 서초3동 ]]></CARDEXPIRY>
+		<!-- 직장전화 -->
+		<HOLDERREGNO><![CDATA[0505-987-5616]]></HOLDERREGNO>
+		<!-- 직장 팩스  -->
+		<RELATION><![CDATA[070-8275-5200]]></RELATION>
+</MOJIPAPP>

@@ -1,0 +1,1962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="대부거래 계약서" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" uuid="0f2802af-6d3a-4572-80e7-528aa2afec56">
+	<property name="rxreport.zoom" value="1.6105100000000045"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true"/>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["d:/00_웰컴론/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="mobile" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[true]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[/root/welcome]]>
+	</queryString>
+	<field name="LonNo" class="java.lang.String">
+		<fieldDescription><![CDATA[LonNo]]></fieldDescription>
+	</field>
+	<field name="NumNo" class="java.lang.String">
+		<fieldDescription><![CDATA[NumNo]]></fieldDescription>
+	</field>
+	<field name="CustName" class="java.lang.String">
+		<fieldDescription><![CDATA[CustName]]></fieldDescription>
+	</field>
+	<field name="RRno1" class="java.lang.String">
+		<fieldDescription><![CDATA[RRno1]]></fieldDescription>
+	</field>
+	<field name="RRno2" class="java.lang.String">
+		<fieldDescription><![CDATA[RRno2]]></fieldDescription>
+	</field>
+	<field name="Addre" class="java.lang.String">
+		<fieldDescription><![CDATA[Addre]]></fieldDescription>
+	</field>
+	<field name="AgreDate" class="java.lang.String">
+		<fieldDescription><![CDATA[AgreDate]]></fieldDescription>
+	</field>
+	<field name="LonLimitAmt" class="java.lang.String">
+		<fieldDescription><![CDATA[LonLimitAmt]]></fieldDescription>
+	</field>
+	<field name="RealLonAmt" class="java.lang.String">
+		<fieldDescription><![CDATA[RealLonAmt]]></fieldDescription>
+	</field>
+	<field name="ConDate" class="java.lang.String">
+		<fieldDescription><![CDATA[ConDate]]></fieldDescription>
+	</field>
+	<field name="ExpDate" class="java.lang.String">
+		<fieldDescription><![CDATA[ExpDate]]></fieldDescription>
+	</field>
+	<field name="LonRate" class="java.lang.String">
+		<fieldDescription><![CDATA[LonRate]]></fieldDescription>
+	</field>
+	<field name="DelRate" class="java.lang.String">
+		<fieldDescription><![CDATA[DelRate]]></fieldDescription>
+	</field>
+	<field name="ALonLimitAmt" class="java.lang.String">
+		<fieldDescription><![CDATA[ALonLimitAmt]]></fieldDescription>
+	</field>
+	<field name="ARealLonAmt" class="java.lang.String">
+		<fieldDescription><![CDATA[ARealLonAmt]]></fieldDescription>
+	</field>
+	<field name="AConDate" class="java.lang.String">
+		<fieldDescription><![CDATA[AConDate]]></fieldDescription>
+	</field>
+	<field name="AExpDate" class="java.lang.String">
+		<fieldDescription><![CDATA[AExpDate]]></fieldDescription>
+	</field>
+	<field name="ALonRate" class="java.lang.String">
+		<fieldDescription><![CDATA[ALonRate]]></fieldDescription>
+	</field>
+	<field name="ADelRate" class="java.lang.String">
+		<fieldDescription><![CDATA[ADelRate]]></fieldDescription>
+	</field>
+	<field name="Bank" class="java.lang.String">
+		<fieldDescription><![CDATA[Bank]]></fieldDescription>
+	</field>
+	<field name="AccNo" class="java.lang.String">
+		<fieldDescription><![CDATA[AccNo]]></fieldDescription>
+	</field>
+	<field name="MAccNo" class="java.lang.String">
+		<fieldDescription><![CDATA[MAccNo]]></fieldDescription>
+	</field>
+	<field name="MaxRate" class="java.lang.String">
+		<fieldDescription><![CDATA[MaxRate]]></fieldDescription>
+	</field>
+	<field name="RePayMethod" class="java.lang.String">
+		<fieldDescription><![CDATA[RePayMethod]]></fieldDescription>
+	</field>
+	<field name="RePayDate" class="java.lang.String">
+		<fieldDescription><![CDATA[RePayDate]]></fieldDescription>
+	</field>
+	<field name="BranchName" class="java.lang.String">
+		<fieldDescription><![CDATA[BranchName]]></fieldDescription>
+	</field>
+	<field name="BranchAddre" class="java.lang.String">
+		<fieldDescription><![CDATA[BranchAddre]]></fieldDescription>
+	</field>
+	<field name="Post1" class="java.lang.String">
+		<fieldDescription><![CDATA[Post1]]></fieldDescription>
+	</field>
+	<field name="Post2" class="java.lang.String">
+		<fieldDescription><![CDATA[Post2]]></fieldDescription>
+	</field>
+	<field name="BizRegiNo" class="java.lang.String">
+		<fieldDescription><![CDATA[BizRegiNo]]></fieldDescription>
+	</field>
+	<field name="LonRegiNo" class="java.lang.String">
+		<fieldDescription><![CDATA[LonRegiNo]]></fieldDescription>
+	</field>
+	<field name="Tel" class="java.lang.String">
+		<fieldDescription><![CDATA[Tel]]></fieldDescription>
+	</field>
+	<field name="Fax" class="java.lang.String">
+		<fieldDescription><![CDATA[Fax]]></fieldDescription>
+	</field>
+	<group name="gh01">
+		<groupHeader>
+			<band height="822">
+				<image onErrorType="Blank">
+					<reportElement uuid="6058b040-8b2f-43b6-891f-cb9777d07eae" x="0" y="2" width="150" height="45"/>
+					<imageExpression><![CDATA[$P{imgDir}+"welLogo.jpg"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="91e817bb-64e1-4de5-ba96-1e2f099de63a" x="161" y="2" width="198" height="28">
+						<property name="com.cabsoft.rx.export.html.id" value="scrollpoint1_1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="15" isBold="true" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[대부거래계약서(대부회사용)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="91e817bb-64e1-4de5-ba96-1e2f099de63a" x="161" y="32" width="198" height="17"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[(금전소비대차계약서)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Opaque" x="0" y="84" width="78" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[고객번호]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="78" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 0, 1 )]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="65" y="125" width="65" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[주    소]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="130" y="125" width="425" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="10">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Addre}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="326" y="108" width="65" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[생년월일]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="391" y="108" width="164" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{RRno1} ? "" : (($F{RRno2}.substring(0,1).equals("1") || $F{RRno2}.substring(0,1).equals("2") ) ? 
+"19" + $F{RRno1}.substring(0,2) + "년 " + $F{RRno1}.substring(2,4) + "월 " + $F{RRno1}.substring(4,6) + "일" :
+"20" + $F{RRno1}.substring(0,2) + "년 " + $F{RRno1}.substring(2,4) + "월 " + $F{RRno1}.substring(4,6) + "일" )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="218" y="108" width="108" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{mobile}==true ? "" : "(서명 또는 날인)"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="326" y="149" width="65" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[생년월일]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="130" y="166" width="425" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="130" y="149" width="196" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="149" width="65" height="34" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[연대
+보증인]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="65" y="149" width="65" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[성    명]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="65" y="166" width="65" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[주    소]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="391" y="149" width="164" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="190" width="391" height="38" forecolor="#000000" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5">
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[본인은 본 계약에 따른 대부한도액을 상한으로 하여 웰컴크레디라인대부㈜(이하 “회사”라 함)가 결정하는 이용한도액의 범위 내에서 반복적으로 이루어지는 대부거래계약을 체결함에 있어 대부거래 약관이 적용됨을 승인하고 다음 대부거래 계약 각 조항을 확약하며 성실히 이행하겠습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="228" width="391" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[계약서 및 대부거래약관의 중요한 내용에 대해 충분한 설명을 들었으며, 계약서 및 대부거래약관을 확실히 수령하였습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="255" width="391" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[원리금 납입 기일안내와 대부관련 안내 등 SMS문자 수신 및 e메일서비스에 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="272" width="391" height="16" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[대부중개업자가 중개수수료를 고객으로부터 받는 것이 불법임을 설명 들었습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="391" y="190" width="25" height="38" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="416" y="190" width="60" height="38">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CustName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="391" y="228" width="25" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="416" y="228" width="60" height="27">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CustName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="391" y="255" width="25" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="416" y="255" width="60" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CustName}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="416" y="272" width="60" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CustName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="391" y="272" width="25" height="16" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="476" y="190" width="79" height="38"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="476" y="228" width="79" height="27"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="476" y="255" width="79" height="17"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="476" y="272" width="79" height="16"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="288" width="555" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[채권양도(담보제공)승낙서 및 위임장]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="305" width="555" height="152" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="5">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Top">
+						<font size="8" isBold="false"/>
+					</textElement>
+					<text><![CDATA[본인은 본 계약서에 의하여 귀사가 본인에 대하여 가지고 있는 금전채권 및 계약상 본인에 대하여 갖는 일체의 권리(계약해제권을 포함한 계약자로서 갖는 모든 권리)(이하‘본건 대부채권’이라 함)를 귀사가 금융기관 및 제3자(이하“양수인”이라 함)에게 양도(담보제공)하는 것을 아무런 이의 없이 승낙합니다.
+
+이와 관련하여 본인은 귀사가 본인을 대리하여 본건 대부채권 양도(담보제공)를 승낙할 수 있는 권한(아래 채권양도의 내용의 백지부분을 보충할 수 있는 권한을 포함)을 위임합니다.
+
+단, 본건 대부채권의 이자 및 원금은 양수인의 별도 서면청구가 있기 전까지는 양수인으로부터 사무를 위임 받아 본건 대부채권을 관리하는 귀사에 계속하여 납부하겠으며 양수인의 별도 서면청구가 있는 경우에는 당해 서면청구서에 기재된 방법에 따라 본건 대부채권의 이자 및 원금을 양수인에게 직접 납입하도록 하겠습니다.
+
+또한, 본인은 귀사가 본인으로부터 취득한 개인(신용)정보(개인식별정보, 신용거래정보, 신용능력정보, 신용평가정보, 신용도판단정보, 공공기관정보)를 채권의 양도(담보제공) 목적으로 양수인 및 양수인으로부터 채권추심 등의 업무를 위탁 받은 자에게 본 계약의 해지시점까지 제공되는 것에 대하여서도 이의 없이 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="457" width="555" height="14" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="5">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="8" isBold="false" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[채권양도의 내용]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="12" y="471" width="105" height="15" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[채권양수인]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="117" y="471" width="160" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="382" y="471" width="160" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="277" y="471" width="105" height="15" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[채권양도일자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="471" width="12" height="15" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="542" y="471" width="13" height="15" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="486" width="382" height="15" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box rightPadding="5">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="476" y="486" width="79" height="15"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="382" y="486" width="94" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CustName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="501" width="85" height="15" backcolor="#FDE9D9"/>
+					<box leftPadding="5" rightPadding="0">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[제1조 【대부조건 】]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="85" y="501" width="175" height="15" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0" rightPadding="0">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[본 계약서에 의한 대부조건은 다음과 같다.]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="e099586c-18c1-46ca-b112-7b80df1dee52" mode="Transparent" x="260" y="501" width="295" height="15" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5"/>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{CustName} ? "(          고객님)" : "("+$F{CustName}+" 고객님)"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="516" width="555" height="11" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="0">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[<굵은 박스 내 자필기재>좌측 인쇄된 대부조건을 굵은 박스 내 흐린 글씨 위에 자필기재 합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="652" width="75" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[채무 및 보증채무
+증명서 발급비용]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="75" y="652" width="110" height="27">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["없음"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="185" y="652" width="120" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[채무 및 보증채무
+증명서 발급기한]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="305" y="652" width="250" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="10">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[내점 신청시 : 신청당일
+전화, 우편 접수 등 : 신청 익일까지 발송]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="684" width="65" height="68" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[보증내용]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="196" y="684" width="160" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="196" y="701" width="160" height="17"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="249" y="718" width="107" height="17"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="196" y="735" width="359" height="17"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="65" y="684" width="131" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[피보증채무금액]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="65" y="701" width="131" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[보증의 범위(보증채무최고금액)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="65" y="718" width="131" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[보증기간]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="65" y="735" width="131" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[특약사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="196" y="718" width="53" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[계약일자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="356" y="684" width="64" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[대부이자율]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="356" y="701" width="64" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[연체이자율]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="356" y="718" width="64" height="17" backcolor="#FDE9D9"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[만기일자]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="420" y="684" width="135" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["년"+"              "+"%"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="420" y="701" width="135" height="17"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["년"+"              "+"%"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="420" y="718" width="135" height="17"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="108" width="65" height="34" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[채무자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="65" y="108" width="65" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[성    명]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="973cc74d-8280-4879-80f1-abcb0342112c" mode="Transparent" x="359" y="2" width="196" height="80" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA["대부회사 : 웰컴크레디라인대부㈜\n"+
+"지점명 : "+($F{BranchName}==null ? "" : $F{BranchName}==""? "" : $F{BranchName})+"\n"+
+"지점주소 : "+($F{BranchAddre}==null ? "" : $F{BranchAddre}==""? "" : $F{BranchAddre})+"\n"+
+"우편번호 : "+($F{Post1}==null ? "" : $F{Post1}==""? "" : $F{Post1}+" - ")+($F{Post2}==null ? "" : $F{Post2}==""? "" : $F{Post2})+"\n"+
+"대표이사 장  세  영\n"+
+"사업자등록번호 : "+($F{BizRegiNo}==null ? "" : $F{BizRegiNo}==""? "" : $F{BizRegiNo})+"\n"+
+"대부업등록번호 : "+($F{LonRegiNo}==null ? "" : $F{LonRegiNo}==""? "" : $F{LonRegiNo})+"\n"+
+"전화 : "+($F{Tel}==null ? "" : $F{Tel}==""? "" : $F{Tel})+"\n"+
+"팩스 : "+($F{Fax}==null ? "" : $F{Fax}==""? "" : $F{Fax})]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="92" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 1, 2 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="120" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="106" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 2, 3 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="148" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 4, 5 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="162" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 5, 6 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="176" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 6, 7 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="134" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 3, 4 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="204" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 8, 9 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="274" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 12, 13 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="218" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 9, 10 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="232" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="260" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 11, 12 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="190" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 7, 8 )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="246" y="84" width="14" height="17"/>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonNo} ? "" : $F{LonNo}.substring( 10, 11 )]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="0" y="755" width="555" height="14" backcolor="#FDE9D9"/>
+					<box leftPadding="5" rightPadding="0">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[법정 최고이자율 년 34.9% (단, 2014년 4월 2일부터 체결되거나 갱신되는 대부계약부터 적용)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Opaque" x="0" y="635" width="75" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[연체이자율]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Opaque" x="0" y="618" width="75" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[대부이자율]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Opaque" x="0" y="584" width="30" height="34" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[계약
+기간]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Opaque" x="30" y="601" width="45" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[만기일자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Opaque" x="30" y="584" width="45" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[계약일자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Opaque" x="0" y="557" width="75" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[실제대부금액]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Opaque" x="0" y="530" width="75" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[대부한도금액]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="23647da0-6b4c-4bf0-aeff-61f913ab70a2" mode="Opaque" x="75" y="635" width="105" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{DelRate} ? "" : $F{DelRate}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="7a2cb44f-30db-4b69-859a-c0fb201c3006" mode="Opaque" x="75" y="618" width="105" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{LonRate} ? "" : $F{LonRate}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="d3fd8963-ce78-4057-be53-36eda267e9f6" mode="Opaque" x="75" y="601" width="105" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ExpDate}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="44e417f6-82fe-4d9c-ae56-271211e77ea2" mode="Opaque" x="75" y="584" width="105" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ConDate}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="1de3b850-852d-48e5-a34b-5c1a559b7d00" mode="Opaque" x="75" y="557" width="105" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{RealLonAmt}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="ef3cdb6a-afbd-42a7-a6dd-212d4ac604f0" mode="Opaque" x="75" y="530" width="105" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LonLimitAmt}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="345" y="635" width="50" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[상환약정일]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="49733c6d-d38c-49d3-83c7-64c1baebec65" mode="Transparent" x="395" y="635" width="65" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[null == $F{RePayDate} ? "" : "매월"+$F{RePayDate}+" 일"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="345" y="618" width="40" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[상환방식]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="345" y="530" width="40" height="88" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ 대부금
+상환은행
+계좌번호]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="460" y="635" width="45" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[부대비용]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7788f2df-666c-4f97-bfb4-3bedab2b8760" mode="Transparent" x="505" y="635" width="50" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[없음]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="33dbb502-9424-4967-bd97-f1ba23d67995" mode="Transparent" x="385" y="618" width="170" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{RePayMethod}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="d0b554b7-1a75-4833-a03a-558bb008276a" mode="Transparent" x="385" y="530" width="170" height="88" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+						<font size="8" isBold="false"/>
+						<paragraph lineSpacing="Double"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<font size='2' color='#000000' style='background-color:#C9C9C9;'><B>"+($F{Bank}==null? "" : $F{Bank}==""? "" : $F{Bank})+"  "+($F{AccNo}==null? "" : $F{AccNo}==""? "" : $F{AccNo})+"</b></font><br/>"+
+"(모 계좌번호 : "+($F{MAccNo}==null? "" : $F{MAccNo}==""? "" : $F{MAccNo})+")<br/>"+
+"<B>예금주 : 웰컴크레디라인대부(주)</B>"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="eac6866c-0acc-46ef-ab4b-65100e3d837b" mode="Opaque" x="180" y="635" width="165" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="2.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="2.0" lineColor="#E36C0A"/>
+						<rightPen lineWidth="2.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[▶]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f5f69469-519f-463b-84f9-fa5c68da8782" mode="Opaque" x="180" y="618" width="165" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="2.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="2.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[▶]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="de481a9e-8abb-40b3-b3d2-d31fe83e5a2b" mode="Opaque" x="180" y="601" width="165" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="2.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="2.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[▶]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fc5e31f3-99b6-4a5c-bf2a-a70f4d31b671" mode="Opaque" x="180" y="584" width="165" height="17" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="2.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="2.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[▶]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="dc1e0c02-7b1e-4bf8-8723-f081eab4db5d" mode="Opaque" x="180" y="557" width="165" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="2.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="2.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[▶]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f9524fb4-4ad8-4816-80ef-1055cf42e340" mode="Opaque" x="180" y="530" width="165" height="27" backcolor="#FDE9D9">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="2.0" lineColor="#E36C0A"/>
+						<leftPen lineWidth="2.0" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="2.0" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[▶]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" mode="Transparent" x="190" y="530" width="150" height="27" backcolor="#FDE9D9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" mode="Transparent" x="190" y="557" width="150" height="27" backcolor="#FDE9D9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" mode="Transparent" x="190" y="584" width="150" height="17" backcolor="#FDE9D9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" mode="Transparent" x="190" y="601" width="150" height="17" backcolor="#FDE9D9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" mode="Transparent" x="190" y="618" width="150" height="17" backcolor="#FDE9D9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" mode="Transparent" x="190" y="635" width="150" height="17" backcolor="#FDE9D9"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b9757fa3-90aa-41d9-b4d7-77dc7e59c3a1" x="130" y="108" width="88" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<leftPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<bottomPen lineWidth="0.75" lineColor="#E36C0A"/>
+						<rightPen lineWidth="0.75" lineColor="#E36C0A"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CustName}]]></textFieldExpression>
+				</textField>
+				<image scaleImage="RealSize" onErrorType="Blank">
+					<reportElement uuid="079ad7f9-cc9e-4e48-9889-52e14d1d1e86" x="509" y="37" width="35" height="35">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir}+"welcome_stamp.png"]]></imageExpression>
+				</image>
+				<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle">
+					<reportElement uuid="56861c52-8ffc-4a4e-9fca-8792522757a8" key="hwsigne.png" x="218" y="108" width="108" height="17">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign1"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="채무자 자필 서명"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign1', '[<b>" + $F{CustName} + "</b>]님의 자필서명을 입력하십시오.','(서명/인)')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<imageExpression><![CDATA[$P{imgDir} + "hwsigne.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="8696fb5d-7682-49da-b448-6c20490cf7cf" x="476" y="190" width="79" height="38">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign2"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="채무자 자필 서명"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign2', '[<b>" + $F{CustName} + "</b>]님의 자필서명을 입력하십시오.','(서명/인)')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "hwsigne.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="4a3cf4c9-2828-4038-94af-7d9c42f773ef" x="476" y="228" width="79" height="27" isPrintWhenDetailOverflows="true">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign3"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="채무자 자필 서명"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign3', '[<b>" + $F{CustName} + "</b>]님의 자필서명을 입력하십시오.','(서명/인)')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "hwsigne.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="9c875d48-f55b-4c12-8da4-85698f8a1d2f" x="476" y="255" width="79" height="17">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign4"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="채무자 자필 서명"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign4', '[<b>" + $F{CustName} + "</b>]님의 자필서명을 입력하십시오.','(서명/인)')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "hwsigne.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="6bf3a355-0d02-4bec-b9da-a1257770da6d" x="476" y="272" width="79" height="16">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign5"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="채무자 자필 서명"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign5', '[<b>" + $F{CustName} + "</b>]님의 자필서명을 입력하십시오.','(서명/인)')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "hwsigne.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="a76905f3-ca5a-4a0e-9a54-8e04959024d2" x="476" y="486" width="79" height="15">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign6"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="채무자 자필 서명"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign6', '[<b>" + $F{CustName} + "</b>]님의 자필서명을 입력하십시오.','(서명/인)')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "hwsigne.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="0d71577c-a35a-4c67-a77f-60623f9d7498" key="LonLimitAmt.png" x="190" y="530" width="150" height="27">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign_LonLimitAmt"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["대부 한도 금액|" + $F{LonLimitAmt}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign_LonLimitAmt', '[<b>" + $F{LonLimitAmt} + "</b>]을 자필로 입력하십시오.','')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "LonLimitAmt.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="1f6f6a6a-4747-4ae7-ac94-f05f538302c7" key="RealLonAmt.png" x="190" y="557" width="150" height="27">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign_RealLonAmt"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["실제 대부 금액|" + $F{RealLonAmt}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign_RealLonAmt', '[<b>" + $F{RealLonAmt} + "</b>]을 자필로 입력하십시오.','')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "RealLonAmt.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="6aba4916-1fe1-4c79-b181-ea2936fe4afe" key="ConDate.png" x="190" y="584" width="150" height="17">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign_ConDate"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["계약 기간|" + $F{ConDate}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign_ConDate', '[<b>" + $F{ConDate} + "</b>]을 자필로 입력하십시오.','')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "ConDate.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="502fca5b-c9b9-4843-a346-590efe9f94bf" key="ExpDate.png" x="190" y="601" width="150" height="17">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign_ExpDate"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["만기 일자|" + $F{ExpDate}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign_ExpDate', '[<b>" + $F{ExpDate} + "</b>]을 자필로 입력하십시오.','')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "ExpDate.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="254f4c51-ffd1-4188-89cf-b2a0847581f5" key="LonRate.png" x="190" y="618" width="150" height="17">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign_LonRate"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["대부 이자율|" + (null == $F{LonRate} ? "" : $F{LonRate}) + ""]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign_LonRate', '[<b>" + $F{LonRate} + "</b>]을 자필로 입력하십시오.','')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true && null != $F{LonRate} && !"".equals($F{LonRate})]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "LonRate.png"]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement uuid="ef9e63c7-a08f-46c0-afd2-f9d7ab68b0cf" key="DelRate.png" x="190" y="635" width="150" height="17">
+						<property name="com.cabsoft.rx.export.html.type" value="hwsign"/>
+						<property name="com.cabsoft.rx.export.html.id" value="hwsign_DelRate"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["연체 이자율|" + (null == $F{DelRate} ? "" : $F{DelRate})]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.script"><![CDATA["onclick=\"doHWSign('hwsign_DelRate', '[<b>" + $F{DelRate} + "</b>]을 자필로 입력하십시오.','')\""]]></propertyExpression>
+						<printWhenExpression><![CDATA[$P{mobile}==true && null != $F{DelRate} && !"".equals($F{DelRate})]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir} + "DelRate.png"]]></imageExpression>
+				</image>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="gh02">
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh03">
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh04">
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh05">
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh06">
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh07">
+		<groupHeader>
+			<band>
+				<printWhenExpression><![CDATA[false]]></printWhenExpression>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="gh08">
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh09">
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh10">
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+</ReportExpress>

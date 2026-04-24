@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="JsonCustomersReport" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="40" rightMargin="40" topMargin="50" bottomMargin="50" uuid="92dbacf4-1207-44d7-8105-ddb4490ff489">
+	<property name="rxreport.zoom" value="1.0"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<property name="com.cabsoft.rx.json.source" value="northwind.json"/>
+	<style name="Sans_Normal" isDefault="true" fontName="DejaVu Sans" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Sans_Bold" fontName="DejaVu Sans" fontSize="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Sans_Italic" fontName="DejaVu Sans" fontSize="12" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false"/>
+	<queryString language="JSON">
+		<![CDATA[Northwind.Customers]]>
+	</queryString>
+	<field name="CustomerID" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerID]]></fieldDescription>
+	</field>
+	<field name="CompanyName" class="java.lang.String">
+		<fieldDescription><![CDATA[CompanyName]]></fieldDescription>
+	</field>
+	<title>
+		<band height="50">
+			<line>
+				<reportElement uuid="b3582b97-f3df-4c0d-b709-aab823cca474" x="0" y="0" width="515" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="aebbfa3f-1772-4d42-9d96-d6779c782dc6" style="Sans_Normal" x="0" y="10" width="515" height="30"/>
+				<textElement textAlignment="Center">
+					<font fontName="맑은 고딕" size="22"/>
+				</textElement>
+				<text><![CDATA[Customer Orders Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="21">
+			<staticText>
+				<reportElement uuid="65f2bc09-1686-4ae1-930f-401527af6ece" style="Sans_Bold" mode="Opaque" x="0" y="5" width="515" height="15" forecolor="#FFFFFF" backcolor="#333333"/>
+				<textElement>
+					<font fontName="맑은 고딕" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Order List]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="50">
+			<textField>
+				<reportElement uuid="515f6084-e6b0-413e-9ba9-88cea7804044" style="Sans_Bold" x="5" y="5" width="100" height="15" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="맑은 고딕" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CustomerID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="36107ac4-57d2-4c5b-84d4-1c9d140a2869" style="Sans_Bold" isPrintRepeatedValues="false" x="404" y="5" width="100" height="15" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="맑은 고딕" size="10"/>
+				</textElement>
+				<text><![CDATA[(continued)]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="c3b8eb60-3e57-4020-b7c5-0b0a6e2b4529" x="0" y="20" width="515" height="1" isPrintWhenDetailOverflows="true"/>
+			</line>
+			<subreport>
+				<reportElement uuid="63330f97-afc4-4acf-8be0-bff31062173b" isPrintRepeatedValues="false" x="5" y="25" width="507" height="20" isRemoveLineWhenBlank="true" backcolor="#FFCC99"/>
+				<subreportParameter name="com.cabsoft.rx.json.source">
+					<subreportParameterExpression><![CDATA["northwind.json"]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CustomerID">
+					<subreportParameterExpression><![CDATA[$F{CustomerID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="com.cabsoft.rx.json.date.pattern">
+					<subreportParameterExpression><![CDATA[$P{com.cabsoft.rx.json.date.pattern}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="JSON_LOCALE">
+					<subreportParameterExpression><![CDATA[$P{JSON_LOCALE}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="com.cabsoft.rx.json.number.pattern">
+					<subreportParameterExpression><![CDATA[$P{com.cabsoft.rx.json.number.pattern}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA["JsonOrdersReport.report"]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement uuid="9fa9f25a-d6a0-4ae1-9cea-0653bb9d21d5" style="Sans_Bold" x="109" y="5" width="291" height="15" isPrintWhenDetailOverflows="true" forecolor="#000000"/>
+				<textElement>
+					<font fontName="맑은 고딕" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CompanyName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="40">
+			<line>
+				<reportElement uuid="a223928c-71e4-4403-bef5-4da2fb01cc46" x="0" y="10" width="515" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="06846bd2-ecfe-43fe-86a0-2cd7cdb75bd2" x="200" y="20" width="80" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="맑은 고딕" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + String.valueOf($V{PAGE_NUMBER}) + " of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="0d33a976-e8e3-4cb9-abe7-c23b6c518861" x="280" y="20" width="75" height="15"/>
+				<textElement>
+					<font fontName="맑은 고딕" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + String.valueOf($V{PAGE_NUMBER})]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</ReportExpress>

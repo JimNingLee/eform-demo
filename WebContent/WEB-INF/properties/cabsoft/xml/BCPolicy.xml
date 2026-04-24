@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<bccard.com>
+	<field>맵핑안됨</field>
+	<docuNm>비씨카드 가맹점 가입신청서</docuNm>	
+	<applicationForm>
+		<bigo>비고</bigo>
+		<request>요청사항1</request>
+		<buisNo>129-81-55555</buisNo>	<!--사업자등록번호-->
+		<CEONm>홍길동</CEONm>	<!--대표자명-->	
+		<CEOResNo>511218-0000000</CEOResNo>	<!--대표자주민민호-->
+		<corpNm><![CDATA[법인명]]></corpNm>	<!--법인명-->
+		<corpNo>888-888-88888</corpNo>	<!--법인등록번호-->
+		<setupPur>testAAA</setupPur>	<!--설립목적-->
+		<signNm><![CDATA[간판]]></signNm>	<!--간판명-->
+		<cpnNm><![CDATA[캡소프트]]></cpnNm>	<!--상호-->
+		<cpnENm>Cabsoft</cpnENm>	<!--영문명-->
+		<guidePNo>0505-998-****</guidePNo>	<!--회원안내 전화번호-->
+		<cardPNo>1599-****</cardPNo>	<!--카드사연락 전화번호-->
+		<buisAddress>187-873 서울시 서초구 서초동 111-1111</buisAddress>	<!--사업장 주소-->
+		<corpAddress>서울시 분당구 이매동 222-2222</corpAddress>	<!--본사 주소-->
+		<FAX>0505-***-0888</FAX>	<!--팩스번호-->
+		<buisDate>20131118</buisDate>	<!--영업개시일-->
+		<buisConditions>업태11</buisConditions>	<!--업태-->
+		<mainITEM>rxEnterprise</mainITEM>	<!--주취급품목-->
+		<CEOAddress>서울시 서초구 서초동3333-333</CEOAddress>	<!--대표자 자택주소-->
+		<CEOPNo>02-3472-0000</CEOPNo>	<!--대표자 자택전화번호-->
+		<CEOHPNo>017-000-0000</CEOHPNo>	<!--대표자 핸드폰번호-->
+		<CEOeMail><![CDATA[test@cabsoftware.com]]></CEOeMail>	<!--대표자 이메일-->
+		<FCEOENm>tomas</FCEOENm>	<!--외국인대표자 영문성명-->
+		<FCEOnation>N.Y</FCEOnation>	<!--외국인대표자 국적-->
+		<FCEOpassNo>232323232323</FCEOpassNo>	<!--외국인대표자 여권번호-->
+		<bankNm>ㅇㅇ은행</bankNm>	<!--은행명-->
+		<bankBranch>서초</bankBranch>	<!--지점-->
+		<accNo>271-111111-00000</accNo>	<!--계좌번호-->
+		<accHolder>홍길동</accHolder>	<!--예금주-->
+		<giroCode>89451</giroCode>	<!--지로코드-->
+		<appDate>20131118</appDate>	<!--신청일-->
+		<JCEONm1>김길동</JCEONm1>	<!--공동대표자명1-->
+		<JCEOResNo1>600213-2222222</JCEOResNo1>	<!--공동대표자 주민번호1-->
+		<JCEONm2>박길동</JCEONm2>	<!--공동대표자명2-->
+		<JCEOResNo2>580000-0000000</JCEOResNo2>	<!--공동대표자 주민번호2-->
+		<francCEONm>이길동</francCEONm>	<!--가맹점 대표자 성명-->
+		<depNm>최길동</depNm>	<!--모집인/대리인 성명-->
+		<VANNm><![CDATA[VAN111111]]></VANNm>	<!--VAN명-->
+		<FVANNm><![CDATA[testzz]]></FVANNm>	<!--VAN대리점명-->
+		<depResNo>740506-5555555</depResNo>	<!--모집인 주민번호-->
+		<depPNo>02-2615-4444</depPNo>	<!--모집인 연락처-->
+		<disAdrsResn>사유없음</disAdrsResn>	<!--사업장 주소일치 여부 '불일치'일 경우 "사유"-->
+		<shopArea><![CDATA[3000m]]></shopArea>	<!--매장유무 '유'일 경우 "면적"-->
+		<locationETC><![CDATA[-----]]></locationETC>	<!--매장소재지 "기타"-->
+		<Mitem><![CDATA[]]></Mitem>	<!--주취급품목-->
+		<Sitem><![CDATA[]]></Sitem>	<!--기타취급품목-->
+		<wDate>20131118</wDate> <!--실사처리일-->
+		<depCode>123456789</depCode>	<!--모집인코드-->
+		<depNm>홍길동</depNm>	<!--모집인성명-->
+		<francNo>02356454</francNo>	<!--가맹점번호-->
+		<francNm><![CDATA[캡소프트11]]></francNm>	<!--상호(가맹점)-->
+		<typeBuis>업종11</typeBuis>	<!--업종-->
+		<ETC>없음</ETC>	<!--특이사항-->
+	</applicationForm>
+</bccard.com>

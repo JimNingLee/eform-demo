@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="elements" pageWidth="595" pageHeight="842" columnWidth="483" leftMargin="56" rightMargin="56" topMargin="56" bottomMargin="56" uuid="903c5785-382b-498c-b72d-a52e73bc83a9">
+	<property name="rxreport.zoom" value="1.948717100000004"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="1505"/>
+	<property name="rxreport.callouts" value="##Fri Aug 02 18:39:07 KST 2013\ncallouts.1.pins=367,110;139,162;\ncallouts.1.text=\uBC30\uACBD \uC694\uC18C\:   zindex\=1\n\uD14D\uC2A4\uD2B8\:       zindex\=2\nTM\:            zindex\=2\n\uC774\uBBF8\uC9C0\:       zindex\=2\ncallouts.1.bounds=423,190,169,93"/>
+	<style name="Default" isDefault="true"/>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["../images/report/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//bank]]>
+	</queryString>
+	<background>
+		<band height="730" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement uuid="5c3eca6d-92c6-4b6c-a8da-21e35f8d3289" mode="Transparent" x="0" y="0" width="483" height="730"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineColor="#0000FF"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement uuid="cc5c2980-22ba-4fee-9607-8eededf68b62" x="9" y="18" width="463" height="49" backcolor="#CCCCFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#9999FF"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="96a1c691-2b1c-46a0-9059-78001035288b" x="9" y="18" width="463" height="49">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box rightPadding="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[서식 요소 사용에 대한 예제]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" vAlign="Middle">
+				<reportElement uuid="302eea43-11df-4194-87ba-e98e5e67b239" x="16" y="40" width="72" height="20">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir} + "cablogo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="a666351b-1bd9-4347-b45b-e8e6d86a8b8f" x="19" y="24" width="143" height="20" forecolor="#0000CC">
+					<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ReportExpress   Enterprise]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d69dfd46-5b0d-4cc0-b8db-cd038b17af8d" x="92" y="27" width="12" height="12" forecolor="#FF0000">
+					<property name="com.cabsoft.rx.export.html.zindex" value="4"/>
+				</reportElement>
+				<textElement>
+					<font size="5" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TM]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="261" splitType="Stretch">
+			<ellipse>
+				<reportElement uuid="a4d61103-e446-4a34-9cd1-dd5330af6b2b" x="34" y="8" width="20" height="20">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+				</reportElement>
+			</ellipse>
+			<staticText>
+				<reportElement uuid="075eb980-5fff-487b-a84d-ef39db682b3a" x="38" y="12" width="13" height="12">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[34]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement uuid="d2ade568-9418-4b0d-87dd-e606dc2398aa" x="31" y="39" width="64" height="18" backcolor="#000000">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="5be9aeba-0891-4454-bd71-f9c1191a8d65" x="45" y="41" width="36" height="14" forecolor="#FFFFFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[제   목]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e36453bd-369a-4db2-8d31-5ae7dc2359fe" mode="Opaque" x="33" y="71" width="100" height="20" backcolor="#CCCCFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					<property name="com.cabsoft.rx.export.html.title" value="z-index=1"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[배경 텍스트]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7a8499a9-15a6-46b8-96cc-cc8352cfdec6" mode="Opaque" x="109" y="83" width="100" height="20" backcolor="#CCFFCC">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					<property name="com.cabsoft.rx.export.html.title" value="z-index=2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[전경 텍스트]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d9baddbe-fd11-45ff-84ec-781f9394c86a" mode="Opaque" x="164" y="142" width="100" height="20" backcolor="#CCCCCC">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+				</reportElement>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ca17a1a7-9bcb-40dc-b399-ac2b0b3de37e" mode="Opaque" x="162" y="139" width="100" height="20" backcolor="#F0F0F0">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#CCCCCC"/>
+					<topPen lineWidth="0.25" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.25" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.25" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.25" lineColor="#CCCCCC"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[그림자 효과]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="97cec4cf-5a78-44e2-b632-cbc78adeed8c" mode="Opaque" x="47" y="182" width="100" height="20" backcolor="#00CCCC">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					<property name="com.cabsoft.rx.export.html.title" value="z-index=1"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[프레임 테스트 1]]></text>
+			</staticText>
+			<frame>
+				<reportElement uuid="63259a70-797e-4a30-987c-f45d2c09fea5" mode="Opaque" x="111" y="190" width="153" height="67" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					<property name="com.cabsoft.rx.export.html.title" value="프레임 z-index=2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<staticText>
+					<reportElement uuid="a7b935bc-c03b-4a95-99dd-fb412edaa4ba" mode="Opaque" x="16" y="17" width="58" height="20"/>
+					<box>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[텍스트 1]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="89c76e65-6ffc-4899-be9f-63cba59c7f8b" mode="Opaque" x="55" y="24" width="47" height="20" backcolor="#00FF33"/>
+					<box>
+						<topPen lineWidth="0.25"/>
+						<leftPen lineWidth="0.25"/>
+						<bottomPen lineWidth="0.25"/>
+						<rightPen lineWidth="0.25"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[텍스트 2]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement uuid="4ca9ec6a-6f39-432c-9bcd-0196ddb4e084" mode="Opaque" x="237" y="182" width="100" height="20" backcolor="#FFCC99">
+					<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+					<property name="com.cabsoft.rx.export.html.title" value="z-index=3"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[프레임 테스트 2]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</ReportExpress>

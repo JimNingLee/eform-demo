@@ -1,0 +1,1118 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<R_NEXL3323 afterEJBCall="1111112222222" beforeEJBCall="1111112222222"
+    bodyLengthOffset="0" bodyLengthSize="8" headerSize="8">
+    <COM_PKTLEN desc="패킷길이" length="8" value="66217" valueType="9"/>
+    <COM_UPMU_GBN desc="채널업무구분" length="1" value="R" valueType="X"/>
+    <COM_SVC_CODE desc="서비스코드" length="6" value="L3323" valueType="X"/>
+    <COM_JSTAR_VALUE desc="JSTAR사용영역" length="30"
+        value="SHB01          128        5058" valueType="X"/>
+    <COM_SYS_GBN desc="온라인시스템구분" length="1" value="T" valueType="X"/>
+    <COM_TRAN_DATE desc="트랜잭션_일자" formatter="date" length="8"
+        originalValue="20131202" value="2013.12.02" valueType="X"/>
+    <COM_TRAN_TIME desc="트랜잭션_시간" formatter="time" length="6"
+        originalValue="164605" value="16:46:05" valueType="X"/>
+    <COM_WEB_DOMAIN desc="웹서버_도메인명" length="8" value="hpcwb1t1" valueType="X"/>
+    <COM_IP_ADDR desc="고객ip주소" length="32" value="59.7.254.204" valueType="X"/>
+    <COM_LANGUAGE desc="언어구분" length="1" value="1" valueType="X"/>
+    <COM_CHANNEL_KBN desc="채널유형" length="2" value="D0" valueType="X"/>
+    <COM_CIF_NO desc="고객번호" length="10" value="000000000" valueType="9"/>
+    <COM_JUMIN_NO desc="홍길동" length="13" value="721225*******" valueType="X"/>
+    <COM_SEC_CHAL1 desc="보안카드_질의값_첫번째" length="2" value="" valueType="X"/>
+    <COM_SEC_CHAL2 desc="보안카드_질의값_두번째" length="2" value="" valueType="X"/>
+    <COM_FILLER1 desc="필러1" length="11" value="" valueType="X"/>
+    <COM_SEC_CHK desc="보안매체check" length="1" value="" valueType="X"/>
+    <COM_ICHEPSWD_CHK desc="이체비번check" length="1" value="" valueType="X"/>
+    <COM_YEYAK_ICHE desc="예약이체" length="1" value="" valueType="X"/>
+    <COM_EF_DATE desc="저널원장_생성일자" length="8" value="20131202" valueType="X"/>
+    <COM_EF_TIME desc="저널원장_생성시간" length="6" value="164544" valueType="X"/>
+    <COM_EF_YOIL desc="저널원장_생성요일" length="1" value="1" valueType="X"/>
+    <COM_RESULT_CD desc="처리결과" length="1" value="0" valueType="9"/>
+    <COM_END_MARK desc="ZZ" length="2" value="ZZ" valueType="X"/>
+    <COM_EF_SERIALNO desc="저널원장_원거래번호" length="8" value="12524697" valueType="9"/>
+    <COM_ECHO_TYPE desc="에코구분" length="1" value="" valueType="X"/>
+    <COM_USER_ERR desc="User_ErrMsg_Display" length="1" value="0" valueType="X"/>
+    <COM_PG_SERIAL desc="PG_원거래번호" length="8" value="" valueType="X"/>
+    <COM_NO_SEND desc="웹서버 미전송거래구분" length="1" value="" valueType="X"/>
+    <COM_SUBCHN_KBN desc="서브채널" length="2" value="30" valueType="X"/>
+    <COM_SLAVE_ID desc="마스터_슬레이브구분" length="3" value="" valueType="X"/>
+    <COM_SMS_TJ desc="사기예방SMS통지" length="1" value="" valueType="X"/>
+    <COM_FILLER2 desc="필러2" length="13" value="" valueType="X"/>
+    <결과코드 length="5" value="0" valueType="9"/>
+    <반복횟수 length="5" target="세부목록" value="27" valueType="9"/>
+    <세부목록 type="Message" value="R_NEXL3323_1">
+        <vector result="27">
+            <data type="Document" vectorkey="0">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="1" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="고객번호" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CUSNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="000000000" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="1">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="2" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="차주명 (겸 담보제공자)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CUSNM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="홍길동" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="2">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="3" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="주소" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="MRG_HOME_ADR" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200"
+                        value="인천 남구 도화3동 572-1사손 공감산해수 0송 849정" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="3">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="4" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="전화번호(자택)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="HOME_TELNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="010-0000-1452" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="4">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="5" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="휴대폰번호" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="HP_TELNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="010-0000-1452" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="5">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="6" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="차입일자(직전 차입일자)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CVT_BF_YKJDT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="20120312" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="6">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="7" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="여신과목" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CVT_PRDT_NM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="일반자금대출" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="7">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="8" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="여신(한도)금액 (변경전)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="HG_DC_APRV_JAMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="금팔백만원" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="8">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="9" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="약정기일 (변경전)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="HNDO_DUDT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="20130330" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="9">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="10" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="제1조 기한연기 선택여부" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40"
+                        value="CVT_JGCNG_OPT_G_1_JO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="1:선택, 0:미선택" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="10">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="11" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="제2조 조건변경 선택여부" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40"
+                        value="CVT_JGCNG_OPT_G_2_JO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="1:선택, 0:미선택" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="11">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="12" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="제3조 한도변경 선택여부" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40"
+                        value="CVT_JGCNG_OPT_G_3_JO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="1:선택, 0:미선택" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="12">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="13" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="제4조 중도상환수수료 발생여부" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="2" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="1:선택, 0:미선택" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="13">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="14" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="승인 적용금리구분(고정/변동) - 제1,2조" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="NUM_FIXED_IRT_G" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="1:고정, 2:변동" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="2" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="14">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="15" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="승인 고정금리(%) - 제1,2조" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="FIXED_APRV_IYUL" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="1.55" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="15">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="16" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="승인 변동금리 시장금리종류+기간물 ) - 제1,2조" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="META_VAR_MKIRT_2K" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="예) 금융채 3년물" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="금융채 6개월물" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="16">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="17" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="승인 변동금리 가산금리(%) - 제1,2조" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="VAR_SP_APRV_2IYUL" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="3.7" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="17">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="18" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="승인 변동금리 변동주기 - 제1,2조" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CVT_IRT_CHG_CYCL" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="예) 3개월, 6개월 등" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="6개월" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="18">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="19" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="연기후기일 - 제1조 기한연기" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CVT_YNGI_AF_DUDT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="20130930" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="19">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="20" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="비고 (계좌번호) - 제1조 기한연기" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CVT_336_REL_ACNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="311-000-000000" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="20">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="21" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="비고 (계좌번호, 보증내용등) - 제2조 조건변경" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CVT_336_REL_ACNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200"
+                        value="311-000-000000&#xa;보증인 보증한도 삼천만원" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="21">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="22" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="비고 (계좌번호) - 제3조 한도변경" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="CVT_336_REL_ACNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="311-000-000000" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="22">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="23" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="조건변경 내용(변경전) - 제2조 조건변경" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="2" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200"
+                        value="담보 : 부동산 1억&#xa;보증인 : 홍길동" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="23">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="24" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="조건변경 내용(변경후) - 제2조 조건변경" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="2" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200"
+                        value="담보 : 부동산 2억&#xa;보증인 : 김길동" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="24">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="25" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="조건변경 사유 - 제2조 조건변경" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="2" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200"
+                        value="채무자 신용도 하락으로 조건변경" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="25">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="26" valueType="9"/>
+                    <여신서류작성항목한글명 length="100"
+                        value="여신(한도)금액 (변경후) - 제3조 한도변경" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="5" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40"
+                        value="HG_JGCNG_AF_DC_SIAMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="이천만원" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+            <data type="Document" vectorkey="26">
+                <R_NEXL3323_1>
+                    <동일상품서류작성순번 length="2" value="10" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="27" valueType="9"/>
+                    <여신서류작성항목한글명 length="100" value="기타 특약사항" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="2" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="40" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="100" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="200" value="특약 사항을 입력한다." valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용3 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용4 length="200" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용5 length="200" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="3" valueType="9"/>
+                    <FILLER10번호1 length="10" value="0" valueType="9"/>
+                    <FILLER10번호2 length="10" value="0" valueType="9"/>
+                    <FILLER5번호1 length="5" value="0" valueType="9"/>
+                    <FILLER5번호2 length="5" value="0" valueType="9"/>
+                    <FILLER3수1 length="3" value="0" valueType="9"/>
+                    <FILLER3수2 length="3" value="0" valueType="9"/>
+                    <FILLER2번호1 length="2" value="0" valueType="9"/>
+                    <FILLER2번호2 length="2" value="0" valueType="9"/>
+                    <FILLER여부1 length="1" value="0" valueType="9"/>
+                    <FILLER여부2 length="1" value="0" valueType="9"/>
+                    <FILLER18금액1 length="18" value="0.00" valueType="9"/>
+                    <FILLER18금액2 length="18" value="0.00" valueType="9"/>
+                    <FILLER일자1 length="8" value="" valueType="X"/>
+                    <FILLER일자2 length="8" value="" valueType="X"/>
+                    <FILLER20내용1 length="20" value="" valueType="X"/>
+                    <FILLER20내용2 length="20" value="" valueType="X"/>
+                    <FILLER30내용1 length="30" value="" valueType="X"/>
+                    <FILLER30내용2 length="30" value="" valueType="X"/>
+                </R_NEXL3323_1>
+            </data>
+        </vector>
+    </세부목록>
+</R_NEXL3323>

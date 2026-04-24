@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<root>
+	<shinhan>
+		<수령일><![CDATA[2013년 1월 1일]]></수령일>
+		<성명1><![CDATA[홍길동1]]></성명1>
+		<성명2><![CDATA[홍길동2]]></성명2>
+		<성명3><![CDATA[홍길동3]]></성명3>		
+	</shinhan>
+</root>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="FAAAEA00410R" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="730" leftMargin="56" rightMargin="56" topMargin="45" bottomMargin="30" whenResourceMissingType="Empty" uuid="e82e20a9-68a8-470e-acf2-035edb5fc2aa">
+	<property name="rxreport.zoom" value="1.0"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true"/>
+	<style name="bai" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{ORG_NM_TEL}.length() > 20]]></conditionExpression>
+			<style fontSize="5"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="json">
+		<![CDATA[list]]>
+	</queryString>
+	<field name="ORG_CD" class="java.lang.String">
+		<fieldDescription><![CDATA[ORG_CD]]></fieldDescription>
+	</field>
+	<field name="ORG_NM_TEL" class="java.lang.String">
+		<fieldDescription><![CDATA[ORG_NM_TEL]]></fieldDescription>
+	</field>
+	<field name="ORG_DGE_CD" class="java.lang.String">
+		<fieldDescription><![CDATA[ORG_DGE_CD]]></fieldDescription>
+	</field>
+	<field name="ADDR_ZIP" class="java.lang.String">
+		<fieldDescription><![CDATA[ADDR_ZIP]]></fieldDescription>
+	</field>
+	<field name="STAFF_CNT" class="java.lang.String">
+		<fieldDescription><![CDATA[STAFF_CNT]]></fieldDescription>
+	</field>
+	<field name="POSLOC_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[POSLOC_NM]]></fieldDescription>
+	</field>
+	<field name="AUDIT_CNT" class="java.lang.String">
+		<fieldDescription><![CDATA[AUDIT_CNT]]></fieldDescription>
+	</field>
+	<field name="CHRG_NM_TEL" class="java.lang.String">
+		<fieldDescription><![CDATA[CHRG_NM_TEL]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_NM3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_NM3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_CNT3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_CNT3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_PSON_CNT3" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_PSON_CNT3]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_NM4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_NM4]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_CNT4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_CNT4]]></fieldDescription>
+	</field>
+	<field name="SUB_ORG_TYPE_PSON_CNT4" class="java.lang.String">
+		<fieldDescription><![CDATA[SUB_ORG_TYPE_PSON_CNT4]]></fieldDescription>
+	</field>
+	<field name="OFFC_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[OFFC_NM]]></fieldDescription>
+	</field>
+	<field name="OFFC_CD" class="java.lang.String">
+		<fieldDescription><![CDATA[OFFC_CD]]></fieldDescription>
+	</field>
+	<field name="strReportName" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/titleName/strReportName]]></fieldDescription>
+	</field>
+	<field name="OFFC_NM2" class="java.lang.String">
+		<fieldDescription><![CDATA[OFFC_NM]]></fieldDescription>
+	</field>
+	<group name="gh1">
+		<groupExpression><![CDATA[$F{OFFC_CD}]]></groupExpression>
+		<groupHeader>
+			<band height="35">
+				<printWhenExpression><![CDATA[$F{OFFC_CD} != null]]></printWhenExpression>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+					<reportElement uuid="26b51b31-f2c1-4363-b066-3a98e6a9975e" stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="35" isPrintWhenDetailOverflows="true"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{OFFC_CD}]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement uuid="c999f5a2-b6d2-42d3-a515-de199634b745" stretchType="RelativeToBandHeight" x="40" y="0" width="690" height="35" isPrintWhenDetailOverflows="true"/>
+					<subreportParameter name="SUBREPORT_DIR">
+						<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[((com.cabsoft.datasource.RXJsonDataSource)$P{REPORT_DATA_SOURCE}).dataSource("list(OFFC_CD=="+$F{OFFC_CD}+")","list")]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "FAAAEA00410R_sub1_json.report"]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="35">
+				<printWhenExpression><![CDATA[$F{OFFC_NM}== null]]></printWhenExpression>
+				<staticText>
+					<reportElement uuid="3f63da91-9ca3-4817-867a-f12dffa579cd" x="0" y="0" width="730" height="35"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[조회된 결과가 없습니다.]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="gh2"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<textField>
+				<reportElement uuid="51037989-d58c-499f-bee8-70e7fbacd3dd" x="0" y="13" width="730" height="40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="24"/>
+				</textElement>
+				<textFieldExpression><![CDATA["기관총람 기관구분별  "+"("+$F{strReportName}+")"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35">
+			<staticText>
+				<reportElement uuid="c5c80642-9647-4444-a25f-0258d9badfc3" x="0" y="0" width="50" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[관계기관 : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17f24fb2-12a4-443c-a44f-ac606affa3e6" x="642" y="0" width="40" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[페이지 : ]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement uuid="42cfebbd-24c3-4df3-a47a-85f8e79dd86f" x="704" y="0" width="28" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="486d11e4-490d-42aa-9774-4365d17d6445" x="682" y="0" width="22" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="abcdf801-7b4b-49d0-b506-c77074319ded" x="50" y="0" width="170" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{strReportName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="70">
+			<staticText>
+				<reportElement uuid="3f63da91-9ca3-4817-867a-f12dffa579cd" x="0" y="0" width="40" height="70"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[소관별]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="398" y="0" width="148" height="25"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[자체감사업무 담당기구]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="398" y="25" width="48" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+					<paragraph tabStopWidth="40"/>
+				</textElement>
+				<text><![CDATA[최고책임자
+직위및직급]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="446" y="25" width="30" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[인원수]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fd9baf4d-3d3e-4ec6-9cbd-63eca39bbab8" x="476" y="25" width="70" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[감사원담당업무
+관련부서명
+(직통전화)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="546" y="0" width="92" height="25"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3차기관]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="546" y="25" width="35" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+					<paragraph tabStopWidth="40"/>
+				</textElement>
+				<text><![CDATA[종류별]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="581" y="25" width="25" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[기관수]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fd9baf4d-3d3e-4ec6-9cbd-63eca39bbab8" x="606" y="25" width="32" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[정원]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3f63da91-9ca3-4817-867a-f12dffa579cd" x="40" y="0" width="65" height="70"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[기관코드]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3f63da91-9ca3-4817-867a-f12dffa579cd" x="105" y="0" width="114" height="70"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[기관명
+(사업자번호)
+(☎전화번호)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3f63da91-9ca3-4817-867a-f12dffa579cd" x="219" y="0" width="25" height="70"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[기관차수]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3f63da91-9ca3-4817-867a-f12dffa579cd" x="244" y="0" width="120" height="70"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[소재지
+(우편번호)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3f63da91-9ca3-4817-867a-f12dffa579cd" x="364" y="0" width="34" height="70"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[정원]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fd9baf4d-3d3e-4ec6-9cbd-63eca39bbab8" x="698" y="25" width="32" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[정원]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="673" y="25" width="25" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[기관수]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="638" y="25" width="35" height="45"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+					<paragraph tabStopWidth="40"/>
+				</textElement>
+				<text><![CDATA[종류별]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf90d658-59de-4e40-b48c-c809ec133626" x="638" y="0" width="92" height="25"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4차기관]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="50">
+			<printWhenExpression><![CDATA[false]]></printWhenExpression>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="30">
+			<textField pattern="yyyy년 MM월 dd일">
+				<reportElement uuid="198698a4-161c-4551-8653-7889bb85b411" x="610" y="0" width="75" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm:ss">
+				<reportElement uuid="eb849bb0-c16a-4329-b069-b57e1a7b671d" x="685" y="0" width="45" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="50c88a7d-2d65-4986-8761-44b2e5fd715e" x="560" y="0" width="50" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[출력시간 : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f4b9f9e8-75bc-4e23-9b9c-678ece925e3a" x="0" y="0" width="150" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[FAAAEA00410R]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</ReportExpress>

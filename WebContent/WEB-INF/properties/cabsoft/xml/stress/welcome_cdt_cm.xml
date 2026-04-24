@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-0"?>
+<root>
+	<welcome>
+		<LonNo>0000000000000</LonNo>			<!-- 대출번호 추가계약(16자리), 대부거래(10자리)-->
+		<NumNo>001</NumNo>						<!-- 일련번호(0자리) -->
+		<CustName>고길동</CustName>				<!-- 고객명,채무자명 -->
+		<RRno1>000000</RRno1>					<!-- 주민등록번호앞 -->
+		<RRno0>1111111</RRno0>					<!-- 주민등록번호앞 -->
+		<Addre>서울특별시 영등포구 여의도동 005-100번지 미래아파트 0000동 0000호</Addre>		<!-- 고객주소 -->
+		<AgreDate>00101010</AgreDate>			<!-- 동의일 -->
+		<LonLimitAmt>금팔천칠백사십삼만오천육백구십오원정</LonLimitAmt>	<!-- 대부한도금액 -->
+		<RealLonAmt>금팔천칠백사십삼만오천육백구십오원정</RealLonAmt>		<!-- 실제대부금액 -->
+		<ConDate>0</ConDate>				<!-- 계약일자 -->
+		<ExpDate>0</ExpDate>				<!-- 만기일자 -->
+		<LonRate>5</LonRate>					<!-- 대부이자율 -->
+		<DelRate>6</DelRate>					<!-- 연체이자율 -->
+		
+		<ALonLimitAmt>금팔천칠백사십삼만오천육백구십오원정</ALonLimitAmt>			<!-- 추가 대부한도금액 -->
+		<ARealLonAmt>금팔천칠백사십삼만오천육백구십오원정</ARealLonAmt>			<!-- 추가 실제대부금액 -->
+		<AConDate>0</AConDate>					<!-- 추가 계약일자 -->
+		<AExpDate>0</AExpDate>					<!-- 추가 만기일자 -->
+		<ALonRate>5</ALonRate>					<!-- 추가 대부이자율 -->
+		<ADelRate>6</ADelRate>					<!-- 추가 연체이자율 -->
+				
+		<Bank>국민은행</Bank>					<!-- 수납은행 -->
+		<AccNo>110-00000-1000000</AccNo>		<!-- 수납계좌번호 -->
+		<MAccNo>050-100-000000</MAccNo>			<!-- 모계좌번호 -->
+		<MaxRate>00.5</MaxRate>					<!-- 이자율 상한 -->
+		<RePayMethod>자동이체</RePayMethod>		<!-- 상환방식 -->
+		<RePayDate>5</RePayDate>				<!-- 상환약정일 -->
+		
+		<BranchName>구로점</BranchName>			<!-- 지점명 -->
+		<BranchAddre>서울특별시 구로구 구로동 구로디지털단지</BranchAddre>	<!-- 지점주소 -->
+		<Post1>606</Post1>						<!-- 우편번호 앞 -->
+		<Post0>100</Post0>						<!-- 우편번호 뒤 -->
+		<BizRegiNo>550000000011</BizRegiNo>		<!-- 사업자번호 -->
+		<LonRegiNo>000000600560</LonRegiNo>		<!-- 대부업번호 -->
+		<Tel>00-0000-0000</Tel>					<!-- 전화번호 -->
+		<Fax>5050-000-0010</Fax>				<!-- 팩스 -->
+		<staff>이홍렬</staff>					<!-- 담당직원 -->
+	</welcome>
+</root>

@@ -1,0 +1,816 @@
+<?xml version='1.1' encoding='EUC-KR' ?>
+<R_NEXL3335 afterEJBCall="1417851117999" beforeEJBCall="1417851117453"
+    bodyLengthOffset="1" bodyLengthSize="8" headerSize="8">
+    <COM_PKTLEN desc="패킷길이" length="8" value="51865" valueType="9"/>
+    <COM_UPMU_GBN desc="채널업무구분" length="1" value="R" valueType="X"/>
+    <COM_SVC_CODE desc="서비스코드" length="6" value="L3335" valueType="X"/>
+    <COM_JSTAR_VALUE desc="JSTAR사용영역" length="31"
+        value="SHB11           34       11695" valueType="X"/>
+    <COM_SYS_GBN desc="온라인시스템구분" length="1" value="T" valueType="X"/>
+    <COM_TRAN_DATE desc="트랜잭션_일자" formatter="date" length="8"
+        originalValue="21141812" value="2114.18.12" valueType="X"/>
+    <COM_TRAN_TIME desc="트랜잭션_시간" formatter="time" length="6"
+        originalValue="222657" value="22:26:57" valueType="X"/>
+    <COM_WEB_DOMAIN desc="웹서버_도메인명" length="8" value="hpcwb1t1" valueType="X"/>
+    <COM_IP_ADDR desc="고객ip주소" length="32" value="59.7.254.211" valueType="X"/>
+    <COM_LANGUAGE desc="언어구분" length="1" value="1" valueType="X"/>
+    <COM_CHANNEL_KBN desc="채널유형" length="2" value="D1" valueType="X"/>
+    <COM_CIF_NO desc="고객번호" length="11" value="786728661" valueType="9"/>
+    <COM_JUMIN_NO desc="주민등록번호" length="13" value="811129*******" valueType="X"/>
+    <COM_SEC_CHAL1 desc="보안카드_질의값_첫번째" length="2" value="" valueType="X"/>
+    <COM_SEC_CHAL2 desc="보안카드_질의값_두번째" length="2" value="" valueType="X"/>
+    <COM_FILLER1 desc="필러1" length="11" value="" valueType="X"/>
+    <COM_SEC_CHK desc="보안매체check" length="1" value="" valueType="X"/>
+    <COM_ICHEPSWD_CHK desc="이체비번check" length="1" value="" valueType="X"/>
+    <COM_YEYAK_ICHE desc="예약이체" length="1" value="" valueType="X"/>
+    <COM_EF_DATE desc="저널원장_생성일자" length="8" value="21141812" valueType="X"/>
+    <COM_EF_TIME desc="저널원장_생성시간" length="6" value="222621" valueType="X"/>
+    <COM_EF_YOIL desc="저널원장_생성요일" length="1" value="2" valueType="X"/>
+    <COM_RESULT_CD desc="처리결과" length="1" value="1" valueType="9"/>
+    <COM_END_MARK desc="ZZ" length="2" value="ZZ" valueType="X"/>
+    <COM_EF_SERIALNO desc="저널원장_원거래번호" length="8" value="13521974" valueType="9"/>
+    <COM_ECHO_TYPE desc="에코구분" length="1" value="" valueType="X"/>
+    <COM_USER_ERR desc="User_ErrMsg_Display" length="1" value="1" valueType="X"/>
+    <COM_PG_SERIAL desc="PG_원거래번호" length="8" value="" valueType="X"/>
+    <COM_NO_SEND desc="웹서버 미전송거래구분" length="1" value="" valueType="X"/>
+    <COM_SUBCHN_KBN desc="서브채널" length="2" value="31" valueType="X"/>
+    <COM_SLAVE_ID desc="마스터_슬레이브구분" length="3" value="" valueType="X"/>
+    <COM_SSO_LOGIN desc="SSO로그인여부" length="1" value="" valueType="X"/>
+    <COM_FILLER2 desc="필러2" length="13" value="" valueType="X"/>
+    <결과코드 length="5" value="1" valueType="9"/>
+    <상품서류번호 length="8" value="21511291" valueType="X"/>
+    <고객번호 length="11" value="786728661" valueType="9"/>
+    <고객명 length="111" value="홍길동" valueType="X"/>
+    <실명번호 length="13" value="8000001000000" valueType="X"/>
+    <승인번호 length="11" value="411186693" valueType="9"/>
+    <계좌순번 length="8" value="1" valueType="9"/>
+    <여신서류목록등록점번 length="4" value="1111" valueType="9"/>
+    <여신서류목록등록행원 length="8" value="16165389" valueType="X"/>
+    <신청구분 length="2" value="11" valueType="9"/>
+    <반복횟수 length="5" target="서류목록GRD" value="49" valueType="9"/>
+    <서류목록GRD type="Message" value="R_NEXL3335_1">
+        <vector result="49">
+            <data type="Document" vectorkey="1">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="1" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="차주 성명" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="MCUMCOMMON_CUSNM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="홍길동" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="1">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="2" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="차주 주민등록번호" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="MCUMCOMMON_SILNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="8000001000000" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="2">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="3" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="우편물 수령지" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="BOJN_MAIL_RCP_G" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="1: 자택, 2: 직장" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="3">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="4" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="차주 현거주지주소(우편번호포함)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="CVT_POSTNO_INCLUDE_HOME_ADR" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211"
+                        value="(413-826) 경기 파주시 " valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="4">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="5" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="차주 전화번호" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="CVT_HOME_TELNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="12-222-2222" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="5">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="6" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="차주 휴대폰번호" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="CVT_HP_TELNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="111-6311-1652" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="6">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="7" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="결혼구분" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="KHGC_MRRD_G" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111"
+                        value="11:미혼&#xa;12:기혼&#xa;13:기타(이혼, 사별 등)" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="7">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="8" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="현거주지 구분" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="NOW_RSDCAR_OWN_G" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111"
+                        value="1 : 자가(본인)  &#xa; 2 : 자가(배우자)&#xa; 3 : 자가(가족)  &#xa; 4 : 전세        &#xa; 5 : 월세        &#xa; 6 : 관사/" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="8">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="9" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="e-mail" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="EMAIL" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="ㅁㄴㅇㅁㄴㅇ" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="9">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="11" valueType="9"/>
+                    <여신서류작성항목한글명 length="111"
+                        value="저소득가구(배우자포함 연소득 25백만원이하) 여부" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="1:여, 1:부" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="11">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="11" valueType="9"/>
+                    <여신서류작성항목한글명 length="111"
+                        value="다자녀가구(만21세미만 자녀 3인 이상)여부" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="1:여, 1:부" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="11">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="12" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="장애인가구여부" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="1:여, 1:부" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="12">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="13" valueType="9"/>
+                    <여신서류작성항목한글명 length="111"
+                        value="고령자(노인부양)가구(만65세이상) 여부" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="1:여, 1:부" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="13">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="14" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="직장명 (자영업자는 상호)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="OFC_NM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="14">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="15" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="직위" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="JKWI_NM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="15">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="16" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="직장 전화번호" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="CVT_OFC_TELNO" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="111-222-2222" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="16">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="17" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="직장(사업장)주소" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="CVT_POSTNO_INCLUDE_OFC_ADR" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="(-)" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="17">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="18" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="직종명" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="META_KHGC_OCCPK_NM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="일반기업" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="18">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="19" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="근로(사업)소득" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="단위:만원" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="19">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="21" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="연금소득" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="단위:만원" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="21">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="21" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="기타소득" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="단위:만원" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="21">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="22" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="연간소득합계" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="CVT_11T_BONIN_ANUL_SDAMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="단위:만원" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="22">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="23" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="본인 부채금액" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="CVT_11T_TA_ORG_TOT_DC_AMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="단위:만원" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="23">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="24" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="주택 물건지주소" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="MDAMT_DC_GODSAR_ADR_NM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211"
+                        value="서울 중구 세종대로9길 21 (태평로2가)" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="24">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="25" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="중도금대출물건지명" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="MDAMT_DC_GODSAR_NM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="은행" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="25">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="26" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="청약중도금주택동호수" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="CVT_CY_MDAMT_HS_DONG_HO_NM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="예) OO 동 OO 호" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="111 동 1112 호" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="26">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="27" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="분양계약일" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="BUNYANG_CONT_DT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="YYYY-MM-DD" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="2114-11-11" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="27">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="28" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="보증신청금액" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="CALC_BOJN_SINC_AMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="단위:원" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="28">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="29" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="보증신청금액(한글)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="HG_CALC_BOJN_SINC_AMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="금영원정" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="29">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="31" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="대출금융기관 은행명" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="YS_DOC_WRT_HMK_IN_YUHYO_CTNT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="은행" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="은행" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="31">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="31" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="대출금융기관 지점명" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="DR_BRNM" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="미래" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="31">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="32" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="대출금융기관 대출가능금액" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="MDAMT_DC_SINC_AMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="대출신청금액" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="231111111" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="32">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="33" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="대출금융기관 대출금리" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="CVT_ALL_MKIRT_K_PLUS_SP" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="금리종류+가산금리" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211"
+                        value="COFIX(잔액) 6개월 + 1.88 %" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="33">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="34" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="상환방법" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="1" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="1:일시상환" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="1" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="34">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="35" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="이자종류" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="NUM_FIXED_IRT_G" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="1:고정, 2:변동" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="2" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="35">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="36" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="연대보증인 성명" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="36">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="37" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="연대보증인 주민등록번호" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="37">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="38" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="연대보증인 주소" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="38">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="39" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="보증료정산용 계좌번호" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="39">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="41" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="보증료정산용 계좌은행명" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="41">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="41" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="보증료정산용 계좌예금주" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="9" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="41">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="42" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="차주 현거주지주소(우편번호제외)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="CVT_HOME_ADR" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211"
+                        value="경기 파주시 동산6길 18 669금 (먹신사)" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="42">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="43" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="보증원금(한글)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="HG_MDAMT_DC_SINC_AMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="금이억삼천만원정" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="43">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="44" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="보증기간시작일(년월일)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="CVT_YMD_DC_SJDT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211"
+                        value="2116 년 11 월 11 일" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="44">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="45" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="보증기간종료일(년월일)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="CVT_YMD_MDAMT_DC_TERM_END_DT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211"
+                        value="2117 년 18 월 16 일" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="45">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="46" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="시행자" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="SIHANGSA_CUSNM1" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="가충너봄기홍말어유인고민" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="46">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="47" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="시공자" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="SIGONGS_CUSNM1" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="가충너봄기홍말어유인고민" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="47">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="48" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="분양금액(한글)" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41"
+                        value="HG_TOT_BUNYANG_AMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="금일십억원정" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+            <data type="Document" vectorkey="48">
+                <R_NEXL3335_1>
+                    <동일상품서류작성순번 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목번호 length="5" value="49" valueType="9"/>
+                    <여신서류작성항목한글명 length="111" value="분양금액" valueType="X"/>
+                    <여신서류작성항목입력방법 length="2" value="1" valueType="9"/>
+                    <여신서류작성항목영문속성명 length="41" value="TOT_BUNYANG_AMT" valueType="X"/>
+                    <여신서류작성항목입력유효내용 length="111" value="단위:원" valueType="X"/>
+                    <여신서류작성항목직원등록내용1 length="211" value="1,111,111,111" valueType="X"/>
+                    <여신서류작성항목직원등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용1 length="211" value="" valueType="X"/>
+                    <여신서류작성항목고객등록내용2 length="211" value="" valueType="X"/>
+                    <여신서류접수상태CODE length="2" value="1" valueType="9"/>
+                </R_NEXL3335_1>
+            </data>
+        </vector>
+    </서류목록GRD>
+</R_NEXL3335>

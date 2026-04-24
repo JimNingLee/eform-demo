@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<R_NEXL3323 afterEJBCall="1111112222222" beforeEJBCall="1111112222222"
+    bodyLengthOffset="0" bodyLengthSize="8" headerSize="8">
+    <COM_PKTLEN desc="패킷길이" length="8" value="356" valueType="9"/>
+    <COM_UPMU_GBN desc="채널업무구분" length="1" value="R" valueType="X"/>
+    <COM_SVC_CODE desc="서비스코드" length="6" value="L3323" valueType="X"/>
+    <COM_JSTAR_VALUE desc="JSTAR사용영역" length="30"
+        value="SHB01          210         176" valueType="X"/>
+    <COM_SYS_GBN desc="온라인시스템구분" length="1" value="T" valueType="X"/>
+    <COM_TRAN_DATE desc="트랜잭션_일자" formatter="date" length="8"
+        originalValue="20131211" value="2013.12.11" valueType="X"/>
+    <COM_TRAN_TIME desc="트랜잭션_시간" formatter="time" length="6"
+        originalValue="095438" value="09:54:38" valueType="X"/>
+    <COM_WEB_DOMAIN desc="웹서버_도메인명" length="8" value="hpcwb1t1" valueType="X"/>
+    <COM_IP_ADDR desc="고객ip주소" length="32" value="59.7.254.204" valueType="X"/>
+    <COM_LANGUAGE desc="언어구분" length="1" value="1" valueType="X"/>
+    <COM_CHANNEL_KBN desc="채널유형" length="2" value="D0" valueType="X"/>
+    <COM_CIF_NO desc="고객번호" length="10" value="00000000" valueType="9"/>
+    <COM_JUMIN_NO desc="홍길동" length="13" value="000000*******" valueType="X"/>
+    <COM_SEC_CHAL1 desc="보안카드_질의값_첫번째" length="2" value="" valueType="X"/>
+    <COM_SEC_CHAL2 desc="보안카드_질의값_두번째" length="2" value="" valueType="X"/>
+    <COM_FILLER1 desc="필러1" length="11" value="" valueType="X"/>
+    <COM_SEC_CHK desc="보안매체check" length="1" value="" valueType="X"/>
+    <COM_ICHEPSWD_CHK desc="이체비번check" length="1" value="" valueType="X"/>
+    <COM_YEYAK_ICHE desc="예약이체" length="1" value="" valueType="X"/>
+    <COM_EF_DATE desc="저널원장_생성일자" length="8" value="20131211" valueType="X"/>
+    <COM_EF_TIME desc="저널원장_생성시간" length="6" value="095437" valueType="X"/>
+    <COM_EF_YOIL desc="저널원장_생성요일" length="1" value="3" valueType="X"/>
+    <COM_RESULT_CD desc="처리결과" length="1" value="0" valueType="9"/>
+    <COM_END_MARK desc="ZZ" length="2" value="ZZ" valueType="X"/>
+    <COM_EF_SERIALNO desc="저널원장_원거래번호" length="8" value="12546803" valueType="9"/>
+    <COM_ECHO_TYPE desc="에코구분" length="1" value="" valueType="X"/>
+    <COM_USER_ERR desc="User_ErrMsg_Display" length="1" value="0" valueType="X"/>
+    <COM_PG_SERIAL desc="PG_원거래번호" length="8" value="" valueType="X"/>
+    <COM_NO_SEND desc="웹서버 미전송거래구분" length="1" value="" valueType="X"/>
+    <COM_SUBCHN_KBN desc="서브채널" length="2" value="30" valueType="X"/>
+    <COM_SLAVE_ID desc="마스터_슬레이브구분" length="3" value="" valueType="X"/>
+    <COM_SMS_TJ desc="사기예방SMS통지" length="1" value="" valueType="X"/>
+    <COM_FILLER2 desc="필러2" length="13" value="" valueType="X"/>
+    <결과코드 length="5" value="0" valueType="9"/>
+    <상품서류번호 length="8" value="20100034" valueType="9"/>
+    <고객번호 length="10" value="00000000" valueType="9"/>
+    <고객명 length="100" value="홍길동" valueType="x"/>
+    <실명번호 length="13" value="1111112222222" valueType="9"/>
+    <신청번호 length="11" value="1081307340" valueType="9"/>
+    <여신서류목록등록점번 length="4" value="12" valueType="9"/>
+    <여신서류목록등록행원 length="8" value="6231403" valueType="9"/>
+    <반복횟수 length="5" target="세부목록" value="0" valueType="9"/>
+    <세부목록 type="Message" value="R_NEXL3323_1">
+        <vector result="0"/>
+    </세부목록>
+</R_NEXL3323>

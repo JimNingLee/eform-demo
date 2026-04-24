@@ -1,0 +1,3221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="5-202-0012" pageWidth="595" pageHeight="842" columnWidth="579" leftMargin="8" rightMargin="8" topMargin="8" bottomMargin="8" uuid="a49b569a-eae9-415a-bc3c-2486d2374050">
+	<property name="rxreport.zoom" value="1.3310000000000028"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="2575"/>
+	<import value="com.cabsoft.utils.StringUtils"/>
+	<style name="Default" backcolor="#EEECE1" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineColor="#000000"/>
+			<topPen lineColor="#000000"/>
+			<leftPen lineColor="#000000"/>
+			<bottomPen lineColor="#000000"/>
+			<rightPen lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Defaultback" style="Default" mode="Opaque" forecolor="#000000" backcolor="#EEECE1" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineColor="#000000"/>
+			<topPen lineColor="#000000"/>
+			<leftPen lineWidth="0.75" lineColor="#000000"/>
+			<bottomPen lineWidth="0.75" lineColor="#000000"/>
+			<rightPen lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Default_9pt" style="Default" hAlign="Left" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Default_10pt" style="Default" hAlign="Left" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="checkbox" isBlankWhenNull="true" fontName="맑은 고딕" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./image/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//R_NEXL3323]]>
+	</queryString>
+	<field name="item1" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='1']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item2" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='2']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item3" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='3']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item4" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='4']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item5" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='5']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item6" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='6']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item7" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='7']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item8" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='8']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item9" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='9']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item10" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='10']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item11" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='11']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item12" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='12']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item13" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='13']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item14" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='14']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item15" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='15']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item16" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='16']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item17" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='17']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item18" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='18']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item19" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='19']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item20" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='20']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item21" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='21']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item22" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='22']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item23" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='23']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item24" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='24']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item25" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='25']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item26" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='26']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item27" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='27']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item28" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='28']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item29" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='29']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item30" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='30']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item31" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='31']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item32" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='32']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item33" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='33']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item34" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='34']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item35" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='35']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item36" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='36']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item37" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='37']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item38" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='38']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item39" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='39']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item40" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='40']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item41" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='41']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item42" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='42']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="EF_DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[COM_TRAN_DATE/@value]]></fieldDescription>
+	</field>
+	<group name="report">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="760">
+				<staticText>
+					<reportElement uuid="17b7fec8-32eb-457e-a7f1-4df82ffbb23d" x="16" y="22" width="547" height="734">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-99"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="10.0"/>
+						<topPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<leftPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<bottomPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<rightPen lineWidth="10.0" lineColor="#CCCCCC"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" x="37" y="28" width="100" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement verticalAlignment="Bottom">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[캡소프트]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="cc096b9d-57fc-48af-abe0-14ccefe2ca71" x="151" y="28" width="390" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+						<property name="com.cabsoft.rx.export.html.id" value="scrollpoint1_1"/>
+					</reportElement>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[준법감시인 사전심사필 제2013-2-738호 (심의일 : 2013. 9. 26 현재)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="cc096b9d-57fc-48af-abe0-14ccefe2ca71" x="167" y="51" width="245" height="29">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="20" isBold="true" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[가계대출 상품설명서]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" mode="Opaque" x="43" y="88" width="490" height="50" backcolor="#F1F1F1">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="5" leftPadding="5" rightPadding="5">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Top">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[본인은 주식회사 캡소프트과 대출거래를 함에 있어 은행직원과 상담하여 아래에서 설명한 내용을 포함하
+여 대출거래의 주요내용 및 고객부담비용에 대하여 충분히 설명을 듣고 이해하였음을 확인합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" mode="Transparent" x="268" y="121" width="258" height="14" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[고객확인 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="379eb9d2-0304-47df-beda-ffc10cd7325a" mode="Transparent" x="316" y="121" width="93" height="14" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{EF_DATE}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="379eb9d2-0304-47df-beda-ffc10cd7325a" mode="Transparent" x="408" y="121" width="83" height="14" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item1}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="320" y="683" width="215" height="23">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[(산식) 중도상환수수료 = 중도상환대출금 X 수수료율X
+                              (대출잔여일수/대출기간) ]]></text>
+				</staticText>
+				<image onErrorType="Blank">
+					<reportElement uuid="47f3d3a5-ab24-434e-a2ef-9529f30f0912" key="sign.png" x="491" y="113" width="30" height="30">
+						<property name="com.cabsoft.rx.export.html.id" value="signimg_sign1"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir}+"sign.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" mode="Transparent" x="487" y="125" width="35" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="4"/>
+						<property name="com.cabsoft.rx.export.html.id" value="sign1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="sign"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doSign(this)&quot;"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["고객확인 서명"]]></propertyExpression>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="5"/>
+					</textElement>
+					<text><![CDATA[(서명/인)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_10pt" mode="Opaque" x="44" y="144" width="490" height="46" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="5">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[이 설명서는 은행이용자의 상품에 대한 이해를 돕고 약관의 중요내용을 알려드리기 위한 참고자료이며, 실제 계약은 대출거래약정서(가계용), 여신거래기본약관(가계용)이 적용됩니다. 계약을 신청하는 경우 약관이, 계약을 체결하는 경우 계약서류가 교부됩니다.
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="39" y="195" width="22" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[1]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="65" y="195" width="135" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doBtnClick(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.id" value="buttonconfirm1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="buttonconfirm"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[ 상품 개요 및 상품의 특성]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" mode="Opaque" x="44" y="219" width="490" height="56" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-98"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="5">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="44" y="221" width="46" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[· 상품명 :
+]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4277b23d-e788-46b1-a3fc-2e7173975f8c" style="Default_9pt" x="90" y="221" width="212" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item3}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="301" y="221" width="55" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[· 대출기간 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="92348cca-bafc-4a97-8755-6508570958e3" style="Default_9pt" x="356" y="221" width="170" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item4}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="44" y="238" width="72" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[· 대출신청금액 :
+]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f2efa96e-7ebb-49f9-830a-e8d3bc68609d" style="Default_9pt" x="116" y="238" width="186" height="17" forecolor="#000000" backcolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[StringUtils.format($F{item5},"#,###원")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="301" y="238" width="50" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[· 채권보전 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="351" y="238" width="10" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["담보".equals( $F{item7} ) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="361" y="238" width="23" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[담보,]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="384" y="238" width="10" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{item7}.isEmpty() ? "[ ]" : ("신용".equals( $F{item7}.substring(0,2) ) ? "[v]" : "[ ]")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="394" y="238" width="26" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[신용(]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="419" y="238" width="10" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["신용(보증)".equals( $F{item7} ) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="429" y="238" width="24" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[보증,]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="454" y="238" width="10" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["신용(무보증)".equals( $F{item7} ) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="464" y="238" width="36" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[무보증),]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="500" y="238" width="10" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["기타".equals( $F{item7} ) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="509" y="238" width="25" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[기타]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="44" y="255" width="107" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[· 적용예정금리(보증료율)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="280e8c92-dd35-4a39-a6a0-9b32019a07bf" style="Default_9pt" x="151" y="255" width="151" height="17" forecolor="#000000" backcolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item8}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="301" y="255" width="70" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="7">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[(금리적용방식 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="Default_9pt" x="371" y="255" width="10" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["변동".equals( $F{item9} ) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="381" y="255" width="27" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[변동,]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="checkbox" x="408" y="255" width="10" height="17">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["고정".equals( $F{item9} ) ? "[v]" : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default_9pt" mode="Transparent" x="418" y="255" width="116" height="17" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[고정)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="39" y="283" width="22" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[2]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="65" y="283" width="135" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[ 거래 구분]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="39" y="303" width="247" height="70">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[■ 개별거래 : 약정액 범위 내에서 일괄하여 대출이 발생하고 갚은
+                  금액을 재사용할 수 없는 방식
+■ 한도거래 : 약정한 한도금액 범위내에서 동일과목의 대출을 자유
+                  롭게 재사용하고 여신기간이 끝나는 날에 한도 금액
+                  을 갚는 방식 (개별거래에 비해 상품마다 별도 가산
+                  금리가 부과되어 금리수준이 높음)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="39" y="387" width="22" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[3]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="65" y="387" width="135" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[ 대출 이자율]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="39" y="409" width="247" height="78">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[■ 고정금리 : 여신실행할 때 결정한 금리가 약정기간동안 동일하게
+                  적용 되는 금리입니다. 다만, 여신실행일 현재 은행에
+                  서 고시하는 기준금리의 변동에 따라 금리차이가 발
+                  생할 수 있습니다.
+■ 변동금리 : 대출약정 기간내에 기준금리가 변경될 경우 해당 대출
+                  금리가 변경되는 금리로서 기준금리가 인상될 경우
+                  고객의 이자 부담이 증가될 수 있습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="42" y="497" width="84" height="14">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[※ 변동금리 예시]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Opaque" x="39" y="512" width="247" height="131" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3" rightPadding="5">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="512" width="247" height="45" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="2" leftPadding="4"/>
+					<textElement markup="none"/>
+					<text><![CDATA[□ CD연동금리:3개월마다 시중의 CD유통수익률(91일물)에 신규할
+    때 결정된 가산이자율을 더하여 변경됩니다.
+□ 기준금리(Prime Rate)연동금리 :은행이 고시하는 기준금리에 가
+    산금리를 적용하여 변경됩니다. 현재 은행이 고시하는 기준금리]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="556" width="38" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="4"/>
+					<textElement markup="none"/>
+					<text><![CDATA[    는 연(]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4a96f04d-0460-46bf-8ce1-ef32286e5c60" style="Default" mode="Transparent" x="77" y="556" width="34" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item10}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="111" y="556" width="103" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="0"/>
+					<textElement markup="none"/>
+					<text><![CDATA[)%이며, 신탁 기준금리는 연(]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4a96f04d-0460-46bf-8ce1-ef32286e5c60" style="Default" mode="Transparent" x="214" y="556" width="33" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item11}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="247" y="556" width="38" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="0"/>
+					<textElement markup="none"/>
+					<text><![CDATA[)% 입니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="567" width="247" height="76" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="4"/>
+					<textElement markup="none"/>
+					<text><![CDATA[□ 금융채연동금리 : KIS채권평가, 한국채권평가, 나이스 채권평가
+    가 고시하는「재산정주기 해당 기간의 AAA등급 금융채유통 수
+    익률」종가(3사평균)의 단순평균값(6개월, 1년, 2년, 3년, 5년)
+    을 적용한다.
+□ COFIX연동금리 : 전국은행연합회에서 공시하는 직전일 신규취
+    급액기준 COFIX금리 또는 잔액기준 COFIX금리에 가산금리를
+    적용하여 매 6/12개월마다 변경됩니다]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="647" width="247" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none"/>
+					<text><![CDATA[■ 최근 5년간 최대금리변동폭 및 부담증가액
+ • 대출신청일 현재 기준금리는 연(   )% 이며, 전월말 기준 5년간
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="658" width="125" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement markup="none"/>
+					<text><![CDATA[• 대출신청일 현재 기준금리는 연(]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="0a8f7359-a9dd-404b-98eb-0f2d2bc17aee" style="Default" mode="Transparent" x="164" y="658" width="22" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item12}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="185" y="658" width="101" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement markup="none"/>
+					<text><![CDATA[)% 이며, 전월말 기준 5년간]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="669" width="81" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="8"/>
+					<textElement markup="none"/>
+					<text><![CDATA[최고 기준금리는 연(]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="0a8f7359-a9dd-404b-98eb-0f2d2bc17aee" style="Default" mode="Transparent" x="120" y="669" width="22" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item13}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="142" y="669" width="144" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement markup="none"/>
+					<text><![CDATA[)%입니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="680" width="247" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement markup="none"/>
+					<text><![CDATA[• 일시상환 변동금리 대출의 경우 최근 5년간 최고 기준 금리 수준]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="691" width="111" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="8"/>
+					<textElement markup="none"/>
+					<text><![CDATA[으로 금리상승할 경우 연간 (]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="0a8f7359-a9dd-404b-98eb-0f2d2bc17aee" style="Default" mode="Transparent" x="149" y="691" width="40" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none"/>
+					<textFieldExpression><![CDATA[StringUtils.format($F{item14},"#,###")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="189" y="691" width="39" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement markup="none"/>
+					<text><![CDATA[)원 [월간 (]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="0a8f7359-a9dd-404b-98eb-0f2d2bc17aee" style="Default" mode="Transparent" x="227" y="691" width="42" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none"/>
+					<textFieldExpression><![CDATA[StringUtils.format($F{item15},"#,###")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="268" y="691" width="18" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement markup="none"/>
+					<text><![CDATA[)원]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="701" width="247" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="8"/>
+					<textElement markup="none"/>
+					<text><![CDATA[의 이자부담이 증가될 수 있습니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="712" width="247" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none"/>
+					<text><![CDATA[■ 대출금리 결정(변동) 요인]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="723" width="247" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement markup="none"/>
+					<text><![CDATA[• 대출금리는 원가요소와 마진을 반영하여 결정 됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="734" width="247" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="8"/>
+					<textElement markup="none"/>
+					<text><![CDATA[원가요소는 ①은행의 자금조달비용 ②고객 신용도에 따른 신용원]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="39" y="745" width="247" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="8"/>
+					<textElement markup="none"/>
+					<text><![CDATA[가 ③ 제 비용인 업무원가 ④ 출연료, 교육세 등 법적 비용 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="313" y="300" width="220" height="43">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[을 고려하여 은행이 결정하며, 결정된 대출금리는 개별약정에
+의해 별도로 정한 항목 (변동금리대출의 기준금리, 거래실적
+에 따른 우대금리 등) 이외에는 대출만기일까지 동일하게 적
+용됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Transparent" x="313" y="345" width="220" height="196" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3" rightPadding="5">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[- 은행의 자금조달비용
+  은행의 자금조달에 드는 비용을 말하며 대표적으로 고객
+  예금에 대한 지급이자, 은행이 직접 시장에서 조달하는
+  경우의 이자비용 및 관련 제비용 등으로 구성됩니다.
+- 신용원가
+  고객의 신용도에 따라 과거 경험과 현재의 시장상황을
+  고려할 때 예상되는 손실과 향후 예상치 못하게 발생할
+  수 있는 잠재적 손실 가능성을 고려한 비용을 말합니다.
+  * 고객의 신용도가 연체 발생 또는 대출금 증가 등으로
+    악화되는 경우 예상손실 증가에 따른 신용원가 상승으
+    로 대출금리가 큰 폭으로 상승할 수 있습니다.
+- 업무원가
+  인건비, 물건비, 제세공과금 등 업무수행에 수반해서 발
+  생하는 운영비용을 말합니다.
+- 법적비용
+  업무원가에 포함되지 않은 법적 비용에 대해 은행이 자
+  체적으로 결정하여 반영하고 있는 원가요소로 주택신용
+  보증기금출연금, 교육세 등이 있습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="311" y="545" width="222" height="35">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[• 기한연장, 채무자변경 등 대출조건이 변경되는 경우에는 변
+  경 당시의 원가요소와 마진을 기준으로 대출금리가 변경 될
+  수 있습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="300" y="582" width="233" height="27">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[■ 고객에게 적용되는 대출금리는 고객의 신용등급 및 담보 유무
+    등에 따라 달리 적용됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="301" y="615" width="22" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[4]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="327" y="615" width="135" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[ 수수료 등 비용]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="304" y="635" width="89" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[■ 중도상환수수료(율) :]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="393" y="635" width="8" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="401" y="635" width="55" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item16}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="456" y="635" width="15" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["~"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="471" y="635" width="55" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item17}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="526" y="635" width="9" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" x="310" y="647" width="10" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[☞]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="320" y="647" width="215" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[대출의 상환기일이 도래하기 전에 대출금을 상환할 경우 고]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="320" y="659" width="35" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[객이 부담]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="355" y="659" width="123" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[하는 금액으로 최초 대출일부터 (]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="0a8f7359-a9dd-404b-98eb-0f2d2bc17aee" style="Default" mode="Transparent" x="478" y="659" width="27" height="12" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item18}.isEmpty() ? "" : $F{item18}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="afd2cbd0-51e4-4005-9a2c-dff9657ddaed" style="Default" mode="Transparent" x="505" y="659" width="30" height="12" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[ )년까지]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="320" y="671" width="215" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[적용 합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="304" y="707" width="133" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[■ 한도약정수수료 : 대출한도금액의]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="437" y="707" width="8" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="445" y="707" width="68" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item19}.isEmpty() ? "" : $F{item19}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="513" y="707" width="22" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[") %"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="310" y="719" width="225" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[☞ 대출한도금액×한도약정수수료율=한도약정수수료]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="304" y="731" width="147" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[■ 약정한도미사용수수료 : 미사용한도의]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="451" y="731" width="8" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="459" y="731" width="56" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item20}.isEmpty() ? "" : $F{item20}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="515" y="731" width="20" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[") %"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="304" y="742" width="78" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[■ 기타수수료 : 항목]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="381" y="742" width="8" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="389" y="742" width="95" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item21}.isEmpty() ? "" : $F{item21}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="484" y="742" width="7" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="389" y="749" width="95" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item22}.isEmpty() ? "" : StringUtils.format($F{item22},"#,###원")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="484" y="753" width="20" height="7" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[") %,원"]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="760">
+				<staticText>
+					<reportElement uuid="17b7fec8-32eb-457e-a7f1-4df82ffbb23d" x="17" y="23" width="547" height="737">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-99"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="10.0"/>
+						<topPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<leftPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<bottomPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<rightPen lineWidth="10.0" lineColor="#CCCCCC"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="42" y="32" width="247" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[■ 근저당권설정비용]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="50" y="43" width="85" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[• 국민주택채권매입비 : ]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="134" y="43" width="8" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="142" y="43" width="124" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item23}.isEmpty() ? "" : StringUtils.format($F{item23},"#,###")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="266" y="43" width="23" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[") 원"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="50" y="54" width="239" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[• 등록면허세, 지방교육세, 등기신청수수료 및 법무사수수료]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="58" y="65" width="5" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="63" y="65" width="8" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="71" y="65" width="195" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item24}.isEmpty() ? "" : StringUtils.format($F{item24},"#,###")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="266" y="65" width="23" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[") 원"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="58" y="76" width="231" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[☞ 말소(감액)등기를 하는 경우 고객이 부담합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="50" y="87" width="239" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[• 근저당물건의 조사 또는 감정평가 수수료]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="58" y="98" width="5" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="63" y="98" width="8" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="71" y="98" width="195" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item25}.isEmpty() ? "" : StringUtils.format($F{item25},"#,###")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="266" y="98" width="23" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[") 원"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="58" y="109" width="231" height="22">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[☞ 고객의 채무불이행으로 인하여 근저당권을 행사하는
+    경우 고객이 부담합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="50" y="131" width="239" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[• 기타 비용으로서 부담주체가 분명하지 아니한 비용]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="58" y="142" width="5" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="63" y="142" width="8" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="71" y="142" width="195" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item26}.isEmpty() ? "" : StringUtils.format($F{item26},"#,###")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="266" y="142" width="23" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[") 원"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="58" y="153" width="231" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[☞ 고객과 은행이 균분하여 부담합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="42" y="164" width="43" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[■ 인지세 :]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="85" y="164" width="8" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="93" y="164" width="173" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item27}.isEmpty() ? "" : StringUtils.format($F{item27},"#,###")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="266" y="164" width="23" height="11" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[") 원"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" mode="Opaque" x="51" y="178" width="60" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[대출금액]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" mode="Opaque" x="111" y="178" width="58" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[인지세액]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" mode="Opaque" x="169" y="178" width="60" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[대출금액]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" mode="Opaque" x="229" y="178" width="60" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[인지세액]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="51" y="189" width="60" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[4천만원 초과
+5천만원 이하
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="111" y="189" width="58" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[4만원]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="169" y="189" width="60" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[1억원 초과
+10억원 이하
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="229" y="189" width="60" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[15만원]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="51" y="213" width="60" height="23">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[5천만원 초과
+1억원 이하]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="111" y="213" width="58" height="23">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[7만원]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="169" y="213" width="60" height="23">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[10억원 초과]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="229" y="213" width="60" height="23">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[35만원]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="57" y="236" width="232" height="33">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[☞ 인지세법에 의해 대출약정을 체결할 때 납부하는 세금으로 대
+    출금액에 따라 세액이 차등 적용되며, 각 50%씩 고객과 은행
+    이 부담합니다.
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="42" y="270" width="69" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[■ 기타비용 : 항목]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="111" y="270" width="8" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="119" y="270" width="107" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item28}.isEmpty() ? "" : $F{item28}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="226" y="270" width="13" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="42" y="281" width="69" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="50"/>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[금액]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="111" y="281" width="8" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="119" y="281" width="109" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{item29}.isEmpty() ? "" : StringUtils.format($F{item29},"#,###")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="18c0c0d8-76ef-44f5-a7c5-a9c88792762e" style="Default" x="228" y="281" width="27" height="12" forecolor="#0000FF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75" lineColor="#0000FF"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")%,원"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="42" y="293" width="258" height="22">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[■ 채무자의 채무불이행으로 인해 발생하는 비용은 은행여신 거래기
+    본약관 제4조(비용의 부담)에 의거하여 채무자가 부담하여야 합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="42" y="316" width="22" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[5]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="68" y="316" width="135" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[ 이자 납입방법]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Transparent" x="42" y="332" width="247" height="33" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0" rightPadding="0"/>
+					<textElement/>
+					<text><![CDATA[■  이자 납입일을 정하여 일정주기(매월 등)마다 이자를 납입
+■  통장대출 형식의 한도거래대출 : 은행이정한매월 결산일에 납입
+■  기타 이자납입방법은 대출거래약정서 참조]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="42" y="366" width="22" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[6]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="68" y="366" width="135" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[대출 상환방법]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Transparent" x="42" y="383" width="247" height="75" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0" rightPadding="0"/>
+					<textElement/>
+					<text><![CDATA[■  만기 일시상환방식 : 대출기간 만기일에 전액 상환
+■  분할상환방식 : 여신개시일로부터 다음달 또는 일정기간 동안 거
+     치후 만기일까지 분할하여 상환
+■  통장대출 형식의 한도거래대출 : 한도거래대출 내에서 자유로이
+     상환하며, 대출 만기일에 전액 상환(이자를 원금에 가산할 때 대
+     출원금에 포함되어 다음달부터 이자가 부과됨)
+■  기타 상환방법은 대출거래약정서 참조]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="42" y="459" width="22" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[7]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="68" y="459" width="135" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[연체이자율(지연배상금률)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Transparent" x="42" y="475" width="247" height="110" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0" rightPadding="0"/>
+					<textElement/>
+					<text><![CDATA[■  연체이자율은 [대출이자율+연체기간별 연체가산이자율]로 적용
+     합니다.
+    • 연체가산이자율은 연체기간별로 다음과 같이 적용하며, 연체
+      기간에 따라 구분하여 부과하는 방식(계단방식)을 적용합니다.
+      - 연체기간이 1개월 이하 : 연 7%
+      - 연체기간이 1개월 초과 3개월 이하 : 연 8%
+      - 연체기간이 3개월 초과 : 연 9%
+■  연체이자율은 최고 연 17%로 합니다.
+■  상품에 따라 연체이자율이 일부 달라지는 경우가 있으므로 세부
+     적인 사항은 대출거래약정서 등을 참고하시기 바랍니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="42" y="586" width="22" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[8]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" mode="Opaque" x="68" y="586" width="135" height="14" backcolor="#D6D6D6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[유의사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="42" y="602" width="78" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[■ 대출의 제한]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Transparent" x="42" y="614" width="247" height="67" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3" rightPadding="0"/>
+					<textElement/>
+					<text><![CDATA[• 당행의 연체대출금[지급보증대지급금{채무자가 기일 내에 돈을 갚
+  지 못한 경우 지급보증을 한 은행(또는 정부)에서 대신 지급하여 주
+  는 금액} 포함] 보유자, 당행에 손해를 끼친자, 신용도판단정보 등
+  록자 등 사유가 있는 경우 대출을 취급하지 않거나 제한하여 운용
+  할 수 있습니다.
+• 주택담보대출은 LTV 및 DTI 허용한도 내에서 운용 할 수 있습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="42" y="682" width="247" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[■  연체이자(지연배상금)를 내셔야 하는 경우
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="42" y="694" width="12" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[•]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="54" y="694" width="198" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[「이자를 납입하기로 약정한 날」에 납입하지 아니한 때]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="56" y="707" width="233" height="43">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[☞ 이자를 납입하여야 할 날의 다음날부터 1개월까지는 내셔야
+    할 약정이자에 대해 연체이자가 적용되고, 1개월이 완전히 지
+    나면 대출원금에 연체이자율을 곱한 연체이자를 내셔야 합니
+    다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="41" y="748" width="12" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[•]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="54" y="748" width="195" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[「원금을 상환하기로 약정한 날」에 상환하지 아니한 때]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="58" y="740" width="233" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[☞ 원금을 상환하여야 할 날의 다음날부터는 대출원금에 대한 연
+    체이자를 내셔야 합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="303" y="32" width="12" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[•]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="315" y="32" width="225" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[「분할상환금(또는 분할상환 원금과 이자)을 상환하기로 한 날」]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="316" y="45" width="85" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[에 상환하지 아니한 때]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="315" y="60" width="221" height="44">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[☞ 분할상환금(또는 분할상환 원금과 이자)을 상환하여야 할
+    날의 다음날부터는 해당 분할상환금(또는 분할 상환원금
+    과 이자)에 대한 연체이자를, 2회 이상 연속하여 지체한
+    때에는 대출원금잔액에 대한 연체이자를 내셔야 합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="303" y="106" width="12" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[•]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="315" y="106" width="221" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[기타 은행여신거래기본약관 제7조에서 정한 대출기한 전의]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="316" y="117" width="220" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[채무변제의무 사유에 해당되어 기한의 이익(미리 정한기간]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="316" y="128" width="149" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동안 당사자가 누리는 이익)이 상실된 때]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="316" y="139" width="221" height="32">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[☞ 기한의이익(미리 정한 기간동안 당사자가 누리는 이익)
+    이 상실되는 날부터 대출원금에 대한 연체이자를 내셔야
+    합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="303" y="173" width="12" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[•]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="315" y="173" width="221" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[통장식 형식의 한도대출이 대출한도금액 부족으로 이자의 일]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="316" y="185" width="98" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[부라도 지급되지 않은 경우]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="318" y="196" width="220" height="66">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[☞ 이자를 납입하여야 할 때부터 계속하여 1개월간 지체한
+    때 또는 은행거래여신거래기본약관(가계용) 제7조에서 정
+    하고 있는 사유가 발생할 경우 그에 따라 기한의 이익이
+    상실되며, 기한이익(미리 정한 기간 동안 당사자가 누리는
+    이익)상실로부터 일중 최고잔액에 대하여 연체이자율에 의
+    한 연체이자를 내셔야 합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Opaque" x="303" y="263" width="235" height="45" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3" rightPadding="3">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[이자납입 연체로 인하여 대출잔액에 연체이자율이 적용되었을 경우, 연체이자 전액을 납입하지 않고 일부연체이자를 정리하는 경우에도 대출잔액에 연체이자율이 적용됨을 유의하시기 바랍니다.
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="303" y="308" width="237" height="33">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[■  대출기한 전에 채무를 상환해야 하는 경우
+(기한의 이익 상실 사례 - 은행여신거래기본약관 제7조 일부
+발췌)
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Opaque" x="303" y="341" width="236" height="103" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement markup="html"/>
+					<text><![CDATA[<b>◇ 기한의 이익이란?</b><br>
+기한의 존재로 말미암아 당사자가 받는 이익을 말하며, 은행과<br>
+의 대출거래에서 채무자인 고객은 당초 약정한 대출기한까지는<br>
+대출금을 상환하지 않아도 되므로 그 기간동안 채무자인 고객<br>
+이 가지는 이익을 기한의 이익이라 합니다.<br>
+<b>◇ 기한의 이익이 상실되면?</b><br>
+- 모든 대출금(또는 해당 대출금)을 즉시 상환<br>
+- 연체이자 부담<br>
+- 일정기간이 완전히 지난 후 신용도판단정보 등록 등<br>]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="303" y="444" width="12" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[•]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="315" y="445" width="224" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[채무자인 고객소유의 예금, 담보부동산에 법원이나 세무서 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="314" y="456" width="151" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[으로부터의 (가)압류명령 등이 있는 때 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="314" y="467" width="225" height="32">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[☞ 은행으로부터 별도 요구가 없더라도 모든 대출금 (또는 해
+    당 대출금)을 대출기한이 도래하기 전임에도 불구하고 곧
+    상환하셔야 합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" mode="Transparent" x="303" y="501" width="12" height="12" backcolor="#FFFFFF">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[•]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="315" y="501" width="225" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[대출기한이 도래되었거나 기한이익(미리 정한 기간 동안 당사]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="315" y="513" width="225" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[자가 누리는 이익)이 상실된 대출을 하나라도 상환하지 아니한]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="315" y="524" width="20" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[때 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="316" y="535" width="223" height="32">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[☞ 은행의 서면요구에 의해 모든 대출금(또는 해당 대출금)을
+    대출기한이 도래하기 전임에도 불구하고 곧 상환하셔야 합
+    니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="303" y="570" width="236" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[■  금리인하요구권]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="307" y="581" width="12" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[•]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="98dec096-3126-4fe8-9f39-9548deaedad4" style="Default" x="319" y="581" width="60" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[채무자인 고객은]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="98dec096-3126-4fe8-9f39-9548deaedad4" style="Default" x="379" y="581" width="162" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[본인의 신용상태에 현저한 변동이 있는 경우]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="319" y="593" width="222" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(승진, 연소득 증가, 국가고시합격, 은행의 우수고객으로 선정,]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="319" y="606" width="222" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[신용등급개선, 자산증가 또는 부채감소 등)에는 증빙자료를]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="98dec096-3126-4fe8-9f39-9548deaedad4" style="Default" x="319" y="619" width="207" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[첨부한 금리인하신청서를 은행에 제출, 금리변경을 요구]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="98dec096-3126-4fe8-9f39-9548deaedad4" style="Default" x="319" y="630" width="222" height="22">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[할 수 있습니다. 단, 은행의 CSS(개인신용평가시스템)평가결과에 따라서 금리인하가 되지 않을 수도 있습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="98dec096-3126-4fe8-9f39-9548deaedad4" style="Default" x="307" y="653" width="234" height="33">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement/>
+					<text><![CDATA[• 금리인하요구 대상여신 : 은행의 CSS에 따라 금리가 차등 적
+  용되는 만기일시상환방식(유동성 한도대출 포함) 및 분할상환
+  방식의 가계신용 대출에 한합니다.
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="302" y="694" width="239" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[■  개인신용정보의 제공 · 조회 및 연체정보 등록
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="98dec096-3126-4fe8-9f39-9548deaedad4" style="Default" x="307" y="705" width="234" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement/>
+					<text><![CDATA[• 개인신용정보 제공 · 조회]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="315" y="717" width="226" height="43">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[☞ 다음의 신용정보들은 전국은행연합회 「신용정보관리규약
+    에 따라 종합신용정보집중기관인 전국은행연합회에 제공,
+    집중, 활용됩니다.
+ - 개인식별정보 : 성명, 주민등록번호, 직업
+ - ‘연체 등’ 정보 : 대출금 등의 연체사실
+ - 신용거래정보 : 대출현황, 보증현황 등]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="760">
+				<staticText>
+					<reportElement uuid="17b7fec8-32eb-457e-a7f1-4df82ffbb23d" x="16" y="24" width="547" height="736">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-99"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="10.0"/>
+						<topPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<leftPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<bottomPen lineWidth="10.0" lineColor="#CCCCCC"/>
+						<rightPen lineWidth="10.0" lineColor="#CCCCCC"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="98dec096-3126-4fe8-9f39-9548deaedad4" style="Default" x="54" y="48" width="235" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+						<property name="com.cabsoft.rx.export.html.id" value="scrollpoint3_1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement/>
+					<text><![CDATA[• '연체 등' 정보 등록]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="62" y="60" width="12" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[☞]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="74" y="60" width="215" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[대출원금, 이자 등을 3개월 이상 연체한 경우에는 3개월이]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="74" y="73" width="215" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[되는 날을 등록사유 발생일로 하여 그 때로부터 10일 이내]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="74" y="86" width="114" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[에 '연체 등' 정보거래처로 등록]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="98dec096-3126-4fe8-9f39-9548deaedad4" style="Default" x="188" y="86" width="42" height="12">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Transparent" x="62" y="99" width="227" height="45" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0" rightPadding="0"/>
+					<textElement/>
+					<text><![CDATA[- 「신용정보관리규약」 개정으로 ‘연체 등’ 정보 등록 기준이
+    변경될 수 있습니다.
+-  ‘연체 등’정보가 등록되면, 금융거래제약 등 불이익을 받을
+    수 있습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Opaque" x="54" y="148" width="235" height="56" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3" rightPadding="5">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="html"/>
+					<text><![CDATA[<b>(예시) 원금 또는 이자를 납입하여야 할 날 : 5/10</b><br>
+ㅇ 연체발생일 : 5/11<br>
+ㅇ 등록사유발생일 : 8/11<br>
+※ 통장대출 형식의 한도거래대출의 경우에는 한도초과일 다음<br>
+&nbsp;&nbsp;&nbsp;날부터 3개월 후에 ‘연체 등’ 정보가 등록됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Transparent" x="302" y="48" width="234" height="48" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0" rightPadding="0"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[• ‘연체 등’ 정보 거래처로 등록된 후 연체금액을 상환하여 등록
+   사유가 해제되는 경우에도 등록기간 및 금액에 따라 해제기
+   록이 1년동안 남아있을 수 있어 동 기록으로 인해 금융상의
+   불편이 초래될 수도 있음에 유의하시기 바랍니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="302" y="99" width="234" height="57">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[■ 이 설명서는 은행여신거래기본약관(가계용)의 이자지연배상
+    금및비용(약정이자, 중도상환수수료, 부대비용등)에 대한 이
+    해를 돕기 위하여 약정전에 제공되는 자료로서, 상담일 이후
+    신청금액, 신용도, 설정금액 등 변경에 의하여 일부 내용이
+    달라질 수 있습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="304" y="160" width="233" height="41">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-98"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5"/>
+						<leftPen lineWidth="1.5"/>
+						<bottomPen lineWidth="1.5"/>
+						<rightPen lineWidth="1.5"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="faa2b939-35be-4b69-b259-dda8c551ded4" style="Default" mode="Opaque" x="307" y="163" width="226" height="35" forecolor="#999999" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="5">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[※ 필요한 경우 개별 상품에 대한 추가 설명자료 요청이
+   가능합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" mode="Opaque" x="42" y="214" width="502" height="48" backcolor="#F1F1F1">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="5">
+						<pen lineStyle="Solid"/>
+						<topPen lineWidth="0.75" lineStyle="Dashed"/>
+						<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+						<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+						<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html"/>
+					<text><![CDATA[상품가입 후 의문사항 또는 불만(민원)이 있을 경우 <b>소비자보호센터</b>(080-023-0182) 또는 <b>인터넷 홈페이지(www.shinhan.com)</b>에 문의할 수 있고, 분쟁이 발생한 경우에는 <b>금융감독원</b>(국번없이 1332) 등에 <b>도움을 요청할 수 있습니다.</b><br/>이 상품은 캡소프트 상품개발부, 개인금융부에서 개발한 상품입니다.<br/>자세한 상품문의는 <b>고객센터 1577-8000(서비스코드 : 예금상담 641, 대출상담 642, 외환상담 643)</b>로 연락바랍니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="210" y="279" width="165" height="22">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doBtnClick(this)&quot;"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.id"><![CDATA["1".equals($F{item31}) ?  "buttonconfirm2" : ""]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.type"><![CDATA["1".equals($F{item31}) ?  "buttonconfirm" : ""]]></propertyExpression>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[예금거래 지급동의서]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="3fd2a1ce-6dad-433f-8529-111b4bc5bbbb" style="Default" x="50" y="316" width="98" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[본인(당사)은 (주)캡소프트]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="2cf2afbf-bb1e-41a1-9259-a0bfe70d14fb" style="Default" x="148" y="316" width="52" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? $F{item30} : ""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="3fd2a1ce-6dad-433f-8529-111b4bc5bbbb" style="Default" x="200" y="316" width="333" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[지점과 여신거래를 함에 있어 아래 예금계좌에 대하여 예금종류별 약관 또는 예금거래 기본약관 내용과 다르게 다음과 같이 특별한 조건을 붙여 귀행과 약정하며, 이로 인하여 발생되는 제반 문제는 본인(당사)책임으로 하며 기타사항은 해당예금약관 및 귀행 규정에 따르기로 하겠습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="3fd2a1ce-6dad-433f-8529-111b4bc5bbbb" style="Default" x="50" y="327" width="483" height="23">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified" markup="none"/>
+					<text><![CDATA[약관 내용과 다르게 다음과 같이 특별한 조건을 붙여 귀행과 약정하며, 이로 인하여 발생되는 제반 문제는 본인(당사)책임으로 하며 기타사항은 해당예금약관 및 귀행 규정에 따르기로 하겠습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" mode="Opaque" x="51" y="367" width="60" height="17" backcolor="#E6E6E6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[구      분]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" mode="Opaque" x="111" y="367" width="236" height="17" backcolor="#E6E6E6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[내          용]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" mode="Opaque" x="347" y="367" width="186" height="17" backcolor="#E6E6E6">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineWidth="0.75" lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[비 고]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="51" y="384" width="60" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[예금종류]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="91f0b0c8-4395-4fd6-a607-fcc581b2d525" style="Default" x="111" y="384" width="236" height="16">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? $F{item32} : ""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="51" y="399" width="60" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[예금계좌번호]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="91f0b0c8-4395-4fd6-a607-fcc581b2d525" style="Default" x="111" y="399" width="236" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? (StringUtils.format($F{item33},"@@@-@@@-@@@@@@")) : ""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="51" y="414" width="60" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[여신계좌번호]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="3c07096f-0edf-4313-8cfc-d7768ac696ed" style="Default" x="111" y="414" width="236" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? (StringUtils.format($F{item34},"@@@-@@@-@@@@@@")) : ""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="51" y="429" width="60" height="155">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<pen lineColor="#33CCCC"/>
+						<topPen lineColor="#33CCCC"/>
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[지급동의내용]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="e981c3a6-e80c-422c-85a5-4b67d402c766" style="checkbox" x="111" y="429" width="15" height="51">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="5" leftPadding="3">
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.0" lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? ("1".equals( $F{item35} ) ? "[v]" : "[ ]") : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8a7e8fe4-38ab-4c47-ad00-48a8fc04ee52" style="Default" x="126" y="429" width="221" height="51">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="5" leftPadding="0">
+						<leftPen lineWidth="0.0" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.0" lineColor="#33CCCC"/>
+					</box>
+					<textElement verticalAlignment="Top"/>
+					<text><![CDATA[신규약정용
+본 동의서에 기재된 해당 비용 및 수수료에 대하여 예금거래
+기본약관 제10조에서 정한 지급의 절차를 생략하고 은행이
+출금하여 수수료에 충당하는 것에 동의 한다.
+
+기존대출용
+2009년4월 22일 대부업법 시행과 관련하여 이미 취급된 아
+래 대출에 대해서 여신의 비용 및 수수료에 대하여 예금거
+래 기본약관 제 10조에서 정한 지급의 절차를 생략하고 은
+행이 출금하여 수수료에 충당한 것에 대하여 사전에 설명
+을 들었으며 이에 동의 하였음을 확인합니다.
+
+여신계좌번호 :]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="c69690d6-fcf9-478f-aa4a-e0fcaf84b60e" style="checkbox" x="111" y="480" width="16" height="104">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="5" leftPadding="3">
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? ("2".equals( $F{item35} ) ? "[v]" : "[ ]") : "[ ]"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="90eeb130-1a28-426e-bcb5-7ca3db365df5" style="Default" x="127" y="480" width="221" height="72">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="5"/>
+					<textElement verticalAlignment="Top" markup="none"/>
+					<text><![CDATA[기존대출용
+2009년4월 22일 대부업법 시행과 관련하여 이미 취급된 아
+래 대출에 대해서 여신의 비용 및 수수료에 대하여 예금거래
+기본약관 제 10조에서 정한 지급의 절차를 생략하고 은행이
+출금하여 수수료에 충당한 것에 대하여 사전에 설명을 들었
+으며 이에 동의 하였음을 확인합니다.]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="127" y="552" width="220" height="32" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="0">
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? "여신계좌번호 : "+$F{item34} : "여신계좌번호 : "]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8a7e8fe4-38ab-4c47-ad00-48a8fc04ee52" style="Default" x="347" y="384" width="186" height="200">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="3" leftPadding="3">
+						<leftPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<bottomPen lineWidth="0.75" lineColor="#33CCCC"/>
+						<rightPen lineWidth="0.75" lineColor="#33CCCC"/>
+					</box>
+					<textElement verticalAlignment="Top"/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c6ab4b1-7e45-443f-96e2-0dc3a51818ef" style="Default" x="347" y="384" width="186" height="30">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[<제3자에게 지급되는 비용>]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="dd689397-8a4d-4ca4-8908-17dc35a36ae9" style="Default" mode="Transparent" x="348" y="414" width="20" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="8"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[□]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="dd689397-8a4d-4ca4-8908-17dc35a36ae9" style="Default" mode="Transparent" x="368" y="414" width="165" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[국민주택채권매입비]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="347" y="426" width="32" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="20"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="379" y="426" width="136" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? StringUtils.format($F{item23},"#,###") : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="426" width="18" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="347" y="438" width="61" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="20"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["입금계좌("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="408" y="438" width="107" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? (StringUtils.format($F{item36},"@@@-@@@-@@@@@@")) : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="438" width="18" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="dd689397-8a4d-4ca4-8908-17dc35a36ae9" style="Default" mode="Transparent" x="347" y="451" width="21" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="8"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[□]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="dd689397-8a4d-4ca4-8908-17dc35a36ae9" style="Default" mode="Transparent" x="368" y="451" width="165" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[감정평가수수료]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="347" y="464" width="32" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="20"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="379" y="464" width="136" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? StringUtils.format($F{item25},"#,###") : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="464" width="18" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="dd689397-8a4d-4ca4-8908-17dc35a36ae9" style="Default" mode="Transparent" x="347" y="488" width="21" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="8"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[□]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="368" y="488" width="11" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="379" y="488" width="136" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? $F{item28} : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="488" width="18" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="347" y="501" width="32" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="20"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="379" y="501" width="136" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? StringUtils.format($F{item29},"#,###") : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="501" width="18" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="347" y="512" width="61" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="20"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["입금계좌("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="408" y="512" width="107" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? (StringUtils.format($F{item38},"@@@-@@@-@@@@@@")) : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="512" width="18" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="dd689397-8a4d-4ca4-8908-17dc35a36ae9" style="Default" mode="Transparent" x="347" y="525" width="21" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="8"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<text><![CDATA[□]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="368" y="525" width="11" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="379" y="525" width="136" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? $F{item39} : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="525" width="18" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="347" y="538" width="32" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="20"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="379" y="538" width="136" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? StringUtils.format($F{item40},"#,###") : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="538" width="18" height="11" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="347" y="549" width="61" height="35" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="20"/>
+					<textElement verticalAlignment="Top" markup="none"/>
+					<textFieldExpression><![CDATA["입금계좌("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="408" y="549" width="107" height="35" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? (StringUtils.format($F{item41},"@@@-@@@-@@@@@@")) : ""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="549" width="18" height="35" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Top" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="51" y="601" width="482" height="76">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[※ 예금거래기본약관 제10조[지급/해지청구]
+    ① 거래처가 통장으로 예금·이자를 찾거나 예금계약을 해지하고자 할 때에는 신고한 비밀번호 등 필요한 사항을 적고,거래인감을
+        날인하거나 서명감과 일치하게 서명된 지급 또는 해지청구서를 제출하여야 합니다. 다만, 거래처가 PIN-Pad기(비밀번호 입력
+        장치)에 직접 비밀번호를 입력하는 경우에는 지급 또는 해지청구서에 비밀번호의 기재를 생략할 수 있다.
+    ② 거래처가 자동이체·전산통신기기 등을 이용하여 찾을 때는 그 약정에서 정한 바에 따른다.
+    ③ 실명확인된 계좌를 보유한 거래처가 전산통신기기를 이용한 서비스에 가입한 경우 거래처의 예금계약을 해지하고자 할 때에는
+        통장 대신 전산통신기기를 이용하여 해지도 가능하다. 이때, 해지된 금액은 본인의 실명확인된 계좌로 입금하여야 한다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="150" y="709" width="63" height="14">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[성            명 :]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="554dd5d7-27f6-4d44-b365-3de1829cafbd" style="Default" x="213" y="709" width="146" height="14">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? $F{item1} : ""]]></textFieldExpression>
+				</textField>
+				<image onErrorType="Blank">
+					<reportElement uuid="47f3d3a5-ab24-434e-a2ef-9529f30f0912" key="sign.png" x="359" y="699" width="30" height="30">
+						<property name="com.cabsoft.rx.export.html.id" value="signimg_sign2"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir}+"sign.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default" x="359" y="711" width="30" height="18">
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doSign(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<property name="com.cabsoft.rx.export.html.desc" value="예금거래 지급동의서 확인 서명"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.id"><![CDATA["1".equals($F{item31}) ?  "sign2" : ""]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.id"><![CDATA["1".equals($F{item31}) ?  "sign2" : ""]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.id"><![CDATA["1".equals($F{item31}) ?  "sign2" : ""]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.type"><![CDATA["1".equals($F{item31}) ?  "sign" : ""]]></propertyExpression>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="5" isBold="false"/>
+					</textElement>
+					<text><![CDATA[(인)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" style="Default" x="150" y="723" width="89" height="14">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified"/>
+					<text><![CDATA[주민(사업자)등록번호 :]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="554dd5d7-27f6-4d44-b365-3de1829cafbd" style="Default" x="239" y="723" width="239" height="14">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? StringUtils.format($F{item2},"@@@@@@0-@@@@@@@") : ""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" x="181" y="738" width="67" height="14">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[(주) 캡소프트]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="8796a781-f08a-40bb-bf65-41d4c5ce5e18" x="246" y="737" width="89" height="14">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item30}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="2255280e-a645-42e1-87ee-4e0e788635b8" x="335" y="738" width="67" height="14">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Justified">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[지점 (앞)]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="347" y="459" width="61" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="20"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["입금계좌("]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="515" y="459" width="18" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[")"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="53c0d329-7bcb-47ee-98a1-38e9d03c20fb" style="Default" mode="Transparent" x="408" y="459" width="107" height="13" backcolor="#EBF6FD">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["1".equals($F{item31}) ? (StringUtils.format($F{item37},"@@@-@@@-@@@@@@")) : ""]]></textFieldExpression>
+				</textField>
+			</band>
+			<band/>
+		</groupFooter>
+	</group>
+	<pageFooter>
+		<band height="66">
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
+				<reportElement uuid="2a04d483-6b85-4a93-a94f-47b741e2a234" x="41" y="12" width="492" height="54">
+					<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"barcode2.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>

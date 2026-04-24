@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+.pageinfo{
+	cursor: default;
+	color:#000000;
+	line-height:36px;
+	*line-height:18px;
+}
+
+.toolbar_menu:after{ /*Add margin between menu and rest of content in Firefox*/
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+.toolbar_menu{
+	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font-family:留묒�怨좊뵓,verdana,geneva,arial,helvetica,sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+}
+
+.toolbar_menu ul{
+	background:url(/rxweb/htmlviewer/images/menu_top.gif) top left repeat-x;
+	height:36px;
+	list-style:none;
+	margin:0;
+	padding:0; 
+}
+
+.toolbar_menu ul li{
+	display: inline;
+}
+
+.toolbar_menu li{
+	float:left;
+	padding:0px 3px 0px 3px;
+	*padding:10px 3px 0px 3px;
+}
+
+.toolbar_menu li a{
+	color:#000000;
+	display:block;
+	font-weight:bold;
+	line-height:36px;
+	padding:0px 0px;
+	text-align:center;
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.toolbar_menu li a:hover{
+	color:#000000;
+	text-decoration:none;
+}
+
+.toolbar_menu li ul{
+	background:#FFFFFF;
+	border-left:1px solid #bfdaff;
+	border-right:1px solid #bfdaff;
+	border-bottom:0px solid #bfdaff;
+	display:none;
+	height:auto;
+	filter:alpha(opacity=95);
+	opacity:0.95;
+	position:absolute;
+	width:225px;
+	z-index:200;
+}
+
+.toolbar_menu li:hover ul{
+	display:block;
+}
+
+.toolbar_menu li li {
+	display:block;
+	float:none;
+	padding:0px;
+	width:225px; border-bottom:solid 1px #dfdaff;
+}
+
+.toolbar_menu li ul a{
+	display:block;
+	font-size:12px;
+	font-style:normal;
+	padding:0px 5px 0px 15px; line-height:30px;
+	text-align:left;
+}
+
+.toolbar_menu li ul a:hover{
+	background:#0080FF;
+	color:#000000;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	background:url(/rxweb/htmlviewer/images/menu_top.gif) top left repeat-x;
+}
+
+.toolbar_menu p{
+	clear:left;
+}
+
+.toolbar_menu #current{
+	background:url(/rxweb/htmlviewer/images/menu.gif) top left repeat-x;
+	color:#ffffff;
+}
+		

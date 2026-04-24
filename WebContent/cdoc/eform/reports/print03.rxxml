@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="기본정보조회" pageWidth="595" pageHeight="842" columnWidth="483" leftMargin="42" rightMargin="28" topMargin="71" bottomMargin="42" uuid="1169ad0d-a525-4e65-92e0-9db407f1303f">
+	<property name="rxreport.zoom" value="1.6528925619834716"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="432"/>
+	<style name="Default" isDefault="true">
+		<paragraph rightIndent="4"/>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:/교보/rpx2rxxml/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["d:/교보/rpx2rxxml/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//bank/data]]>
+	</queryString>
+	<field name="P_@title" class="java.lang.String">
+		<fieldDescription><![CDATA[../@title]]></fieldDescription>
+	</field>
+	<field name="error" class="java.lang.String">
+		<fieldDescription><![CDATA[error]]></fieldDescription>
+	</field>
+	<field name="예금주" class="java.lang.String">
+		<fieldDescription><![CDATA[예금주]]></fieldDescription>
+	</field>
+	<field name="가입일" class="java.lang.String">
+		<fieldDescription><![CDATA[가입일]]></fieldDescription>
+	</field>
+	<field name="계좌관리지점" class="java.lang.String">
+		<fieldDescription><![CDATA[계좌관리지점]]></fieldDescription>
+	</field>
+	<field name="통장발행지점" class="java.lang.String">
+		<fieldDescription><![CDATA[통장발행지점]]></fieldDescription>
+	</field>
+	<field name="통장사본발행일" class="java.lang.String">
+		<fieldDescription><![CDATA[통장사본발행일]]></fieldDescription>
+	</field>
+	<field name="계좌번호" class="java.lang.String">
+		<fieldDescription><![CDATA[계좌번호]]></fieldDescription>
+	</field>
+	<field name="예금종류" class="java.lang.String">
+		<fieldDescription><![CDATA[예금종류]]></fieldDescription>
+	</field>
+	<group name="ghtitle">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="10" splitType="Stretch">
+				<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5ee5fc66-ecb7-4c84-b773-91cc4084b2df" key="" mode="Transparent" x="3" y="0" width="493" height="3" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="16" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{P_@title}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="92fc4864-4746-4e0a-8494-cd36f9941384" key="" mode="Transparent" x="3" y="6" width="493" height="3" forecolor="#FFFFFF" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["."]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="21" splitType="Stretch">
+				<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="a128c5e6-4978-403b-9b78-b7dacc596075" key="" mode="Transparent" x="3" y="0" width="505" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{error}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="GH2">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="1" splitType="Stretch"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="1" splitType="Stretch"/>
+		</groupFooter>
+	</group>
+	<pageHeader>
+		<band height="69" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="7b060ddb-0eeb-47ee-857c-67d2375eca98" key="print03_1.bmp" x="0" y="0" width="198" height="23">
+					<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["이미지입니다."]]></propertyExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"print03_1.bmp"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="243e4c11-0a03-4b71-8413-e629f48d53d2" key="print03_3.bmp" mode="Transparent" x="0" y="26" width="510" height="43" backcolor="#FFFF00">
+					<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["이미지입니다."]]></propertyExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"print03_3.bmp"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="497" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="1fcca939-b514-451a-aa4c-f4df81781ba0" key="print03_4.bmp" x="0" y="0" width="505" height="496">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["이미지입니다."]]></propertyExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"print03_4.bmp"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="38cd98f0-f1f9-4273-9a73-c9d2412b0404" key="print03_6.bmp" x="272" y="279" width="190" height="153">
+					<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.position"><![CDATA["absolute"]]></propertyExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"print03_6.bmp"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="50afee67-8d5a-4bd8-a3d4-c25c3676fb52" key="print03_5.bmp" x="40" y="279" width="187" height="150">
+					<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.position"><![CDATA["absolute"]]></propertyExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"print03_5.bmp"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a8019db0-d744-4bb9-b761-df717bd3497a" key="" mode="Transparent" x="111" y="68" width="238" height="20" forecolor="#000000" backcolor="#FFFFFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="굴림" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{계좌번호}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2ca275c6-dfe3-408f-8bc8-3d2180a55f7f" key="" mode="Transparent" x="111" y="88" width="238" height="20" forecolor="#000000" backcolor="#FFFFFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="굴림" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{예금종류}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f3e57af7-eb0f-41b5-8e91-20f5e5853831" key="" mode="Transparent" x="42" y="113" width="187" height="19" forecolor="#000000" backcolor="#FFFFFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="굴림" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{예금주}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="15759175-0159-4134-a38c-a95d5e757b26" key="" mode="Transparent" x="111" y="145" width="187" height="20" forecolor="#000000" backcolor="#FFFFFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="굴림" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{가입일}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c57c29cd-672b-454b-9130-7be3ce255300" key="" mode="Transparent" x="111" y="165" width="215" height="20" forecolor="#000000" backcolor="#FFFFFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="굴림" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{계좌관리지점}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ae3d8d50-5272-4c6e-a6f4-560e72b07eda" key="" mode="Transparent" x="111" y="185" width="215" height="20" forecolor="#000000" backcolor="#FFFFFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="굴림" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{통장발행지점}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5f34a556-1f35-4871-a533-d84f267be721" key="" mode="Transparent" x="123" y="210" width="330" height="20" forecolor="#000000" backcolor="#FFFFFF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="굴림" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{통장사본발행일}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f3165b3d-695a-4f4c-b982-e57aab77eac2" x="26" y="68" width="85" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[계 좌 번 호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6619c687-4ff5-4d2e-b28b-5a1455bb7332" x="26" y="88" width="85" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[예 금 종 류]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4a93ca49-d49c-4e2c-9a0f-f6383c047f8e" x="26" y="145" width="85" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[가입하신 날]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27c84911-4d41-42ae-8f0f-ed97f7b45603" x="26" y="165" width="85" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[계좌관리 점포]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6b578f19-974c-4bda-9dc2-c5746b8fbbae" x="26" y="185" width="85" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[통잘발행 점포]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="58" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="198802a3-f934-42fb-a3a4-f66dcc839804" key="" mode="Transparent" x="3" y="3" width="505" height="42" forecolor="#000000" backcolor="#EFF4F7">
+					<printWhenExpression><![CDATA[false]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C0C0FF"/>
+					<leftPen lineWidth="0.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C0C0FF"/>
+					<rightPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="굴림" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="fd740472-2dc1-4b34-aea4-d33d06a886f9" key="print03_7.bmp" x="3" y="3" width="505" height="42">
+					<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["이미지입니다."]]></propertyExpression>
+					<propertyExpression name="com.cabsoft.rx.export.html.position"><![CDATA["absolute"]]></propertyExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"print03_7.bmp"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>

@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="5-900-0915" pageWidth="595" pageHeight="842" columnWidth="579" leftMargin="8" rightMargin="8" topMargin="8" bottomMargin="8" uuid="469c3891-e18f-497c-ba1d-95fbaf55144e">
+	<property name="rxreport.zoom" value="1.2100000000000017"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<import value="com.cabsoft.utils.StringUtils"/>
+	<style name="Default_59000915" hAlign="Left" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineColor="#000000"/>
+			<topPen lineColor="#000000"/>
+			<leftPen lineColor="#000000"/>
+			<bottomPen lineColor="#000000"/>
+			<rightPen lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Default_10pt" style="Default_59000915" hAlign="Left" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Defaultback_59000915" style="Default_59000915" mode="Opaque" forecolor="#000000" backcolor="#EEECE1" hAlign="Left" fontSize="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineColor="#000000"/>
+			<topPen lineColor="#000000"/>
+			<leftPen lineWidth="0.75" lineColor="#000000"/>
+			<bottomPen lineWidth="0.75" lineColor="#000000"/>
+			<rightPen lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["./image/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//R_NEXL3323]]>
+	</queryString>
+	<field name="EF_DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[COM_EF_DATE/@value]]></fieldDescription>
+	</field>
+	<field name="고객명" class="java.lang.String">
+		<fieldDescription><![CDATA[고객명/@value]]></fieldDescription>
+	</field>
+	<field name="실명번호" class="java.lang.String">
+		<fieldDescription><![CDATA[실명번호/@value]]></fieldDescription>
+	</field>
+	<group name="report">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="760">
+				<staticText>
+					<reportElement uuid="3ddb0ecf-b9f8-4e10-8d0d-3d2a98f99218" x="132" y="23" width="303" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="11" isBold="true" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[개인(신용)정보 수집·이용·제공 동의서(여신 금융거래) ]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="ae563a86-f457-4214-aa1a-fa5a6bafdd80" x="15" y="67" width="14" height="14" backcolor="#000000">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+				</rectangle>
+				<rectangle>
+					<reportElement uuid="ae563a86-f457-4214-aa1a-fa5a6bafdd80" x="556" y="67" width="14" height="14" backcolor="#000000">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="7af3a2a1-43f5-44b1-88c6-9f3cb0ee5f03" style="Default_59000915" x="0" y="83" width="579" height="55">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[[주식회사 캡소프트] 귀하
+   [귀 행]과의 여신 (금융)거래와 관련하여 [귀 행]이 본인의 개인(신용)정보를 수집·이용하거나 제3자에게 제공하고자 하는 경우에는「개인정보 보호법」제15조 제1항 제1호, 제17조
+제1항 제1호, 제24조 제1항 제1호, 신용정보의 이용 및 보호에 관한 법률」 제32조 제1항, 제33조 및 제34조에 따라 본인의 동의를 얻어야 합니다. 이에 본인은 [귀 행]이 아래의 내용과
+같이 본인의 개인(신용)정보를 수집·이용 또는 제공하는 것에 동의합니다.
+   * 여신 (금융)거래라 함은 은행업무(여신), 부수업무(보증, 팩토링 등)와 관련된 거래를 의미합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="6627ab44-756a-4e98-b861-53e1701c451d" x="0" y="138" width="579" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[1. 수집·이용에 관한 사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fb5b4c87-8c35-4784-82b2-3d7798e26a5c" style="Defaultback_59000915" mode="Transparent" x="0" y="153" width="70" height="22">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[수집·이용 목적]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="153" width="509" height="22">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[■ (금융)거래관계의 설정 여부 판단                   ■ (금융)거래관계의 설정·유지·이행·관리
+■ 금융사고 조사, 분쟁 해결, 민원 처리               ■ 법령상 의무이행
+
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fb5b4c87-8c35-4784-82b2-3d7798e26a5c" style="Defaultback_59000915" mode="Transparent" x="0" y="175" width="70" height="111">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[수집·이용할 항목]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="175" width="509" height="10">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[[필수적 정보]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="185" width="509" height="69">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Top"/>
+					<text><![CDATA[■ 개인식별정보: 성명, 주민등록번호 등 고유식별정보, 국적, 직업, 주소 ∙ 전자우편 주소 ∙ 전화번호 등 연락처
+■ (금융)거래정보 : 상품종류, 거래조건(이자율, 만기, 담보 등), 거래일시, 금액 등 거래 설정 및 내역 정보
+■ 신용평가를 위한 정보
+  ▶신용능력정보: 재산·채무·소득의 총액, 납세실적 등  ▶신용도판단정보: 연체, 대위변제, 대지급, 부도, 관련인 발생사실, 금융질서 문란정보 등
+■ 고객 ID, 접속일시, IP주소, 이용 전화번호 등 전자금융거래법에 따른 수집 정보
+■ 금융거래의 설정·유지·이행·관리를 위한 상담, 채권관리 등을 통해 생성되는 정보
+■ 기타 특정상품의 계약 성립에 필수적인 정보 :  임차자금대출의 경우 주택소유여부 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="254" width="509" height="10">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+						<property name="com.cabsoft.rx.export.html.id" value="scrollpoint1_1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[[선택적 정보]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="264" width="509" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[■ 필수적 정보 이외에 개인식별정보로서 거래신청서에 기재된 정보 또는 고객이 제공한 정보 : 주거 및 가족사항, 거주기간, 세대구성 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="275" width="509" height="11">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[※ 본 동의 이전에 발생한 개인(신용)정보도 포함됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fb5b4c87-8c35-4784-82b2-3d7798e26a5c" style="Defaultback_59000915" mode="Transparent" x="0" y="286" width="70" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[보유·이용 기간]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="286" width="509" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[위 개인(신용)정보는 수집·이용에 관한 동의일로부터 (금융)거래 종료일까지 위 이용목적을 위하여 보유·이용됩니다. 단, (금융)거래 종료일 후에는 금융사고 조사,
+분쟁 해결, 민원처리, 법령상 의무이행 및 [당 행]의 리스크 관리업무만을 위하여 보유·이용됩니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fb5b4c87-8c35-4784-82b2-3d7798e26a5c" style="Defaultback_59000915" mode="Transparent" x="0" y="310" width="70" height="34">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[동의를 거부할 권리 및 동의를 거부할 경우의 불이익]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="310" width="509" height="34">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[위 개인(신용)정보 중 필수적 정보의 수집·이용에 관한 동의는 계약의 체결 및 이행을 위하여 필수적이므로, 위 사항에 동의하셔야만 (금융) 거래관계의 설정 및
+유지가 가능합니다. 위 개인(신용)정보 중 선택적 정보의 수집·이용에 관한 동의는 거부하실 수 있으며, 다만 동의하지 않으시는 경우 금융거래 조건 등에
+불이익을 받으실 수 있습니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="0" y="344" width="70" height="31">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[수집·이용
+동의여부]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="70" y="344" width="509" height="13">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="1" leftPadding="3">
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Top"/>
+					<text><![CDATA[[귀 행]이 위와 같이 본인의 개인(신용)정보를 수집ㆍ이용하는 것에 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="70" y="357" width="509" height="18">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box topPadding="1" leftPadding="3">
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Top"/>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="70" y="357" width="77" height="18">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[■ 필수적 정보 (동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="Default_59000915" x="146" y="357" width="25" height="18">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm1"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="수집·이용 동의여부 - 필수적 정보"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="170" y="357" width="48" height="18">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="Default_59000915" x="217" y="357" width="25" height="18">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm1_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="수집·이용 동의여부 - 필수적 정보"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="242" y="357" width="214" height="18">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[)                                                               ■ 선택적 정보]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="455" y="357" width="26" height="18">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="Default_59000915" x="480" y="357" width="25" height="18">
+						<property name="com.cabsoft.rx.export.html.id" value="yesno1"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="수집·이용 동의여부 - 선택적 정보"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesno1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="505" y="357" width="45" height="18">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="Default_59000915" x="550" y="357" width="25" height="18">
+						<property name="com.cabsoft.rx.export.html.id" value="yesno1_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="수집·이용 동의여부 - 선택적 정보"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesno1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="575" y="357" width="4" height="18">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="0" y="375" width="70" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[고유식별정보
+동의여부]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="70" y="375" width="509" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[[귀 행]이 위 목적으로 다음과 같은 본인의 고유식별정보를 수집ㆍ이용하는 것에 동의합니다.
+고유식별정보 : [주민등록번호, 여권번호, 운전면허번호, 외국인등록번호]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Defaultback_59000915" mode="Transparent" x="455" y="375" width="26" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box bottomPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="Default_59000915" x="480" y="375" width="25" height="26">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="고유식별정보 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="505" y="375" width="45" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" style="Default_59000915" x="550" y="375" width="25" height="26">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm2_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="고유식별정보 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="575" y="375" width="4" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="6627ab44-756a-4e98-b861-53e1701c451d" x="0" y="401" width="579" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[2. 제공에 관한 사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="0" y="416" width="70" height="96">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[제공받는 자]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="416" width="509" height="96">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[■ 신용정보집중기관 및 신용조회회사에 대한 제공
+  ▶신용정보집중기관 [전국은행연합회, 여신금융협회 등]   ▶신용조회회사 [서울신용평가정보(주), 코리아크레딧뷰로(주), NICE신용평가정보㈜ 등]
+■ 금융거래의 설정∙유지∙이행∙관리 등에 필요한 업무를 수행하는 제휴업체
+  ▶LIG 손해보험㈜, 서울보증보험, ㈜동부화재해상보험 등
+■ 수탁업체에 대한 제공
+  ▶가람감정평가법인, 가온감정평가법인, 경일감정평가법인, 나라감정평가법인, 대일감정원,  대한감정평가법인, 대화감정평가법인, 
+     미래새한감정평가법인, 미래신용정보㈜, 빌포스트㈜, 삼일감정평가법인, 삼일회계법인, 삼창감정평가법인, 서울신용평가정보㈜, 써브감정평가법인, 
+     솔로몬신용정보㈜,  신한신용정보㈜,  에이원감정평가법인,  제일감정평가법인, ㈜그린CS, ㈜비포스, ㈜신한데이타시스템, ㈜신한서브,
+     ㈜아데코코리아, ㈜아이앤씨엠, ㈜엠피씨, ㈜제니엘, 중앙감정평가법인, 태평양감정평가법인, 통일감정평가법인, 프라임감정평가법인, 하나감정평가법인,
+     한신정신용정보㈜, 효성ITX㈜ 등
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fb5b4c87-8c35-4784-82b2-3d7798e26a5c" style="Defaultback_59000915" mode="Transparent" x="0" y="512" width="70" height="40">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[제공받는 자의
+이용 목적]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="512" width="509" height="40">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+						<property name="com.cabsoft.rx.export.html.id" value="scrollpoint1_2"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[■ 신용정보집중기관 및 신용조회회사에 대한 제공
+  ▶본인의 신용을 판단하기 위한 자료로 활용하거나 공공기관에서 정책자료로 활용
+■ 제휴업체 및 수탁업체에 대한 제공
+  ▶(금융)거래의 설정·유지·이행·관리 등에 필요한 제휴업무의 수행 및 위탁 받은 업무의 수행
+■ 채권의 양수인(투자자포함)에 대한 제공
+  ▶양수가격 산정, 양수인의 추심 및 관리 등에 필요한 업무 수행]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="0" y="552" width="70" height="40">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[제공할 개인(신용)정보의 항목]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="552" width="509" height="40">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[■ 신용정보집중기관 및 신용조회회사에게 제공되는 개인(신용)정보의 항목
+  ▶개인식별정보, 신용거래정보, 신용능력정보, 신용평가를 위한 정보
+■ (금융)거래의 설정∙유지∙이행∙관리 등에 필요한 업무를 수행하는 제휴업체 및 위탁업체에 제공되는 개인정보의 항목
+  ▶수집 ∙ 이용에 동의한 정보 중 제휴업무 목적달성 및 위탁업무 목적달성을 위해 필요한 정보에 한함
+■ 채권의 양수인(투자자포함)에게 제공되는 개인(신용)정보의 항목
+  ▶수집 ∙ 이용에 동의한 정보 중 양수가격 산정, 양수인의 추심 및 관리 등에 필요한 정보]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="0" y="592" width="70" height="30">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[제공 및 변경에 관한 세부사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="592" width="509" height="30">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[■ [당 행]은 위 제휴업체 등 및 수탁업체에게 개인정보를 제공할 경우, 업무수행에 필요한 최소한의 정보만을 제공하며, 위 제공대상 업체현황 제공대상 개인정
+     보 이용목적∙제공대상 개인정보 항목의 세부적 내용은 [당 행] 홈페이지 [www.shinhan.com]에서 확인할 수 있습니다.
+■ [당 행]은 위 사항의 변경이 있을 경우에는 위 홈페이지에 변경 내용을 게시합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="0" y="622" width="70" height="32">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[제공받은 자의 개인
+(신용)정보
+보유·이용 기간]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="622" width="509" height="32">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[개인(신용)정보는 제공된 날로부터 제공된 목적을 달성할 때까지 보유·이용됩니다. 동의 철회 또는 제공된 목적 달성 후에는 위에 기재된 이용 목적과 관련된
+금융사고 조사, 분쟁 해결, 민원처리, 법령상 의무이행을 위하여 필요한 범위 내에서만 보유·이용됩니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="0" y="654" width="70" height="32">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[동의를 거부할 권리
+ 및 동의를 거부할
+경우의 불이익]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f897e300-e689-44ff-ba44-11ab844bac47" style="Defaultback_59000915" mode="Transparent" x="70" y="654" width="509" height="32">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[위 개인(신용)정보의 제공에 관한 동의는 계약의 체결 및 이행을 위하여 필수적이므로, 위 사항에 동의하셔야만 (금융)거래관계의 설정 및 유지가 가능합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="0" y="686" width="70" height="21">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[제공동의여부]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="70" y="686" width="509" height="21">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[[귀 행]이 위와 같이 본인의 개인(신용)정보를 제공하는 것에 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Defaultback_59000915" mode="Transparent" x="455" y="686" width="26" height="21">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="480" y="686" width="25" height="21">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm3"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="개인(신용)정보 제공 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm3"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="505" y="686" width="45" height="21">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="550" y="686" width="25" height="21">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm3_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="개인(신용)정보 제공 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm3"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="575" y="686" width="4" height="21">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="0" y="707" width="70" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[고유식별정보
+동의여부]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Opaque" x="70" y="707" width="509" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3">
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[[귀 행]이 위 목적으로 다음과 같은 본인의 고유식별정보를 제공하는 것에 동의합니다.
+고유식별정보 : [주민등록번호, 여권번호, 운전면허번호, 외국인등록번호]]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="693736ad-7525-49b7-a120-61c033bc039d" style="Defaultback_59000915" mode="Transparent" x="455" y="707" width="26" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box bottomPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[(동의함]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="480" y="707" width="25" height="24">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm4"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="1"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의함]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="고유식별정보 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm4"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="505" y="707" width="45" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[동의하지 않음]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f3863a31-a45d-4811-8da3-4c714d17e4a4" key="" x="550" y="707" width="25" height="24">
+						<property name="com.cabsoft.rx.export.html.id" value="yesnoconfirm4_2"/>
+						<property name="com.cabsoft.rx.export.html.tagValue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.radiovalue" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="radio"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doRadio(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.title" value="[동의하지 않음]이 선택됩니다."/>
+						<property name="com.cabsoft.rx.export.html.desc" value="고유식별정보 동의여부"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.name" value="yesnoconfirm4"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["○"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8ced1f43-29e1-4430-b330-fb4418ba0a25" style="Defaultback_59000915" mode="Transparent" x="575" y="707" width="4" height="24">
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<box leftPadding="0">
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="671e9976-f922-45d2-961d-52b232c39aa6" style="Default_59000915" mode="Transparent" x="0" y="732" width="372" height="25">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[* 선택적 정보는 동의하지 않으셔도 상품가입 거절 등의 은행거래상 불이익은 발생하지 않습니다.
+* 본인은 본 동의서의 내용을 이해하였으며, 개인(신용)정보 수집·이용·제공 관련 고객 권리 안내문에 관하여
+  자세히 설명을 듣고 수령하였습니다]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="fc62022d-1461-4c3e-9d09-b19598910e84" style="Default_59000915" mode="Transparent" x="372" y="732" width="207" height="13">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none"/>
+					<textFieldExpression><![CDATA[StringUtils.format($F{EF_DATE},"@@@@년 @@월 @@일")]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="71668489-4cba-4210-b920-13811462e49b" style="Default_59000915" mode="Transparent" x="372" y="744" width="25" height="13">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none"/>
+					<textFieldExpression><![CDATA["성명 : "]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="71668489-4cba-4210-b920-13811462e49b" style="Default_59000915" mode="Transparent" x="397" y="744" width="83" height="13">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{고객명}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" style="Default_59000915" x="530" y="748" width="35" height="9">
+						<property name="com.cabsoft.rx.export.html.id" value="sign1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doSign(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+						<property name="com.cabsoft.rx.export.html.type" value="sign"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["사용자 확인 서명"]]></propertyExpression>
+					</reportElement>
+					<textElement textAlignment="Center" markup="html">
+						<font size="5" isBold="false"/>
+					</textElement>
+					<text><![CDATA[(서명 또는 인)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f6ac0f14-f578-4648-bb40-a443d7ed7587" style="Default_59000915" mode="Transparent" x="372" y="757" width="159" height="3">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none"/>
+					<textFieldExpression><![CDATA["(주민등록번호 : "+StringUtils.format($F{실명번호},"@@@@@@ - @@@@@@@")+" )"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="749">
+				<staticText>
+					<reportElement uuid="3ddb0ecf-b9f8-4e10-8d0d-3d2a98f99218" x="134" y="14" width="314" height="18">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="11" isBold="true" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[개인(신용)정보 수집·이용 및 제공 관련 고객 권리 안내문]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="36c022c4-b2be-488c-a719-bc4e5c5b12dc" style="Default_10pt" x="15" y="47" width="548" height="79">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement markup="html">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[<b>1.  금융서비스 이용 범위</b><br>
+
+&nbsp;&nbsp;&nbsp;고객의 개인(신용)정보는 고객이 동의한 목적을 위하여만 수집·이용 및 제공됩니다. 필수적 정보에 대한 수집·이용 및<br>
+&nbsp;&nbsp;&nbsp;제공은 계약의 체결 및 이행을 위하여 필수적이므로, 위 사항에 동의하셔야만 [(금융)거래] 관계의 설정 및 유지가<br>
+&nbsp;&nbsp;&nbsp;가능합니다. 반면 선택적 정보에 대한 수집·이용 및 제공에 대하여는 거부하실 수 있으며, 다만 동의하지 않으실 경우<br>
+&nbsp;&nbsp;&nbsp;[(금융)거래] 조건 등에 불이익을 받으실수 있습니다.<br><br> ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="36c022c4-b2be-488c-a719-bc4e5c5b12dc" style="Default_10pt" x="15" y="126" width="548" height="335">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement markup="html">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[<b>2. 고객 개인(신용)정보의 처리 정지 요구권</b><br>
+
+&nbsp;&nbsp;가. 고객은 가입신청시 동의한 본인 개인(신용)정보의 제3자 제공 또는 귀사의 [금융상품(서비스)] 소개 등 영업목적의<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사용에 대하여 전체 또는 사안별로 [당행]에 처리의 정지를 요구할 수 있습니다 (개인정보 보호법 제37조 제1항,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;신용정보의 이용 및 보호에 관한 법률 제37조). 다만, ① 법률에 특별한 규정*이 있거나 법령상 의무를 준수하기<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위하여 불가피한 경우, ② 다른 사람의 생명·신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;게 침해할 우려가 있는 경우, ③ 개인(신용)정보를 처리하지 아니하면 정보주체와 약정한 서비스를 제공하지 못하는<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;등 계약의 이행이 곤란한 경우로서 정보주체가 그 계약의 해지 의사를 명확하게 밝히지 아니한 경우에는 처리정지<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;요구가 거절될 수 있습니다(개인정보 보호법 제37조 제2항).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*신용조회회사 또는 신용정보집중기관에 제공하여 개인의 신용도를 평가하기 위한 목적으로 행한 신용정보의 제공<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동의는 철회할 수 없습니다(신용정보의 이용 및 보호에 관한 법률 제37조 단서).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*[(금융)거래] 관계를 설정하면서 동의를 한 경우 계약 체결일로부터 3개월 내에는 신용정보의 제공 동의를 철회할<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수 없습니다(신용정보의 이용 및 보호에 관한 법률 시행령 제32조 제1항 단서)<br><br>
+
+&nbsp;&nbsp;나. 본인 개인(신용)정보의 처리 정지를 원하시는 고객은 아래의 매체를 통하여 신청하여 주시기 바랍니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 신청방법: 인터넷접수 :  www.shinhan.com<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+전화접수 : 1544-8000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+서면접수 : 당행 전 영업점<br><br>
+
+&nbsp;&nbsp;다. 위의 신청과 관련하여 불편함을 느끼시거나 애로가 있으신 경우 [당행]의 신용정보관리·보호인/개인정보 보호책임자<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;또는 은행연합회, 금융감독원 개인신용정보보호담당자 앞으로 연락하여 주시기 바랍니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 연락처 : [당행] 고객 정보관리·보호인/개인정보 보호책임자 연락처 : 1544-8000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+은행연합회 정보보호담당자 연락처 : 민원상담실 02-3705-5117~9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+금융감독원 정보보호담당자 연락처 : 민원실(국번없이) 1332<br><br> ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="36c022c4-b2be-488c-a719-bc4e5c5b12dc" style="Default_10pt" x="15" y="463" width="548" height="286">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="3"/>
+					<textElement markup="html">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[<b>3. 고객 개인(신용)정보의 열람·정정·삭제 요구권</b><br>
+&nbsp;&nbsp;가. 고객은 개인정보 보호법, 신용정보의 이용 및 보호에 관한 법률 및 신용정보업감독규정 등에 따라 아래의 권리가<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;부여되어 있습니다. 동 권리의 세부내용에 대해서는 [당행] 홈페이지([www.shinhan.com) 또는 금융감독원 홈페이지<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(www.fss.or.kr)에 게시되어 있습니다. 동 권리를 행사하고자 하는 고객은 [당행 각 영업점 앞]으로 신청하여 주시기<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;바랍니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● 개인(신용)정보 열람 및 정정·삭제 요구권(개인정보 보호법 제35조, 제36조):  [당행]에 본인의 개인(신용)정보에<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+대한 열람을 요구할 수 있는 권리 및 자신의 개인(신용)정보를 열람한 후 사실과 다르거나 확인할 수 없는 개인<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(신용)정보에 대하여 정정 또는 삭제를 요구할 수 있는 권리(단, 법률에 특별한 규정이 있는 경우, 다른 사람의<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+생명·신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우 등에는<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;열람이 제한 또는 거절될 수 있음)<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● 신용정보 제공사실 통보 요구권(신용정보의 이용 및 보호에 관한 법률 제35조): 신용정보회사 등이 본인에 관한<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+신용정보를 제공한 경우 제공받은 자, 신용정보회사 등에게 제공한 신용정보의 주요 내용, 제공받은 자, 이용 목적<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+등의 통보를 요구할 수 있는 권리<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● 신용정보 열람 및 정정요구권(신용정보의 이용 및 보호에 관한 법률 제38조): 신용정보회사 등이 보유하는 본인의<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+신용정보의 제공 또는 열람을 요구할 수 있는 권리 및 본인의 신용정보가 사실과 다른 경우 이에 대한 정정을 요<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+구하고, 정정 처리결과에 이의가 있는 경우 금융위원회에 시정조치를 요구할 수 있는 권리<br><br>
+
+&nbsp;&nbsp;나. 고객은 본인 개인(신용)정보를 개인신용평가회사(마이크레딧, 크레딧뱅크, 서울신용평가정보, 코리아크레딧뷰로<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;등)를 통하여 연간 일정 범위내에서 무료로 확인할 수 있습니다. 자세한 사항은 각 개인신용평가회사에 문의하시기<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;바랍니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; · 마이크레딧:  02) 1588-2486 / www.mycredit.co.kr<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  · 크레딧뱅크:  02) 3771-1004 / www.creditbank.co.kr<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; · 서울신용평가정보㈜: 02) 846-5000 / www.siren24.com<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; · 코리아크레딧뷰로㈜: 02) 708-1000 / www.kcb4u.com ]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<pageFooter>
+		<band height="66">
+			<staticText>
+				<reportElement uuid="a80eeb49-0635-47b2-9392-2aa2750e90b9" x="281" y="38" width="23" height="11"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[(2-2)]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</ReportExpress>

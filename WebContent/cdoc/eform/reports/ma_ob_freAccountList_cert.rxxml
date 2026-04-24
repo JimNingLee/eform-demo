@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="자주쓰는입금계좌" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="521" leftMargin="37" rightMargin="37" topMargin="56" bottomMargin="56" uuid="c8ab25c9-fcbf-4958-ae23-091c7ff3b43b">
+	<property name="rxreport.zoom" value="1.4641000000000006"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<import value="com.cabsoft.rx.hbarcode.sec"/>
+	<style name="Default" isDefault="true"/>
+	<style name="thead" mode="Opaque" backcolor="#EEF1F4" hAlign="Center" vAlign="Middle" fontName="맑은 고딕" fontSize="9" isBold="true">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell" hAlign="Center" vAlign="Middle" fontSize="9">
+		<box>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_r" hAlign="Right" vAlign="Middle" fontSize="9">
+		<box rightPadding="5">
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="box" hAlign="Left" vAlign="Top">
+		<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+			<topPen lineWidth="0.75" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_w_t" hAlign="Center" vAlign="Middle" fontSize="9">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_l" hAlign="Left" vAlign="Middle" fontSize="9">
+		<box leftPadding="10" rightPadding="0">
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_w_t_l" hAlign="Left" vAlign="Middle" fontSize="9">
+		<box leftPadding="10">
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="tdcell_w_t_r" hAlign="Right" vAlign="Middle" fontSize="9">
+		<box leftPadding="0" rightPadding="5">
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="thead_l" mode="Opaque" backcolor="#EEF1F4" hAlign="Left" vAlign="Middle" fontName="맑은 고딕" fontSize="9" isBold="true">
+		<box leftPadding="10">
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+	</style>
+	<style name="first_bg" hAlign="Center" vAlign="Middle" fontSize="9">
+		<box>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{incval} == 3 | $V{incval} == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#EEF100"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="org_barcode" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[Steganography에 사용될 바코드 이미지]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXSecurity/barcode.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodepath" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[고밀도 바코드가 저장되어 있는 경로]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXHiDensityBarcode/out/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="surfix" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 파일 접두사]]></parameterDescription>
+		<defaultValueExpression><![CDATA["410ec709-99cd-470f-8567-c29ed8869a36_"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodeAction" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 삽입 후 이미지 파일 삭제]]></parameterDescription>
+		<defaultValueExpression><![CDATA["deleteafter"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="IssuerID" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="IssuerIDStr" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="xPath">
+		<![CDATA[//kfcc]]>
+	</queryString>
+	<field name="DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[DATE]]></fieldDescription>
+	</field>
+	<field name="TIME" class="java.lang.String">
+		<fieldDescription><![CDATA[TIME]]></fieldDescription>
+	</field>
+	<field name="RESV_TRAN_DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[RESV_TRAN_DATE]]></fieldDescription>
+	</field>
+	<field name="TR_TIME" class="java.lang.String">
+		<fieldDescription><![CDATA[TR_TIME]]></fieldDescription>
+	</field>
+	<field name="OAMT_ACNO" class="java.lang.String">
+		<fieldDescription><![CDATA[OAMT_ACNO]]></fieldDescription>
+	</field>
+	<field name="OAMT_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[OAMT_NM]]></fieldDescription>
+	</field>
+	<field name="IAMT_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[IAMT_NM]]></fieldDescription>
+	</field>
+	<field name="IAMT_BKCD" class="java.lang.String">
+		<fieldDescription><![CDATA[IAMT_BKCD]]></fieldDescription>
+	</field>
+	<field name="IAMT_ACT_DPMN_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[IAMT_ACT_DPMN_NM]]></fieldDescription>
+	</field>
+	<field name="TRAN_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[TRAN_AMT]]></fieldDescription>
+	</field>
+	<field name="FEE_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[FEE_AMT]]></fieldDescription>
+	</field>
+	<field name="TRAN_STCD" class="java.lang.String">
+		<fieldDescription><![CDATA[TRAN_STCD]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement uuid="79626b1f-03ef-4f5b-85f2-8891988288fb" key="ob_freAccountList.png" x="0" y="0" width="521" height="35">
+					<property name="com.cabsoft.rx.export.html.title" value="자주쓰는 입금계좌"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir} + "ob_freAccountList.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="194f1667-8611-4ad9-8291-f62246524fb8" x="-1" y="35" width="521" height="20">
+					<propertyExpression name="com.cabsoft.rx.export.html.id"><![CDATA["IssuerID"]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["발급 번호: 미부여"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="966972d7-135b-487a-8405-5a707b19392a" style="thead" x="0" y="0" width="25" height="20"/>
+				<textElement/>
+				<text><![CDATA[구분]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="648a972f-86c6-450f-b3e5-6462db783a3c" style="thead" x="25" y="0" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[입금은행]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9367060d-ba7f-4b72-bca1-05c6d069818e" style="thead" x="105" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[입금계좌번호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d10d42e1-d98f-405f-b2e6-aa8b2a4e50d2" style="thead" x="205" y="0" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[예금주명]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e8f97aea-a2eb-4a01-b33f-054c1da636f4" style="thead" x="285" y="0" width="80" height="20"/>
+				<textElement/>
+				<text><![CDATA[그룹명]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="73738b52-bf48-4eec-8c81-4084bc57ee78" style="thead" x="365" y="0" width="156" height="20"/>
+				<textElement/>
+				<text><![CDATA[별칭]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="5e7bd891-a74e-49d6-b7bb-76c4c44a2fea" style="tdcell" stretchType="RelativeToTallestObject" x="0" y="0" width="25" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="77f6ae5e-31bb-4127-96d7-28b4fe0f92df" style="tdcell" stretchType="RelativeToTallestObject" x="25" y="0" width="80" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$F{IAMT_NM}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="e058ee10-8b3a-4416-9597-480f4678c0d1" style="tdcell" stretchType="RelativeToTallestObject" x="105" y="0" width="100" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$F{OAMT_ACNO}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="2c68b2f1-9d6f-42b1-94bf-2ee98d12ba02" style="tdcell" stretchType="RelativeToTallestObject" x="205" y="0" width="80" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$F{OAMT_NM}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="abe0884d-0849-4a93-a54e-981fef73f9c1" style="tdcell" stretchType="RelativeToTallestObject" x="285" y="0" width="80" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="75f79626-f134-42c9-8faf-d27b78da2a01" style="tdcell" stretchType="RelativeToTallestObject" x="365" y="0" width="156" height="20"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="97" splitType="Stretch">
+			<textField>
+				<reportElement uuid="810e7f7d-25f9-47a4-be41-75c32a8184c1" x="171" y="77" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["페이지 : "+$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="e6e2115e-4565-4426-8113-e0f1a11e343e" x="251" y="77" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0ade99b3-8f14-450c-a110-6f2e945f6ba3" key="MarkAnyBarcode" x="0" y="4" width="437" height="65">
+					<property name="com.cabsoft.rx.export.html.title" value="원본 대조를 위한 고밀도 바코드입니다."/>
+					<property name="com.cabsoft.rx.export.html.id" value="ma_barcode"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["<!-- MarkAny Barcode -->"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cc9de69a-a410-4b94-8c19-969d11b5996f" key="MarkAnyCopyDetector" x="444" y="4" width="76" height="65">
+					<property name="com.cabsoft.rx.export.html.title" value="복사 방지용 마크입니다."/>
+					<property name="com.cabsoft.rx.export.html.id" value="ma_copyprotector"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["<!-- MarkAny CopyDetector -->"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="155">
+			<textField>
+				<reportElement uuid="c6247264-6286-4026-b430-c2860b4063e4" x="198" y="135" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["페이지 : "+$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a78ca5b5-33eb-4ef0-b0bb-1ef5b26e2729" style="box" x="0" y="77" width="454" height="50"/>
+				<textElement markup="styled">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[◈  PC에서 인쇄 출력한 처리결과는 변경가능성이 있어 거래증빙으로 사용할 수 없습니다.
+◈  CMS지금가능금액은 1일, 2일 자기앞수표가 포함된 금액입니다.
+]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement uuid="0f948d8e-d885-4979-98d4-03a8d44b7347" x="278" y="135" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="d8fb144b-ab4c-4a9b-90eb-c354b5efc034" key="smartcode.png" x="464" y="75" width="55" height="55">
+					<property name="com.cabsoft.rx.export.html.title" value="원본 대조를 위한 스마트 코드입니다."/>
+					<propertyExpression name="com.cabsoft.rx.export.html.id"><![CDATA["SmartCode"]]></propertyExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir} + "smartcode.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="0ade99b3-8f14-450c-a110-6f2e945f6ba3" key="MarkAnyBarcode" x="0" y="6" width="437" height="65">
+					<property name="com.cabsoft.rx.export.html.title" value="원본 대조를 위한 고밀도 바코드입니다."/>
+					<property name="com.cabsoft.rx.export.html.id" value="ma_barcode"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["<!-- MarkAny Barcode -->"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cc9de69a-a410-4b94-8c19-969d11b5996f" key="MarkAnyCopyDetector" x="444" y="6" width="76" height="65">
+					<property name="com.cabsoft.rx.export.html.title" value="복사 방지용 마크입니다."/>
+					<property name="com.cabsoft.rx.export.html.id" value="ma_copyprotector"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["<!-- MarkAny CopyDetector -->"]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</ReportExpress>

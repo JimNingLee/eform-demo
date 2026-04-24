@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="report_101501" pageWidth="595" pageHeight="842" columnWidth="523" leftMargin="36" rightMargin="36" topMargin="56" bottomMargin="56" uuid="8fa6f17c-7fe4-4df3-904f-debaa950d3f6">
+	<property name="rxreport.zoom" value="1.5000000000000007"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<property name="rxreport.callouts" value="##Tue Jul 23 14:58:55 KST 2013\ncallouts.1.pins=419,905;337,978;300,1085;\ncallouts.1.text=Datamatrix, PDF 417\uC740\n\uC601\uBB38\uACFC \uC22B\uC790\uB9CC \uC9C0\uC6D0\uD568\ncallouts.1.bounds=395,1003,150,75"/>
+	<import value="com.cabsoft.Barcode"/>
+	<style name="Default" isDefault="true" fontName="돋움체"/>
+	<parameter name="IssuerIDStr" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="probeUrl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:/workspace/OpenETAX/WebContent/cabsoft/eForm/reports/images/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[/root/etax]]>
+	</queryString>
+	<field name="code39" class="java.lang.String">
+		<fieldDescription><![CDATA[code39]]></fieldDescription>
+	</field>
+	<field name="code128" class="java.lang.String">
+		<fieldDescription><![CDATA[code128]]></fieldDescription>
+	</field>
+	<field name="code128a" class="java.lang.String">
+		<fieldDescription><![CDATA[code128a]]></fieldDescription>
+	</field>
+	<field name="code128b" class="java.lang.String">
+		<fieldDescription><![CDATA[code128b]]></fieldDescription>
+	</field>
+	<field name="code128c" class="java.lang.String">
+		<fieldDescription><![CDATA[code128c]]></fieldDescription>
+	</field>
+	<field name="codabar" class="java.lang.String">
+		<fieldDescription><![CDATA[codabar]]></fieldDescription>
+	</field>
+	<field name="a" class="java.lang.String">
+		<fieldDescription><![CDATA[uccean128/a]]></fieldDescription>
+	</field>
+	<field name="b" class="java.lang.String">
+		<fieldDescription><![CDATA[uccean128/b]]></fieldDescription>
+	</field>
+	<field name="ean13" class="java.lang.String">
+		<fieldDescription><![CDATA[ean13]]></fieldDescription>
+	</field>
+	<field name="bookland" class="java.lang.String">
+		<fieldDescription><![CDATA[bookland]]></fieldDescription>
+	</field>
+	<field name="qrcode" class="java.lang.String">
+		<fieldDescription><![CDATA[qrcode]]></fieldDescription>
+	</field>
+	<field name="twodim" class="java.lang.String">
+		<fieldDescription><![CDATA[twodim]]></fieldDescription>
+	</field>
+	<field name="code93" class="java.lang.String">
+		<fieldDescription><![CDATA[code93]]></fieldDescription>
+	</field>
+	<group name="g1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="730">
+				<staticText>
+					<reportElement uuid="58f75c84-86c2-4c3c-bca4-f23ceffc5825" x="20" y="0" width="482" height="29"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="맑은 고딕" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[일차원 바코드 테스트]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="8e2b35cc-c5ea-40ff-9ecc-60b083f95451" x="20" y="39" width="482" height="15"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Code 3 of 9: " + $F{code39}]]></textFieldExpression>
+				</textField>
+				<image hAlign="Left" vAlign="Middle" onErrorType="Icon">
+					<reportElement uuid="ce55ddfe-ee16-49f6-b72f-5c99eec6479d" x="20" y="54" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 3 of 9 바코드: " + $F{code39}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 3 of 9 바코드: " + $F{code39}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode39($F{code39}, false, false)]]></imageExpression>
+				</image>
+				<image hAlign="Left" vAlign="Middle">
+					<reportElement uuid="04620948-ac28-4197-98d5-e793634fb160" x="20" y="83" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 3 of 9 바코드: " + $F{code39}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 3 of 9 바코드: " + $F{code39}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.create3of9($F{code39}, false, true)]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="1df3c804-16f3-4bc5-95cb-8a8f5c40205a" x="20" y="160" width="482" height="15"/>
+					<textElement>
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Code 128: " + $F{code128}]]></textFieldExpression>
+				</textField>
+				<image hAlign="Left" vAlign="Middle">
+					<reportElement uuid="f2f75e79-ca2f-40a9-a893-5299daef47f0" x="20" y="175" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 128: " + $F{code128}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 128: " + $F{code128}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128($F{code128}, false)]]></imageExpression>
+				</image>
+				<image hAlign="Left" vAlign="Middle">
+					<reportElement uuid="8cc1fe8b-7564-4bbf-89f2-8b23f38ab8cf" x="20" y="204" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 128: " + $F{code128}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 128: " + $F{code128}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128($F{code128}, true)]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="e8c12c55-b483-4309-8224-98f4fb4fa98b" x="20" y="240" width="482" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Code 128A: " + $F{code128a}]]></textFieldExpression>
+				</textField>
+				<image hAlign="Left" vAlign="Middle">
+					<reportElement uuid="301e0fdb-5eca-45bc-ad7a-c58a27222fcc" x="20" y="255" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 128A: " + $F{code128a}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 128A: " + $F{code128a}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128A($F{code128a}, false)]]></imageExpression>
+				</image>
+				<image hAlign="Left" vAlign="Middle">
+					<reportElement uuid="0e0c6af4-5818-46f4-843a-6fe130309a7b" x="20" y="284" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 128A: " + $F{code128a}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 128A: " + $F{code128a}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128($F{code128}, true)]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="7f7fe5d0-e64e-439a-8ba4-f4854ea489ec" x="20" y="320" width="482" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Code 128B: " + $F{code128b}]]></textFieldExpression>
+				</textField>
+				<image hAlign="Left" vAlign="Middle">
+					<reportElement uuid="5595e01b-35fa-436e-b327-615eae808903" x="20" y="335" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 128B: " + $F{code128b}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 128B: " + $F{code128b}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128B($F{code128b}, false)]]></imageExpression>
+				</image>
+				<image hAlign="Left" vAlign="Middle">
+					<reportElement uuid="3ef89d63-4b2d-41ee-92db-ddf39811d5d0" x="20" y="364" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 128B: " + $F{code128b}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 128B: " + $F{code128b}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128B($F{code128b}, true)]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="92194159-cd62-48d3-b2f5-7710df30eca8" x="20" y="400" width="482" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Code 128C: " + $F{code128c}]]></textFieldExpression>
+				</textField>
+				<image vAlign="Middle">
+					<reportElement uuid="2380c88d-58b3-41b0-ac8c-0993ed8a6624" x="20" y="415" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 128C: " + $F{code128c}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 128C: " + $F{code128c}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128C($F{code128c}, false)]]></imageExpression>
+				</image>
+				<image vAlign="Middle">
+					<reportElement uuid="b29ee122-a563-42a0-b3ca-6d0bab0ca8e1" x="20" y="444" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code 128C: " + $F{code128c}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code 128C: " + $F{code128c}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128C($F{code128c}, true)]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="778b14e3-6e3d-4559-8d93-c0d40d56eda7" x="20" y="480" width="482" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Codabar: " + $F{codabar}]]></textFieldExpression>
+				</textField>
+				<image vAlign="Middle">
+					<reportElement uuid="eb759404-08fa-4c0c-8fae-aa106a90206d" x="20" y="495" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Codabar: " + $F{codabar}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Codabar: " + $F{codabar}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCodabar($F{codabar}, false)]]></imageExpression>
+				</image>
+				<image vAlign="Middle">
+					<reportElement uuid="cf7bb8c2-8089-49c8-92f9-77a8155e349c" x="20" y="524" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Codabar: " + $F{codabar}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Codabar: " + $F{codabar}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCodabar($F{codabar}, true)]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="f7221760-6b03-4837-911e-6cda3163a2de" x="20" y="560" width="482" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["UCCEAN128: " + $F{a} + " " + $F{b}]]></textFieldExpression>
+				</textField>
+				<image vAlign="Middle">
+					<reportElement uuid="60ba5a93-2283-41c8-bb9c-54d90c25c886" x="20" y="575" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["UCCEAN128: " + $F{a} + " " + $F{b}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["UCCEAN128: " + $F{a} + " " + $F{b}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createUCCEAN128($F{a},$F{b},true, false)]]></imageExpression>
+				</image>
+				<image vAlign="Middle">
+					<reportElement uuid="9e444cbf-9abf-46dd-a91c-37e6e9b085db" x="20" y="604" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["UCCEAN128: " + $F{a} + " " + $F{b}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["UCCEAN128: " + $F{a} + " " + $F{b}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createUCCEAN128($F{a},$F{b},true, true)]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="9244f8dd-8f0f-43ae-bb65-94d5b91777ad" x="20" y="638" width="482" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["EAN13: " + $F{ean13}]]></textFieldExpression>
+				</textField>
+				<image vAlign="Middle">
+					<reportElement uuid="0a48a64d-2ef5-4968-8882-18ba99f49d24" x="20" y="653" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["EAN13: " + $F{ean13}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["EAN13: " + $F{ean13}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createEAN13($F{ean13})]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="1e4ea470-9b92-4d37-bc59-720f1a22b5ac" x="20" y="689" width="482" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Bookland: " + $F{bookland}]]></textFieldExpression>
+				</textField>
+				<image vAlign="Middle">
+					<reportElement uuid="972841e7-b1e1-4409-abfb-958e13a6be17" x="20" y="704" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Bookland: " + $F{bookland}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Bookland: " + $F{bookland}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createBookland($F{bookland})]]></imageExpression>
+				</image>
+				<image hAlign="Left" vAlign="Middle" onErrorType="Blank">
+					<reportElement uuid="04620948-ac28-4197-98d5-e793634fb160" x="20" y="130" width="482" height="26">
+						<propertyExpression name="com.cabsoft.rx.export.html.alt"><![CDATA["Code93 바코드: " + $F{code93}]]></propertyExpression>
+						<propertyExpression name="com.cabsoft.rx.export.html.title"><![CDATA["Code93 바코드: " + $F{code93}]]></propertyExpression>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createCode93($F{code93}, true, true)]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="8e2b35cc-c5ea-40ff-9ecc-60b083f95451" x="20" y="115" width="482" height="15"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Code93: " + $F{code93}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="g2">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="730">
+				<staticText>
+					<reportElement uuid="b96e2075-e533-4f00-838a-7decb9c52647" x="20" y="0" width="482" height="29"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font fontName="맑은 고딕" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[이차원 바코드 테스트]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="c2ca41f2-fed6-4ee4-9c0b-52c7b0b40f00" x="20" y="39" width="87" height="15"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<text><![CDATA[QR Code]]></text>
+				</staticText>
+				<image>
+					<reportElement uuid="a8a09db5-d164-4ed7-8284-e8d751cad266" x="117" y="39" width="100" height="100">
+						<property name="com.cabsoft.rx.export.html.alt" value="QR Code"/>
+						<property name="com.cabsoft.rx.export.html.title" value="QR Code"/>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createQRCode($F{qrcode}, 600)]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="e87493e3-f26e-4fdc-8088-931ec9fe4170" x="247" y="39" width="87" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Datamatrix]]></text>
+				</staticText>
+				<image scaleImage="RealSize">
+					<reportElement uuid="78cf693e-6534-4852-9d31-01ed2bfb4c0c" x="344" y="39" width="100" height="100">
+						<property name="com.cabsoft.rx.export.html.alt" value="Datamatrix"/>
+						<property name="com.cabsoft.rx.export.html.title" value="Datamatrix"/>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createDataMatix($F{twodim}, 600)]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="889e4681-1906-40ca-bf7e-62cb20ce91eb" x="20" y="149" width="87" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PDF 417]]></text>
+				</staticText>
+				<image>
+					<reportElement uuid="b5dbd332-635a-4c99-87e9-6c02eaac2a28" x="117" y="149" width="200" height="100">
+						<property name="com.cabsoft.rx.export.html.alt" value="PDF 417"/>
+						<property name="com.cabsoft.rx.export.html.title" value="PDF 417"/>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createPDF417($F{twodim}, 600,false)]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="2ddcbc98-eb30-4cb1-93f2-e826e76b3f4c" x="20" y="259" width="87" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="맑은 고딕" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PDF 417 Compact]]></text>
+				</staticText>
+				<image>
+					<reportElement uuid="6545cf74-63c2-414e-9563-cd7f70081d7b" x="117" y="259" width="200" height="100">
+						<property name="com.cabsoft.rx.export.html.alt" value="PDF 417 Compact"/>
+						<property name="com.cabsoft.rx.export.html.title" value="PDF 417 Compact"/>
+					</reportElement>
+					<imageExpression><![CDATA[com.cabsoft.Barcode.createPDF417($F{twodim}, 600,true)]]></imageExpression>
+				</image>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band height="730" splitType="Stretch"/>
+	</background>
+</ReportExpress>

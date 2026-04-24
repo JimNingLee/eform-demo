@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="CYPICVLC_cert_wonri" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="25" bottomMargin="25" uuid="599e0f2b-5336-47ff-90a5-eb0b41148401">
+	<property name="rxreport.zoom" value="1.5"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="510"/>
+	<import value="com.cabsoft.rx.hbarcode.sec"/>
+	<style name="Default" isDefault="true"/>
+	<style name="styleM" hAlign="Left" vAlign="Middle" fontSize="96"/>
+	<style name="padding1"/>
+	<style name="padding2"/>
+	<style name="padding" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingL" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingR" style="styleM">
+		<box leftPadding="0" rightPadding="5"/>
+	</style>
+	<subDataset name="dataset1" uuid="dd6376a9-27c9-422d-8547-339aeaf4f305">
+		<queryString language="xPath">
+			<![CDATA[/Root/LData/out_list/LMultiData/LData]]>
+		</queryString>
+		<field name="EVAL_AMT" class="java.lang.String">
+			<fieldDescription><![CDATA[EVAL_AMT]]></fieldDescription>
+		</field>
+		<field name="ADDRMRK_NM" class="java.lang.String">
+			<fieldDescription><![CDATA[ADDRMRK_NM]]></fieldDescription>
+		</field>
+		<field name="CHECK_RECP_AMT" class="java.lang.String">
+			<fieldDescription><![CDATA[CHECK_RECP_AMT]]></fieldDescription>
+		</field>
+		<field name="FUND_NM" class="java.lang.String">
+			<fieldDescription><![CDATA[FUND_NM]]></fieldDescription>
+		</field>
+		<field name="ORIGN_AMT" class="java.lang.String">
+			<fieldDescription><![CDATA[ORIGN_AMT]]></fieldDescription>
+		</field>
+		<field name="ACCT_NO" class="java.lang.String">
+			<fieldDescription><![CDATA[ACCT_NO]]></fieldDescription>
+		</field>
+		<field name="CUST_NM" class="java.lang.String">
+			<fieldDescription><![CDATA[CUST_NM]]></fieldDescription>
+		</field>
+		<field name="RNAME_NO" class="java.lang.String">
+			<fieldDescription><![CDATA[RNAME_NO]]></fieldDescription>
+		</field>
+		<field name="REMN_QTY" class="java.lang.String">
+			<fieldDescription><![CDATA[REMN_QTY]]></fieldDescription>
+		</field>
+		<field name="STDPRC" class="java.lang.String">
+			<fieldDescription><![CDATA[STDPRC]]></fieldDescription>
+		</field>
+		<field name="CASH_AMT" class="java.lang.String">
+			<fieldDescription><![CDATA[CASH_AMT]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["../../images/kyobo/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="org_barcode" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[Steganography에 사용될 바코드 이미지]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXSecurity/barcode.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodepath" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[고밀도 바코드가 저장되어 있는 경로]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXHiDensityBarcode/out/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodeAction" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 삽입 후 이미지 파일 삭제]]></parameterDescription>
+		<defaultValueExpression><![CDATA["deleteafter"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="surfix" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 파일 접두사]]></parameterDescription>
+		<defaultValueExpression><![CDATA["test_"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IssuerNo" class="java.util.Map" isForPrompting="false"/>
+	<parameter name="data" class="com.cabsoft.rx.engine.data.RXXmlDataSource" isForPrompting="false">
+		<defaultValueExpression><![CDATA[new com.cabsoft.rx.engine.data.RXXmlDataSource($P{XML_DATA_DOCUMENT},"/root/list/row/EVAL_AMT")]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[/Root/LData/out_list/LMultiData/LData]]>
+	</queryString>
+	<field name="RNAME_NO" class="java.lang.String">
+		<fieldDescription><![CDATA[RNAME_NO]]></fieldDescription>
+	</field>
+	<field name="CUST_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[CUST_NM]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/STD_DT" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/STD_DT]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/CURRENTDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/CURRENTDATE]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/CURRENCY_CD" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/CURRENCY_CD]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/USE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/USE]]></fieldDescription>
+	</field>
+	<field name="ACCT_NO" class="java.lang.String">
+		<fieldDescription><![CDATA[ACCT_NO]]></fieldDescription>
+	</field>
+	<field name="ADDRMRK_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[ADDRMRK_NM]]></fieldDescription>
+	</field>
+	<field name="EVAL_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[EVAL_AMT]]></fieldDescription>
+	</field>
+	<field name="FUND_NM" class="java.lang.String">
+		<fieldDescription><![CDATA[FUND_NM]]></fieldDescription>
+	</field>
+	<field name="REMN_QTY" class="java.lang.String">
+		<fieldDescription><![CDATA[REMN_QTY]]></fieldDescription>
+	</field>
+	<field name="CHECK_RECP_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[CHECK_RECP_AMT]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/SUM_CHECK_RECP_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/SUM_CHECK_RECP_AMT]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/SUM_BALANCE_AMOUNT_USD" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/SUM_BALANCE_AMOUNT_USD]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/SUM_CASH_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/SUM_CASH_AMT]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/SUM_BALANCE_AMOUNT" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/SUM_BALANCE_AMOUNT]]></fieldDescription>
+	</field>
+	<field name="STDPRC" class="java.lang.String">
+		<fieldDescription><![CDATA[STDPRC]]></fieldDescription>
+	</field>
+	<field name="CASH_AMT" class="java.lang.String">
+		<fieldDescription><![CDATA[CASH_AMT]]></fieldDescription>
+	</field>
+	<group name="gh0">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="112">
+				<staticText>
+					<reportElement uuid="1daaf726-33e1-4553-ae6f-f829573546bc" mode="Opaque" x="3" y="0" width="127" height="28" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[계 좌 번 호
+(Account Number)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="01d4d94f-a2c5-4f32-a991-cb72a5953e19" mode="Opaque" x="130" y="0" width="108" height="28" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[통 장 부 기 명
+(Sub Signature)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="0c402eae-ea1c-4e3c-b405-3f539b741a3d" mode="Opaque" x="238" y="0" width="108" height="28" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[평 가 금 액
+(Balance Amount)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ccc739a7-3ae7-4cec-a1dc-4e64e80948db" mode="Opaque" x="346" y="0" width="108" height="28" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[현 금 잔 고
+(Cash Balance)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5bed9543-b929-4945-8c9e-03724b492796" mode="Opaque" x="3" y="28" width="127" height="28" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[종 목 명
+(Fund Name)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="9dc7928d-c538-4bc7-97fa-c2803465e11b" mode="Opaque" x="130" y="28" width="108" height="28" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[기 준 가 격
+(Basic Price)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="859a99dd-d4bd-4839-b268-6535d41358e8" mode="Opaque" x="238" y="28" width="108" height="28" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[잔 고 좌 수
+(Number of shares Hold)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="96489114-7d52-4981-a882-a427fe7c7245" mode="Opaque" x="346" y="28" width="108" height="28" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[미 결 제 타 점 권
+(Uncollected Checks)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="3f2ba4cb-421d-4143-ab88-858d1981c6a5" mode="Opaque" x="454" y="0" width="78" height="56" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[비 고
+Rights -
+Restrictions]]></text>
+				</staticText>
+				<componentElement>
+					<reportElement uuid="6e159957-16fc-43ce-b6bc-ffb5e4155145" isPrintRepeatedValues="false" x="1" y="56" width="531" height="56"/>
+					<rx:list xmlns:rx="http://www.cabsoftware.com/reportexpress/components" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress/components http://www.cabsoftware.com/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="dataset1" uuid="08e486c9-1592-4f02-a41d-c67394c2c222">
+							<dataSourceExpression><![CDATA[new com.cabsoft.rx.engine.data.RXXmlDataSource($P{XML_DATA_DOCUMENT},"//Root/LData/out_list/LMultiData/LData")]]></dataSourceExpression>
+						</datasetRun>
+						<rx:listContents height="56" width="531">
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="fee0f9ca-6a9d-4b45-befc-1d71943b9a11" style="styleM" x="2" y="0" width="127" height="28"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ACCT_NO}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="88c3def8-b7e9-49b1-8688-1fb73b00590d" style="styleM" x="129" y="0" width="108" height="28"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ADDRMRK_NM}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="7412712f-8b51-48b0-b1f9-960dcaf3ea0a" style="paddingR" x="237" y="0" width="108" height="28"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{EVAL_AMT}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="b7ea5f04-f294-403c-9b50-69873b72c119" style="paddingR" x="345" y="0" width="108" height="28"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{CASH_AMT}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="6704a940-fd8e-4115-8a83-2ad60e613eaa" style="styleM" x="2" y="28" width="127" height="28"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{FUND_NM}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="1c338d77-6bef-4769-bd84-bd9e66e09d97" style="paddingR" x="129" y="28" width="108" height="28"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{STDPRC}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="4bfe5314-58ec-45d8-997f-c11f71964c3e" style="styleM" x="237" y="28" width="108" height="28"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{REMN_QTY}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="e74093b3-f4cf-4578-b0de-df7880721580" style="styleM" x="345" y="28" width="108" height="28"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{CHECK_RECP_AMT}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="23f2b755-7b7c-49c4-b1cb-e030679ca923" style="styleM" x="453" y="0" width="78" height="56"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[""]]></textFieldExpression>
+							</textField>
+						</rx:listContents>
+					</rx:list>
+				</componentElement>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="154">
+				<staticText>
+					<reportElement uuid="1d741665-673d-4b85-a4a2-f2966cf1525e" x="31" y="16" width="469" height="38"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[귀하의 잔고가 위와 같음을 증명합니다. (증명서 발급기준일이 당일인 경우 당일 출금 환매는 하실 수 없습니다)
+We certify that your account shows the above balance as of the designated accounting date.
+(No withdrawals or tranfers permitted on day of issue of certificate)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="648d1619-d7f6-40a6-a990-734b4b1ccd3c" x="49" y="77" width="419" height="17"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{/Root/LData/CURRENTDATE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d51b07b0-77df-42a0-b9d9-dba727fc5da0" mode="Opaque" x="370" y="98" width="65" height="17" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[발급기관]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7f58d7a3-7c9d-4ec5-9a73-f3496d4f7aa3" style="styleM" x="435" y="98" width="94" height="17"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[유지고객지원팀]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="47527fc3-ee3c-43e4-bc0c-c686d92bf994" mode="Opaque" x="370" y="115" width="65" height="17" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[전화번호]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fa6bf63f-afd8-4656-9ec3-460ca3e4aafc" style="styleM" x="435" y="115" width="94" height="17"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[1599-7899]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="gh2">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupFooter>
+			<band height="71">
+				<staticText>
+					<reportElement uuid="610f77ef-0952-4920-8f55-bef1ef4b9c93" mode="Opaque" x="3" y="0" width="127" height="56" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[합    계
+(Total)]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="61dff1db-6c82-4cc6-9ba0-c4223c5095f2" style="paddingR" mode="Opaque" x="130" y="0" width="216" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{/Root/LData/SUM_BALANCE_AMOUNT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="126255d7-e6d0-4b18-aa94-37d8e808e2cc" style="paddingR" mode="Opaque" x="346" y="0" width="108" height="28" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{/Root/LData/SUM_CASH_AMT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="31384267-4f7b-4369-a243-4c2b8fbf739b" style="paddingR" mode="Opaque" x="219" y="28" width="127" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0" lineStyle="Dashed"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["USD " + $F{/Root/LData/SUM_BALANCE_AMOUNT_USD}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="05b58c14-0727-48ad-9af6-24aa1ee22708" style="paddingR" mode="Opaque" x="346" y="28" width="108" height="28" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0" lineStyle="Dashed"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{/Root/LData/SUM_CHECK_RECP_AMT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="e28ee98c-36f8-4c84-8f48-fd0e73f93e88" mode="Opaque" x="454" y="0" width="78" height="56" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="9157ef86-fe6b-44e9-8846-949f64615a2f" style="styleM" x="3" y="56" width="529" height="15"/>
+					<textElement textAlignment="Left" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[※ 수기 잔고증명등 당사의 정상적인 업무지침에 따라 발급되지 아니한 잔고증명서는 그 효력이 없습니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="915e2e87-3d8b-4b62-b01e-75c6e9fab52d" mode="Opaque" x="130" y="28" width="89" height="28" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0" lineStyle="Dashed"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[Equivalent Amount]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="214" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="37613276-a0ef-4f5e-a7b4-4c58c1afbff3" style="styleM" mode="Opaque" x="0" y="61" width="535" height="4" backcolor="#0969B3"/>
+				<textElement>
+					<font size="1"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cb10a2e3-d207-4263-a323-faa138360ed3" style="styleM" x="0" y="0" width="422" height="34"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[투자신탁 잔고증명서]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9055ebcc-7f30-4179-ac88-0c07ebf93df6" style="styleM" x="0" y="34" width="422" height="27"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(certificate of Account Balance)]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="0b57fc93-682d-4ad4-adb3-4a0fe53e9382" isPrintRepeatedValues="false" x="422" y="0" width="113" height="57" isPrintInFirstWholeBand="true"/>
+				<imageExpression><![CDATA[$P{imgDir} + "rpt_top_logo.gif"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="932a6bb6-17ac-409f-bd79-6fe0ed1c47d2" x="3" y="68" width="258" height="13"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA["발급번호 : " + $P{IssuerNo}.get("IssuerNo")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6d419927-63be-4cab-a1e5-63c14ff8bf86" x="450" y="68" width="82" height="13"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[인터넷발급]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a7b2cae-5fd9-4232-8720-aba999c89752" mode="Opaque" x="3" y="82" width="110" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[주민(사업자)등록번호
+(Ident ification Number)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="821c1a30-7716-43fc-b306-2306f26fa1f4" style="paddingL" x="113" y="82" width="153" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RNAME_NO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8f0ad762-a0bf-42f1-947e-1efc01ab639b" mode="Opaque" x="266" y="82" width="110" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[성       명
+(Account Name)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d75fb6d1-9bbd-4c42-861b-53ebe78bb016" style="paddingL" x="376" y="82" width="156" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CUST_NM}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="525450ba-3888-4432-9f0b-da75f94cf497" mode="Opaque" x="3" y="110" width="110" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[기 준 일 자
+(Account Ing Date)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="af96aa4b-3cc7-4bae-8989-59b3919347e5" style="paddingL" x="113" y="110" width="153" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{/Root/LData/STD_DT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="18d02d94-0e8c-46c1-8ae2-956b7aa8ffb0" mode="Opaque" x="266" y="110" width="110" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[발 행 일 자
+(Issuing Date)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4ea65185-2b99-4519-85e3-25c8ca025c7f" style="paddingL" x="376" y="110" width="156" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{/Root/LData/CURRENTDATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9faaaca6-ce16-451c-b772-89203876e0d7" mode="Opaque" x="3" y="138" width="110" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[평 가 기 준
+(Tax Status)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="dc8b563a-adb6-4954-a6f9-65023d1e0835" style="paddingL" x="113" y="138" width="153" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["세전"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="87ab2420-3fbe-44d9-be06-0d6f72f53490" mode="Opaque" x="266" y="138" width="110" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[환       율
+(Exchange Rate)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0b2097da-ff3f-4ea5-be87-bdf4a367d619" style="paddingL" x="376" y="138" width="156" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["USD 1 = KRW"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="86f9a816-18e5-421e-993a-dda717e0b3d0" mode="Opaque" x="3" y="166" width="110" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[발 급 용 도
+(Use)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b99135a3-4d15-4aad-a38c-424f415525c6" style="paddingL" x="113" y="166" width="153" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{/Root/LData/USE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="4790ca7f-10e0-4899-90f5-17cea3051c07" mode="Opaque" x="266" y="166" width="110" height="28" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[발 급 부 수
+(Number of Copies)]]></text>
+			</staticText>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement uuid="42b8d26f-904e-4c1e-97e7-48a0abd6b925" style="paddingL" x="376" y="166" width="156" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cd3eb109-7e48-4448-a861-da0eb6fb27bb" style="styleM" x="435" y="194" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page ( "+$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="ba372619-5f06-4efe-8a51-46f81c665b0c" style="styleM" x="515" y="194" width="16" height="20"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER} + " )"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band height="164" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c551f2fb-b787-4ce0-ab8b-bf6ec1ff5d78" style="styleM" x="0" y="1" width="341" height="17"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[* 상기 내용은 홈페이지(www.cabsoftware.com)에서 제공된 것입니다.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b7034ec7-c1ec-48f6-bedf-6a05dcd368f6" x="0" y="92" width="535" height="23"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ 본 증명서는 인터넷으로 발급 되었으며, 홈페이지(www.cabsoftware.com)의 사이버창구 "발급증명서 확인" 메뉴에서 발급사실을
+ 확인하실 수 있습니다.]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
+				<reportElement uuid="2a04d483-6b85-4a93-a94f-47b741e2a234" x="21" y="22" width="492" height="64">
+					<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"barcode2.png"]]></imageExpression>
+			</image>
+			<image scaleImage="RealSize" hAlign="Center" onErrorType="Blank">
+				<reportElement uuid="95374c87-57cd-433c-9c79-bd78a80fbc8b" x="0" y="119" width="535" height="45"/>
+				<imageExpression><![CDATA[$P{imgDir} + "cabsoft_bottom.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>

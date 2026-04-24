@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+<title>XPDF Viewer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" Cache-control="no-cache" Pragma="no-cache">
+<base href="$$$base_href$$$">
+<link rel="stylesheet" type="text/css" href="css/Content.css">
+<script type="text/javascript">
+var agent = navigator.userAgent.toLowerCase();
+Browser = {
+	os : function() {
+		if (agent.indexOf("windows") > -1) {
+			return "ms";
+		} else if (agent.indexOf("android") > -1) {
+			if (agent.indexOf("shw-m380w") > -1) {
+				return "galexytab";
+			} else if ((agent.indexOf("shw-m480w") > -1)
+					|| (agent.indexOf("tablet") > -1)) {
+				os = "galexytabnote";
+			} else {
+				return "android";
+			}
+		} else if (agent.indexOf("linux") > -1) {
+			return "linux";
+		} else if (agent.indexOf("iphone") > -1) {
+			return "iphone";
+		} else if (agent.indexOf("ipad") > -1) {
+			return "ipad";
+		} else if (agent.indexOf("mac") > -1) {
+			return "mac";
+		} else {
+			return "unknown";
+		}
+	},
+
+	bw : function() {
+		if ((agent.indexOf("msie") > -1) || agent.indexOf("trident") > -1) {
+			return "ie";
+		} else if (agent.indexOf("chrome") > -1) {
+			return "Chrome";
+		} else if (agent.indexOf("safari") > -1) {
+			return "Safari";
+		} else if ((agent.indexOf("opera") > -1) || (agent.indexOf("opr") > -1)){
+			return "Opera";
+		} else if (agent.indexOf("firefox") > -1) {
+			return "Firefox";
+		} else {
+			return "Unknown";
+		}
+	},
+
+	version : function() {
+		if (this.os() == "ms" && this.bw() == "ie") {
+			var start = agent.indexOf("msie");
+			if(start>-1){
+				var tmp = agent.substring(start);
+				var end = tmp.indexOf(";");
+				tmp = tmp.substring(0, end);
+				tmp = tmp.substring(tmp.lastIndexOf(" "));
+				return tmp;
+			}else{
+				start = agent.indexOf("rv:");
+				var tmp = agent.substring(start);
+				var end = tmp.indexOf(")");
+				tmp = tmp.substring("rv:".length, end);
+				return tmp;
+			}
+		} else {
+			return 99999;
+		}
+	}
+};
+
+var os = Browser.os();
+var bw = Browser.bw();
+var version = Browser.version();
+
+function Close(){
+	top.window.opener = top;
+	top.window.open('', '_parent', '');
+	top.window.close();
+	window.close();
+}
+
+function active(){
+	Close();
+}
+
+window.onload = function(){
+	var d = new Date();
+	var tver = d.getFullYear() + "" + d.getMonth() + "" + d.getDay() + "" + d.getTime();
+	if(os=="ms"){
+		var obj = "";
+		var data = "$$$data$$$";
+		if(bw=="ie"){
+			mtitle.innerHTML = "<span class='f_blue'><img width='24px' src='images/" + bw + ".gif' alt=''/> XPDF Viewer™</span>가 <span class='f_red'>Internet Explorer</span>에서 실행 중입니다.";
+			obj += "<object\n";
+			obj += "id='viewer'\n";
+			obj += "classid='CLSID:65060C96-7482-4E1E-AB3F-55E59BCA6D56'\n";
+			obj += "codebase='cab/rxpdfviewer.cab?" + tver +"#version=1,0,0,0'>\n";
+			obj += "<param name='data' value='" + data +"'>\n";
+			obj += "</object>";
+		}else{
+			mtitle.innerHTML = "<span class='f_blue'><img width='24px' src='images/" + bw + ".gif' alt=''/> XPDF Viewer™</span>가 <span class='f_red'>" + bw + "</span>에서 실행 중입니다.";
+			obj += "<object\n";
+			obj += "id='viewer'\n";
+			obj += "type='application/x-cabsoft-plugins'\n";
+			obj += "clsid='{65060C96-7482-4E1E-AB3F-55E59BCA6D56}'\n";
+			obj += "width='1'\n";
+			obj += "height='1'\n";
+			obj += "progid='pdfviewer'\n";
+			obj += "event_Avtivate='active'\n";
+			obj += "codeBaseURL='cab/rxpdfviewer.cab?" + tver + "#version=1,0,0,0'\n";
+			obj += "param_data='" + data + "'\n";
+			obj += "<object>";
+		}
+		cert.innerHTML=obj;
+	}else{
+		alert("지원하지 않는 운영체제입니다.");
+	}
+}
+</script>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" align="center" style="height:100%;">
+  <tr>
+    <td>
+      <div class="loading_bg">
+        <h1 class="title" id="mtitle"><img src="images/ie.gif" alt="" /><span class="f_blue">XPDF Viewer™</span>가 실행 중입니다.</h1>
+        <div class="lo_top_con">
+          <ul class="lo_img">
+            <li><img src="images/loading_img_01.gif" alt="" /></li>
+            <li>
+              <span class="bl mt22"><img src="images/loading_text_01.gif" alt="" /></span>
+              <span class="bl mt5"><img src="images/loading_bar.gif" alt="" /></span>
+
+            </li>
+          </ul>
+          <ul class="g_dot">
+            <li><span class="f_blue">XPDF Viewer™</span> 설치여부를 묻는 ‘보안경고창’이 나타나면 반드시 <span class="f_ora">“예”</span>를<br>선택하여 주십시오.</li>
+            <li>이는 제품 설치/업데이트에 필요한 프로그램 설치이므로 “아니오” 를 선택하시면<br>서비스를 이용하실 수 없습니다.</li>
+          </ul>
+        </div>
+        <div class="ml32"><img src="images/lo_box_top.gif" alt="" /></div>
+        <div class="lo_box_bg">
+          <ul>
+            <li><span class="f_blue">XPDF Viewer™</span>에 의해 고객님의 컴퓨터에 제품을 설치/업데이트 중입니다.</li>
+            <li><span class="f_blue">XPDF Viewer™</span> 설치에 문제가 있으시면 
+					<a href="cab/rxpdfviewer.exe"><span class="f_ora">“여기”</span></a>를 눌러서 수동설치 파일을
+              다운로드한 후에 설치하세요.
+            </li>
+            <li>프로그램을 설치/업데이트 한 후에 <span class="f_blue">XPDF Viewer™</span>가 실행되지 않는다면<a
+                    href="javascript:document.location.reload();"><span class="f_ora">“여기”</span></a>를 눌러주세요.
+            </li>
+          </ul>
+        </div>
+        <div class="ml32"><img src="images/lo_box_bottom.gif" alt="" /></div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+  	<td align="center">
+  		<div id="cert"></div>
+  	</td>
+  </tr>
+</table>
+</BODY>
+</HTML>
+

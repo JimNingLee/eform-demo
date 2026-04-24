@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="custom_size" pageWidth="595" pageHeight="842" columnWidth="483" leftMargin="56" rightMargin="56" topMargin="56" bottomMargin="56" uuid="5d103643-9e93-4bee-b664-50ae34697d96">
+	<property name="rxreport.zoom" value="2.5937424601000028"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="16"/>
+	<style name="Default" isDefault="true"/>
+	<title>
+		<band height="730">
+			<rectangle>
+				<reportElement uuid="64ba1b30-09b9-4899-a159-7947e7c8e4fa" x="6" y="11" width="318" height="82" backcolor="#CCFFCC">
+					<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="e8ee1796-2168-4360-a573-dce930f77160" mode="Opaque" x="113" y="41" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#FF0000"/>
+					<leftPen lineWidth="0.5" lineColor="#FF0000"/>
+					<bottomPen lineWidth="0.5" lineColor="#FF0000"/>
+					<rightPen lineWidth="0.5" lineColor="#FF0000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[3 Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="83e38870-73a9-424e-9aac-81a2b6d5f5c2" mode="Opaque" x="13" y="41" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#CC0033"/>
+					<leftPen lineWidth="0.5" lineColor="#CC0033"/>
+					<bottomPen lineWidth="0.5" lineColor="#CC0033"/>
+					<rightPen lineWidth="0.5" lineColor="#CC0033"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[2 Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="583b82a2-9363-4fd3-9197-c71872c4c879" mode="Opaque" x="13" y="21" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#FF0000"/>
+					<leftPen lineWidth="0.5" lineColor="#FF0000"/>
+					<bottomPen lineWidth="0.5" lineColor="#FF0000"/>
+					<rightPen lineWidth="0.5" lineColor="#FF0000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[1 Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b58c4ca4-5e64-4cd0-bb91-251ff90d9d20" mode="Opaque" x="113" y="21" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#FF0000"/>
+					<leftPen lineWidth="0.5" lineColor="#FF0000"/>
+					<bottomPen lineWidth="0.5" lineColor="#FF0000"/>
+					<rightPen lineWidth="0.5" lineColor="#FF0000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ecc08599-7f27-4156-9f06-4939245af29c" mode="Opaque" x="213" y="21" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FF0000"/>
+					<topPen lineWidth="0.5" lineColor="#FF0000"/>
+					<leftPen lineWidth="0.5" lineColor="#FF0000"/>
+					<bottomPen lineWidth="0.5" lineColor="#FF0000"/>
+					<rightPen lineWidth="0.5" lineColor="#FF0000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="63750b60-b1ac-4c12-a63f-4656c2cc1380" mode="Opaque" x="213" y="41" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FF0000"/>
+					<topPen lineWidth="0.5" lineColor="#FF0000"/>
+					<leftPen lineWidth="0.5" lineColor="#FF0000"/>
+					<bottomPen lineWidth="0.5" lineColor="#FF0000"/>
+					<rightPen lineWidth="0.5" lineColor="#FF0000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1d238436-2f35-4d60-aa65-030bbff78859" mode="Opaque" x="13" y="61" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FF0000"/>
+					<topPen lineWidth="0.5" lineColor="#FF0000"/>
+					<leftPen lineWidth="0.5" lineColor="#FF0000"/>
+					<bottomPen lineWidth="0.5" lineColor="#FF0000"/>
+					<rightPen lineWidth="0.5" lineColor="#FF0000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d8dec574-7403-423d-a01d-4d148f02a417" mode="Opaque" x="113" y="61" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FF0000"/>
+					<topPen lineWidth="0.5" lineColor="#FF0000"/>
+					<leftPen lineWidth="0.5" lineColor="#FF0000"/>
+					<bottomPen lineWidth="0.5" lineColor="#FF0000"/>
+					<rightPen lineWidth="0.5" lineColor="#FF0000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d1e47167-04f7-4536-a02e-b7c1b94c28f6" mode="Opaque" x="213" y="61" width="100" height="20" backcolor="#9999FF">
+					<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FF0000"/>
+					<topPen lineWidth="0.5" lineColor="#FF0000"/>
+					<leftPen lineWidth="0.5" lineColor="#FF0000"/>
+					<bottomPen lineWidth="0.5" lineColor="#FF0000"/>
+					<rightPen lineWidth="0.5" lineColor="#FF0000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+		</band>
+	</title>
+</ReportExpress>

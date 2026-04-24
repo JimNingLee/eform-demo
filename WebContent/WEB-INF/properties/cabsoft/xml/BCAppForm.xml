@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<bccard.com>
+	<field>맵핑안됨</field>
+	<essential>
+		<francNm></francNm>	<!--상호(가맹점)-->
+		<francNo></francNo>	<!--가맹점번호-->
+		<buisNo></buisNo>	<!--사업자번호-->
+		<buisPNo></buisPNo>	<!--사업장 전화번호-->
+		<HPNo></HPNo>	<!--휴대폰번호-->
+		<corRegiNo></corRegiNo>	<!--법인등기번호-->
+	</essential>
+	<change>
+		<bankNm></bankNm>	<!--은행명-->
+		<bankBranch></bankBranch>	<!--지점-->
+		<buisRegiNo></buisRegiNo>	<!--사업자등록번호-->
+		<CEONm></CEONm>	<!--대표자명-->
+		<cpnNm></cpnNm>	<!--상호-->
+		<address></address>	<!--주소-->
+		<typeBuisBef></typeBuisBef>	<!--업종 변경전-->
+		<typeBuisAft></typeBuisAft>	<!--업종 변경후-->
+		<mnthCntBef></mnthCntBef>	<!--할부개월수 변경전-->
+		<mnthCntAft></mnthCntAft>	<!--할부개월수 변경후-->
+		<EDCapp></EDCapp>	<!--EDC 신청-->
+		<EDCcancel></EDCcancel>	<!--EDC 해지-->
+		<francCancel></francCancel>	<!--가맹점 해지-->
+		<ETC1></ETC1>	<!--기타-->
+		<ETC2></ETC2>
+		<ETC3></ETC3>
+		<appDate>20131115</appDate>	<!--신청일-->
+		<francCEONm></francCEONm>	<!--가맹점 대표자명-->
+	</change>
+	<sign>
+		<JCEONm1></JCEONm1>	<!--공동대표자명1-->
+		<JCEOResNo1></JCEOResNo1>	<!--공동대표자 주민번호1-->
+		<JCEONm2></JCEONm2>	<!--공동대표자명2-->
+		<JCEOResNo2></JCEOResNo2>	<!--공동대표자 주민번호2-->
+		<FVANNm></FVANNm>	<!--VAN대리점명-->
+		<depCode></depCode>	<!--모집인 코드-->		
+		<depPNo></depPNo>	<!--모집인 연락처-->
+		<depNm></depNm>	<!--모집인 성명-->
+	</sign>
+	<write>
+		<memo1></memo1>
+		<memo2></memo2>
+		<test></test>
+		<BCmember></BCmember>
+		<BCleader></BCleader>
+	</write>
+</bccard.com>

@@ -1,0 +1,1 @@
+SmartCert 원본 저정 위치

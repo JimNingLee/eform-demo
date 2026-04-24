@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='EUC-KR'?><Root><LData><list><LMultiData><LData><subNo>888888888485</subNo>
+<procRsn>생존연금 정상지급</procRsn>
+<prodNm>연금보험</prodNm>
+<agmtDt>2002.03.14</agmtDt>
+<payDt>2012.03.14</payDt>
+<premAmt>0</premAmt>
+<bfPremAmt>6,708,000</bfPremAmt>
+<sherTaxAmt>96,400</sherTaxAmt>
+<incomeTaxAmt>4,820</incomeTaxAmt>
+<juminTaxAmt>480</juminTaxAmt>
+<nongTaxAmt>0</nongTaxAmt>
+<total>5,300</total>
+<inagCnt>1</inagCnt>
+</LData>
+<LData><subNo>888888888485</subNo>
+<procRsn>생존연금 선지급</procRsn>
+<prodNm>연금보험</prodNm>
+<agmtDt>2002.03.14</agmtDt>
+<payDt>2012.04.13</payDt>
+<premAmt>0</premAmt>
+<bfPremAmt>6,708,000</bfPremAmt>
+<sherTaxAmt>50,000</sherTaxAmt>
+<incomeTaxAmt>2,500</incomeTaxAmt>
+<juminTaxAmt>250</juminTaxAmt>
+<nongTaxAmt>0</nongTaxAmt>
+<total>2,750</total>
+<inagCnt>1</inagCnt>
+</LData>
+<LData><subNo>888888888485</subNo>
+<procRsn>생존연금 정상지급</procRsn>
+<prodNm>연금보험</prodNm>
+<agmtDt>2002.03.14</agmtDt>
+<payDt>2012.05.14</payDt>
+<premAmt>0</premAmt>
+<bfPremAmt>6,708,000</bfPremAmt>
+<sherTaxAmt>50,000</sherTaxAmt>
+<incomeTaxAmt>2,500</incomeTaxAmt>
+<juminTaxAmt>250</juminTaxAmt>
+<nongTaxAmt>0</nongTaxAmt>
+<total>2,750</total>
+<inagCnt>1</inagCnt>
+</LData>
+<LData><subNo>888888888485</subNo>
+<procRsn>생존연금 정상지급</procRsn>
+<prodNm>연금보험</prodNm>
+<agmtDt>2002.03.14</agmtDt>
+<payDt>2012.06.14</payDt>
+<premAmt>0</premAmt>
+<bfPremAmt>6,708,000</bfPremAmt>
+<sherTaxAmt>50,000</sherTaxAmt>
+<incomeTaxAmt>2,500</incomeTaxAmt>
+<juminTaxAmt>250</juminTaxAmt>
+<nongTaxAmt>0</nongTaxAmt>
+<total>2,750</total>
+<inagCnt>1</inagCnt>
+</LData>
+<LData><subNo>888888888485</subNo>
+<procRsn>생존연금 선지급</procRsn>
+<prodNm>연금보험</prodNm>
+<agmtDt>2002.03.14</agmtDt>
+<payDt>2012.07.13</payDt>
+<premAmt>0</premAmt>
+<bfPremAmt>6,708,000</bfPremAmt>
+<sherTaxAmt>50,000</sherTaxAmt>
+<incomeTaxAmt>2,500</incomeTaxAmt>
+<juminTaxAmt>250</juminTaxAmt>
+<nongTaxAmt>0</nongTaxAmt>
+<total>2,750</total>
+<inagCnt>1</inagCnt>
+</LData>
+<LData><subNo>888888888485</subNo>
+<procRsn>생존연금 정상지급</procRsn>
+<prodNm>연금보험</prodNm>
+<agmtDt>2002.03.14</agmtDt>
+<payDt>2012.08.14</payDt>
+<premAmt>0</premAmt>
+<bfPremAmt>6,708,000</bfPremAmt>
+<sherTaxAmt>50,000</sherTaxAmt>
+<incomeTaxAmt>2,500</incomeTaxAmt>
+<juminTaxAmt>250</juminTaxAmt>
+<nongTaxAmt>0</nongTaxAmt>
+<total>2,750</total>
+<inagCnt>1</inagCnt>
+</LData>
+</LMultiData>
+</list>
+<sherTaxAmt>346,400</sherTaxAmt>
+<incomeTaxAmtSum>17,320</incomeTaxAmtSum>
+<juminTaxAmtSum>1,730</juminTaxAmtSum>
+<totalSum>19,050</totalSum>
+<sendFile>CYPICVIC_annuity_receipt</sendFile>
+<regNo>999999-1******</regNo>
+<regNm>김  X</regNm>
+<homeAddr>충북 청주시 흥덕구 봉명2동 삼정아파트 ********************************************************************************</homeAddr>
+<currDate>2012년 08월 30일</currDate>
+</LData>
+</Root>

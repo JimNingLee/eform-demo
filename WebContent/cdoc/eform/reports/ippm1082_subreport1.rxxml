@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="마이너스대출이자납입증명서_subreport1" pageWidth="539" pageHeight="730" columnWidth="539" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="15fe2d3b-245b-461d-8490-e815bb75ece4">
+	<property name="rxreport.zoom" value="1.6105100000000008"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true"/>
+	<queryString language="xPath">
+		<![CDATA[//납입내역]]>
+	</queryString>
+	<field name="납입월" class="java.lang.String">
+		<fieldDescription><![CDATA[납입월]]></fieldDescription>
+	</field>
+	<field name="이자" class="java.lang.String">
+		<fieldDescription><![CDATA[이자]]></fieldDescription>
+	</field>
+	<field name="미원가이자" class="java.lang.String">
+		<fieldDescription><![CDATA[미원가이자]]></fieldDescription>
+	</field>
+	<field name="연체이자" class="java.lang.String">
+		<fieldDescription><![CDATA[연체이자]]></fieldDescription>
+	</field>
+	<field name="이자합계" class="java.lang.String">
+		<fieldDescription><![CDATA[이자합계]]></fieldDescription>
+	</field>
+	<field name="비고" class="java.lang.String">
+		<fieldDescription><![CDATA[비고]]></fieldDescription>
+	</field>
+	<group name="GH01">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+	</group>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2bf473d0-b220-404a-9f32-448724087510" x="0" y="0" width="61" height="24">
+					<property name="com.cabsoft.rx.export.html.zindex" value="102"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="맑은 고딕" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT} +"월"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a4c4c65c-f0cc-4a51-8ce4-aa9dab9efdc6" x="405" y="0" width="134" height="24">
+					<property name="com.cabsoft.rx.export.html.zindex" value="102"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="맑은 고딕" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{비고}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="650de8a7-1326-41f0-91cc-e8c40cfd2322" x="319" y="0" width="86" height="24">
+					<property name="com.cabsoft.rx.export.html.zindex" value="102"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="맑은 고딕" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{이자합계}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="12e9a34a-4a24-4d2b-b638-83b8fd2727bb" x="147" y="0" width="86" height="24">
+					<property name="com.cabsoft.rx.export.html.zindex" value="102"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="맑은 고딕" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{미원가이자}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bda1be17-1497-4346-b5f3-f7a99cc87119" x="233" y="0" width="86" height="24">
+					<property name="com.cabsoft.rx.export.html.zindex" value="102"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="맑은 고딕" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{연체이자}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="c09a0446-52db-4c2e-bcfe-64f615615e54" x="61" y="0" width="86" height="24">
+					<property name="com.cabsoft.rx.export.html.zindex" value="102"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="맑은 고딕" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["".equals($F{이자}) || $F{이자} == null ? "" : $F{이자}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</ReportExpress>

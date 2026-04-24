@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="5-203-1166" pageWidth="595" pageHeight="842" columnWidth="579" leftMargin="8" rightMargin="8" topMargin="8" bottomMargin="8" uuid="a49b569a-eae9-415a-bc3c-2486d2374050">
+	<property name="rxreport.zoom" value="1.2418426461183112"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="475"/>
+	<import value="com.cabsoft.utils.StringUtils"/>
+	<style name="Default" isDefault="true" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Defaultback_52031166" hAlign="Left" fontSize="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="Default_10pt" hAlign="Left" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Default_9pt" hAlign="Left" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<parameter name="imgDir" class="java.lang.String">
+		<defaultValueExpression><![CDATA["./image/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[//R_NEXL3323]]>
+	</queryString>
+	<field name="item1" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='1']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item2" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='2']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item3" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='3']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="item4" class="java.lang.String">
+		<fieldDescription><![CDATA[세부목록/vector/data/R_NEXL3323_1[여신서류작성항목번호/@value='4']/여신서류작성항목직원등록내용1/@value]]></fieldDescription>
+	</field>
+	<field name="EF_DATE" class="java.lang.String">
+		<fieldDescription><![CDATA[COM_EF_DATE/@value]]></fieldDescription>
+	</field>
+	<group name="report">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="760">
+				<rectangle>
+					<reportElement uuid="ae563a86-f457-4214-aa1a-fa5a6bafdd80" x="26" y="66" width="14" height="14" backcolor="#000000"/>
+				</rectangle>
+				<rectangle>
+					<reportElement uuid="ae563a86-f457-4214-aa1a-fa5a6bafdd80" x="556" y="67" width="14" height="14" backcolor="#000000"/>
+				</rectangle>
+				<rectangle>
+					<reportElement uuid="12f25ef6-bdf0-460b-a247-333a0dfd375a" mode="Transparent" x="26" y="84" width="530" height="570">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-99"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="0.75"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="14b92771-0842-4e4d-9e7c-966886a5679a" x="157" y="84" width="274" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[개인금융신용보험 가입에 따른 추가약정서
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="93039126-2022-459e-bd9b-a5ba55d02efd" style="Default_9pt" x="34" y="113" width="27" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[본인은    년   월   일자 ㈜캡소프트(이하 “캡소프트”이라 한다)와 체결한 『대출거래약정』(이하 “대출약정”이라 한다)에 추가하
+여 서울보증보험㈜(이하 “보증보험사”라 한다)와 다음과 같이 약정한다.]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="af8b80b1-6037-4b20-9264-f1120e9aa77a" style="Default_9pt" x="61" y="113" width="105" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[StringUtils.format($F{item4},"@@@@년 @@월 @@일")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="93039126-2022-459e-bd9b-a5ba55d02efd" style="Default_9pt" x="166" y="113" width="381" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[㈜캡소프트(이하 “캡소프트”이라 한다)와 체결한 『대출거래약정』(이하 “대출약정”이라 한다)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="93039126-2022-459e-bd9b-a5ba55d02efd" style="Default_9pt" x="34" y="128" width="513" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[에 추가하여 서울보증보험㈜(이하 “보증보험사”라 한다)와 다음과 같이 약정한다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="34" y="149" width="514" height="26">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="html">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[<b>제1조(개인금융신용보험 가입)</b>&nbsp;본인이 “캡소프트”과 체결한 “대출약정”은 “보증보험사”가 영위하는 “개인금융신용보험 가입조건부 대출”임을 확인하고, 다음의 사항에 동의한다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="34" y="178" width="514" height="13">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[제2조(대출금상환채무 불이행시 조치내용)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="41" y="191" width="507" height="61">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[① 본인은 “대출약정”에서 정한 바에 따라 대출금 상환채무를 성실히 이행하기로 한다.
+② 본인은 제①항의 대출금 상환채무를 이행하지 않는 경우, “캡소프트”이 개인금융신용보험 계약에 의거 본인의 채무불이행
+    으로 입은 손해를 “보증보험사”에게 청구하여 지급받는데 대하여 이의를 제기하지 않기로 한다.
+③ 본인이 “대출약정”에서 정한 바에 따라 채무를 이행하지 아니하여 “캡소프트”이 “보증보험사”에 보험금을 청구한 경우, "보
+    증보험사”는 보험금을 지급하기 전이라도 본인의 재산에 대한 가압류 등 필요한 법적조치를 취할 수 있다.
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="36" y="255" width="511" height="36">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="html">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[<b>제3조(채권양도·양수의 승낙)</b>&nbsp;본인이 “캡소프트”과의 “대출약정”에서 정한 채무를 이행하지 아니함으로써 “캡소프트”이 “보증보험사”로부터 보험금을 지급받게 되는 경우, 본인은 별도의 통지 또는 승낙없이 본 약정서의 체결로써 “캡소프트”이 본인에게
+가지는 권리 중 지급보험금 해당액 채권을 “보증보험사”에게 양도함을 승낙한다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="36" y="296" width="512" height="13">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[제4조(보험금 지급후의 채무변제)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="41" y="309" width="507" height="123">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement/>
+					<text><![CDATA[① 제2조에 따라 “캡소프트”이 “보증보험사”로부터 보험금을 지급받은 때에는 본인은 지급보험금 해당액을 법정대위자인 “보
+    증보험사”에게 즉시 변제하겠으며, 이를 지체할 경우 지급보험금에 대해서 지급일 익일부터 완제일까지의 지연손해금(시중
+    은행의 일반대출 연체이율 중 최고의 연체이율 범위내에서 “보증보험사”가 정한 연체이율과 대출약정상의 연체이율 중 적
+    은 연체이율 적용)을 가산하여 변제하기로 한다.
+② 본인은 제①항에서 정한 지연손해금 외에의 “보증보험사”가 지급한 다음 각호의 비용을 즉시 변제하기로 한다.
+  1. 채권보전, 이전 및 소송, 경매 등 채권 실행에 소요된 비용
+  2. 기타 법상 본인이 부담하여야 할 비용
+③ 본인은 “보증보험사”가 담보권을 행사하거나 채권을 추심하여 회수한 금액 또는 본인이 변제한 금액이 제①항 및 제②항에
+    서 약정한 채무전액을 소멸시키기에 부족한 때에는 제②항의 비용, 지급보험금, 지급보험금에 대한 지연손해금의 순서로
+    충당하는 것에 따르기로 한다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="34" y="434" width="513" height="25">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="html">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[<b>제5조(신용정보의 제공)</b>&nbsp;본인은 제2조에 따라 “보증보험사”가 “캡소프트”에게 보험금을 지급한 경우, “보증보험사”가 본인의 보험사고 내용을 은행 등 여타기관에 통보하는 것에 동의한다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="34" y="462" width="513" height="51">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="html">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[<b>제6조(관할법원)</b>&nbsp;“보증보험사”의 본인에 대한 채권행사와 관련한 소송은 법이 정하는 관할법원과 아울러 “보증보험사”의 부점(본점·본부·지점 등)소재지를 관할하는 법원을 관할법원으로 할 것을 합의한다. 다만, 그 채권의 관리를 위하여 “보증보험사”의
+본점·본부나 다른 지점(사무소)으로 그 채권을 이관한 경우에는 이관받은 본점·본부나 다른 지점(사무소)으로 그 채권을 이관한
+경우에는 이관받은 본점·본부 또는 지점(사무소) 소재지를 관할하는 법원을 관할 법원으로 할 수 있다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="05db1761-37a2-4c05-95e8-b35cd528e10e" style="Default_9pt" x="34" y="515" width="513" height="15">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement markup="html">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[<b>제7조(기타)</b>&nbsp;이 추가약정서는 본인과 서울보증보험㈜를 대리한 ㈜캡소프트이 체결한 것이다.]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="086eb95d-8986-41f4-afbb-4a82ad5f2c9b" mode="Transparent" x="34" y="534" width="513" height="113">
+						<property name="com.cabsoft.rx.export.html.zindex" value="-98"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="0.75"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Default" x="35" y="540" width="512" height="15">
+						<property name="com.cabsoft.rx.export.html.type" value="buttonconfirm"/>
+						<property name="com.cabsoft.rx.export.html.id" value="buttonconfirm1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doBtnClick(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[본인은 “캡소프트”과「대출거래약정」을 체결함에 있어, 이 추가약정서의 모든 조항을 충분히 이해하고 아래와 같이 서명 날인합니다.]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="72a85778-aaef-45f4-ab82-8a30ffd83a37" style="Default_9pt" x="41" y="555" width="499" height="21">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[StringUtils.format($F{EF_DATE},"@@@@년 @@월 @@일")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Defaultback_52031166" x="40" y="576" width="116" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[대출취급기관]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Defaultback_52031166" x="156" y="576" width="113" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[주식회사 캡소프트]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Defaultback_52031166" x="269" y="576" width="111" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[신용보험계약 체결기관]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Defaultback_52031166" x="380" y="576" width="159" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[서울보증보험 주식회사]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Defaultback_52031166" x="40" y="596" width="116" height="40">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[본인
+(대출받는자)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Defaultback_52031166" mode="Transparent" x="156" y="596" width="39" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[주소 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="d5a7178f-8ce0-46bf-9b90-94ea5e0fc29d" style="Defaultback_52031166" mode="Transparent" x="195" y="596" width="344" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item2}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Defaultback_52031166" mode="Transparent" x="156" y="616" width="39" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[성명 :]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="88ab92ee-348e-45f2-a8d7-2711f51469ee" style="Defaultback_52031166" x="195" y="616" width="55" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item1}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="ef438c51-b04e-4706-ae43-5af212e1c9a0" style="Defaultback_52031166" mode="Transparent" x="250" y="616" width="97" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<image onErrorType="Blank">
+					<reportElement uuid="47f3d3a5-ab24-434e-a2ef-9529f30f0912" key="sign.png" x="282" y="611" width="30" height="30">
+						<property name="com.cabsoft.rx.export.html.id" value="signimg_sign1"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="2"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir}+"sign.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="d57ca505-1bad-4f31-b870-8bf1cd405fe7" key="" style="Default" x="282" y="623" width="30" height="20">
+						<property name="com.cabsoft.rx.export.html.id" value="sign1"/>
+						<property name="com.cabsoft.rx.export.html.script" value="onclick=&quot;doSign(this)&quot;"/>
+						<property name="com.cabsoft.rx.export.html.type" value="sign"/>
+						<property name="com.cabsoft.rx.export.html.zindex" value="3"/>
+						<propertyExpression name="com.cabsoft.rx.export.html.desc"><![CDATA["본인 확인 서명"]]></propertyExpression>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="5" isBold="false"/>
+					</textElement>
+					<text><![CDATA[(인)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="d5a7178f-8ce0-46bf-9b90-94ea5e0fc29d" style="Defaultback_52031166" mode="Transparent" x="347" y="616" width="192" height="20">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<box leftPadding="2">
+						<leftPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["주민등록번호 : "+StringUtils.format($F{item3},"@@@@@@ - @@@@@@@")]]></textFieldExpression>
+				</textField>
+				<image scaleImage="FillFrame" onErrorType="Blank">
+					<reportElement uuid="f2712828-9c33-4758-aa12-21af9debc58f" key="Sgic_logo.gif" x="156" y="665" width="286" height="34">
+						<property name="com.cabsoft.rx.export.html.zindex" value="1"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgDir}+"Sgic_logo.gif"]]></imageExpression>
+				</image>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<pageFooter>
+		<band height="66">
+			<image scaleImage="RetainShape" hAlign="Center" onErrorType="Blank">
+				<reportElement uuid="2a04d483-6b85-4a93-a94f-47b741e2a234" x="41" y="12" width="492" height="54">
+					<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"barcode2.png"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame" hAlign="Center" onErrorType="Blank">
+				<reportElement uuid="d60b1e9d-7ea2-4055-b0ee-01f36a27f6f7" isPrintRepeatedValues="false" x="215" y="12" width="155" height="23"/>
+				<imageExpression><![CDATA[com.cabsoft.Barcode.createCode128("52031166010101", false)]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="ae563a86-f457-4214-aa1a-fa5a6bafdd80" x="29" y="27" width="14" height="14" backcolor="#000000"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="ae563a86-f457-4214-aa1a-fa5a6bafdd80" x="548" y="41" width="14" height="14" backcolor="#000000"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="c7dd6761-4b36-4ea3-b424-9f46a1c74cd5" style="Default" x="43" y="35" width="207" height="23"/>
+				<textElement/>
+				<text><![CDATA[S-MORE MY CAR 개인금융신용보험 추가약정서
+(서울보증보험)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c7dd6761-4b36-4ea3-b424-9f46a1c74cd5" style="Default" x="509" y="35" width="47" height="23"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[5-203-1166]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</ReportExpress>

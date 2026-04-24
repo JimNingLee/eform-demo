@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="CYPICVLC_cert_wonri" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="25" bottomMargin="25" uuid="bbfae257-a124-4c92-be0a-38ff08426044">
+	<property name="rxreport.zoom" value="1.5"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="1101"/>
+	<import value="com.cabsoft.rx.hbarcode.sec"/>
+	<style name="Default" isDefault="true"/>
+	<style name="styleM" hAlign="Left" vAlign="Middle" fontSize="96"/>
+	<style name="padding1"/>
+	<style name="padding2"/>
+	<style name="padding" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingL" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingR" style="styleM">
+		<box leftPadding="0" rightPadding="5"/>
+	</style>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["../../images/kyobo/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="org_barcode" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[Steganography에 사용될 바코드 이미지]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXSecurity/barcode.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodepath" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[고밀도 바코드가 저장되어 있는 경로]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXHiDensityBarcode/out/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodeAction" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 삽입 후 이미지 파일 삭제]]></parameterDescription>
+		<defaultValueExpression><![CDATA["deleteafter"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="surfix" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 파일 접두사]]></parameterDescription>
+		<defaultValueExpression><![CDATA["test_"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IssuerNo" class="java.util.Map" isForPrompting="false"/>
+	<parameter name="data" class="com.cabsoft.rx.engine.data.RXXmlDataSource" isForPrompting="false">
+		<defaultValueExpression><![CDATA[new com.cabsoft.rx.engine.data.RXXmlDataSource($P{XML_DATA_DOCUMENT},"/root/list/row/EVAL_AMT")]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[/Root/LData]]>
+	</queryString>
+	<field name="today" class="java.lang.String">
+		<fieldDescription><![CDATA[today]]></fieldDescription>
+	</field>
+	<field name="pTpdNm" class="java.lang.String">
+		<fieldDescription><![CDATA[pTpdNm]]></fieldDescription>
+	</field>
+	<field name="pAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[pAddress]]></fieldDescription>
+	</field>
+	<field name="pResdNo" class="java.lang.String">
+		<fieldDescription><![CDATA[pResdNo]]></fieldDescription>
+	</field>
+	<field name="pName" class="java.lang.String">
+		<fieldDescription><![CDATA[pName]]></fieldDescription>
+	</field>
+	<field name="pTrustAmt" class="java.lang.String">
+		<fieldDescription><![CDATA[pTrustAmt]]></fieldDescription>
+	</field>
+	<field name="pTrustFrom" class="java.lang.String">
+		<fieldDescription><![CDATA[pTrustFrom]]></fieldDescription>
+	</field>
+	<field name="pTrustTo" class="java.lang.String">
+		<fieldDescription><![CDATA[pTrustTo]]></fieldDescription>
+	</field>
+	<field name="pNoticeYN" class="java.lang.String">
+		<fieldDescription><![CDATA[pNoticeYN]]></fieldDescription>
+	</field>
+	<field name="pNoticeMod" class="java.lang.String">
+		<fieldDescription><![CDATA[pNoticeMod]]></fieldDescription>
+	</field>
+	<field name="pEmail" class="java.lang.String">
+		<fieldDescription><![CDATA[pEmail]]></fieldDescription>
+	</field>
+	<field name="pBaseAmt" class="java.lang.String">
+		<fieldDescription><![CDATA[pBaseAmt]]></fieldDescription>
+	</field>
+	<field name="pTpdCd" class="java.lang.String">
+		<fieldDescription><![CDATA[pTpdCd]]></fieldDescription>
+	</field>
+	<field name="pKorTrustAmt" class="java.lang.String">
+		<fieldDescription><![CDATA[pKorTrustAmt]]></fieldDescription>
+	</field>
+	<group name="gh1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="792">
+				<staticText>
+					<reportElement uuid="d9e6d5de-d7d0-4c54-a2c0-c0af2f94d1ef" style="styleM" positionType="Float" x="0" y="65" width="267" height="631" isPrintInFirstWholeBand="true"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[<b>제 1 조 (신탁의 목적)</b> 갑은 수익자의 이익증식 및 신탁재산 관리를 목적으로 금전을 신탁한다.
+<b>제 2 조 (신탁금액)</b> 이 신탁의 금액은〔별표1〕특정금전신탁계약세부내역 (운용지시서) (이하 “신탁계약세부내역”이라 한다)에 기재된 금액으로 한다.
+<b>제 3 조 (신탁기간)</b> 이 신탁의 신탁기간은 신탁계약세부내역에 기재된 기간으로 한다
+<b>제 4 조 (수익자)</b> ①이 신탁계약의 수익자는 신탁계약세부내역에 기재된 자로 한다. 단 수익자를 별도로 기재하지 않을 때는 갑과 수익자가 동일한 것으로 본다.
+②갑은 수익자와 연서로써 을의 승낙을 얻어 수익자를 새로 지정하거나 변경할 수 있다. 이 권리는 갑에게 전속되며 상속되지 아니한다.
+<b>제 5 조 (추가신탁)</b> ①갑은 을의 승낙을 얻어 이 신탁에 대하여 추가신탁을 할 수 있으며 추가 신탁하는 경우 특정금전신탁계약변경계약서에 의하여 을과 추가신탁에 대한 계약을 체결한다.
+②제1항에도 불구하고 운용방법의 변경이 없이 추가 입금만 하는 때에는 신탁통장을 발급한 경우에 한하여 제1항의 특정금전신탁계약변경계약서를 작성하지 아니할 수 있다.
+<b>제 6 조 (신탁재산의 운용)</b> ①갑은 신탁재산을 신탁계약세부내역 중에서 운용방법을 선택하여 신탁자금 운용방법에 기재하여 운용하도록 지시하며, 을은 이 지시에 따라 신탁재산을 운용한다. 다만, 갑이 지정한 방법대로 운용할 수 없는 잔액이 있는 경우에는 을은 금융투자업규정 제4-85조 제3항에 따라 을의 고유계정에 대한 일시적인 자금대여 및 자금중개회사의 중개를 거쳐 행하는 단기자금 대여의 방법으로 운용할 수 있다.
+②을은 운용상 발생하는 이익에 대하여도 갑이 별도의 지시를 하지 않는 한 제1항과 같이 처리한다.
+③신탁재산에 관한 권리행사는 관련법령이 허용하는 범위 내에서 을이 직접 행사한다
+④을은 이 신탁재산을 다른 신탁재산과 구분하여 관리•운용한다.
+⑤갑은 특정금전신탁계약변경계약서에 의하여 신탁재산의 운용방법을 변경지정 할 수 있으며, 을은 특별한 사유가 없는 한 갑의 요구에 응하여야 한다.
+<b>제 7 조 (대리인의 지정)</b> ①갑은 제6조에서 정한 신탁재산 운용방법에 대하여 일체의 지시권을 대리인으로 하여금 행사하게 할 수 있다. 이 경우 갑은 대리인 위임장, 기타 적법하게 대리권을 수여 하였음을 확인할 수 있는 서류를 을에게 제출하여야 한다
+②갑은 대리인 변경신청서, 기타 적법하게 대리권을 수여 하였음을 확인할 수 있는 서류를 을에게 제출하여 제1항의 대리인을 변경할 수 있다.
+<b>제 8 조 (운용내역 통보)</b> ①을은 매분기 말일을 기준으로 신탁재산의 운용내역을 다음달 말일까지 갑에게 서면 또는 전자문서 중 갑이 사전에 선택한 방법으로 통보하여야 한다. 다만, 갑이 정기적인 통보를 원하지 않을 경우 그 내용을 신탁계약세부내역에 명기한 후 통보를 생략할 수 있다.
+②제1항에도 불구하고 갑 또는 수익자가 신탁재산의 운용내역 및 자산의 평가가액을 확인하고자 할 때에는 을은 그 내용을 즉시 제공하여야 한다.
+<b>제 9 조 (원본과 이익의 보전)</b> 이 신탁은 원본과 이익의 보전을 하지 아니하며 경우에 따라서는 원본의 손실이 발생할 수 있다.
+<b>제 10 조 (손익의 귀속)</b> 신탁재산 운용으로 발생되는 이익 및 손실은 전부 수익자에게 귀속된다.
+<b>제 11 조 (신탁재산의 표시)</b> 을은 신탁재산에 대하여는 신탁의 등기 또는 등록을 하여야 하며, 등기 또는 등록을 할 수 없는 경우에는 고유재산과 별도로 분별하여 관리하는 방법으로 신탁재산임을 표시한다
+<b>제 12 조 (신탁보수)</b> ①을은 신탁보수를 신탁계약세부내역에 기재된 산식에 의해 계산하여 제13조 제1항에서 정한 신탁이익 지급일에 신탁재산 중에서 수령하거나 갑 또는 수익자에게 따로 청구할 수 있다.
+②신탁계약세부내역의 신탁금 평균잔액이라 함은 일별 신탁원본을 신탁기간(일수)동안 누적 하여 합한 금액을 신탁기간(일수)로 나눈 금액을 말한다
+③경제사정의 급격한 변화 또는 신탁사무의 처리에 변동이 있을 때에는 을은 갑 및 수익자와 협의하여 제1항의 신탁보수율을 변경할 수 있다.
+④신탁보수를 선취한 경우에는 중도해지 이후의 기간에 대하여 일할 계산하여 반환하는 것을 원칙으로 하되 갑과 을이 합의하여 반환기준을 달리 정할 수 있다.
+⑤을은 갑과 합의하여 수익보수를 징수할 수 있으며 수익보수 지급에 관한 구체적인 사항은 특약에서 정할 수 있다
+<b>제 13 조 (이익계산 및 지급)</b> ①이 신탁의 이익은 신탁계약세부내역에 기재된 방식대로 수익자에게 지급하거나 원본에 가산한다. 이때 이익을 지급하거나 원본에 가산하기로 한 날이 휴일인 경우에는 그 다음 영업일에 지급 또는 가산한다.
+②신탁이익의 계산은 신탁계약을 체결한 날 또는 직전 이익지급일부터 제1항에서 정한 이익지급일의 전일까지 한다.
+③을은 신탁계약일로부터 1년이 경과하거나 제18조에 의한 일부해지 또는 신탁이익 지급시 결산을 실시할 수 있으며, 그에 따라 제12조의 신탁보수, 제14조의 조세 및 제비용을 신탁재산
+중에서 수령하거나, 갑 또는 수익자에게 따로 청구할 수 있다.
+<b>제 14조 (조세 및 제비용)</b> 을의 귀책사유 없이 발생하는 신탁재산에 대한 세금 및 공과금 기타 신탁사무의 처리에 소요되는 비용은 신탁재산 중에서 충당하거나 갑 또는 수익자에게 따로 청구할 수 있다.
+<b>제 15 조 (중도해지)</b> ①제3조에서 정한 신탁기간 종료 전에 신탁을 해지하고자 할 때에는 갑은 수익자와 연서로써 해지를 신청할 수 있으며 을은 특별한 사유가 없는 한 이에 응하여야 한다. 다만, 신탁재산을 처분하기 곤란하여 원본 및 수익의 상환이 정상적으로 이루어지지 않거나, 중도해지시 신탁재산의 만기가 도래하지 아니한 경우 등 특별한 사유가 있는 때에는 신탁재산을 처분하여 현금화가 가능할 때까지 중도해지가 불가능할 수 있으며, 중도해지가 가능하더라도 가격조건이 불리하게 되어 수익률이 하락할 수 있다.
+② 제1항에 따라 중도해지 하는 경우 을은 제12조에서 정한 신탁보수 중 중도해지 시까지의 신탁보수와 신탁계약세부내역에 기재된 중도해지수수료를 받는다.
+③을은 제2항에도 불구하고 다음 각 호의 어느 하나에 해당하는 경우에는 중도해지 수수료를 받지 아니 한다
+ 1. 을의 귀책사유에 의하여 해지 하는 경우
+ 2. 갑과 을이 중도해지수수료를 받지 아니하기로 합의하여 해지하는 경우
+ 3. 관련 법규에서 중도해지수수료 징수 예외의 사유로 인정하는 경우
+④갑과 수익자가 동일한 경우를 제외하고는 갑이 사망 하였을 경우 을과 수익자가 합의하여 신탁계약을 종료할 수 있다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5bbc376f-6212-40b6-928d-0eef4e9671a8" style="styleM" positionType="Float" x="268" y="66" width="267" height="631" isPrintInFirstWholeBand="true"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[<b>제 16조 (신탁의 종료)</b> ①이 신탁이 종료된 때에는 을은 최종계산서를 작성하여 수익자의 승인을 얻은 후 신탁재산을 수익자에게 교부한다. 다만, 운용신탁재산 중 환가 및 회수가 곤란한 경우 기타 부득이한 사정이 있는 경우에는 운용신탁재산을 현상대로 교부하고 운용현상대로 교부가 곤란한 경우 을은 수익자가 별도의 의사표시를 하지 않는 한 교부가 가능해 질 때까지 보관, 관리 및 추심을 한다.
+②제1항에 의한 신탁 종료시 수익자가 신탁재산을 운용현상 그대로 교부할 것을 요청하는 경우에는 을은 수익자와 협의하여 운용현상 그대로 교부할 수 있다.
+③최종계산서에 대하여 수익자가 승인을 하지 아니한 경우 을은 최종계산서를 작성하여 수익자에게 계산 승인을 요구 하며 수익자는 계산승인의 요구를 받은 때로부터 1개월 내에 승인여부를 을에게 통지하여야 한다.
+④을은 제3항의 계산승인을 요구할 경우 “ 수익자는 최종계산에 대하여 이의가 있는 경우 계산승인을 요구 받은 때로부터 1개월 내에 이의를 제기할 수 있고, 최종계산에 대하여 이의를 제기하지 아니한 경우에는 수익자가 승인한 것으로 본다”라는 취지의 내용을 고지하여야 한다.
+⑤수익자가 제4항의 계산승인을 요구 받은 때로부터 1개월 내에 이의를 제기하지 아니한 경우 계산을 승인한 것으로 본다.
+⑥신탁기간 만료, 신탁계약의 전부해지 등 신탁계약 종료 사유 발생일 이후 갑이 신탁재산에 대한 처리방법에 대하여 별도의 지시를 하지 않는 경우 을은 제5조 제1항의 단서에서 정하는 방법에 따라 신탁재산을 운용한다. 이 경우 신탁계약 종료사유 발생일 이후의 보수는 제12조에서 정한 보수의(    )%의 비율로 계산한다.
+⑦신탁계약의 종료 이후 신탁재산의 만기가 도래하는 경우 신탁계약 종료 시 신탁재산을 처분하여 현금화하기가 곤란하여 원본 및 수익의 지급이 정상적으로 이루어지지 않을 수 있으며, 신탁재산을 처분하여 현금화할 수 있더라도 가격조건이 불리하게 되어 수익률이 하락할 수 있다. 또한 신탁재산의 만기가 신탁계약의 종료 이전에 도래하는 경우에는 수익률이 하락할 수 있다
+<b>제 17조 (양도 및 담보제공)</b> 이 신탁의 수익권을 양도하거나 담보제공 하고자 할 때에는 갑과 수익자의 연서로써 을의 승낙을 받아야 한다.
+<b>제 18조 (일부해지)</b> ①이 신탁의 일부해지가 필요한 때에는 갑과 수익자의 연서로써 해지할 수 있으며, 을은 특별한 사정이 없는 한 이에 응하여야 한다. 이 경우 을은 제15조 제2항에서 정한 중도해지 수수료를 받는다. 다만 제15조 제3항 각 호의 사유에 의한 중도해지시에는 중도해지수수료를 받지 않는다.
+②일부해지 이후 새로운 원본금액은 갑이 해지신청서 작성시 선택한 해지방법에 따라 재계산 된다.
+<b>제 19 조 (신탁기간 연장)</b> ①이 신탁의 신탁기간은 갑과 수익자의 연서로써 을의 승낙을 얻어 연장할 수 있다.
+②제1항의 신탁기간 연장기간 중에 중도해지 하는 경우 을은 제15조 제2항에서 정한 중도해지수수료를 받는다. 다만, 제15조 제3항 각호의 사유에 의한 해지시에는 중도해지수수료를 받지 않는다.
+<b>제 20조 (사고신고 등)</b> ①갑은 다음의 경우에는 지체 없이 서면 등의 방법으로 을에게 신고하여야 한다. 다만, 긴급하거나 부득이 할 때는 영업시간 중에 전화로 신고할 수 있으며, 이때는 다음 영업일 안에 서면 신고하여야 한다 그 신고의 지연으로 인하여 발생한 손해에 대하여 을은 을의 귀책사유가 없는 한 책임을 지지 아니한다.
+1. 통장•거래인감을 분실•도난•훼손하였거나 변경하고자 할 때
+2. 위탁자, 수익자, 대리인, 기타 신탁계약 관계자에 관한 성명•상호 등의 변경, 사망 또는 행위능력에 변동이 있을 때
+②위탁자의 주소, 이메일, 전화번호의 경우 전화 또는 전자문서를 통하여 변경 신고할 수 있다
+<b>제 21 조 (거래인감 등 신고)</b> ①갑과 수익자는 거래할 인감 ∙ 서명을 을에게 미리 신고하여야 한다. 대리인 등 신탁관계인의 인감 ∙ 서명 등도 이와 같다.
+②서류에 날인한 인영을 신고한 인감 육안을 통하여 상당한 주의로 대조하여 상위 없다고 인정하고 신탁재산의 교부 및 기타 처리를 한 후에는 인감의 도용 또는 위조, 변조 그 밖의 다른 사고가 있더라도 이로 인하여 발생한 손해에 대하여는 을은 책임을 지지 아니한다. 다만, 을이 갑과 수익자의 인감이 도용 또는 위조, 변조된 사실을 알았거나 알 수 있었을 때에는 그러하지 아니하다.
+<b>제 22조 (계약의 변경 등)</b> ① 을은 이 신탁계약을 변경하고자 하는 경우 을의 영업점과 인터넷홈페이지, 온라인 거래를 위한 컴퓨터 화면 기타 이와 유사한 전자통신매체에 변경내용을 변경예정일 전부터 비치 또는 게시한다
+②을은 제1항의 변경내용이 갑에게 불리한 것일 경우 이를 서면 등 갑과 사전에 합의한 방법으로 변경전 최소 1개월 전까지 통지하여야 한다. 다만, 갑에게 변경 전 내용이 그대로 적용되는 경우 또는 갑이 변경내용에 대한 통지를 받지 아니하겠다는 의사를 명시적으로 표시한 경우에는 그러하지 아니한다.
+③을은 제2항의 통지를 할 경우 “갑이 변경에 동의하지 아니한 경우에는 계약해지를 할 수 있고 통지를 받은 후 변경예정일 전일까지 계약해지의 의사표시를 하지 아니한 경우에는 변경에 동의한 것으로 본다”라는 취지의 내용을 통지하여야 한다.
+④갑이 제3항의 통지를 받은 후 변경예정일 전일 까지 계약해지의 의사표시를 하지 아니한 경우에는 변경에 동의한 것으로 본다.
+⑤을은 특정금전신탁계약서를 영업점에 비치 또는 게시하여 갑이 요구할 경우 이를 교부하여야 하며, 인터넷 홈페이지, 온라인 거래를 위한 컴퓨터 화면, 기타 이와 유사한 전자통신매체에 게시하여 갑이 계약서를 조회하고 다운로드(화면출력 포함) 받을 수 있도록 하여야 한다.
+<b>제 23조 (정보제공, 통지)</b> 갑 또는 수익자가 전화 등으로 신탁금 잔액, 이익계산서 등에 관한 정보제공을 요청하는 경우, 을은 명의인, 계좌번호 및 비밀번호의 일치 여부를 확인한 후 이에 관한 정보를 제공할 수 있다.
+<b>제 24조 (특약사항)</b> 갑과 을은 신탁법 및 관계법령 등에 위배되지 않는 범위 내에서 특약을 체결할 수 있다.
+<b>제 25조 (준용)</b> ① 이 계약에 규정되어 있지 않은 사항은 신탁법 및 관계법령에서 정한 방법에 의한다.
+②이 계약에 의한 서비스 중 전자금융거래에 관하여는 ‘전자금융서비스 이용에 관한 기본약관’ 및 전자금융거래법령이 우선 적용된다.
+<b>제 26조 (관할법원)</b> 이 신탁계약에 관한 소송은 민사소송법이 정하는 관할법원으로 한다.
+<b>제 27조(기타)</b> ① 갑이 자기의 재무상태, 투자목적 등에 대하여 을에게 상담을 요청하는 경우, 을은 그 상담요구에 응하기로 한다.
+②갑은 을과 분쟁이 발생하는 경우 을의 민원처리기구에 그 해결을 요구하거나 금융감독원, 한국금융투자협회 등에 분쟁조정을 신청할 수 있다.
+<b>제 28조 (신탁계약서 작성)</b> 이 신탁계약서는 2통 작성하여 갑과 을이 각 1통씩 보관한다.
+]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="75963f6c-6ab2-4e8c-8967-77611083a12a" style="paddingL" x="130" y="708" width="404" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pAddress}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="f9aa5530-0a5e-4f3e-837b-790819d19caf" mode="Opaque" x="0" y="708" width="130" height="24" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[위탁자(갑)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="c62bcbdc-c280-40ee-af16-bddb04254909" style="paddingL" x="130" y="720" width="202" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pResdNo}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="15bc9c75-f466-4cca-a5bb-9808138ca87e" style="paddingL" x="332" y="720" width="202" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pName} + "                    (인/서명)"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4d743f39-2f16-4ecd-8c42-231bfeaee90d" mode="Opaque" x="0" y="732" width="130" height="24" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[수 익 자]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="0788f3ae-18ab-45ec-a1b8-80f6c5b4118e" style="paddingL" x="130" y="732" width="404" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pAddress}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f7e16a4b-a6be-48fb-a29f-067e1e16ae97" style="paddingL" x="130" y="744" width="202" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pResdNo}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4e0bccc9-daf0-404d-beed-7cddc10cc132" style="paddingL" x="332" y="744" width="202" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pName} + "                    (인/서명)"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="ff5e41bc-2685-4b21-b3b8-46552660ff37" mode="Opaque" x="0" y="756" width="130" height="24" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[수탁자(을)]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="add0efe8-05b9-469b-b98c-afec7ce432f8" style="paddingL" x="130" y="756" width="202" height="24" isPrintInFirstWholeBand="true"/>
+					<box leftPadding="5">
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="14" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["교보생명보험주식회사"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="724414b3-5760-405b-b89e-39c33b214d5d" style="paddingL" x="0" y="780" width="534" height="12" isPrintInFirstWholeBand="true"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[※ 수익자를 별도로 기재하지 않을 때에는 위탁자와 수익자가 동일한 것으로 봅니다.(특정금전신탁계약서 제4조①) ]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="e1554b6b-6cc8-423f-9978-6dc8f4c2edcd" style="paddingL" x="332" y="756" width="202" height="24" isPrintInFirstWholeBand="true"/>
+					<box leftPadding="5">
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["대표이사      신 창 재"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="73e22de1-5f3f-4d03-8e38-2598a47fdfc9" style="styleM" mode="Opaque" x="0" y="61" width="535" height="4" backcolor="#0969B3"/>
+					<textElement>
+						<font size="1"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2d851e23-6565-4689-bda3-d3fea6b1e495" style="styleM" x="0" y="0" width="422" height="57"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[특정금전신탁계약서]]></text>
+				</staticText>
+				<image scaleImage="RetainShape" hAlign="Center" vAlign="Bottom" onErrorType="Blank">
+					<reportElement uuid="426b711c-359d-4a34-9c00-469254437ecc" isPrintRepeatedValues="false" x="422" y="0" width="113" height="57" isPrintInFirstWholeBand="true"/>
+					<imageExpression><![CDATA[$P{imgDir} + "rpt_top_logo.gif"]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="813f3e00-535a-4f68-80d6-adb506b91673" style="paddingL" x="0" y="697" width="534" height="11" isPrintInFirstWholeBand="true"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pTrustFrom}.substring( 0, 4 ) + "년" + $F{pTrustFrom}.substring( 4, 6 ) + "월" + $F{pTrustFrom}.substring( 6, 8 ) + "일  부터   " + $F{pTrustTo}.substring( 0, 4 ) + "년" + $F{pTrustTo}.substring( 4, 6 ) + "월" + $F{pTrustTo}.substring( 6, 8 ) + "일  까지"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="gh2">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="792">
+				<staticText>
+					<reportElement uuid="5ee44b87-8a28-4343-835c-7216c3a916ce" style="paddingL" x="1" y="66" width="534" height="12" isPrintInFirstWholeBand="true"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[【 별 표 1 】]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5f128596-413c-4630-8089-d9eb0a0e4524" style="paddingL" x="1" y="78" width="534" height="12" isPrintInFirstWholeBand="true"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[● 기본사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7bedfebe-7f0e-42e8-b167-c4222601b214" mode="Opaque" x="1" y="92" width="83" height="18" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[상품명]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="6829ce55-a56f-407e-8e96-264322a8f427" style="paddingL" x="84" y="92" width="116" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pTpdNm}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="d5694674-94ce-41bd-a813-670f4eabb896" mode="Opaque" x="200" y="92" width="51" height="18" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[계좌번호]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5efb9b4e-3b30-45f2-b608-1fa4bd020112" style="paddingL" x="251" y="92" width="116" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="0c946e7b-6b23-407d-8be6-4dced47402b6" mode="Opaque" x="367" y="92" width="51" height="18" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[계약번호]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="e9fdeebe-5d3a-4b0c-bcaa-38bff9f0b499" style="paddingL" x="418" y="92" width="116" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="46e51b56-6826-4cac-86d3-0699e066fae3" mode="Opaque" x="1" y="110" width="83" height="18" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[신탁금액]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5cd7baa6-4503-4be3-9f20-3fe772aa70df" style="paddingR" x="84" y="110" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["금   " + $F{pKorTrustAmt} + "         원정 ( ￦ " + $F{pTrustAmt} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="3771d90f-3de5-4933-ab2a-dfd762a42606" style="paddingL" x="461" y="110" width="73" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["계약서 제2조"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="38b0d780-9073-4059-b5cf-5cf411c413a4" mode="Opaque" x="1" y="128" width="83" height="18" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[신탁기간]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="4ce594ba-d54f-4e21-8c3d-b7def671c968" style="paddingL" x="84" y="128" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pTrustFrom}.substring( 0, 4 ) + "년" + $F{pTrustFrom}.substring( 4, 6 ) + "월" + $F{pTrustFrom}.substring( 6, 8 ) + "일  부터   " + $F{pTrustTo}.substring( 0, 4 ) + "년" + $F{pTrustTo}.substring( 4, 6 ) + "월" + $F{pTrustTo}.substring( 6, 8 ) + "일  까지"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="b3cf580c-516e-4294-9bf2-cd90c420c96b" style="paddingL" x="461" y="128" width="73" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["계약서 제3조"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="7b35eae4-eb81-43bd-9f11-8586e5041458" mode="Opaque" x="1" y="146" width="83" height="36" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[운용내역 통지여부]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="cfbac4dc-274b-40be-8ea1-3e0c6cc5c3f8" style="paddingL" x="84" y="146" width="167" height="36" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["□ 통지원함     □ 통지생략"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="a6acaea7-e52f-4459-9bd6-e483198ccdb2" mode="Opaque" x="251" y="146" width="48" height="36" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[통지방법]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="abcdc0f4-1cab-4a9d-8c4d-5a91cd53d8eb" style="paddingL" x="299" y="146" width="162" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["□ 서면"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="1dcd2db5-129b-423b-8de4-e2b99e30badf" style="paddingL" x="299" y="164" width="162" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["□ 전자문서        (e-mail주소)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="378d68f6-f74b-4dea-97b5-cbda0774e12a" style="paddingL" x="461" y="146" width="73" height="36" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["계약서 제8조"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="fe0cc360-c2ad-48fd-86c4-c3a70981b178" mode="Opaque" x="1" y="182" width="83" height="18" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[신탁보수]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="3df314f3-7a1b-4b3a-adb3-96493e165f3c" style="paddingL" x="84" y="182" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["신탁금 평균잔액×연( " + $F{pBaseAmt} + " )%"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="111b7e36-5690-4602-990a-f3919d28165d" style="paddingL" x="461" y="182" width="73" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["계약서 제12조"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="dc495819-1fc4-49d5-843d-aae63e114b9e" mode="Opaque" x="1" y="200" width="83" height="90" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[이익계산 및 지급]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="a96443d6-8b8c-4868-adbc-ecab53b714d5" style="paddingL" x="84" y="200" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["□ 매분기말(원천징수 대상 소득이 있는 경우에 한함)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="db95336a-cc8d-4a2d-8053-a882b8d5ed8a" style="paddingL" x="84" y="218" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["■ 신탁종료일의 다음 영업일(해지일)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="66bb3e0b-02b8-4e64-93b6-c52ed2944d32" style="paddingL" x="84" y="236" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["□ 신탁계약일로부터 매(   )월이 경과한 지정한 날(   )일 또는 신탁종료일의 다음 영업일"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="a9bc0a1b-f25c-47b9-9a64-0684cbdf8674" style="paddingL" x="84" y="254" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["□ 신탁계약 해지(일부해지를 포함한다)로 인한 원본을 지급하는날"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="a6eab45d-824b-448c-8ccc-ee1b2a6172f7" style="paddingL" x="84" y="272" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["□ 기타 (                                                        )"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="9f05d001-92eb-4a2d-96b3-b8cfc0015189" style="paddingL" x="461" y="200" width="73" height="90" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["계약서 제13조"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="76e027bf-6f8a-4302-9610-ca0c8bff8528" mode="Opaque" x="1" y="290" width="83" height="72" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[중도해지수수료]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="725575ea-3bd2-4604-82d2-475f24c53951" style="paddingL" x="84" y="290" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["신탁계약일로부터 계약기간(       ) 개월 미만 경과시 : 해지 신탁금의(      )%"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="3699d5c2-9634-4c69-9be8-dd0404634a02" style="paddingL" x="84" y="308" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["신탁계약일로부터 계약기간 (       )개월 미만 경과시 : 해지 신탁금의(      )%"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="9979a0fb-d516-4d9b-8781-c542ee95a12c" style="paddingL" x="84" y="326" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["신탁계약일로부터 계약기간 (       )개월 미만 경과시 : 해지 신탁금의(      )%"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="cd84e47f-6867-4127-b0b0-65947444dc94" style="paddingL" x="84" y="344" width="377" height="18" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["■ 중도해지 수수료 없음	□ 기타 (                     )"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="cd66b460-b2ce-4f94-8395-07ae454f5404" style="paddingL" x="461" y="290" width="73" height="72" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["계약서 제15조"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="94021401-d4aa-4406-86e2-cc9b5ac3b8db" style="paddingL" x="1" y="367" width="534" height="12" isPrintInFirstWholeBand="true"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[● 신탁자금운용방법]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="b4ee2f2a-6d95-4e04-a31b-dc5bd597667d" style="paddingL" x="7" y="384" width="103" height="97" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[( $F{pTpdNm} == "MMT" ? "■ 콜론\n■ 발행어음\n□ 예금\n□ 양도성예금증서\n■ RP" : "□ 콜론\n□ 발행어음\n■ 예금\n□ 양도성예금증서\n□ RP" )]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="9eeeff08-8eba-401e-b35c-2f327ede4881" style="paddingL" x="110" y="384" width="100" height="97" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{pTpdNm} == "MMT" ? "□ MMDA\n■ CMA\n□ MMF\n□ 표지어음\n□ 기업어음증권(CP)" : "□ MMDA\n□ CMA\n□ MMF\n□ 표지어음\n□ 기업어음증권(CP)" )]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="47964d12-a7e1-48da-9537-f55d06e64099" style="paddingL" x="210" y="384" width="100" height="97" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[□ 집합투자증권
+□ 국채
+□ 지방채
+□ 통화안정증권
+□ 특수채]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="07f04bb5-b45f-4765-8109-affd75faf245" style="paddingL" x="310" y="384" width="100" height="97" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[□ 금융채
+□ 신용카드채권
+□ 회사채
+□ 주식
+□ 외화증권]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="bfd5bfd2-cd60-4c63-a094-eb2dbf70928d" style="paddingL" x="410" y="384" width="117" height="97" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[( $F{pTpdNm} == "MMT" ? "□ 부동산의 매입 및 개발\n□ 장내파생상품\n□ 장외파생상품\n□ 대출금\n□ 기타" : "□ 부동산의 매입 및 개발\n□ 장내파생상품\n□ 장외파생상품\n□ 대출금\n■ 기타" )]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="617cebd6-da7c-4ea1-b10c-4d5ed6a42c3f" style="paddingL" x="7" y="481" width="520" height="93" isPrintInFirstWholeBand="true"/>
+					<textElement verticalAlignment="Middle" markup="html">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[** 정기예금을 운용대상으로 하는 경우 갑은 신탁계약기간 종료일 이전에 만기가 도래하는 정기예금을 지정하여야 하며,
+추후 갑이 중도해지 하고자 하는 경우 당해 신탁재산으로 운용중인 정기예금을 만기전에 해지할 수 있으며, 이로 인한
+이자 수익의 감소 등 제반 불이익은 갑에게 귀속합니다.
+** 신탁계약의 종료에도 불구하고 기업어음증권의 경우 부도발생시 해당 지분만큼 실물로 지급하는 것이 곤란할 수
+있으며, 분할 후 실물로 지급을 받는다 하더라도 기업어음증권의 권리자로서 정상적인 권리행사가 어려울 수 있습니다.
+※ 고객이 지정한 방법대로 운용할 수 없는 잔액이 있는 경우에는 <font color="red">금융투자업규정 제4-85조 제3항에 따라 을의 고유계정에 대한
+일시적인 자금 대여 및 자금중개회사의 중개를 거쳐 행하는 단기자금 대여의 방법으로</font> 운용할 수 있다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5d8333df-da5e-496a-b73d-138a1aeca032" style="paddingL" x="1" y="579" width="534" height="12" isPrintInFirstWholeBand="true"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[● 세부운용지시(신탁자금 운용방법중 세부적으로 운용지시하는 경우에 기재합니다)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="9cc66b72-296c-4a10-9582-842dc248e196" style="paddingL" x="7" y="596" width="520" height="32" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f202e55c-236b-4035-aa5a-c7f5b2baa66e" style="paddingL" x="1" y="633" width="534" height="12" isPrintInFirstWholeBand="true"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[● 기타 특약 사항]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="bed5e404-933d-43e4-a3ef-9a7cc558be60" style="paddingL" x="7" y="650" width="520" height="32" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="6124d027-19ed-4002-9ba7-9d6416407d7e" mode="Opaque" x="0" y="730" width="130" height="24" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[위탁자(갑)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="dcfac93e-f694-4d8d-abfd-8aad68dafd51" style="paddingL" x="130" y="742" width="202" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pResdNo}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="3621a668-0991-45bf-88a1-2ab818d03145" style="paddingL" x="130" y="706" width="404" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pAddress}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="71072ec0-f7fe-4a5b-bd4b-fb3e00c35537" mode="Opaque" x="0" y="706" width="130" height="24" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[위탁자(갑)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="90b531d9-b37a-4135-a66d-473b5929c7cd" style="paddingL" x="332" y="742" width="202" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pName} + "                    (인/서명)"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="a73e4a1c-de9b-4323-9060-3b083ed5bfef" mode="Opaque" x="0" y="754" width="130" height="24" isPrintInFirstWholeBand="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[위탁자(갑)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="7b486e54-140a-4002-bb7c-d8d9dd57dfec" style="paddingL" x="332" y="718" width="202" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pName} + "                    (인/서명)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="46eaa83e-4257-4864-9143-48d519d23688" style="paddingL" x="130" y="730" width="404" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pAddress}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5e3e3b82-c38c-49e4-9534-a50d7d150226" style="paddingL" x="130" y="718" width="202" height="12" isPrintInFirstWholeBand="true"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pResdNo}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="f62a8651-9983-444f-abb1-ad222b8cad11" style="paddingL" x="0" y="778" width="534" height="12" isPrintInFirstWholeBand="true"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[※ 수익자를 별도로 기재하지 않을 때에는 위탁자와 수익자가 동일한 것으로 봅니다.(특정금전신탁계약서 제4조①) ]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="446c19f2-ccfc-4c3b-b838-050e2dff5ae6" style="paddingL" x="332" y="754" width="202" height="24" isPrintInFirstWholeBand="true"/>
+					<box leftPadding="5">
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["대표이사      신 창 재"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="db9f2f68-3376-4cf6-b131-7b059c344795" style="paddingL" x="130" y="754" width="202" height="24" isPrintInFirstWholeBand="true"/>
+					<box leftPadding="5">
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font size="14" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["교보생명보험주식회사"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="b02df76a-2077-4ccf-9fa0-a124b0ba504b" style="styleM" mode="Opaque" x="0" y="61" width="535" height="4" backcolor="#0969B3"/>
+					<textElement>
+						<font size="1"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+					<reportElement uuid="63e65131-d480-45b1-a71f-844e25d0865c" isPrintRepeatedValues="false" x="422" y="0" width="113" height="57" isPrintInFirstWholeBand="true"/>
+					<imageExpression><![CDATA[$P{imgDir} + "rpt_top_logo.gif"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement uuid="7e4b0862-894e-4a7b-b70d-cc7b7900210f" style="styleM" x="0" y="0" width="267" height="57"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[특정금전신탁계약세부내역]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="80fa1579-185c-48f3-a2c6-dc24bf06ba1f" style="styleM" x="267" y="13" width="155" height="37"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[(운용지시서)]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+</ReportExpress>

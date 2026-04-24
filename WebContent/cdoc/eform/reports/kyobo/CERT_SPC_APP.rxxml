@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="CYPICVLC_cert_wonri" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="25" bottomMargin="25" uuid="d2e400d6-c832-4c43-953a-1c73e5314862">
+	<property name="rxreport.zoom" value="1.5"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="185"/>
+	<import value="com.cabsoft.rx.hbarcode.sec"/>
+	<style name="Default" isDefault="true"/>
+	<style name="styleM" hAlign="Left" vAlign="Middle" fontSize="96"/>
+	<style name="padding1"/>
+	<style name="padding2"/>
+	<style name="padding" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingL" style="styleM">
+		<box leftPadding="5"/>
+	</style>
+	<style name="paddingR" style="styleM">
+		<box leftPadding="0" rightPadding="5"/>
+	</style>
+	<subDataset name="dataset1" uuid="53f18612-1159-4d9d-8a49-091392db2534">
+		<queryString language="xPath">
+			<![CDATA[/Root/LData/list/LMultiData/LData]]>
+		</queryString>
+		<field name="conMngNo" class="java.lang.String">
+			<fieldDescription><![CDATA[conMngNo]]></fieldDescription>
+		</field>
+		<field name="appDtm" class="java.lang.String">
+			<fieldDescription><![CDATA[appDtm]]></fieldDescription>
+		</field>
+		<field name="resdNo" class="java.lang.String">
+			<fieldDescription><![CDATA[resdNo]]></fieldDescription>
+		</field>
+		<field name="famNo" class="java.lang.String">
+			<fieldDescription><![CDATA[famNo]]></fieldDescription>
+		</field>
+		<field name="nm" class="java.lang.String">
+			<fieldDescription><![CDATA[nm]]></fieldDescription>
+		</field>
+		<field name="drvChk" class="java.lang.String">
+			<fieldDescription><![CDATA[drvChk]]></fieldDescription>
+		</field>
+		<field name="hlthAnorChk" class="java.lang.String">
+			<fieldDescription><![CDATA[hlthAnorChk]]></fieldDescription>
+		</field>
+		<field name="note" class="java.lang.String">
+			<fieldDescription><![CDATA[note]]></fieldDescription>
+		</field>
+		<field name="perAgmDate" class="java.lang.String">
+			<fieldDescription><![CDATA[perAgmDate]]></fieldDescription>
+		</field>
+		<field name="appDivNm" class="java.lang.String">
+			<fieldDescription><![CDATA[appDivNm]]></fieldDescription>
+		</field>
+		<field name="apvDate" class="java.lang.String">
+			<fieldDescription><![CDATA[apvDate]]></fieldDescription>
+		</field>
+		<field name="apvAppId" class="java.lang.String">
+			<fieldDescription><![CDATA[apvAppId]]></fieldDescription>
+		</field>
+		<field name="apvAppcNm" class="java.lang.String">
+			<fieldDescription><![CDATA[apvAppcNm]]></fieldDescription>
+		</field>
+		<field name="devonindex" class="java.lang.String">
+			<fieldDescription><![CDATA[devonindex]]></fieldDescription>
+		</field>
+		<field name="stkNo" class="java.lang.String">
+			<fieldDescription><![CDATA[stkNo]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["../../images/kyobo/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="org_barcode" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[Steganography에 사용될 바코드 이미지]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXSecurity/barcode.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodepath" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[고밀도 바코드가 저장되어 있는 경로]]></parameterDescription>
+		<defaultValueExpression><![CDATA["k:/Netbeans/RXHiDensityBarcode/out/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barcodeAction" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 삽입 후 이미지 파일 삭제]]></parameterDescription>
+		<defaultValueExpression><![CDATA["deleteafter"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="surfix" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[바코드 파일 접두사]]></parameterDescription>
+		<defaultValueExpression><![CDATA["test_"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IssuerNo" class="java.util.Map" isForPrompting="false"/>
+	<queryString language="xPath">
+		<![CDATA[/Root/LData/list/LMultiData/LData]]>
+	</queryString>
+	<field name="/Root/LData/con_mng_no" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/con_mng_no]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/grp_nm" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/grp_nm]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/prod_nm" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/prod_nm]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/sttl_yn" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/sttl_yn]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/grupAgmtNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/grupAgmtNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/name" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/name]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/prodName" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/prodName]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/depoja" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/depoja]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/refNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/refNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/telNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/telNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/saupjaNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/saupjaNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/address" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/address]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/insPe" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/insPe]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/insSttlYn" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/insSttlYn]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/stDt" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/stDt]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/bokjiYn" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/bokjiYn]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/edDt" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/edDt]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/occrRt" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/occrRt]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/basePrem" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/basePrem]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/decPrem" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/decPrem]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/applPrem" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/applPrem]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/sunapPrem" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/sunapPrem]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/mJong" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/mJong]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/mBeau" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/mBeau]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/mJa" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/mJa]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/mBumo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/mBumo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/mTot" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/mTot]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/wJong" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/wJong]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/wBeau" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/wBeau]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/wJa" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/wJa]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/wBumo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/wBumo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/wTot" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/wTot]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/tJong" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/tJong]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/tBeau" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/tBeau]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/tJa" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/tJa]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/tBumo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/tBumo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/tTot" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/tTot]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/ingamYn" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/ingamYn]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/songgumYn" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/songgumYn]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/premFreq" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/premFreq]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/bankName" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/bankName]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/bankNo" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/bankNo]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/fpBrnc" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/fpBrnc]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/fpName" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/fpName]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/fpAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/fpAddress]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/fpTel" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/fpTel]]></fieldDescription>
+	</field>
+	<field name="/Root/LData/fpEmail" class="java.lang.String">
+		<fieldDescription><![CDATA[/Root/LData/fpEmail]]></fieldDescription>
+	</field>
+	<field name="appDtm" class="java.lang.String">
+		<fieldDescription><![CDATA[appDtm]]></fieldDescription>
+	</field>
+	<field name="apvDate" class="java.lang.String">
+		<fieldDescription><![CDATA[apvDate]]></fieldDescription>
+	</field>
+	<field name="apvAppId" class="java.lang.String">
+		<fieldDescription><![CDATA[apvAppId]]></fieldDescription>
+	</field>
+	<field name="apvAppcNm" class="java.lang.String">
+		<fieldDescription><![CDATA[apvAppcNm]]></fieldDescription>
+	</field>
+	<group name="gh0">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+	</group>
+	<group name="gh1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="80">
+				<staticText>
+					<reportElement uuid="ab64904f-3413-40ac-9d69-5f095491938e" style="styleM" x="3" y="6" width="529" height="20" isPrintWhenDetailOverflows="true"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[2. 신청서]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="84180fd3-ce80-45cc-9bdd-4a192aa63b72" mode="Opaque" x="3" y="26" width="58" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[구분
+(추가·탈퇴)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4d5ffd55-95c2-4a98-9158-7507227f526b" mode="Opaque" x="61" y="26" width="58" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[가입
+증서번호]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="082e2f17-e1b0-435e-b9c0-4f9ae56b260c" mode="Opaque" x="119" y="26" width="59" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[주민등록
+번호]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="081dd1a2-1a38-4824-9486-f3be015d3bbd" mode="Opaque" x="178" y="26" width="59" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[이름]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d9506a62-b46b-479e-9a99-2532b7afabe3" mode="Opaque" x="237" y="26" width="59" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[관계(본인,
+배우자,부모)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="cd6a2c7b-e2c5-482f-84ca-a508455adf08" mode="Opaque" x="296" y="26" width="59" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[인사발령일]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="e8e66ad1-3763-46fd-a189-9bbbebe6553e" mode="Opaque" x="355" y="26" width="59" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[취급업무]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7d50f993-03c7-4a15-8cfc-ddc8009f35fc" mode="Opaque" x="414" y="26" width="59" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[운전
+(차·종)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="085006db-9925-403d-a8fd-7c4db2edd601" mode="Opaque" x="473" y="26" width="59" height="34" isPrintWhenDetailOverflows="true" backcolor="#EEEFEE"/>
+					<box>
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[건강상태
+이상여부]]></text>
+				</staticText>
+				<componentElement>
+					<reportElement uuid="a5f23d66-2e27-44c8-8eb0-2707829aeec8" isPrintRepeatedValues="false" x="3" y="60" width="529" height="20"/>
+					<rx:list xmlns:rx="http://www.cabsoftware.com/reportexpress/components" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress/components http://www.cabsoftware.com/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="dataset1" uuid="61b93f52-acdc-4285-81b1-d85503e34b5a">
+							<dataSourceExpression><![CDATA[new com.cabsoft.rx.engine.data.RXXmlDataSource($P{XML_DATA_DOCUMENT},"//Root/LData/list/LMultiData/LData")]]></dataSourceExpression>
+						</datasetRun>
+						<rx:listContents height="20" width="529">
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="b7922aa4-f1d4-4285-b93a-a891e84a835d" style="styleM" x="0" y="0" width="58" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{appDivNm}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="350f433f-8a98-4026-8f41-c72a4d36487d" style="styleM" x="411" y="0" width="59" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{drvChk}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="b7cba3a0-943b-4359-8545-649457cadcd3" style="styleM" x="470" y="0" width="59" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{hlthAnorChk}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="038a6867-cceb-49e6-b2fd-ffecb8c28066" style="styleM" x="352" y="0" width="59" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{note}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="bf68e9fa-f7ce-4d5b-a2f9-46b4f40abea2" style="styleM" x="234" y="0" width="59" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[""]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="fab84c8e-1474-426b-82a8-d440027b0069" style="styleM" x="58" y="0" width="58" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stkNo}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="aa769b90-6055-45ea-ac84-eed1b6c85e6a" style="styleM" x="116" y="0" width="59" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{resdNo}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="4ea847b8-c487-4513-8026-cd6cd3d794a0" style="styleM" x="175" y="0" width="59" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{nm}]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement uuid="df651a5e-835a-467b-9f53-d07d78f3062f" style="styleM" x="293" y="0" width="59" height="20"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" markup="none">
+									<font size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{perAgmDate}]]></textFieldExpression>
+							</textField>
+						</rx:listContents>
+					</rx:list>
+				</componentElement>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="193">
+				<textField>
+					<reportElement uuid="4066f820-3e35-44af-80cd-bb1f1b24ab21" x="3" y="7" width="529" height="45"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="html"/>
+					<textFieldExpression><![CDATA["당사는 <b>" + $F{appDtm} + "</b> 귀사에 <b>" + $F{/Root/LData/prod_nm}.trim() + "</b> 보험을 가입/탈퇴함에 있어, 규약에 의거<br/> 위의 고지내용이 사실임을 확인하며,신용정보 이용 및 보호에 관한 법률 제 32조의 규정에 따라 귀사가 신용정보를<br/>제공, 활용하는 것에 대하여 동의합니다."]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="55af4643-7b79-43e8-8526-1862198bd669" x="3" y="52" width="529" height="81"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="html"/>
+					<text><![CDATA[<b>추가 가입시</b><br/>
+&nbsp;&nbsp;- 가입증서번호에만 미기입<br/>
+&nbsp;&nbsp;- 유첨서류<br/><br/>
+<b>탈퇴시</b><br/>
+&nbsp;&nbsp;- 가입증서번호,주민번호,성명에만 기입]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="15fb2f70-bbd3-490a-9b46-fcd45078dcf6" x="399" y="133" width="133" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA[$F{appDtm}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="ff64d11e-687d-4004-8202-3a6fd177f5d3" x="399" y="153" width="133" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["처리자 : " + $F{apvAppcNm} + "(" + $F{apvAppId} + ")"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="4156bf0e-fceb-4397-a483-50474fe1c222" x="399" y="173" width="133" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle" markup="none"/>
+					<textFieldExpression><![CDATA["처리일자 : " + $F{apvDate}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="gh2">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="155" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="6f12eee6-ea6c-43e5-aa45-d4c8afdc85b5" style="styleM" mode="Opaque" x="0" y="61" width="535" height="4" backcolor="#0969B3"/>
+				<textElement>
+					<font size="1"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="77fba6b7-a787-47a2-adea-e64f605f82fa" style="styleM" x="0" y="0" width="422" height="57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[보험료정산특약 추가가입·탈퇴 신청서]]></text>
+			</staticText>
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="178ba5a6-b4e5-4a43-b10c-ce5af698223f" isPrintRepeatedValues="false" x="422" y="0" width="113" height="57" isPrintInFirstWholeBand="true"/>
+				<imageExpression><![CDATA[$P{imgDir} + "rpt_top_logo.gif"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="a1e7fab4-719a-4551-ae2d-eac6725ba1e1" mode="Opaque" x="3" y="115" width="132" height="20" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[단체명]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="260e53cb-f019-487c-9fa4-be1eb9ac45a3" style="paddingL" x="3" y="135" width="132" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{/Root/LData/grp_nm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c81f98fc-1f64-4ba4-a8af-4c00c8884f79" style="styleM" x="3" y="68" width="529" height="27"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[보험료저산특약 약관 및 협정서에 의거 계약내용 추가가입,탈퇴명부를 아래와 같이 제출하오니
+처리하여 주시기 바랍니다.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9be6adba-265d-4b36-8c90-a7eeed3d51eb" style="styleM" x="3" y="95" width="529" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. 최초 계약사항]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9cc2709-67f6-4078-91ee-568dd92dadb7" mode="Opaque" x="135" y="115" width="132" height="20" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[최초계약일]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="41a7eb47-c05d-4573-8f22-3d907b2654f4" mode="Opaque" x="267" y="115" width="132" height="20" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[고객관리번호]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a656d5f-d263-4d18-9e42-466933db3e42" mode="Opaque" x="399" y="115" width="133" height="20" backcolor="#EEEFEE"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[단체계약관리번호]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="404d8203-39ef-4325-8706-2a390166e63c" style="styleM" x="135" y="135" width="132" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{/Root/LData/stDt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="502a68e7-c541-422a-aa66-2f794a4cb197" style="paddingL" x="267" y="135" width="132" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c069d5cd-47c4-475b-b602-93af54ebfc2d" style="paddingL" x="399" y="135" width="133" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{/Root/LData/con_mng_no}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band height="70" splitType="Stretch">
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="2a04d483-6b85-4a93-a94f-47b741e2a234" x="21" y="6" width="492" height="64">
+					<property name="com.cabsoft.rx.export.html.id" value="rxcode"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{imgDir}+"barcode2.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>

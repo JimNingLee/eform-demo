@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="A1"  pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e8d8429c-3927-446a-9039-94836bded459">
+	<property name="rxreport.zoom" value="1.6105100000000017"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="864"/>
+	<style name="Default" isDefault="true" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Defaultback" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="styreport" hAlign="Center" fontSize="8" isBold="false" isItalic="false" isUnderline="true"/>
+	<style name="styback" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="styinfo" hAlign="Left" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Default_10pt" hAlign="Left" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Default_10pt_bold" isBlankWhenNull="true" fontSize="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Defaultback_top" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<topPen lineWidth="0.75"/>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="Defaultback_all" fontSize="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<topPen lineWidth="0.75"/>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+			<rightPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="Defaultback _10pt_center " hAlign="Center" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="Defaultback _10pt_center_top " hAlign="Center" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<topPen lineWidth="0.75"/>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<style name="Defaultback _10pt_center_all" hAlign="Center" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<topPen lineWidth="0.75"/>
+			<leftPen lineWidth="0.75"/>
+			<bottomPen lineWidth="0.75"/>
+			<rightPen lineWidth="0.75"/>
+		</box>
+	</style>
+	<queryString language="xPath">
+		<![CDATA[/root/shinhan/info]]>
+	</queryString>
+	<field name="년" class="java.lang.String">
+		<fieldDescription><![CDATA[년]]></fieldDescription>
+	</field>
+	<field name="월" class="java.lang.String">
+		<fieldDescription><![CDATA[월]]></fieldDescription>
+	</field>
+	<field name="일" class="java.lang.String">
+		<fieldDescription><![CDATA[일]]></fieldDescription>
+	</field>
+	<field name="동의자성명_1" class="java.lang.String">
+		<fieldDescription><![CDATA[동의자성명_1]]></fieldDescription>
+	</field>
+	<field name="주민등록번호_1" class="java.lang.String">
+		<fieldDescription><![CDATA[주민등록번호_1]]></fieldDescription>
+	</field>
+	<field name="주소_1" class="java.lang.String">
+		<fieldDescription><![CDATA[주소_1]]></fieldDescription>
+	</field>
+	<field name="전화번호_1" class="java.lang.String">
+		<fieldDescription><![CDATA[전화번호_1]]></fieldDescription>
+	</field>
+	<field name="동의자성명_2" class="java.lang.String">
+		<fieldDescription><![CDATA[동의자성명_2]]></fieldDescription>
+	</field>
+	<field name="주민등록번호_2" class="java.lang.String">
+		<fieldDescription><![CDATA[주민등록번호_2]]></fieldDescription>
+	</field>
+	<field name="주소_2" class="java.lang.String">
+		<fieldDescription><![CDATA[주소_2]]></fieldDescription>
+	</field>
+	<field name="전화번호_2" class="java.lang.String">
+		<fieldDescription><![CDATA[전화번호_2]]></fieldDescription>
+	</field>
+	<field name="동의자성명_3" class="java.lang.String">
+		<fieldDescription><![CDATA[동의자성명_3]]></fieldDescription>
+	</field>
+	<field name="주민등록번호_3" class="java.lang.String">
+		<fieldDescription><![CDATA[주민등록번호_3]]></fieldDescription>
+	</field>
+	<field name="주소_3" class="java.lang.String">
+		<fieldDescription><![CDATA[주소_3]]></fieldDescription>
+	</field>
+	<field name="전화번호_3" class="java.lang.String">
+		<fieldDescription><![CDATA[전화번호_3]]></fieldDescription>
+	</field>
+	<field name="직위" class="java.lang.String">
+		<fieldDescription><![CDATA[직위]]></fieldDescription>
+	</field>
+	<field name="성명" class="java.lang.String">
+		<fieldDescription><![CDATA[성명]]></fieldDescription>
+	</field>
+	<group name="group1">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="422">
+				<staticText>
+					<reportElement uuid="a44a05d3-179b-4423-b8ae-e14c4de82e5a" style="Default_10pt" x="55" y="135" width="138" height="20"/>
+					<textElement/>
+					<text><![CDATA[한국주택금융공사 귀하]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="551af969-08d0-4fd9-9b99-8c302fed6c40" style="Default_10pt" x="49" y="165" width="496" height="35"/>
+					<textElement/>
+					<text><![CDATA[  본인은 아래의 제공기관이 주택금융신용보증기금의 운용관리기관인 한국주택금융공사에게 본인의 부동산
+소유현황, 주민등록정보 및 직장 · 소득정보 등을 제공하는데 동의합니다.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a031c29a-b899-4bcc-b560-4665cccf136b" style="Default_10pt_bold" x="49" y="218" width="201" height="20"/>
+					<textElement/>
+					<text><![CDATA[※ 제공할 개인정보의 내용 등]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="85fe131c-5cc8-40ff-9217-0e177936e073" style="Default_10pt" x="55" y="239" width="490" height="157"/>
+					<textElement/>
+					<text><![CDATA[1. 제공기관 : 국가, 지방자치단체, 금융기관, 「국민연금법」에 따른 국민연금관리공단 및 「국민건강보험법」에
+   따른 국민건강보험공단 및 그 밖의 공공단체
+
+2. 사용목적 : 미수채권(구상권 포함) 행사(재산보유 파악, 보전조치, 강제집행 등)
+
+3. 자료제공범위 : 본인 소유부동산 현황, 주민등록번호 및 직장·소득정보 등
+
+4. 동의서 유효기간 : 미수채권(구상권 포함)의 소멸시까지
+
+5. 동의를 거부할 권리 및 동의를 거부할 경우의 불이익 : 위 개인정보의 제공에 관한 동의는 계약의 체결 및
+   이행을 위하여 필수적이므로 위 사항에 동의하셔야만 금융거래 관계의 설정 및 유지가 가능합니다. ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d92ac2d7-b32c-4eda-91a7-e09cebbfe47c" style="Default_10pt_bold" x="226" y="81" width="129" height="21"/>
+					<textElement textAlignment="Center"/>
+					<text><![CDATA[개인정보 제공 동의서]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a031c29a-b899-4bcc-b560-4665cccf136b" style="Default_10pt_bold" x="49" y="402" width="376" height="20"/>
+					<textElement/>
+					<text><![CDATA[※ 근거법령 : 「개인정보보호법」 제17조 및 「한국주택금융공사법」 제64조]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d92ac2d7-b32c-4eda-91a7-e09cebbfe47c" x="226" y="103" width="129" height="5"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font size="11" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="331">
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="87" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["주민등록번호(법인번호) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="104" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["주     소 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="121" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["전화번호 : "]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="0aa64366-a61d-400f-8279-b34b49c92904" style="Defaultback _10pt_center_all" x="413" y="257" width="129" height="15"/>
+					<textElement/>
+					<text><![CDATA[본인 확인필]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fd4d9593-2439-4070-8610-a8f428a1bd1a" style="Defaultback _10pt_center " x="413" y="272" width="54" height="15"/>
+					<textElement/>
+					<text><![CDATA[직위]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5c174f9c-b935-48ae-85a4-d9063156eae1" style="Defaultback _10pt_center_all" x="467" y="272" width="75" height="15"/>
+					<textElement/>
+					<text><![CDATA[성   명]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="88ab92ee-348e-45f2-a8d7-2711f51469ee" style="Defaultback _10pt_center " x="413" y="287" width="54" height="40"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="88ab92ee-348e-45f2-a8d7-2711f51469ee" style="Defaultback _10pt_center " x="467" y="287" width="49" height="40"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="e6edc108-bd19-49a5-8427-ab4381575b00" style="Defaultback _10pt_center_all" x="516" y="287" width="26" height="40"/>
+					<box>
+						<leftPen lineWidth="0.0"/>
+					</box>
+					<textElement/>
+					<text><![CDATA[(인)]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="70" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["동의자 성명(법인명) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="a2f56fbe-ae4d-405e-93ad-1d6b6b801998" style="Default_10pt" x="413" y="30" width="132" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["        년         월        일"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="70" width="364" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="87" width="364" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="121" width="364" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="104" width="364" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="172" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["주민등록번호(법인번호) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="189" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["주     소 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="155" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["동의자 성명(법인명) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="206" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["전화번호 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="172" width="364" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="206" width="364" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="189" width="364" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="155" width="364" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="241" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["동의자 성명(법인명) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="258" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["주민등록번호(법인번호) : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="292" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["전화번호 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="49" y="275" width="129" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA["주     소 : "]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="241" width="225" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="292" width="225" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="275" width="225" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5e284d4a-f833-4d82-a388-bbf6ac656978" style="Default_10pt" x="178" y="258" width="225" height="16"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band height="842">
+			<rectangle>
+				<reportElement uuid="1462a102-04da-4365-b5cd-2cced2d8e6b2" x="24" y="50" width="548" height="744"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</background>
+</ReportExpress>

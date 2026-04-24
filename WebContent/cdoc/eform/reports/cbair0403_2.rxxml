@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportExpress xmlns="http://www.cabsoftware.com/reportexpress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cabsoftware.com/reportexpress http://www.cabsoftware.com/reportexpress/xsd/reportexpress.xsd" name="NH" pageWidth="595" pageHeight="842" columnWidth="513" leftMargin="42" rightMargin="40" topMargin="50" bottomMargin="42" uuid="1169ad0d-a525-4e65-92e0-9db407f1303f">
+	<property name="rxreport.zoom" value="1.5026296018031553"/>
+	<property name="rxreport.x" value="0"/>
+	<property name="rxreport.y" value="0"/>
+	<style name="Default" isDefault="true">
+		<paragraph rightIndent="4"/>
+	</style>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:/00_nh/01.기업/rpxFiles/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="imgDir" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["../images/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath">
+		<![CDATA[/root/bank/data]]>
+	</queryString>
+	<field name="title" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/title]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/date]]></fieldDescription>
+	</field>
+	<field name="계좌번호" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/계좌번호]]></fieldDescription>
+	</field>
+	<field name="예금종류" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/예금종류]]></fieldDescription>
+	</field>
+	<field name="예금주명" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/예금주명]]></fieldDescription>
+	</field>
+	<field name="통장잔액" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/통장잔액]]></fieldDescription>
+	</field>
+	<field name="조회기간" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/조회기간]]></fieldDescription>
+	</field>
+	<field name="지급가능잔액" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/지급가능잔액]]></fieldDescription>
+	</field>
+	<field name="구분" class="java.lang.String">
+		<fieldDescription><![CDATA[구분]]></fieldDescription>
+	</field>
+	<field name="거래일시" class="java.lang.String">
+		<fieldDescription><![CDATA[거래일시]]></fieldDescription>
+	</field>
+	<field name="출금금액" class="java.lang.String">
+		<fieldDescription><![CDATA[출금금액]]></fieldDescription>
+	</field>
+	<field name="입금금액" class="java.lang.String">
+		<fieldDescription><![CDATA[입금금액]]></fieldDescription>
+	</field>
+	<field name="거래후잔액" class="java.lang.String">
+		<fieldDescription><![CDATA[거래후잔액]]></fieldDescription>
+	</field>
+	<field name="거래내용" class="java.lang.String">
+		<fieldDescription><![CDATA[거래내용]]></fieldDescription>
+	</field>
+	<field name="거래기록사항" class="java.lang.String">
+		<fieldDescription><![CDATA[거래기록사항]]></fieldDescription>
+	</field>
+	<field name="거래점" class="java.lang.String">
+		<fieldDescription><![CDATA[거래점]]></fieldDescription>
+	</field>
+	<field name="이체메모" class="java.lang.String">
+		<fieldDescription><![CDATA[이체메모]]></fieldDescription>
+	</field>
+	<field name="error" class="java.lang.String">
+		<fieldDescription><![CDATA[error]]></fieldDescription>
+	</field>
+	<field name="입금건수합계" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/입금건수합계]]></fieldDescription>
+	</field>
+	<field name="출금건수합계" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/출금건수합계]]></fieldDescription>
+	</field>
+	<field name="입금금액합계" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/입금금액합계]]></fieldDescription>
+	</field>
+	<field name="출금금액합계" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/bank/계좌정보/출금금액합계]]></fieldDescription>
+	</field>
+	<group name="gh0">
+		<groupHeader>
+			<band height="147" splitType="Stretch">
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="4c8d3a89-76f3-4ae6-9922-1fc8f346d38a" key="" mode="Opaque" x="3" y="47" width="72" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["계좌번호"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="c52f4121-a34b-46df-b76f-cf9f11851a52" key="" mode="Transparent" x="75" y="47" width="134" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{계좌번호}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="b99065fb-0993-455c-9120-1c876c77e5a0" key="" mode="Opaque" x="209" y="47" width="119" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["예금종류"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="eb5d78e3-1cb9-49f4-9016-4ef8b91ef643" key="" mode="Transparent" x="328" y="47" width="183" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{예금종류}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="479974e5-88d4-4b28-94cd-31e3421fa6aa" key="" mode="Opaque" x="3" y="67" width="72" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["예금주명"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="737cba54-0c62-4cab-9726-832f982adef3" key="" mode="Transparent" x="75" y="67" width="134" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{예금주명}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="a19fe823-df43-4b89-b419-8d10fac9159a" key="" mode="Opaque" x="209" y="67" width="119" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["현재통장잔액"]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="7b9117fb-334b-4f6e-8029-4f708ca82c66" key="" mode="Transparent" x="328" y="67" width="183" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box rightPadding="2">
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[Double.valueOf($F{통장잔액})]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="d1a07744-ddcd-4359-9f9b-037da37e58f7" key="" mode="Opaque" x="3" y="87" width="72" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["조회기간"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f1b57a1f-da23-40d6-831b-35627e37f476" key="" mode="Transparent" x="75" y="87" width="134" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{조회기간}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="804c015c-29cb-4925-8cc0-7b054ca0b8e3" key="" mode="Opaque" x="209" y="87" width="119" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["현재지급가능잔액"]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="2950f7b7-f137-4e95-b93f-4c9cb3962376" key="" mode="Transparent" x="328" y="87" width="183" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box rightPadding="2">
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[Double.valueOf($F{지급가능잔액})]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="fbcea9c7-5915-49d0-b509-ddf856fc55df" key="" mode="Transparent" x="3" y="4" width="508" height="20" forecolor="#000000" backcolor="#FFFFFF">
+						<printWhenExpression><![CDATA[false]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["입출금 거래내역은 입출금한 내용을 한번에 확인할 수 있습니다."]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="a04472dd-f818-4441-9607-0cd76a0ac383" key="" mode="Transparent" x="3" y="24" width="508" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["현재시간 : "+ $F{date}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="2950f7b7-f137-4e95-b93f-4c9cb3962376" key="" mode="Transparent" x="328" y="127" width="183" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box rightPadding="2">
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[Double.valueOf($F{출금금액합계})]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f1b57a1f-da23-40d6-831b-35627e37f476" key="" mode="Transparent" x="75" y="107" width="134" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{입금건수합계}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="804c015c-29cb-4925-8cc0-7b054ca0b8e3" key="" mode="Opaque" x="209" y="127" width="119" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["출금금액합계"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="d1a07744-ddcd-4359-9f9b-037da37e58f7" key="" mode="Opaque" x="3" y="127" width="72" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["출금건수합계"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="d1a07744-ddcd-4359-9f9b-037da37e58f7" key="" mode="Opaque" x="3" y="107" width="72" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["입금건수합계"]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0" isBlankWhenNull="true">
+					<reportElement uuid="2950f7b7-f137-4e95-b93f-4c9cb3962376" key="" mode="Transparent" x="328" y="107" width="183" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box rightPadding="2">
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[Double.valueOf($F{입금금액합계})]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="f1b57a1f-da23-40d6-831b-35627e37f476" key="" mode="Transparent" x="75" y="127" width="134" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{출금건수합계}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="804c015c-29cb-4925-8cc0-7b054ca0b8e3" key="" mode="Opaque" x="209" y="107" width="119" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["입금금액합계"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="20">
+				<printWhenExpression><![CDATA[( $F{error} == null ? false : true )]]></printWhenExpression>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement uuid="6bb547bd-5b83-4b5f-bb17-d2c868ec2e92" key="" stretchType="RelativeToTallestObject" mode="Transparent" x="3" y="0" width="508" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.0" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.0" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{error}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="gh2">
+		<groupHeader>
+			<band height="46">
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="ba9e5d69-3408-4151-860f-833d7095f6a6" key="" mode="Opaque" x="3" y="26" width="57" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["거래일시"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="9ae01bb1-9766-46c3-be57-f20ec6a82440" key="" mode="Opaque" x="60" y="26" width="67" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["출금금액"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="36f86403-2d20-4bcd-8bd9-a23d917d4a1e" key="" mode="Opaque" x="127" y="26" width="67" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["입금금액"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="d6b7c06a-4c38-4e51-8faa-74195621550c" key="" mode="Opaque" x="194" y="26" width="72" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["거래후잔액"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="f93f0845-a7d7-48e7-95fa-f9c362b284a2" key="" mode="Opaque" x="266" y="26" width="62" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["거래내용"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="4451c20e-82e7-45fd-902e-f00b75bced4b" key="" mode="Opaque" x="328" y="26" width="63" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["거래기록사항"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="fc34ba00-2af2-40c1-8631-a705ae6c4554" key="" mode="Opaque" x="391" y="26" width="62" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["거래점"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="26000e32-bdf9-4203-b0ad-969ecf1ddf87" key="" mode="Transparent" x="3" y="5" width="450" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="굴림" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<font size='5'>●</font> 입출금거래내역"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="a4350c29-a1c3-4c4e-a0c6-853e34682217" key="" mode="Transparent" x="453" y="5" width="58" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+					<box>
+						<topPen lineWidth="0.0" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["(단위: 원)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="fc34ba00-2af2-40c1-8631-a705ae6c4554" key="" mode="Opaque" x="453" y="26" width="58" height="20" forecolor="#000000" backcolor="#F0F0F0"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+						<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+						<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["이체메모"]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<pageHeader>
+		<band height="58" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="4e885f3e-2830-4c2b-a8cb-8b522da98380" mode="Opaque" x="3" y="0" width="388" height="48" isPrintWhenDetailOverflows="true" backcolor="#F8FBFF"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="맑은 고딕" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RealSize" vAlign="Middle" onErrorType="Blank">
+				<reportElement uuid="ff31bf2a-e6a8-4120-b091-78ae94a7261c" key="Logo.gif" x="391" y="0" width="120" height="48"/>
+				<imageExpression><![CDATA[$P{imgDir}+"Logo.gif"]]></imageExpression>
+			</image>
+			<image onErrorType="Blank">
+				<reportElement uuid="17489496-3055-4688-a2e6-7cc0f60bfa7c" key="Top_line.jpg" x="3" y="48" width="508" height="10"/>
+				<imageExpression><![CDATA[$P{imgDir}+"Top_line.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<printWhenExpression><![CDATA[( $F{error} == null ?      $F{이체메모}.length() <= 10 ? true : false      : false )]]></printWhenExpression>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0b81d137-427e-45a3-8502-f44c5b5c024b" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="3" y="0" width="57" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{거래일시}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="7c608320-0cc8-4c13-9840-254cfde775b7" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="60" y="0" width="67" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="2">
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Double.valueOf($F{출금금액})]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="ff8f595e-4309-41ad-8f4c-dbe13488ad70" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="127" y="0" width="67" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="2">
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Double.valueOf($F{입금금액})]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="d5d89d15-600d-44bb-948f-78a2d7fcbd95" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="194" y="0" width="72" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="2">
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Double.valueOf($F{거래후잔액})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e373cb46-d49b-429f-8431-511a35857984" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="266" y="0" width="62" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{거래내용}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8659785d-2533-4502-82be-45e8c14ba4dd" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="328" y="0" width="63" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{거래기록사항}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2d879937-7277-455b-b2e7-c0f86fc75de9" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="391" y="0" width="62" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{거래점}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+				<reportElement uuid="2d879937-7277-455b-b2e7-c0f86fc75de9" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="453" y="0" width="58" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{이체메모} == null || "".equals($F{이체메모}) ? " " : 
+    $F{이체메모}.length() >= 12 ? "" : $F{이체메모}.replace("(","&#40;").replace("(" ,"&#41;").replace("/","&#47;")]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="32">
+			<printWhenExpression><![CDATA[( $F{error} == null ?       $F{이체메모}.length() > 10 ? true : false       : false )]]></printWhenExpression>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0b81d137-427e-45a3-8502-f44c5b5c024b" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="3" y="0" width="57" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{거래일시}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="7c608320-0cc8-4c13-9840-254cfde775b7" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="60" y="0" width="67" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="2">
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Double.valueOf($F{출금금액})]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="ff8f595e-4309-41ad-8f4c-dbe13488ad70" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="127" y="0" width="67" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="2">
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Double.valueOf($F{입금금액})]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement uuid="d5d89d15-600d-44bb-948f-78a2d7fcbd95" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="194" y="0" width="72" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box rightPadding="2">
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Double.valueOf($F{거래후잔액})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e373cb46-d49b-429f-8431-511a35857984" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="266" y="0" width="62" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{거래내용}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8659785d-2533-4502-82be-45e8c14ba4dd" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="328" y="0" width="63" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{거래기록사항}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2d879937-7277-455b-b2e7-c0f86fc75de9" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="391" y="0" width="62" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="굴림" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{거래점}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+				<reportElement uuid="2d879937-7277-455b-b2e7-c0f86fc75de9" key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="453" y="0" width="58" height="32" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="굴림" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{이체메모} == null || "".equals($F{이체메모}) ? " " : 
+    $F{이체메모}.length() >= 12 ? $F{이체메모}.replace("(","&#40;").replace("(" ,"&#41;").replace("/","&#47;") : ""]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="11070acf-8eb4-4dec-8e05-0543738c6f13" mode="Opaque" x="3" y="6" width="508" height="41" forecolor="#000000" backcolor="#E6E6E6"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<leftPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<bottomPen lineWidth="0.5" lineColor="#C0C0C0"/>
+					<rightPen lineWidth="0.5" lineColor="#C0C0C0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[· 고객님이 요청하신 대로 위와 같이 처리되었습니다.
+· 본 확인증은 고객님의 편의를 위하여 제공되는 것으로 법적 효력은 없습니다.
+· 농협 인터넷뱅킹을 이용해 주셔서 대단히 감사합니다.]]></text>
+			</staticText>
+			<image vAlign="Bottom" onErrorType="Blank">
+				<reportElement uuid="787bba04-61e6-4b70-a6a4-5cf6cb15ff00" key="Bottom_line.jpg" x="3" y="53" width="512" height="4"/>
+				<imageExpression><![CDATA[$P{imgDir}+"Bottom_line.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</ReportExpress>
