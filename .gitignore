@@ -1,0 +1,26 @@
+# Eclipse 빌드 출력
+build/
+
+# Eclipse 로컬 설정
+.settings/
+.classpath
+
+# Tomcat 배포 캐시
+.tomcat/
+
+# 인증서 파일 (보안)
+WebContent/WEB-INF/properties/cabsoft/cert/
+WebContent/WEB-INF/properties/cabsoft/license/
+*.der
+*.key
+*.pfx
+*.lic
+cert.zip
+
+# 로그 파일
+*.log
+logs/
+
+# OS 파일
+.DS_Store
+Thumbs.db
